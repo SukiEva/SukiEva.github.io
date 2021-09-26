@@ -11681,3 +11681,10 @@ figure.highlight .section {
     width: 75%;
   }
 }
+.is-2-column {
+  background-image: url("/img/bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
