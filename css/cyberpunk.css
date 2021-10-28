@@ -11707,6 +11707,10 @@ figure.highlight .section {
 .footer {
   background-color: rgba(255,255,255,0.812);
 }
+.article .content a img {
+  margin: auto;
+  display: block;
+}
 body {
   counter-reset: card;
 }
