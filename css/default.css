@@ -11689,10 +11689,10 @@ figure.highlight .section {
   .navbar-start {
     margin-left: 250px;
   }
-}
-.container {
-  padding-left: 30px;
-  padding-right: 30px;
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 #post-calendar {
   display: flex;
