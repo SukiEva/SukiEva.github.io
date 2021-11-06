@@ -1,28 +1,34 @@
-#toc {
-  align-self: flex-start;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0.75rem;
-}
-.widget {
-  background-color: rgba(255,255,255,0.812);
-}
 @media screen and (min-width: 1088px), print {
+  body {
+    background-image: url("https://cdn.jsdelivr.net/gh/SukiEva/SukiEva.github.io/img/bg1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .footer {
+    background-color: rgba(255,255,255,0.812);
+    backdrop-filter: blur(10px);
+  }
   .column.is-4,
   .column.is-4-tablet {
     width: 25%;
   }
   .column.is-8,
-  .column.is-8-tablet {
+  .column.is-8-widescreen {
     width: 75%;
   }
+  .navbar {
+    background-color: rgba(255,255,255,0.812);
+    backdrop-filter: blur(20px);
+  }
+  .navbar-start {
+    margin-left: 350px;
+  }
 }
-.is-2-column {
-  background-image: url("https://cdn.jsdelivr.net/gh/SukiEva/SukiEva.github.io/img/bg.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
 }
 #post-calendar {
   display: flex;
@@ -38,9 +44,6 @@
   overflow-x: auto;
   justify-content: center;
   max-width: 100%;
-}
-.footer {
-  background-color: rgba(255,255,255,0.812);
 }
 .article .content a img {
   margin: auto;
