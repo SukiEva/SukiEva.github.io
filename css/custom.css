@@ -46,3 +46,7 @@
   margin: auto;
   display: block;
 }
+.article,
+.content {
+  letter-spacing: 0.08rem;
+}
