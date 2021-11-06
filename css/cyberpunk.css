@@ -11715,6 +11715,32 @@ figure.highlight .section {
 .content {
   letter-spacing: 0.08rem;
 }
+.logolink a {
+  color: #464646;
+  float: left;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration-line: none;
+}
+.logolink .sakuraso {
+  border-radius: 5px;
+  height: auto;
+  line-height: 25px;
+  padding: 5px;
+  text-size-adjust: 100%;
+  width: auto;
+  background-color: #b3cfd9;
+  color: #fff;
+}
+.logolink .shironeko {
+  color: #2fb5b7;
+}
+.logolink .no {
+  font-size: 15px;
+  display: inline-block;
+  padding: 5px;
+  color: #2fb5b7;
+}
 body {
   counter-reset: card;
 }
