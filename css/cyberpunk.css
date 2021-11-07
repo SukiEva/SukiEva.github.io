@@ -11665,7 +11665,7 @@ figure.highlight .section {
 }
 @media screen and (min-width: 1088px), print {
   body {
-    background-image: url("https://cdn.jsdelivr.net/gh/SukiEva/SukiEva.github.io/img/bg1.png");
+    background-image: url("https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/blog/bg1.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;

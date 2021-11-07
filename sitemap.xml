@@ -2,6 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.sukiu.top/Android/Jetpack%E2%80%94ViewModel/</loc>
+    
+    <lastmod>2021-11-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.sukiu.top/Android/Jetpack%E2%80%94Lifecycle/</loc>
+    
+    <lastmod>2021-11-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.sukiu.top/Android/Gradle%E2%80%94Gradle%E8%BF%81%E7%A7%BBkts/</loc>
+    
+    <lastmod>2021-11-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.sukiu.top/Linux/Linux%E6%8C%87%E4%BB%A4%E2%80%94%E7%B3%BB%E7%BB%9F%E7%AE%A1%E7%90%86/</loc>
+    
+    <lastmod>2021-11-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.sukiu.top/Android/Gradle%E2%80%94Build%E6%9E%84%E5%BB%BA/</loc>
+    
+    <lastmod>2021-11-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.sukiu.top/Android/Android%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E2%80%94Activity/</loc>
+    
+    <lastmod>2021-11-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.sukiu.top/Linux/Linux%E6%8C%87%E4%BB%A4%E2%80%94%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86/</loc>
+    
+    <lastmod>2021-11-07</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://blog.sukiu.top/Linux/Linux%E6%8C%87%E4%BB%A4%E2%80%94%E6%96%87%E4%BB%B6%E4%B8%8E%E6%9D%83%E9%99%90/</loc>
     
     <lastmod>2021-11-07</lastmod>
@@ -72,28 +121,7 @@
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/Android/Jetpack%E2%80%94Lifecycle/</loc>
-    
-    <lastmod>2021-10-03</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://blog.sukiu.top/Android/Jetpack%E2%80%94Compose/</loc>
-    
-    <lastmod>2021-10-02</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.sukiu.top/Android/Gradle%E2%80%94Gradle%E8%BF%81%E7%A7%BBkts/</loc>
-    
-    <lastmod>2021-10-02</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.sukiu.top/Android/Gradle%E2%80%94Build%E6%9E%84%E5%BB%BA/</loc>
     
     <lastmod>2021-10-02</lastmod>
     
@@ -103,13 +131,6 @@
     <loc>http://blog.sukiu.top/Language/Language%E2%80%94Kotlin/</loc>
     
     <lastmod>2021-10-02</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.sukiu.top/Android/Jetpack%E2%80%94ViewModel/</loc>
-    
-    <lastmod>2021-10-01</lastmod>
     
   </url>
   
@@ -136,13 +157,6 @@
   
   <url>
     <loc>http://blog.sukiu.top/Android/Android%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E2%80%94BroadcastReceiver/</loc>
-    
-    <lastmod>2021-09-28</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://blog.sukiu.top/Android/Android%E5%9B%9B%E5%A4%A7%E7%BB%84%E4%BB%B6%E2%80%94Activity/</loc>
     
     <lastmod>2021-09-28</lastmod>
     
@@ -186,14 +200,14 @@
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/tags/Gradle/</loc>
+    <loc>http://blog.sukiu.top/tags/Jetpack/</loc>
     <lastmod>2021-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/tags/Jetpack/</loc>
+    <loc>http://blog.sukiu.top/tags/Gradle/</loc>
     <lastmod>2021-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -207,14 +221,14 @@
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/tags/Kotlin/</loc>
+    <loc>http://blog.sukiu.top/tags/Shell/</loc>
     <lastmod>2021-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/tags/Shell/</loc>
+    <loc>http://blog.sukiu.top/tags/Kotlin/</loc>
     <lastmod>2021-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -235,14 +249,14 @@
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/tags/Container/</loc>
+    <loc>http://blog.sukiu.top/tags/Tree/</loc>
     <lastmod>2021-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/tags/Tree/</loc>
+    <loc>http://blog.sukiu.top/tags/Container/</loc>
     <lastmod>2021-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -265,14 +279,14 @@
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/categories/Language/</loc>
+    <loc>http://blog.sukiu.top/categories/Linux/</loc>
     <lastmod>2021-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/categories/Linux/</loc>
+    <loc>http://blog.sukiu.top/categories/Language/</loc>
     <lastmod>2021-11-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
