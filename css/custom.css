@@ -4,14 +4,13 @@
 /* 仅PC端修改 */
 @media screen and (min-width: 1088px), print {
   body {
-    background-image: url("https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/blog/bg1.png");
+    background-image: url("https://cdn.jsdelivr.net/gh/SukiEva/SukiEva.github.io/img/bg.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
   }
-  .navbar,
-  .footer {
+  .navbar {
     background-color: rgba(255,255,255,0.812);
     backdrop-filter: blur(10px);
   }
@@ -56,6 +55,11 @@
   #time-now {
     margin-left: 80px;
   }
+}
+/* 透明 */
+.widget,
+.footer {
+  background-color: rgba(255,255,255,0.812);
 }
 /*  导航栏固定  */
 .navbar {
