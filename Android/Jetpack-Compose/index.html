@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="msvalidate.01" content="AFC59628FC88BD6352D3E7A5AE5FE303"><meta name="google-site-verification" content="uAa2fbb800RIF4HzoIvwlhtlNh7J2m24V8LizLrlCu4"><title>Jetpack——Compose - Sakurasou</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#3273dc"><meta name="application-name" content="Sakurasou"><meta name="msapplication-TileImage" content="/img/favicon.ico"><meta name="msapplication-TileColor" content="#3273dc"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Sakurasou"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="使用 JetpackCompose 的一些笔记。"><meta property="og:type" content="blog"><meta property="og:title" content="Jetpack——Compose"><meta property="og:url" content="http://blog.sukiu.top/Android/Jetpack-Compose/"><meta property="og:site_name" content="Sakurasou"><meta property="og:description" content="使用 JetpackCompose 的一些笔记。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://developer.android.com/codelabs/jetpack-compose-theming/img/bb8ab0b2d8f9bca8.png?hl=zh-cn"><meta property="og:image" content="https://developer.android.com/codelabs/jetpack-compose-theming/img/767fd40cb6938dc4.png?hl=zh-cn"><meta property="article:published_time" content="2021-09-29T13:30:56.000Z"><meta property="article:modified_time" content="2021-10-02T10:37:10.660Z"><meta property="article:author" content="SukiEva"><meta property="article:tag" content="Jetpack"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://developer.android.com/codelabs/jetpack-compose-theming/img/bb8ab0b2d8f9bca8.png?hl=zh-cn"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Android/Jetpack-Compose/"},"headline":"Jetpack——Compose","image":[],"datePublished":"2021-09-29T13:30:56.000Z","dateModified":"2021-10-02T10:37:10.660Z","author":{"@type":"Person","name":"SukiEva"},"publisher":{"@type":"Organization","name":"Sakurasou","logo":{"@type":"ImageObject","url":"https://cdn.jsdelivr.net/gh/SukiEva/SukiEva.github.io/img/favicon.ico"}},"description":"使用 JetpackCompose 的一些笔记。"}</script><link rel="canonical" href="http://blog.sukiu.top/Android/Jetpack-Compose/"><link rel="alternate" href="/rss.xml" title="Sakurasou" type="application/atom+xml"><link rel="icon" href="https://cdn.jsdelivr.net/gh/SukiEva/SukiEva.github.io/img/favicon.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><script>var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?46b8feda6aa9434cccdff91f797b76ad";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();</script><meta name="msvalidate.01" content="AFC59628FC88BD6352D3E7A5AE5FE303"><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-YW921Z6076" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-YW921Z6076');</script><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css"><script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script><meta name="generator" content="Hexo 5.4.0"></head><body class="is-3-column"><script type="text/javascript" src="/js/night.js"></script><canvas id="universe"></canvas><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><span class="logolink"><a class="navbar-item navbar-logo" href="/"><span class="sakuraso">樱花庄</span><span class="no">の</span><span class="shironeko">μ&#039;s</span></a></span></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/"><i class="fas fa-home faa-horizontal"></i> 首页</a><a class="navbar-item" href="/archives"><i class="fa fa-archive faa-shake"></i> 归档</a><a class="navbar-item" href="/categories"><i class="fa fa-list-ul faa-vertical"></i> 分类</a><a class="navbar-item" href="/tags"><i class="fas fa-tags faa-tada"></i> 标签</a><a class="navbar-item" href="/about"><i class="fa fa-leaf faa-wrench"></i> 关于</a></div><div class="navbar-end"><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2021-09-29T13:30:56.000Z" title="2021/9/29 下午9:30:56">2021-09-29</time>发表</span><span class="level-item"><time dateTime="2021-10-02T10:37:10.660Z" title="2021/10/2 下午6:37:10">2021-10-02</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/Android/">Android</a></span><span class="level-item">2 分钟读完 (大约297个字)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile">Jetpack——Compose</h1><div class="content"><p>使用 JetpackCompose 的一些笔记。</p>
+<span id="more"></span>
+
+<p><strong>关键术语</strong> - <strong>组合</strong>：Jetpack Compose 在执行可组合项时构建的界面描述。</p>
+<p><strong>初始组合</strong>：通过首次运行可组合项创建组合。</p>
+<p><strong>重组</strong>：在数据发生变化时重新运行可组合项以更新组合。</p>
+<p><code> &#39;Surface&#39; A surface container using the &#39;background&#39; color from the theme</code></p>
+<p><code>&#39;Divider&#39; is a provided composable function that creates a horizontal divider.</code></p>
+<h3 id="可组合项中的状态"><a href="#可组合项中的状态" class="headerlink" title="可组合项中的状态"></a>可组合项中的状态</h3><p>可组合函数可以使用 <code>remember</code> 可组合项记住单个对象。</p>
+<p>系统会在初始组合期间将由 <code>remember</code> 计算的值存储在组合中，并在重组期间返回存储的值。</p>
+<ul>
+<li><p><code>remember</code> 既可用于存储可变对象，又可用于存储不可变对象。</p>
+</li>
+<li><p><code>mutableStateOf</code>会创建可观察的 <code>MutableState</code> 会创建可观察的 <code>MutableState</code>，后者是与 Compose 运行时集成的可观察类型。</p>
+</li>
+</ul>
+<p>在可组合项中声明 <code>MutableState</code> 对象的方法有三种（等价）：</p>
+<ul>
+<li><code>val mutableState = remember &#123; mutableStateOf(default) &#125;</code></li>
+<li><code>var value by remember &#123; mutableStateOf(default) &#125;</code></li>
+<li><code>val (value, setValue) = remember &#123; mutableStateOf(default) &#125;</code></li>
+</ul>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Composable</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">Counter</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">val</span> count = remember &#123; mutableStateOf(<span class="number">0</span>) &#125;</span><br><span class="line">    Button(onClick = &#123; count.value++ &#125;) &#123;</span><br><span class="line">        Text(<span class="string">&quot;I&#x27;ve been clicked <span class="subst">$&#123;count.value&#125;</span> times&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="Color"><a href="#Color" class="headerlink" title="Color"></a>Color</h3><center><img src="https://developer.android.com/codelabs/jetpack-compose-theming/img/bb8ab0b2d8f9bca8.png?hl=zh-cn" alt="Material Design Color"  /></center>
+
+<ul>
+<li><code>primary</code>：main brand color</li>
+<li><code>secondary</code>：provide accents</li>
+</ul>
+<h3 id="Typography"><a href="#Typography" class="headerlink" title="Typography"></a>Typography</h3><center><img src="https://developer.android.com/codelabs/jetpack-compose-theming/img/767fd40cb6938dc4.png?hl=zh-cn" alt="Typographies" style="zoom: 50%;" /></center>
+
+</div><div class="article-licensing box"><div class="licensing-title"><p>Jetpack——Compose</p><p><a href="http://blog.sukiu.top/Android/Jetpack-Compose/">http://blog.sukiu.top/Android/Jetpack-Compose/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>SukiEva</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2021-09-29</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2021-10-02</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/Jetpack/">Jetpack</a></div><!--!--></article></div><div class="card"><div class="card-content"><h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3><div class="buttons is-centered"><a class="button donate" data-type="alipay"><span class="icon is-small"><i class="fab fa-alipay"></i></span><span>支付宝</span><span class="qrcode"><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/pay/alipay.jpg" alt="支付宝"></span></a><a class="button donate" data-type="wechat"><span class="icon is-small"><i class="fab fa-weixin"></i></span><span>微信</span><span class="qrcode"><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/pay/wxpay.png" alt="微信"></span></a></div></div></div><nav class="post-navigation mt-4 level is-mobile"><div class="level-start"><a class="article-nav-prev level level-item link-muted" href="/Android/Jetpack-ViewModel/"><i class="level-item fas fa-chevron-left"></i><span class="level-item">Jetpack——ViewModel</span></a></div><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/Android/Android-ContentProvider/"><span class="level-item">Android四大组件——ContentProvider</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><div class="title is-5">评论</div><div id="disqus_thread"><noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div><script>var disqus_config = function () {
+            this.page.url = 'http://blog.sukiu.top/Android/Jetpack-Compose/';
+            this.page.identifier = 'Android/Jetpack-Compose/';
+        };
+        (function() {
+            var d = document, s = d.createElement('script');  
+            s.src = '//' + 'sakurasou' + '.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#可组合项中的状态"><span class="level-left"><span class="level-item">1</span><span class="level-item">可组合项中的状态</span></span></a></li><li><a class="level is-mobile" href="#Color"><span class="level-left"><span class="level-item">2</span><span class="level-item">Color</span></span></a></li><li><a class="level is-mobile" href="#Typography"><span class="level-left"><span class="level-item">3</span><span class="level-item">Typography</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="https://cdn.jsdelivr.net/gh/SukiEva/SukiEva.github.io/img/avatar.jpg" alt="SukiEva"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">SukiEva</p><p class="is-size-6 is-block">Developer</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">30</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">8</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">17</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/SukiEva" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Navigation" href="https://sukiu.top"><i class="fas fa-compass"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/SukiEva"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Email" href="Mailto:dev.suki@outlook.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Rss" href="/rss.xml"><i class="fas fa-rss"></i></a></div><div><hr><center><p id="hitokoto">:D 一言句子获取中...</p></center><script src="https://v1.hitokoto.cn/?encode=js&amp;select=%23hitokoto&amp;c=i" defer></script></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="https://cdn.jsdelivr.net/gh/SukiEva/SukiEva.github.io/img/favicon.ico" alt="Sakurasou" height="28"></a><p class="is-size-7"><span>&copy; 2021 SukiEva</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">共<span id="busuanzi_value_site_uv">0</span>个访客</span></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/"><i class="fab fa-github"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mhchem.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><div id="outdated"><h6>Your browser is out-of-date!</h6><p>Update your browser to view this website correctly.&amp;npsb;<a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p><p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">×</a></p></div><script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script><script>window.addEventListener("load", function () {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'object-fit' // display on IE11 or below
+            });
+        });</script><!--!--><script src="/js/main.js" defer></script><script src="/js/custom.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
