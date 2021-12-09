@@ -2,14 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.sukiu.top/friends/index.html</loc>
+    <loc>http://blog.sukiu.top/Computer-network/Models-And-Protocols/</loc>
     
     <lastmod>2021-12-09</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/Computer-network/Models-And-Protocols/</loc>
+    <loc>http://blog.sukiu.top/friends/index.html</loc>
     
     <lastmod>2021-12-09</lastmod>
     
@@ -298,13 +298,6 @@
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/tags/Container/</loc>
-    <lastmod>2021-12-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.sukiu.top/tags/Bit-Operation/</loc>
     <lastmod>2021-12-09</lastmod>
     <changefreq>daily</changefreq>
@@ -319,14 +312,14 @@
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/tags/Go/</loc>
+    <loc>http://blog.sukiu.top/tags/Container/</loc>
     <lastmod>2021-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/tags/Gradle/</loc>
+    <loc>http://blog.sukiu.top/tags/Go/</loc>
     <lastmod>2021-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -340,14 +333,14 @@
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/tags/Jetpack/</loc>
+    <loc>http://blog.sukiu.top/tags/Gradle/</loc>
     <lastmod>2021-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/tags/Shell/</loc>
+    <loc>http://blog.sukiu.top/tags/Jetpack/</loc>
     <lastmod>2021-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -361,14 +354,7 @@
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/tags/License/</loc>
-    <lastmod>2021-12-09</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.sukiu.top/tags/Queue/</loc>
+    <loc>http://blog.sukiu.top/tags/Shell/</loc>
     <lastmod>2021-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -382,7 +368,14 @@
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/tags/SQL/</loc>
+    <loc>http://blog.sukiu.top/tags/Queue/</loc>
+    <lastmod>2021-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.sukiu.top/tags/License/</loc>
     <lastmod>2021-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -390,6 +383,13 @@
   
   <url>
     <loc>http://blog.sukiu.top/tags/Redis/</loc>
+    <lastmod>2021-12-09</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.sukiu.top/tags/SQL/</loc>
     <lastmod>2021-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -468,14 +468,14 @@
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/categories/Mixed/</loc>
+    <loc>http://blog.sukiu.top/categories/Computer-network/</loc>
     <lastmod>2021-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/categories/Computer-network/</loc>
+    <loc>http://blog.sukiu.top/categories/Mixed/</loc>
     <lastmod>2021-12-09</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
