@@ -1,7 +1,7 @@
 // author by removef
 // https://removeif.github.io/
 $(function () { //获取处理友链数据
-    $.getJSON("https://cdn.jsdelivr.net/gh/SukiEva/SukiEva.github.io/data/friend.json", function (data) {
+    $.getJSON("../data/friend.json", function (data) {
 
         // var data0 = data[0];
         $('.links-content').html("");
