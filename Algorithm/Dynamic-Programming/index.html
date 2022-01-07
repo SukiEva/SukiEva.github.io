@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="msvalidate.01" content="AFC59628FC88BD6352D3E7A5AE5FE303"><meta name="google-site-verification" content="uAa2fbb800RIF4HzoIvwlhtlNh7J2m24V8LizLrlCu4"><title>动态规划 - 千反田</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#3273dc"><meta name="application-name" content="千反田"><meta name="msapplication-TileImage" content="/img/favicon.ico"><meta name="msapplication-TileColor" content="#3273dc"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="千反田"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="动态规划（Dynamic Programming，简称DP），如果某一问题有很多重叠子问题，使用动态规划是最有效的。 和贪心的区别在于：  动态规划中每一个状态一定是由上一个状态推导出来的 贪心没有状态推导，而是从局部直接选最优的，"><meta property="og:type" content="blog"><meta property="og:title" content="动态规划"><meta property="og:url" content="http://blog.sukiu.top/Algorithm/Dynamic-Programming/"><meta property="og:site_name" content="千反田"><meta property="og:description" content="动态规划（Dynamic Programming，简称DP），如果某一问题有很多重叠子问题，使用动态规划是最有效的。 和贪心的区别在于：  动态规划中每一个状态一定是由上一个状态推导出来的 贪心没有状态推导，而是从局部直接选最优的，"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201031349546.png"><meta property="article:published_time" content="2022-01-03T05:47:38.000Z"><meta property="article:modified_time" content="2022-01-06T07:30:20.304Z"><meta property="article:author" content="SukiEva"><meta property="article:tag" content="DP"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201031349546.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Algorithm/Dynamic-Programming/"},"headline":"动态规划","image":["https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201031349546.png"],"datePublished":"2022-01-03T05:47:38.000Z","dateModified":"2022-01-06T07:30:20.304Z","author":{"@type":"Person","name":"SukiEva"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/blog/favicon.ico"}},"description":"动态规划（Dynamic Programming，简称DP），如果某一问题有很多重叠子问题，使用动态规划是最有效的。 和贪心的区别在于：  动态规划中每一个状态一定是由上一个状态推导出来的 贪心没有状态推导，而是从局部直接选最优的，"}</script><link rel="canonical" href="http://blog.sukiu.top/Algorithm/Dynamic-Programming/"><link rel="alternate" href="/rss.xml" title="千反田" type="application/atom+xml"><link rel="icon" href="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/blog/favicon.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://unpkg.com/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><script>var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?46b8feda6aa9434cccdff91f797b76ad";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();</script><meta name="msvalidate.01" content="AFC59628FC88BD6352D3E7A5AE5FE303"><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><link rel="stylesheet" href="https://unpkg.com/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://unpkg.com/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://unpkg.com/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-YW921Z6076" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-YW921Z6076');</script><!--!--><!--!--><link rel="stylesheet" href="https://unpkg.com/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css"><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://unpkg.com/pace-js@1.2.4/pace.min.js"></script><meta name="generator" content="Hexo 5.4.0"></head><body class="is-3-column"><script type="text/javascript" src="/js/night.js"></script><canvas id="universe"></canvas><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><span class="logolink"><a class="navbar-item navbar-logo" href="/"><span class="sakuraso">千反田</span><span class="no">の</span><span class="shironeko">μ&#039;s</span></a></span></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">🌈首页</a><a class="navbar-item" href="/archives">🗂️归档</a><a class="navbar-item" href="/categories">🪁分类</a><a class="navbar-item" href="/tags">🏷️标签</a><a class="navbar-item" href="/friends">🎉友链</a><a class="navbar-item" href="/donate">💕赞赏</a><a class="navbar-item" href="/about">🎐关于</a></div><div class="navbar-end"><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="Travelling" href="https://travellings.link"><i class="fas fa-subway"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201031349546.png" alt="动态规划"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-01-03T05:47:38.000Z" title="2022/1/3 13:47:38">2022-01-03</time>发表</span><span class="level-item"><time dateTime="2022-01-06T07:30:20.304Z" title="2022/1/6 15:30:20">2022-01-06</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/Algorithm/">Algorithm</a></span><span class="level-item">6 分钟读完 (大约920个字)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile">动态规划</h1><div class="content"><p>动态规划（Dynamic Programming，简称DP），如果某一问题有很多重叠子问题，使用动态规划是最有效的。</p>
+<p>和贪心的区别在于：</p>
+<ul>
+<li>动态规划中每一个状态一定是由上一个状态推导出来的</li>
+<li>贪心没有状态推导，而是从局部直接选最优的，</li>
+</ul>
+<span id="more"></span>
+
+<blockquote>
+<p>参考：<br><a target="_blank" rel="noopener" href="https://programmercarl.com/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80.html#%E4%BB%80%E4%B9%88%E6%98%AF%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92">代码随想录</a></p>
+</blockquote>
+<p>卡子哥的<strong>DP五部曲</strong>：</p>
+<ol>
+<li>确定dp数组（dp table）以及下标的含义</li>
+<li>确定递推公式</li>
+<li>dp数组如何初始化</li>
+<li>确定遍历顺序</li>
+<li>举例推导dp数组</li>
+</ol>
+<img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201031418164.png" style="zoom: 50%;" />
+
+<h2 id="1、背包问题"><a href="#1、背包问题" class="headerlink" title="1、背包问题"></a>1、背包问题</h2><blockquote>
+<p>对于面试，掌握01背包和完全背包就够用了，最多可以再来一个多重背包。</p>
+</blockquote>
+<img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201061504469.png" style="zoom:80%;" />
+
+<h3 id="01背包"><a href="#01背包" class="headerlink" title="01背包"></a>01背包</h3><p>有N件物品和一个最多能背重量为 <code>W</code> 的背包。第i件物品的重量是<code>weight[i]</code>，得到的价值是<code>value[i]</code> 。</p>
+<p><strong>每件物品只能用一次</strong>，求解将哪些物品装入背包里物品价值总和最大。</p>
+<h4 id="二维"><a href="#二维" class="headerlink" title="二维"></a>二维</h4><ol>
+<li><p><code>dp[i][j]</code>：从下标为<code>[0-i]</code>的物品里任意取，放进容量为<code>j</code>的背包，价值总和最大是多少</p>
+</li>
+<li><p>有两个方向推出来<code>dp[i][j]</code>：</p>
+</li>
+</ol>
+<ul>
+<li><p><strong>不放物品 i</strong>：由<code>dp[i - 1][j]</code>推出，即背包容量为j，里面不放物品i的最大价值</p>
+</li>
+<li><p><strong>放物品 i</strong>：由<code>dp[i - 1][j - weight[i]]</code>推出，<code>dp[i - 1][j - weight[i]] </code>为背包容量为<code>j - weight[i]</code>的时候不放物品i的最大价值，那么<code>dp[i - 1][j - weight[i]] + value[i]</code> ，就是背包放物品i得到的最大价值</p>
+</li>
+<li><p>动态转移公式：$dp[i][j] = max(dp[i-1][j], dp[i-1][j-weight[i]]+value[i])$</p>
+</li>
+</ul>
+<ol start="3">
+<li>初始化：由递推公式看出，必须初始化<code>dp[0][j]</code>（存放编号0的物品的时候，各个容量的背包所能存放的最大价值）</li>
+</ol>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">vector&lt;vector&lt;<span class="keyword">int</span>&gt;&gt; <span class="built_in">dp</span>(weight.<span class="built_in">size</span>(), vector&lt;<span class="keyword">int</span>&gt;(bagWeight + <span class="number">1</span>, <span class="number">0</span>));</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">int</span> j = weight[<span class="number">0</span>]; j &lt;= bagWeight; j++) &#123;</span><br><span class="line">    dp[<span class="number">0</span>][j] = value[<span class="number">0</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>遍历顺序：先遍历物品和先遍历背包重量都可，<strong>先遍历物品</strong>更好理解</li>
+</ol>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 01背包</span></span><br><span class="line"><span class="comment">- 动态转移方程：dp[i][j] = max(dp[i-1][j], dp[i-1][j-weight[i]]+value[i])</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function">func <span class="title">bagProblem</span><span class="params">(weight, value []<span class="keyword">int</span>, bagWeight <span class="keyword">int</span>)</span> <span class="keyword">int</span> </span>&#123;</span><br><span class="line">    dp := <span class="built_in">make</span>([][]<span class="keyword">int</span>, <span class="built_in">len</span>(weight))</span><br><span class="line">    <span class="keyword">for</span> i := range dp &#123;</span><br><span class="line">        dp[i] = <span class="built_in">make</span>([]<span class="keyword">int</span>, bagWeight+<span class="number">1</span>)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 初始化, dp[0][j]</span></span><br><span class="line">    <span class="keyword">for</span> j := weight[<span class="number">0</span>]; j &lt;= bagWeight; j++ &#123;</span><br><span class="line">        dp[<span class="number">0</span>][j] = value[<span class="number">0</span>]</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> i := <span class="number">1</span>; i &lt; <span class="built_in">len</span>(weight); i++ &#123;</span><br><span class="line">        <span class="keyword">for</span> j := <span class="number">0</span>; j &lt;= bagWeight; j++ &#123;</span><br><span class="line">            <span class="keyword">if</span> j &lt; weight[i] &#123; <span class="comment">// 放不下</span></span><br><span class="line">                dp[i][j] = dp[i<span class="number">-1</span>][j]</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                dp[i][j] = <span class="built_in">max</span>(dp[i<span class="number">-1</span>][j], dp[i<span class="number">-1</span>][j-weight[i]]+value[i])</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> dp[<span class="built_in">len</span>(weight)<span class="number">-1</span>][bagWeight]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="一维"><a href="#一维" class="headerlink" title="一维"></a>一维</h4><p>滚动数组：把二维 dp 降为一维 dp</p>
+<blockquote>
+<p>对于背包问题其实状态都是可以压缩的。</p>
+<p>在使用二维数组的时候，递推公式：<code>dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - weight[i]] + value[i])</code></p>
+<p><strong>其实可以发现如果把dp[i - 1]那一层拷贝到dp[i]上，表达式完全可以是：<code>dp[i][j] = max(dp[i][j], dp[i][j - weight[i]] + value[i])</code></strong></p>
+<p><strong>与其把dp[i - 1]这一层拷贝到dp[i]上，不如只用一个一维数组了</strong>，只用dp[j]（一维数组，也可以理解是一个滚动数组）</p>
+<p><strong>倒叙遍历是为了保证物品i只被放入一次</strong></p>
+</blockquote>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 滚动数组优化 一维</span></span><br><span class="line"><span class="comment">// - dp[j] = max(dp[j], dp[j - weight[i]] + value[i])</span></span><br><span class="line"><span class="function">func <span class="title">bagProblemBetter</span><span class="params">(weight, value []<span class="keyword">int</span>, bagWeight <span class="keyword">int</span>)</span> <span class="keyword">int</span> </span>&#123;</span><br><span class="line">    dp := <span class="built_in">make</span>([]<span class="keyword">int</span>, bagWeight+<span class="number">1</span>)</span><br><span class="line">    <span class="keyword">for</span> i := range weight &#123;</span><br><span class="line">        <span class="keyword">for</span> j := bagWeight; j &gt;= weight[i]; j-- &#123; <span class="comment">// 倒序，正序会状态重复</span></span><br><span class="line">            dp[j] = <span class="built_in">max</span>(dp[j], dp[j-weight[i]]+value[i])</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> dp[bagWeight]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="完全背包"><a href="#完全背包" class="headerlink" title="完全背包"></a>完全背包</h3><h3 id="多重背包"><a href="#多重背包" class="headerlink" title="多重背包"></a>多重背包</h3></div><div class="article-licensing box"><div class="licensing-title"><p>动态规划</p><p><a href="http://blog.sukiu.top/Algorithm/Dynamic-Programming/">http://blog.sukiu.top/Algorithm/Dynamic-Programming/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>SukiEva</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2022-01-03</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2022-01-06</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/DP/">DP</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/Language/Shell/"><span class="level-item">Shell</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div id="comment-container"></div><link rel="stylesheet" href="https://unpkg.com/gitalk@1.7.2/dist/gitalk.css"><script src="https://unpkg.com/gitalk@1.7.2/dist/gitalk.min.js"></script><script>var gitalk = new Gitalk({
+            id: "52d785bb0c7faaec5af2b857e5e09ea6",
+            repo: "SukiEva.github.io",
+            owner: "SukiEva",
+            clientID: "8542444b11c2adac4574",
+            clientSecret: "3bfc002a0a942d7dfb1eeada021f62c499ec2af9",
+            admin: ["SukiEva"],
+            createIssueManually: false,
+            distractionFreeMode: false,
+            perPage: 10,
+            pagerDirection: "last",
+            
+            
+            enableHotKey: true,
+            language: "zh-CN",
+        })
+        gitalk.render('comment-container')</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#1、背包问题"><span class="level-left"><span class="level-item">1</span><span class="level-item">1、背包问题</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#01背包"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">01背包</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#二维"><span class="level-left"><span class="level-item">1.1.1</span><span class="level-item">二维</span></span></a></li><li><a class="level is-mobile" href="#一维"><span class="level-left"><span class="level-item">1.1.2</span><span class="level-item">一维</span></span></a></li></ul></li><li><a class="level is-mobile" href="#完全背包"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">完全背包</span></span></a></li><li><a class="level is-mobile" href="#多重背包"><span class="level-left"><span class="level-item">1.3</span><span class="level-item">多重背包</span></span></a></li></ul></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/blog/avatar.jpg" alt="SukiEva"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">SukiEva</p><p class="is-size-6 is-block">Developer</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">42</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">10</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">23</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/SukiEva" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Navigation" href="https://sukiu.top"><i class="fas fa-compass"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/SukiEva"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Email" href="Mailto:dev.suki@outlook.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Rss" href="/rss.xml"><i class="fas fa-rss"></i></a></div><div><hr><center><p id="hitokoto">取次花丛懒回顾，半缘修道半缘君。</p></center></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/blog/favicon.ico" alt="千反田" height="28"></a><p class="is-size-7"><span>&copy; 2022 SukiEva</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">共<span id="busuanzi_value_site_uv">0</span>个访客</span></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="GitHub" href="https://github.com/"><i class="fab fa-github"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p></div></div></div></div></footer><script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://unpkg.com/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://unpkg.com/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://unpkg.com/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://unpkg.com/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://unpkg.com/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><link rel="stylesheet" href="https://unpkg.com/katex@0.15.1/dist/katex.min.css"><script src="https://unpkg.com/katex@0.15.1/dist/katex.min.js" defer></script><script src="https://unpkg.com/katex@0.15.1/dist/contrib/auto-render.min.js" defer></script><script src="https://unpkg.com/katex@0.15.1/dist/contrib/mhchem.min.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://unpkg.com/mathjax@2.7.9/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><div id="outdated"><h6>Your browser is out-of-date!</h6><p>Update your browser to view this website correctly.&amp;npsb;<a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p><p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">×</a></p></div><script src="https://unpkg.com/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script><script>window.addEventListener("load", function () {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'object-fit' // display on IE11 or below
+            });
+        });</script><!--!--><script src="/js/main.js" defer></script><script src="/js/custom.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>

@@ -1,3 +1,9 @@
+/*
+ * @Author: SukiEva
+ * @Date: 2021-12-09 16:09:10
+ * @Description: https://github.com/SukiEva
+ * わたし、気になります！
+ */
 // author by removef
 // https://removeif.github.io/
 $(function () { //获取处理友链数据
@@ -11,7 +17,7 @@ $(function () { //获取处理友链数据
         data = data.filter((item, a, b) => item.valid != 0).sort(function (a, b) {
             return Math.random() > .5 ? -1 : 1;
         });
-        $('.links-content').append("<div class='friend-title-item'><br>朋友圈<br><br><hr></div>");
+        $('.links-content').append("<div class='friend-title-item'><article class='message is-info'><div class='message-body'>朋友圈</div></article></div>");
         $.each(data, function (i, e) {
             var html = "<div class=\"friend-card-item\">";
             if (e.src == undefined) {
