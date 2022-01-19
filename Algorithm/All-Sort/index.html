@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="msvalidate.01" content="AFC59628FC88BD6352D3E7A5AE5FE303"><meta name="google-site-verification" content="uAa2fbb800RIF4HzoIvwlhtlNh7J2m24V8LizLrlCu4"><title>排序 - 千反田</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#3273dc"><meta name="application-name" content="千反田"><meta name="msapplication-TileImage" content="/img/favicon.ico"><meta name="msapplication-TileColor" content="#3273dc"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="千反田"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="常见的内部排序算法有：插入排序、希尔排序、选择排序、冒泡排序、归并排序、快速排序、堆排序、基数排序等。"><meta property="og:type" content="blog"><meta property="og:title" content="排序"><meta property="og:url" content="http://blog.sukiu.top/Algorithm/All-Sort/"><meta property="og:site_name" content="千反田"><meta property="og:description" content="常见的内部排序算法有：插入排序、希尔排序、选择排序、冒泡排序、归并排序、快速排序、堆排序、基数排序等。"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192137738.png"><meta property="article:published_time" content="2022-01-19T13:36:14.000Z"><meta property="article:modified_time" content="2022-01-19T14:03:50.874Z"><meta property="article:author" content="SukiEva"><meta property="article:tag" content="Sort"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192137738.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Algorithm/All-Sort/"},"headline":"排序","image":["https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192137738.png"],"datePublished":"2022-01-19T13:36:14.000Z","dateModified":"2022-01-19T14:03:50.874Z","author":{"@type":"Person","name":"SukiEva"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/blog/favicon.ico"}},"description":"常见的内部排序算法有：插入排序、希尔排序、选择排序、冒泡排序、归并排序、快速排序、堆排序、基数排序等。"}</script><link rel="canonical" href="http://blog.sukiu.top/Algorithm/All-Sort/"><link rel="alternate" href="/rss.xml" title="千反田" type="application/atom+xml"><link rel="icon" href="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/blog/favicon.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://unpkg.com/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><script>var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?46b8feda6aa9434cccdff91f797b76ad";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();</script><meta name="msvalidate.01" content="AFC59628FC88BD6352D3E7A5AE5FE303"><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><link rel="stylesheet" href="https://unpkg.com/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://unpkg.com/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://unpkg.com/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-YW921Z6076" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-YW921Z6076');</script><!--!--><!--!--><link rel="stylesheet" href="https://unpkg.com/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css"><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://unpkg.com/pace-js@1.2.4/pace.min.js"></script><meta name="generator" content="Hexo 5.4.0"></head><body class="is-3-column"><script type="text/javascript" src="/js/night.js"></script><canvas id="universe"></canvas><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><span class="logolink"><a class="navbar-item navbar-logo" href="/"><span class="sakuraso">千反田</span><span class="no">の</span><span class="shironeko">μ&#039;s</span></a></span></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">🌈首页</a><a class="navbar-item" href="/archives">🗂️归档</a><a class="navbar-item" href="/categories">🪁分类</a><a class="navbar-item" href="/tags">🏷️标签</a><a class="navbar-item" href="/friends">🎉友链</a><a class="navbar-item" href="/donate">💕赞赏</a><a class="navbar-item" href="/about">🎐关于</a></div><div class="navbar-end"><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="Travelling" href="https://travellings.link"><i class="fas fa-subway"></i></a><a class="navbar-item is-hidden-tablet catalogue" title="目录" href="javascript:;"><i class="fas fa-list-ul"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-image"><span class="image is-7by3"><img class="fill" src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192137738.png" alt="排序"></span></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-01-19T13:36:14.000Z" title="2022/1/19 21:36:14">2022-01-19</time>发表</span><span class="level-item"><time dateTime="2022-01-19T14:03:50.874Z" title="2022/1/19 22:03:50">2022-01-19</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/Algorithm/">Algorithm</a></span><span class="level-item">15 分钟读完 (大约2233个字)</span><span class="level-item" id="busuanzi_container_page_pv"><span id="busuanzi_value_page_pv">0</span>次访问</span></div></div><h1 class="title is-3 is-size-4-mobile">排序</h1><div class="content"><p>常见的内部排序算法有：插入排序、希尔排序、选择排序、冒泡排序、归并排序、快速排序、堆排序、基数排序等。</p>
+<span id="more"></span>
+
+<blockquote>
+<p>稳定性是指排序过程中，原来相同的元素保持原来的相对位置<br>比如 a[i] = a[j] ，且 i&lt;j , 排序后 i&lt;j 依然成立</p>
+</blockquote>
+<h2 id="1、插入排序"><a href="#1、插入排序" class="headerlink" title="1、插入排序"></a>1、插入排序</h2><h3 id="1-直接插入排序"><a href="#1-直接插入排序" class="headerlink" title="(1) 直接插入排序"></a>(1) 直接插入排序</h3><blockquote>
+<p>时间复杂度：O(n^2)，最好 O(n)<br>空间复杂度：O(1)<br>稳定性：稳定</p>
+</blockquote>
+<ul>
+<li>思路：<br>  将开头元素视作已排序<br>  执行下述过程，直到未排序过程消失：</li>
+</ul>
+<ol>
+<li>取出未排序部分的开头元素赋给变量 v</li>
+<li>在已排序部分，将所有比 v 大的元素向后移动一位</li>
+<li>将已取出的元素 v 插入空位</li>
+</ol>
+<img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192140735.png" style="zoom: 67%;" >
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">InsertSort</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> len)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">1</span>; i&lt;len; i++) &#123;</span><br><span class="line">        <span class="keyword">int</span> v=a[i];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=i<span class="number">-1</span>; v&lt;a[j];j--)</span><br><span class="line">            a[j+<span class="number">1</span>]=a[j]; <span class="comment">// 后移</span></span><br><span class="line">        a[j+<span class="number">1</span>]=v;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-希尔排序"><a href="#2-希尔排序" class="headerlink" title="(2) 希尔排序"></a>(2) 希尔排序</h3><blockquote>
+<p>时间复杂度：平均 O(n^1.3)，最坏 O(n^2)<br>空间复杂度：O(1)<br>稳定性：不稳定</p>
+</blockquote>
+<p><strong>缩小增量法</strong></p>
+<ul>
+<li><p>n 个记录，增量为 di，则分组</p>
+<ul>
+<li><p>下标 0, di, 2di, 3di, …… 为 1 组</p>
+</li>
+<li><p>下标 1, di +1, 2di +1, 3di +1, …… 为 1 组</p>
+</li>
+<li><p>下标 2, di +2, 2di +2, 3di +2, …… 为 1 组</p>
+</li>
+<li><p>…… …… …… ……</p>
+</li>
+<li><p>下标 di-1, di+di -1, 2di+di -1, …… 为 1 组</p>
+</li>
+</ul>
+</li>
+</ul>
+<img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192141773.png" style="zoom: 80%;"  >
+
+<p>思路：</p>
+<ul>
+<li><p>增量为 d1 时，在各组内，进行排序</p>
+</li>
+<li><p>减小增量，重新分组，组内排序</p>
+<ul>
+<li>减小增量：初始：d1 = n/2，则模式：di+1 = di /2</li>
+</ul>
+</li>
+<li><p>重复第 2 步， 直到 di==1，所有记录在同一组，组内排序</p>
+<ul>
+<li>排序均为直接插入排序</li>
+</ul>
+</li>
+</ul>
+<img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192141543.png" style="zoom:67%;" >
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ? 按照 ShellSort 定义写出</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">shellSort1</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i, j, k, gap;</span><br><span class="line">    <span class="keyword">for</span> (gap = n / <span class="number">2</span>; gap &gt; <span class="number">0</span>; gap /= <span class="number">2</span>)</span><br><span class="line">        <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; gap; i++)                   <span class="comment">// 分组</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i + gap; j &lt; n; j += gap)  <span class="comment">// 组内插入排序</span></span><br><span class="line">                <span class="keyword">if</span> (a[j] &lt; a[j - gap]) &#123;            <span class="comment">// 直接插入排序</span></span><br><span class="line">                    <span class="keyword">int</span> v = a[j];</span><br><span class="line">                    <span class="keyword">for</span> (<span class="keyword">int</span> k = j - gap; k &gt;= <span class="number">0</span> &amp;&amp; a[k] &gt; v; k -= gap)</span><br><span class="line">                        a[k + gap] = a[k];  <span class="comment">// 后移</span></span><br><span class="line">                    a[k + gap] = v;</span><br><span class="line">                &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ? 优化</span></span><br><span class="line"><span class="comment">// - 上述 i 的作用是为了确认 j 的位置，并与组内元素比较</span></span><br><span class="line"><span class="comment">// - 明显每次 gap 与 j-gap 就是组内比较，不需要再分组</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">shellSort</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> j, k, gap;</span><br><span class="line">    <span class="keyword">for</span> (gap = n / <span class="number">2</span>; gap &gt; <span class="number">0</span>; gap /= <span class="number">2</span>)</span><br><span class="line">        <span class="keyword">for</span> (j = gap; j &lt; n; j++)</span><br><span class="line">            <span class="keyword">if</span> (a[j] &lt; a[j - gap]) &#123;</span><br><span class="line">                <span class="keyword">int</span> v = a[j];</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> k = j - gap; k &gt;= <span class="number">0</span> &amp;&amp; a[k] &gt; v; k -= gap)</span><br><span class="line">                    a[k + gap] = a[k];  <span class="comment">// 后移</span></span><br><span class="line">                a[k + gap] = v;</span><br><span class="line">            &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2、交换排序"><a href="#2、交换排序" class="headerlink" title="2、交换排序"></a>2、交换排序</h2><h3 id="3-冒泡排序"><a href="#3-冒泡排序" class="headerlink" title="(3) 冒泡排序"></a>(3) 冒泡排序</h3><blockquote>
+<p>时间复杂度：平均 O(n^2)，最坏 O(n^2)，最好 O(n)<br>空间复杂度：O(1)<br>稳定性：稳定</p>
+</blockquote>
+<ul>
+<li>思路：<br>  重复执行下述处理，直到数组中不包含顺序相反的相邻元素：<br>  1、从数组开头开始依次比较相邻两个元素，如果大小关系相反则交换位置</li>
+</ul>
+<img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192140973.png" style="zoom:67%;" >
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">BubbleSort</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;len; i++)&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=i+<span class="number">1</span>; j&lt;len; j++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (a[i]&gt;a[j])&#123;</span><br><span class="line">                <span class="keyword">int</span> temp=a[i];</span><br><span class="line">                a[i]=a[j];</span><br><span class="line">                a[j]=temp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-快速排序"><a href="#4-快速排序" class="headerlink" title="(4) 快速排序"></a>(4) 快速排序</h3><blockquote>
+<p>时间复杂度：平均 O(nlogn)，最坏 O(n^2)<br>空间复杂度：平均 O(logn)，最坏 O(n)<br>稳定性：不稳定</p>
+</blockquote>
+<ul>
+<li><p>思路：<br>  以整个数组为对象执行 QuickSort<br>  QuickSort 流程如下：<br>  1、通过分割将对象局部数组分割为前后两个局部数组<br>  2、对前半部分的局部数组执行 QuickSort<br>  3、对后半部分的局部数组执行 QuickSort</p>
+</li>
+<li><p>第 1 趟快排：</p>
+<ul>
+<li><p>从待排序码中，选出 1 个 K（如 R0.key ）</p>
+<ul>
+<li>将小于 k 的记录移动到左边（左子表），</li>
+<li>大于 k 的记录移动到右边（右子表），</li>
+<li>将 k 放在左、右两个子表的分界处</li>
+</ul>
+</li>
+<li><p>左游历下标：i=0， 右游历下标：j=n-1,<br>  取出分区基准：temp=R[0]</p>
+<ul>
+<li>初始空位 R[0]：在左表中，即 R[i]</li>
+</ul>
+</li>
+<li><p>重复以下两种扫描，<strong>直到 i==j （空位置在左，则 j 扫描；空位置在右，则 i 扫描)</strong></p>
+<ul>
+<li>j 向左扫描，直到 R[j].key &lt; temp.key，<br>  将 R[j]移动到空位 R[i]中，则 R[j]为空，令 i++</li>
+<li>i 向右扫描，直到 R[i].key &gt; temp.key，<br>  将 R[i]移动到空位 R[ j]中，则 R[i]为空，令 j - -</li>
+</ul>
+</li>
+<li><p>将“分区基准” temp，放到空位 R[i]中</p>
+<ul>
+<li><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192143880.png" style="zoom:50%;" ></li>
+<li><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192144818.png" style="zoom:50%;" ></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>第 2 趟快排：</p>
+<ul>
+<li>对 K 左、右两个字表，分别执行 1 趟快排 - 4 个子表<br>  … …</li>
+</ul>
+</li>
+<li><p>直到：各子表长度 ≤1</p>
+<ul>
+<li><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192148803.png" style="zoom:50%;" ></li>
+<li><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192149615.png" style="zoom:50%;" ></li>
+<li><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192149319.png" style="zoom:50%;" ></li>
+</ul>
+</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ? 快排划分</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">Partition</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> p = a[l];</span><br><span class="line">    <span class="keyword">while</span> (l &lt; r) &#123;                      <span class="comment">// l != r</span></span><br><span class="line">        <span class="keyword">while</span> (l &lt; r &amp;&amp; a[r] &gt;= p) --r;  <span class="comment">// r 向左扫描</span></span><br><span class="line">        a[l] = a[r];</span><br><span class="line">        <span class="keyword">while</span> (l &lt; r &amp;&amp; a[l] &lt;= p) ++l;  <span class="comment">// l 向右扫描</span></span><br><span class="line">        a[r] = a[l];</span><br><span class="line">    &#125;</span><br><span class="line">    a[l] = p;</span><br><span class="line">    <span class="keyword">return</span> l;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ? 快速排序</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">QuickSort</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (l &lt; r) &#123;</span><br><span class="line">        <span class="keyword">int</span> p = <span class="built_in">Partition</span>(a, l, r);</span><br><span class="line">        <span class="built_in">QuickSort</span>(a, l, p - <span class="number">1</span>);</span><br><span class="line">        <span class="built_in">QuickSort</span>(a, p + <span class="number">1</span>, r);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ? 三数取中优化，此版本快的飞起</span></span><br><span class="line"><span class="comment">// https://www.cnblogs.com/chengxiao/p/6262208.html</span></span><br><span class="line"><span class="comment">// - 左端、中间、右端三个数，然后进行排序，将中间数作为枢纽值</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">QuickSort</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> l, <span class="keyword">int</span> r)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> mid = a[(l + r) / <span class="number">2</span>];</span><br><span class="line">    <span class="keyword">int</span> i = l, j = r;</span><br><span class="line">    <span class="keyword">do</span> &#123;</span><br><span class="line">        <span class="keyword">while</span> (a[i] &lt; mid) i++;</span><br><span class="line">        <span class="keyword">while</span> (a[j] &gt; mid) j--;</span><br><span class="line">        <span class="keyword">if</span> (i &lt;= j) &#123;</span><br><span class="line">            <span class="built_in">swap</span>(a[i], a[j]);</span><br><span class="line">            i++;</span><br><span class="line">            j--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">while</span> (i &lt;= j);</span><br><span class="line">    <span class="keyword">if</span> (l &lt; j) <span class="built_in">QuickSort</span>(a, l, j);</span><br><span class="line">    <span class="keyword">if</span> (i &lt; r) <span class="built_in">QuickSort</span>(a, i, r);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3、选择排序"><a href="#3、选择排序" class="headerlink" title="3、选择排序"></a>3、选择排序</h2><h3 id="5-简单选择排序"><a href="#5-简单选择排序" class="headerlink" title="(5) 简单选择排序"></a>(5) 简单选择排序</h3><blockquote>
+<p>时间复杂度：平均 O(n^2)，最坏 O(n^2)<br>空间复杂度：O(1)<br>稳定性：不稳定</p>
+</blockquote>
+<p>思路：</p>
+<ul>
+<li>重复执行 N-1 次 下述处理：<ol>
+<li>找出未排序部分最小值的位置 minj</li>
+<li>将 minj 位置的元素与未排序部分的起始元素交换</li>
+</ol>
+</li>
+</ul>
+<img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192152371.png" style="zoom:67%;" />
+
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">SelectSort</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> len)</span></span>&#123;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;len<span class="number">-1</span>; i++)&#123;</span><br><span class="line">        <span class="keyword">int</span> k=i;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j=i+<span class="number">1</span>; j&lt;len; j++)&#123;</span><br><span class="line">            <span class="keyword">if</span> (a[j]&lt;a[k]) k=j;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (i!=k) <span class="built_in">swap</span>(a[i],a[k]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="6-堆排序"><a href="#6-堆排序" class="headerlink" title="(6) 堆排序"></a>(6) 堆排序</h3><blockquote>
+<p>时间复杂度：平均 O(nlogn)，最坏 O(nlogn)，最好 n(nlogn)<br>空间复杂度：O(1)<br>稳定性：不稳定</p>
+</blockquote>
+<p>思路：</p>
+<ul>
+<li><p>将待排序数据建立成大根堆</p>
+<ul>
+<li><p>将待排序记录建成 1 个完全二叉树（<strong>从左往右</strong>插入），再“<strong>从后向前</strong>”依次调整 sift</p>
+  <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192153994.png" style="zoom:50%;" />
+
+<ul>
+<li>sift（待调整：x）：<strong>就是让其满足大根堆</strong><ul>
+<li>判断“待调整 x”是否 &gt;左孩子 &amp;&amp; &gt;右孩子<ul>
+<li>是，则无需调整，结束</li>
+<li>否，继续“调整 x”，即：重复，直到 x 与孩子满足堆序性，或 x 成为叶子</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>从<strong>最后结点的父亲</strong>开始，最后结点下标：n-1 父亲下标 p= (n-1-1)/2<ul>
+<li>“从后向前”：依次调整 p, p-1, p-2, …, 0<img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192154341.png" style="zoom:50%;" />
+- 之后 sift (3)，sift(2)，sift(1)，sift(0)，构成大根堆</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>重复：选出最大值（堆顶）、并<strong>调整</strong>剩余部分（<strong>较大的孩子上升，空位置下降</strong></p>
+<ul>
+<li><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192154904.png" style="zoom: 33%;" /></li>
+<li><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192155185.png" style="zoom: 50%;" /></li>
+<li><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192155222.png" style="zoom: 50%;" /></li>
+<li><p>以此类推，直到堆无剩余元素</p>
+<ul>
+<li><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192155994.png" style="zoom:50%;" /></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// - 图解 https://www.cnblogs.com/chengxiao/p/6129630.html</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// ? 调整以 k 为根的子树，即 shift 操作</span></span><br><span class="line"><span class="comment">// - 大孩子上升，空位置下降</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">HeadAdjust</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> k, <span class="keyword">int</span> len)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> t = a[k];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = k * <span class="number">2</span> + <span class="number">1</span>; i &lt; len; i = i * <span class="number">2</span> + <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="comment">//  如果左子结点小于右子结点，i指向右子结点</span></span><br><span class="line">        <span class="keyword">if</span> (i + <span class="number">1</span> &lt; len &amp;&amp; a[i] &lt; a[i + <span class="number">1</span>]) i++;</span><br><span class="line">        <span class="comment">//  如果子节点大于父节点，将子节点值赋给父节点（不用进行交换）</span></span><br><span class="line">        <span class="keyword">if</span> (a[i] &gt; t) &#123;</span><br><span class="line">            a[k] = a[i];</span><br><span class="line">            k = i;</span><br><span class="line">        &#125; <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    a[k] = t;  <span class="comment">// t 放在最终位置</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ? 堆排序</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">HeapSort</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> len)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> i;</span><br><span class="line">    <span class="comment">// - 建立大根堆</span></span><br><span class="line">    <span class="keyword">for</span> (i = len / <span class="number">2</span> - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) <span class="built_in">HeadAdjust</span>(a, i, len);</span><br><span class="line">    <span class="comment">// - 交换堆顶堆低元素 + 调整堆结构</span></span><br><span class="line">    <span class="keyword">for</span> (i = len - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">        <span class="built_in">swap</span>(a[i], a[<span class="number">0</span>]);</span><br><span class="line">        <span class="built_in">HeadAdjust</span>(a, <span class="number">0</span>, i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="4、其他排序"><a href="#4、其他排序" class="headerlink" title="4、其他排序"></a>4、其他排序</h2><h3 id="7-归并排序"><a href="#7-归并排序" class="headerlink" title="(7) 归并排序"></a>(7) 归并排序</h3><blockquote>
+<p>时间复杂度： O(nlogn) (好、坏、平均)<br>空间复杂度：O(n)<br>稳定性：稳定</p>
+</blockquote>
+<p>思路：</p>
+<p>以整个数组为对象执行 mergeSort</p>
+<ul>
+<li>mergeSort：<ol>
+<li>将给定包含 n 个元素的局部数组分割成两个局部数组</li>
+<li>对局部数组分别 mergeSort</li>
+<li>通过 merge 将两个已排序的数组整合为一个数组</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">Merge</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> begin, <span class="keyword">int</span> mid, <span class="keyword">int</span> end)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> left = begin, right = mid + <span class="number">1</span>, k = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> *temp = <span class="keyword">new</span> <span class="keyword">int</span>[end - begin + <span class="number">1</span>];</span><br><span class="line">    <span class="comment">//顺序选取两个有序区的较小元素，存储到t数组中</span></span><br><span class="line">    <span class="keyword">while</span> (left &lt;= mid &amp;&amp; right &lt;= end) &#123;</span><br><span class="line">        <span class="comment">//较小的先存入temp中</span></span><br><span class="line">        <span class="keyword">if</span> (a[left] &lt;= a[right])</span><br><span class="line">            temp[k++] = a[left++];</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            temp[k++] = a[right++];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//若比较完之后，有序区仍有剩余，则直接复制到t数组中</span></span><br><span class="line">    <span class="keyword">while</span> (left &lt;= mid) temp[k++] = a[left++];</span><br><span class="line">    <span class="keyword">while</span> (right &lt;= end) temp[k++] = a[right++];</span><br><span class="line">    <span class="comment">//将排好序的存回arr中</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = begin, k = <span class="number">0</span>; i &lt;= end; i++, k++) a[i] = temp[k];</span><br><span class="line">    <span class="comment">//删除指针，释放空间</span></span><br><span class="line">    <span class="keyword">delete</span>[] temp;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ? 递归</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">MergeSort</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> begin, <span class="keyword">int</span> end)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (begin &lt; end) &#123;</span><br><span class="line">        <span class="keyword">int</span> mid = (begin + end) / <span class="number">2</span>;</span><br><span class="line">        <span class="built_in">MergeSort</span>(a, begin, mid);    <span class="comment">// 左侧递归</span></span><br><span class="line">        <span class="built_in">MergeSort</span>(a, mid + <span class="number">1</span>, end);  <span class="comment">// 右侧递归</span></span><br><span class="line">        <span class="built_in">Merge</span>(a, begin, mid, end);   <span class="comment">// 归并</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ? 非递归</span></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">MergeSort2</span><span class="params">(<span class="keyword">int</span> a[], <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">int</span> size = <span class="number">1</span>, begin, mid, end;</span><br><span class="line">    <span class="keyword">while</span> (size &lt;= n - <span class="number">1</span>) &#123;</span><br><span class="line">        begin = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (begin + size &lt;= n - <span class="number">1</span>) &#123;</span><br><span class="line">            mid = begin + size - <span class="number">1</span>;</span><br><span class="line">            end = mid + size;</span><br><span class="line">            <span class="keyword">if</span> (end &gt; n - <span class="number">1</span>)  <span class="comment">//第二个序列个数不足size</span></span><br><span class="line">                end = n - <span class="number">1</span>;</span><br><span class="line">            <span class="built_in">Merge</span>(a, begin, mid, end);</span><br><span class="line">            begin = end + <span class="number">1</span>;  <span class="comment">//下一次归并时第一关序列的下界</span></span><br><span class="line">        &#125;</span><br><span class="line">        size *= <span class="number">2</span>;  <span class="comment">//扩大范围</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="8-基数排序"><a href="#8-基数排序" class="headerlink" title="(8) 基数排序"></a>(8) 基数排序</h3><blockquote>
+<p>时间复杂度： O(d(n+r)) d: d 趟分配和收集<br>空间复杂度：O(r) r: r 个队列<br>稳定性：稳定</p>
+</blockquote>
+<p><strong>看图理解：</strong> <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192157649.png" style="zoom:67%;" /></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/SukiEva/AlgorithmLearning/blob/master/00%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/7%20%E6%8E%92%E5%BA%8F/RadixSort.cpp">代码详见</a></p>
+<h2 id="5、排序比较"><a href="#5、排序比较" class="headerlink" title="5、排序比较"></a>5、排序比较</h2><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192157440.png" style="zoom:50%;" />
+
+<img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192203045.png" style="zoom:67%;" />
+
+</div><div class="article-licensing box"><div class="licensing-title"><p>排序</p><p><a href="http://blog.sukiu.top/Algorithm/All-Sort/">http://blog.sukiu.top/Algorithm/All-Sort/</a></p></div><div class="licensing-meta level is-mobile"><div class="level-left"><div class="level-item is-narrow"><div><h6>作者</h6><p>SukiEva</p></div></div><div class="level-item is-narrow"><div><h6>发布于</h6><p>2022-01-19</p></div></div><div class="level-item is-narrow"><div><h6>更新于</h6><p>2022-01-19</p></div></div><div class="level-item is-narrow"><div><h6>许可协议</h6><p><a class="icons" rel="noopener" target="_blank" title="Creative Commons" href="https://creativecommons.org/"><i class="icon fab fa-creative-commons"></i></a><a class="" rel="noopener" target="_blank" title="CC BY-NC-SA 4.0" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a></p></div></div></div></div></div><div class="article-tags is-size-7 mb-4"><span class="mr-2">#</span><a class="link-muted mr-2" rel="tag" href="/tags/Sort/">Sort</a></div><!--!--></article></div><!--!--><nav class="post-navigation mt-4 level is-mobile"><div class="level-end"><a class="article-nav-next level level-item link-muted" href="/Language/Language-Golang/"><span class="level-item">Golang</span><i class="level-item fas fa-chevron-right"></i></a></div></nav><div class="card"><div class="card-content"><h3 class="title is-5">评论</h3><div id="comment-container"></div><link rel="stylesheet" href="https://unpkg.com/gitalk@1.7.2/dist/gitalk.css"><script src="https://unpkg.com/gitalk@1.7.2/dist/gitalk.min.js"></script><script>var gitalk = new Gitalk({
+            id: "d17197ce2f17eabe7fd5c2d59c544746",
+            repo: "SukiEva.github.io",
+            owner: "SukiEva",
+            clientID: "8542444b11c2adac4574",
+            clientSecret: "3bfc002a0a942d7dfb1eeada021f62c499ec2af9",
+            admin: ["SukiEva"],
+            createIssueManually: false,
+            distractionFreeMode: false,
+            perPage: 10,
+            pagerDirection: "last",
+            
+            
+            enableHotKey: true,
+            language: "zh-CN",
+        })
+        gitalk.render('comment-container')</script></div></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><div class="card widget" id="toc" data-type="toc"><div class="card-content"><div class="menu"><h3 class="menu-label">目录</h3><ul class="menu-list"><li><a class="level is-mobile" href="#1、插入排序"><span class="level-left"><span class="level-item">1</span><span class="level-item">1、插入排序</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#1-直接插入排序"><span class="level-left"><span class="level-item">1.1</span><span class="level-item">(1) 直接插入排序</span></span></a></li><li><a class="level is-mobile" href="#2-希尔排序"><span class="level-left"><span class="level-item">1.2</span><span class="level-item">(2) 希尔排序</span></span></a></li></ul></li><li><a class="level is-mobile" href="#2、交换排序"><span class="level-left"><span class="level-item">2</span><span class="level-item">2、交换排序</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#3-冒泡排序"><span class="level-left"><span class="level-item">2.1</span><span class="level-item">(3) 冒泡排序</span></span></a></li><li><a class="level is-mobile" href="#4-快速排序"><span class="level-left"><span class="level-item">2.2</span><span class="level-item">(4) 快速排序</span></span></a></li></ul></li><li><a class="level is-mobile" href="#3、选择排序"><span class="level-left"><span class="level-item">3</span><span class="level-item">3、选择排序</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#5-简单选择排序"><span class="level-left"><span class="level-item">3.1</span><span class="level-item">(5) 简单选择排序</span></span></a></li><li><a class="level is-mobile" href="#6-堆排序"><span class="level-left"><span class="level-item">3.2</span><span class="level-item">(6) 堆排序</span></span></a></li></ul></li><li><a class="level is-mobile" href="#4、其他排序"><span class="level-left"><span class="level-item">4</span><span class="level-item">4、其他排序</span></span></a><ul class="menu-list"><li><a class="level is-mobile" href="#7-归并排序"><span class="level-left"><span class="level-item">4.1</span><span class="level-item">(7) 归并排序</span></span></a></li><li><a class="level is-mobile" href="#8-基数排序"><span class="level-left"><span class="level-item">4.2</span><span class="level-item">(8) 基数排序</span></span></a></li></ul></li><li><a class="level is-mobile" href="#5、排序比较"><span class="level-left"><span class="level-item">5</span><span class="level-item">5、排序比较</span></span></a></li></ul></div></div><style>#toc .menu-list > li > a.is-active + .menu-list { display: block; }#toc .menu-list > li > a + .menu-list { display: none; }</style><script src="/js/toc.js" defer></script></div><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/blog/avatar.jpg" alt="SukiEva"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">SukiEva</p><p class="is-size-6 is-block">Developer</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">45</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">11</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">25</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/SukiEva" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Navigation" href="https://sukiu.top"><i class="fas fa-compass"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/SukiEva"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Email" href="Mailto:dev.suki@outlook.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Rss" href="/rss.xml"><i class="fas fa-rss"></i></a></div><div><hr><center><p id="hitokoto">取次花丛懒回顾，半缘修道半缘君。</p></center></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/blog/favicon.ico" alt="千反田" height="28"></a><p class="is-size-7"><span>&copy; 2022 SukiEva</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">共<span id="busuanzi_value_site_uv">0</span>个访客</span></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="GitHub" href="https://github.com/"><i class="fab fa-github"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p></div></div></div></div></footer><script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://unpkg.com/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://unpkg.com/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://unpkg.com/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://unpkg.com/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://unpkg.com/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><link rel="stylesheet" href="https://unpkg.com/katex@0.15.1/dist/katex.min.css"><script src="https://unpkg.com/katex@0.15.1/dist/katex.min.js" defer></script><script src="https://unpkg.com/katex@0.15.1/dist/contrib/auto-render.min.js" defer></script><script src="https://unpkg.com/katex@0.15.1/dist/contrib/mhchem.min.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://unpkg.com/mathjax@2.7.9/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><div id="outdated"><h6>Your browser is out-of-date!</h6><p>Update your browser to view this website correctly.&amp;npsb;<a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p><p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">×</a></p></div><script src="https://unpkg.com/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script><script>window.addEventListener("load", function () {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'object-fit' // display on IE11 or below
+            });
+        });</script><!--!--><script src="/js/main.js" defer></script><script src="/js/custom.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
