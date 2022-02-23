@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta name="msvalidate.01" content="AFC59628FC88BD6352D3E7A5AE5FE303"><meta name="google-site-verification" content="uAa2fbb800RIF4HzoIvwlhtlNh7J2m24V8LizLrlCu4"><title>分类: Design Pattern - 千反田</title><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#3273dc"><meta name="application-name" content="千反田"><meta name="msapplication-TileImage" content="/img/favicon.ico"><meta name="msapplication-TileColor" content="#3273dc"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="千反田"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="One simple blog"><meta property="og:type" content="blog"><meta property="og:title" content="千反田"><meta property="og:url" content="http://blog.sukiu.top/"><meta property="og:site_name" content="千反田"><meta property="og:description" content="One simple blog"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="http://blog.sukiu.top/img/og_image.png"><meta property="article:author" content="SukiEva"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top"},"headline":"千反田","image":["http://blog.sukiu.top/img/og_image.png"],"author":{"@type":"Person","name":"SukiEva"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/blog/favicon.ico"}},"description":"One simple blog"}</script><link rel="alternate" href="/rss.xml" title="千反田" type="application/atom+xml"><link rel="icon" href="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/blog/favicon.ico"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://unpkg.com/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><script>var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?46b8feda6aa9434cccdff91f797b76ad";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();</script><meta name="msvalidate.01" content="AFC59628FC88BD6352D3E7A5AE5FE303"><script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" defer></script><link rel="stylesheet" href="https://unpkg.com/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://unpkg.com/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://unpkg.com/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><script src="https://www.googletagmanager.com/gtag/js?id=G-YW921Z6076" async></script><script>window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'G-YW921Z6076');</script><!--!--><!--!--><link rel="stylesheet" href="https://unpkg.com/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css"><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://unpkg.com/pace-js@1.2.4/pace.min.js"></script><meta name="generator" content="Hexo 5.4.0"></head><body class="is-3-column"><script type="text/javascript" src="/js/night.js"></script><canvas id="universe"></canvas><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand justify-content-center"><span class="logolink"><a class="navbar-item navbar-logo" href="/"><span class="sakuraso">千反田</span><span class="no">の</span><span class="shironeko">μ&#039;s</span></a></span></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">🌈首页</a><a class="navbar-item" href="/archives">🗂️归档</a><a class="navbar-item" href="/categories">🪁分类</a><a class="navbar-item" href="/tags">🏷️标签</a><a class="navbar-item" href="/friends">🎉友链</a><a class="navbar-item" href="/donate">💕赞赏</a><a class="navbar-item" href="/about">🎐关于</a></div><div class="navbar-end"><a class="navbar-item night" id="night-nav" title="Night Mode" href="javascript:;"><i class="fas fa-moon" id="night-icon"></i></a><a class="navbar-item" target="_blank" rel="noopener" title="Travelling" href="https://travellings.link"><i class="fas fa-subway"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen is-8-tablet is-8-desktop is-6-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/categories">分类</a></li><li class="is-active"><a href="#" aria-current="page">Design Pattern</a></li></ul></nav></div></div><div class="card"><div class="card-image"><a class="image is-7by3" href="/Design-Pattern/Go-Design-Pattern/"><img class="fill" src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202202231122957.jpeg" alt="Go的设计模式"></a></div><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-02-23T03:19:37.000Z" title="2022/2/23 11:19:37">2022-02-23</time>发表</span><span class="level-item"><time dateTime="2022-02-23T06:40:29.992Z" title="2022/2/23 14:40:29">2022-02-23</time>更新</span><span class="level-item"><a class="link-muted" href="/categories/Design-Pattern/">Design Pattern</a></span><span class="level-item">1 小时读完 (大约7511个字)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/Design-Pattern/Go-Design-Pattern/">Go的设计模式</a></h1><div class="content"><p>Go的设计模式：❌指在Go中不常用</p>
+<ul>
+<li>创建型<ul>
+<li>单例模式：一个类只有一个实例<ul>
+<li>饿汉：系统初始化时创建并初始化单例对象</li>
+<li>懒汉：调用实例时初始化单例对象</li>
+</ul>
+</li>
+<li>工厂模式：使用共同接口创建对象</li>
+<li>建造者模式：与工厂不同在于，创建参数复杂的对象</li>
+<li>原型模式：利用已有对象复制的方式来创建新的对象 ❌</li>
+</ul>
+</li>
+<li>结构型<ul>
+<li>代理模式：为其他对象提供⼀种代理以控制这个对象的访问 <strong>代理访问</strong></li>
+<li>桥接模式：将类的抽象部分和它的实现部分分离开来，使它们可以独立地变化 <strong>抽象实现拆分独立</strong></li>
+<li>装饰模式：动态地给⼀个对象添加⼀些额外的职责 <strong>附加职责</strong></li>
+<li>适配器模式：将⼀个类的接口转换成用户希望得到的另⼀个接口 <strong>转换接口</strong></li>
+<li>门面模式：定义⼀个高层接口，为子系统中的⼀组接口提供一个一致的外观 <strong>对外统一接口</strong> ❌</li>
+<li>组合模式：将对象组合成树型结构以表示”整体-部分”的层次结构 <strong>树型目录结构</strong> ❌</li>
+<li>享元模式：提供支持大量细粒度对象共享的有效方法 ❌</li>
+</ul>
+</li>
+<li>行为型<ul>
+<li>观察者模式：定义对象间的⼀种⼀对多的依赖关系，当⼀个对象的状态发生改变时，所有依赖于它的对象都得到通知并自动更新</li>
+<li>模板模式：定义⼀个操作中的算法骨架，而将⼀些步骤延迟到子类中，使得子类可以不改变⼀个算法的结构即可重新定义算法的某些特定步骤</li>
+<li>策略模式：定义⼀系列算法，把它们⼀个个封装起来，并且使它们之间可互相替换，从而让算法可以独立于使用它的用户而变化</li>
+<li>职责链模式：通过给多个对象处理请求的机会，减少请求的发送者与接收者之间的耦合。将接收对象链接起来，在链中传递请求，直到有⼀个对象处理这个请求 <strong>传递职责</strong></li>
+<li>状态模式：允许⼀个对象在其内部状态改变时改变它的行为</li>
+<li>迭代器模式：提供⼀种方法来顺序访问⼀个聚合对象中的各个元素而不需要暴露该对象的内部表示</li>
+<li>访问者模式：表示⼀个作用于某对象结构中的各元素的操作，使得在不改变各元素的类的前提下定义作用于这些元素的新操作 ❌</li>
+<li>备忘录模式：在不破坏封装性的前提下，捕获⼀个对象的内部状态，并在该对象之外保存这个状态，从而可用在以后将该对象恢复到原先保存的状态 ❌</li>
+<li>命令模式：将⼀个请求封装为⼀个对象，从而可用不同的请求对客户进行参数化，将请求排队或记录请求⽇志，支持可撤销的操作 ❌</li>
+<li>解释器模式：给定⼀种语言，定义它的文法表示，并定义⼀个解释器，该解释器用来根据文法表示来解释语言中的句子 ❌</li>
+<li>中介模式：用⼀个中介对象来封装⼀系列的对象交互。它使各对象不需要显式地相互调用，从而达到低耦合，还可以独立地改变对象间的交互 ❌</li>
+</ul>
+</li>
+</ul></div><a class="article-more button is-small is-size-7" href="/Design-Pattern/Go-Design-Pattern/#more">阅读更多</a></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-3-widescreen  order-1 is-sticky"><!--!--><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar is-rounded" src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/blog/avatar.jpg" alt="SukiEva"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">SukiEva</p><p class="is-size-6 is-block">Developer</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>China</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">文章</p><a href="/archives"><p class="title">50</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">分类</p><a href="/categories"><p class="title">12</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">标签</p><a href="/tags"><p class="title">29</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/SukiEva" target="_blank" rel="noopener">关注我</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Navigation" href="https://sukiu.top"><i class="fas fa-compass"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/SukiEva"><i class="fab fa-github"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Email" href="Mailto:dev.suki@outlook.com"><i class="fa fa-envelope"></i></a><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Rss" href="/rss.xml"><i class="fas fa-rss"></i></a></div><div><hr><center><p id="hitokoto">取次花丛懒回顾，半缘修道半缘君。</p></center></div></div></div><div class="column-right-shadow is-hidden-widescreen"></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/blog/favicon.ico" alt="千反田" height="28"></a><p class="is-size-7"><span>&copy; 2022 SukiEva</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a><br><span id="busuanzi_container_site_uv">共<span id="busuanzi_value_site_uv">0</span>个访客</span></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="GitHub" href="https://github.com/"><i class="fab fa-github"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p></div></div></div></div></footer><script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://unpkg.com/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://unpkg.com/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("zh-CN");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://unpkg.com/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "此网站使用Cookie来改善您的体验。",
+          dismiss: "知道了！",
+          allow: "允许使用Cookie",
+          deny: "拒绝",
+          link: "了解更多",
+          policy: "Cookie政策",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://unpkg.com/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://unpkg.com/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><link rel="stylesheet" href="https://unpkg.com/katex@0.15.1/dist/katex.min.css"><script src="https://unpkg.com/katex@0.15.1/dist/katex.min.js" defer></script><script src="https://unpkg.com/katex@0.15.1/dist/contrib/auto-render.min.js" defer></script><script src="https://unpkg.com/katex@0.15.1/dist/contrib/mhchem.min.js" defer></script><script>window.addEventListener("load", function() {
+            document.querySelectorAll('[role="article"] > .content').forEach(function(element) {
+                renderMathInElement(element);
+            });
+        });</script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+            'HTML-CSS': {
+                matchFontHeight: false
+            },
+            SVG: {
+                matchFontHeight: false
+            },
+            CommonHTML: {
+                matchFontHeight: false
+            },
+            tex2jax: {
+                inlineMath: [
+                    ['$','$'],
+                    ['\\(','\\)']
+                ]
+            }
+        });</script><script src="https://unpkg.com/mathjax@2.7.9/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script><div id="outdated"><h6>Your browser is out-of-date!</h6><p>Update your browser to view this website correctly.&amp;npsb;<a id="btnUpdateBrowser" target="_blank" rel="noopener" href="http://outdatedbrowser.com/">Update my browser now </a></p><p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">×</a></p></div><script src="https://unpkg.com/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script><script>window.addEventListener("load", function () {
+            outdatedBrowser({
+                bgColor: '#f25648',
+                color: '#ffffff',
+                lowerThan: 'object-fit' // display on IE11 or below
+            });
+        });</script><!--!--><script src="/js/main.js" defer></script><script src="/js/custom.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="想要查找什么..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"想要查找什么...","untitled":"(无标题)","posts":"文章","pages":"页面","categories":"分类","tags":"标签"});
+        });</script></body></html>
