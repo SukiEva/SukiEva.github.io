@@ -5448,7 +5448,7 @@ p.p.subtitle:first-child {
 }
 span.p.logo,
 p.p.logo {
-  font-family: Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
+  font-family: Sxls, "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 span.p.code,
 p.p.code {
@@ -6913,7 +6913,7 @@ pre {
   border-radius: 4px;
   -webkit-border-radius: 4px;
   color: var(--color-text);
-  font-family: Dosis, "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
+  font-family: FZFWZhuZiAYuanJR, "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
 }
 .aplayer .aplayer-list {
   text-align: left;
@@ -7519,6 +7519,14 @@ ul.list-v.rightmenu li.music .nav.volume .aplayer-volume-bar .aplayer-volume {
 [color-scheme='dark'] .OwO .OwO-body .OwO-items-image .OwO-item:hover {
   background-color: #252627 !important;
 }
+@media screen and (max-width: 2048px) {
+  .l_header {
+    left: 0 !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    max-width: 100% !important;
+  }
+}
 article#post > h1,
 article#post h2,
 article#post h3 {
@@ -7533,4 +7541,14 @@ article#post h3 {
 article#post > h3 {
   font-weight: 500;
   position: initial;
+}
+h1.article-title {
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+div.md.article-desc {
+  line-height: 200%;
+}
+a.readmore {
+  color: #888;
 }
