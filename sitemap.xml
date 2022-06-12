@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://blog.sukiu.top/friends/index.html</loc>
+    
+    <lastmod>2022-06-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.sukiu.top/Computer-network/Graphic-Http-Notes/</loc>
     
     <lastmod>2022-06-12</lastmod>
@@ -479,15 +488,6 @@
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/friends/index.html</loc>
-    
-    <lastmod>2022-06-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.sukiu.top/about/index.html</loc>
     
     <lastmod>2022-06-12</lastmod>
@@ -538,6 +538,13 @@
   </url>
   
   <url>
+    <loc>http://blog.sukiu.top/tags/Network/</loc>
+    <lastmod>2022-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.sukiu.top/tags/Tree/</loc>
     <lastmod>2022-06-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -546,13 +553,6 @@
   
   <url>
     <loc>http://blog.sukiu.top/tags/Backtracking/</loc>
-    <lastmod>2022-06-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://blog.sukiu.top/tags/Network/</loc>
     <lastmod>2022-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -573,14 +573,14 @@
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/tags/Interview/</loc>
+    <loc>http://blog.sukiu.top/tags/Container/</loc>
     <lastmod>2022-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/tags/Container/</loc>
+    <loc>http://blog.sukiu.top/tags/Interview/</loc>
     <lastmod>2022-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -650,6 +650,13 @@
   </url>
   
   <url>
+    <loc>http://blog.sukiu.top/tags/Kotlin/</loc>
+    <lastmod>2022-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.sukiu.top/tags/Shell/</loc>
     <lastmod>2022-06-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -664,13 +671,6 @@
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/tags/Kotlin/</loc>
-    <lastmod>2022-06-12</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://blog.sukiu.top/tags/Queue/</loc>
     <lastmod>2022-06-12</lastmod>
     <changefreq>weekly</changefreq>
@@ -678,14 +678,14 @@
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/tags/App/</loc>
+    <loc>http://blog.sukiu.top/tags/License/</loc>
     <lastmod>2022-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/tags/License/</loc>
+    <loc>http://blog.sukiu.top/tags/App/</loc>
     <lastmod>2022-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -757,14 +757,14 @@
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/categories/Data-structure/</loc>
+    <loc>http://blog.sukiu.top/categories/Computer-network/</loc>
     <lastmod>2022-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/categories/Computer-network/</loc>
+    <loc>http://blog.sukiu.top/categories/Data-structure/</loc>
     <lastmod>2022-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -792,14 +792,14 @@
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/categories/Language/</loc>
+    <loc>http://blog.sukiu.top/categories/Design-Pattern/</loc>
     <lastmod>2022-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/categories/Design-Pattern/</loc>
+    <loc>http://blog.sukiu.top/categories/Language/</loc>
     <lastmod>2022-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -813,14 +813,14 @@
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/categories/Share/</loc>
+    <loc>http://blog.sukiu.top/categories/Mixed/</loc>
     <lastmod>2022-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://blog.sukiu.top/categories/Mixed/</loc>
+    <loc>http://blog.sukiu.top/categories/Share/</loc>
     <lastmod>2022-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

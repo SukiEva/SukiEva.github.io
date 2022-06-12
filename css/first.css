@@ -898,14 +898,14 @@ button {
 }
 @font-face {
   font-family: 'FZFWZhuZiAYuanJR';
-  src: url("/media/fonts/FZFWZhuZiAYuanJR.OTF");
+  src: url("https://cdn.jsdelivr.net/gh/SukiEva/SukiEva.github.io/media/fonts/FZFWZhuZiAYuanJR.OTF");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
 @font-face {
   font-family: 'Sxls';
-  src: url("/media/fonts/Sxls.ttf");
+  src: url("https://cdn.jsdelivr.net/gh/SukiEva/SukiEva.github.io/media/fonts/Sxls.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
