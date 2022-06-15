@@ -25,10 +25,10 @@
   <!-- Custom Files headBegin begin-->
   
   <!-- Custom Files headBegin end-->
-    <link rel="shortcut icon" type='image/x-icon' href="https://cdn.jsdelivr.net/gh/SukiEva/assets/blog/favicon.png">
+    <link rel="shortcut icon" type='image/x-icon' href="https://fastly.jsdelivr.net/gh/SukiEva/assets/blog/favicon.png">
   <link rel="preload" href="/css/style.52159e1f.css" as="style">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-<link rel="preload" href="https://cdn.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
+  <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
 
   <!-- feed -->
         <link rel="alternate" href="/rss.xml" title="千反田" type="application/rss+xml">
@@ -283,6 +283,103 @@ button {
   position: relative;
   overflow: hidden;
   margin-bottom: -100px;
+}
+.cover-wrapper .cover-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+}
+.cover-wrapper .cover-bg.lazyload:not(.loaded) {
+  opacity: 0;
+  -webkit-opacity: 0;
+  -moz-opacity: 0;
+}
+.cover-wrapper .cover-bg.lazyload.loaded {
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-name: fadeIn;
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -khtml-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
 }
 .cover-wrapper .cover-body {
   z-index: 1;
@@ -633,71 +730,6 @@ button {
   -moz-opacity: 1;
   border-bottom: 2px solid var(--color-site-inner);
 }
-.cover-wrapper #parallax-window {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-}
-.parallax-mirror {
-  animation-delay: 0s;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-  animation-name: fadeIn;
-}
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
 @media (prefers-color-scheme: dark) {
   :root {
     --color-mode: 'dark';
@@ -852,14 +884,14 @@ button {
 }
 @font-face {
   font-family: 'FZFWZhuZiAYuanJR';
-  src: url("https://cdn.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF");
+  src: url("https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
 @font-face {
   font-family: 'Sxls';
-  src: url("https://cdn.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf");
+  src: url("https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -1772,9 +1804,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655171255697","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655171255697","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655171255697","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655171255697","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655171255697","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655171255697","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655171255697"},"css":{"style":"/css/style.52159e1f.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655308420762","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655308420762","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655308420762","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655308420762","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655308420762","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655308420762","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655308420762"},"css":{"style":"/css/style.52159e1f.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1655171255697),
+    lastupdate: new Date(1655308420762),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2607,7 +2639,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
       <div id="half" class='cover-wrapper  search' style="display: ;">
         
-  <div id="parallax-window"></div>
+  <div class='cover-bg lazyload placeholder' data-bg="https://pic.sukiu.top/?type=pc"></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -3276,7 +3308,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655171255697"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655308420762"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3517,19 +3549,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655171255697")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655308420762")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655171255697")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655308420762")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655171255697")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655308420762")
       }
     
   };
@@ -3625,7 +3657,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655171255697')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655308420762')
   
   })();
 
@@ -3752,7 +3784,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655171255697");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655308420762");
   }
 
   function loadSearchService() {
@@ -4053,57 +4085,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-  <script>
-  let total = 175;
-  let index = Math.floor(Math.random() * total) + 1;
-  let IntervalParallax = null;
- 
-  function parallax(){
-    let ParallaxWindow = document.querySelector("#parallax-window");
-    
-    Parallax.window = ParallaxWindow;
-    Parallax.options.fade = 1500;
-    Parallax.cache = 1;
-    next_parallax();
-    Parallax.init();
-    if (total>1) {
-      IntervalParallax = setInterval(function () {
-        next_parallax();
-      }, '10000');
-    }
-  }
- 
-  function next_parallax() {
-    if (typeof Parallax == "undefined") {
-      return
-    }
-    
-      if (!document.querySelector("#full")&&!document.querySelector("#half")) {
-        return
-      }
-    
-    if (total>=1) {
-      Parallax.options.src = "https://cdn.jsdelivr.net/gh/SukiEva/assets/webp/pc/" + index + ".webp";
-      Parallax.start();
-      index = Math.floor(Math.random() * total) + 1;
-      if (Parallax.cache) {
-        fetch("https://cdn.jsdelivr.net/gh/SukiEva/assets/webp/pc/" + index + ".webp?t=" + new Date().getTime());
-      }
-    }
-  }
-  var runningOnBrowser = typeof window !== "undefined";
-  var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
-  if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655171255697').then(()=>{
-      parallax()
-    })
-    volantis.pjax.send(()=>{
-      clearInterval(IntervalParallax)
-    },"clearIntervalParallax");
-    volantis.pjax.push(parallax);
-  }
-</script>
 
 
 
@@ -4438,7 +4419,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
     <!-- Custom Files bodyEnd end-->
   <!-- hexo injector body_end start -->
-  <script data-pjax src="https://cdn.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js"></script>
+  <script data-pjax src="https://fastly.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js"></script>
   <script data-pjax>
         function GithubCalendarConfig(){
             var git_githubapiurl ="https://python-github-calendar-api.vercel.app/api?SukiEva";
