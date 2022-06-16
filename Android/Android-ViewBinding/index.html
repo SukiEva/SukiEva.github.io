@@ -26,7 +26,7 @@
   
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://fastly.jsdelivr.net/gh/SukiEva/assets/blog/favicon.png">
-  <link rel="preload" href="/css/style.52159e1f.css" as="style">
+  <link rel="preload" href="/css/style.bca4d315.css" as="style">
   <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
 
@@ -733,6 +733,71 @@ button {
   -webkit-opacity: 1;
   -moz-opacity: 1;
   border-bottom: 2px solid var(--color-site-inner);
+}
+.cover-wrapper #parallax-window {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+.parallax-mirror {
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-name: fadeIn;
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -1729,8 +1794,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.52159e1f.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.52159e1f.css"></noscript>
+  <link rel="stylesheet" href="/css/style.bca4d315.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.bca4d315.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1808,9 +1873,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655308420762","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655308420762","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655308420762","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655308420762","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655308420762","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655308420762","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655308420762"},"css":{"style":"/css/style.52159e1f.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655351299072","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655351299072","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655351299072","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655351299072","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655351299072","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655351299072","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655351299072"},"css":{"style":"/css/style.bca4d315.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1655308420762),
+    lastupdate: new Date(1655351299072),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2645,7 +2710,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
       <div id="half" class='cover-wrapper post search' style="display: ;">
         
-  <div class='cover-bg lazyload placeholder' data-bg="https://pic.sukiu.top/?type=pc"></div>
+  <div id="parallax-window"></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -2939,7 +3004,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <i class="fa-duotone fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
     </section>
     <section class='body'>
-      <div class="vlts-rps"><a class="item" href="\Android\Android-Activity\" title="Android四大组件——Activity" rel="bookmark "><span class="title">Android四大组件——Activity</span><span class="excerpt">Activity 类是 Android 应用的关键组件，而 Activity 的启动和组合方式则是该平台应用模型的基本组成...</span></a><a class="item" href="\Android\Android-BroadcastReceiver\" title="Android四大组件——BroadcastReceiver" rel="bookmark "><span class="title">Android四大组件——BroadcastReceiver</span><span class="excerpt">Android 应用与 Android 系统和其他 Android 应用之间可以相互收发广播消息，这与发布-订阅设计模式相...</span></a><a class="item" href="\Android\Android-ContentProvider\" title="Android四大组件——ContentProvider" rel="bookmark "><span class="title">Android四大组件——ContentProvider</span><span class="excerpt">内容提供程序主要目的是不同应用程序间的数据共享。它提供了一套完整的机制，允许一个程序访问另一个程序的数据，同时保证被访问数...</span></a><a class="item" href="\Android\Android-Service\" title="Android四大组件——Service" rel="bookmark "><span class="title">Android四大组件——Service</span><span class="excerpt">Service 是一种可在后台执行长时间运行操作而不提供界面的应用组件。服务可由其他应用组件启动，而且即使用户切换到其他应...</span></a><a class="item" href="\Android\Gradle-Gradle2kts\" title="Gradle——从Groovy迁移到KTS" rel="bookmark "><span class="title">Gradle——从Groovy迁移到KTS</span><span class="excerpt">在Android Studio中将Gradle配置从 Groovy 迁移到 KTS，即用 Kotlin 代替 Groovy...</span></a></div></section></div>
+      <div class="vlts-rps"><a class="item" href="\Android\Android-Activity\" title="Android四大组件——Activity" rel="bookmark "><span class="title">Android四大组件——Activity</span><span class="excerpt">Activity 类是 Android 应用的关键组件，而 Activity 的启动和组合方式则是该平台应用模型的基本组成...</span></a><a class="item" href="\Android\Android-BroadcastReceiver\" title="Android四大组件——BroadcastReceiver" rel="bookmark "><span class="title">Android四大组件——BroadcastReceiver</span><span class="excerpt">Android 应用与 Android 系统和其他 Android 应用之间可以相互收发广播消息，这与发布-订阅设计模式相...</span></a><a class="item" href="\Android\Android-ContentProvider\" title="Android四大组件——ContentProvider" rel="bookmark "><span class="title">Android四大组件——ContentProvider</span><span class="excerpt">内容提供程序主要目的是不同应用程序间的数据共享。它提供了一套完整的机制，允许一个程序访问另一个程序的数据，同时保证被访问数...</span></a><a class="item" href="\Android\Android-Service\" title="Android四大组件——Service" rel="bookmark "><span class="title">Android四大组件——Service</span><span class="excerpt">Service 是一种可在后台执行长时间运行操作而不提供界面的应用组件。服务可由其他应用组件启动，而且即使用户切换到其他应...</span></a><a class="item" href="\Android\Gradle-Build\" title="Gradle——Android Build 构建配置" rel="bookmark "><span class="title">Gradle——Android Build 构建配置</span><span class="excerpt">Android 构建系统会编译应用资源和源代码，然后将它们打包到 APK 或 Android App Bundle 中，供...</span></a></div></section></div>
       
       <!-- 版权声明组件 -->
       
@@ -3544,7 +3609,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655308420762"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655351299072"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3785,19 +3850,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655308420762")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655351299072")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655308420762")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655351299072")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655308420762")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655351299072")
       }
     
   };
@@ -3893,7 +3958,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655308420762')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655351299072')
   
   })();
 
@@ -4020,7 +4085,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655308420762");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655351299072");
   }
 
   function loadSearchService() {
@@ -4321,6 +4386,57 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+
+  <script>
+  let total = 175;
+  let index = Math.floor(Math.random() * total) + 1;
+  let IntervalParallax = null;
+ 
+  function parallax(){
+    let ParallaxWindow = document.querySelector("#parallax-window");
+    
+    Parallax.window = ParallaxWindow;
+    Parallax.options.fade = 1500;
+    Parallax.cache = 1;
+    next_parallax();
+    Parallax.init();
+    if (total>1) {
+      IntervalParallax = setInterval(function () {
+        next_parallax();
+      }, '10000');
+    }
+  }
+ 
+  function next_parallax() {
+    if (typeof Parallax == "undefined") {
+      return
+    }
+    
+      if (!document.querySelector("#full")&&!document.querySelector("#half")) {
+        return
+      }
+    
+    if (total>=1) {
+      Parallax.options.src = "https://fastly.jsdelivr.net/gh/SukiEva/assets/webp/pc/" + index + ".webp";
+      Parallax.start();
+      index = Math.floor(Math.random() * total) + 1;
+      if (Parallax.cache) {
+        fetch("https://fastly.jsdelivr.net/gh/SukiEva/assets/webp/pc/" + index + ".webp?t=" + new Date().getTime());
+      }
+    }
+  }
+  var runningOnBrowser = typeof window !== "undefined";
+  var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+  if (!isBot) {
+    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655351299072').then(()=>{
+      parallax()
+    })
+    volantis.pjax.send(()=>{
+      clearInterval(IntervalParallax)
+    },"clearIntervalParallax");
+    volantis.pjax.push(parallax);
+  }
+</script>
 
 
 
