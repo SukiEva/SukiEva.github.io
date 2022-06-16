@@ -33,19 +33,20 @@
   <!-- feed -->
         <link rel="alternate" href="/rss.xml" title="千反田" type="application/rss+xml">
   <!-- 页面元数据 -->
-  <title>Android四大组件——Activity - 千反田</title>
+  <title>Android四大组件之Activity - 千反田</title>
   <meta name="keywords" content="Component,null">
-  <meta desc name="description" content="Activity 类是 Android 应用的关键组件，而 Activity 的启动和组合方式则是该平台应用模型的基本组成部分。在编程范式中，应用是通过 main() 方法启动的，而 Android 系统与此不同，它会调用与其生命周期特定阶段相对应的特定回调方法来启动 Activity 实例中的代码。 - SukiEva - 千反田">
+  <meta desc name="description" content="Activity 类是 Android 应用的关键组件，而 Activity 的启动和组合方式则是该平台应用模型的基本组成部分。
+在编程范式中，应用是通过 main() 方法启动的，而 Android 系统与此不同，它会调用与其生命周期特定阶段相对应的特定回调方法来启动 Activity 实例中的代码。 - SukiEva - 千反田">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android四大组件——Activity">
+<meta property="og:title" content="Android四大组件之Activity">
 <meta property="og:url" content="http://blog.sukiu.top/Android/Android-Activity/index.html">
 <meta property="og:site_name" content="千反田">
-<meta property="og:description" content="Activity 类是 Android 应用的关键组件，而 Activity 的启动和组合方式则是该平台应用模型的基本组成部分。在编程范式中，应用是通过 main() 方法启动的，而 Android 系统与此不同，它会调用与其生命周期特定阶段相对应的特定回调方法来启动 Activity 实例中的代码。">
+<meta property="og:description" content="Activity 类是 Android 应用的关键组件，而 Activity 的启动和组合方式则是该平台应用模型的基本组成部分。 在编程范式中，应用是通过 main() 方法启动的，而 Android 系统与此不同，它会调用与其生命周期特定阶段相对应的特定回调方法来启动 Activity 实例中的代码。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2021-09-28T00:45:08.000Z">
-<meta property="article:modified_time" content="2022-06-12T09:35:12.067Z">
+<meta property="article:modified_time" content="2021-12-22T07:16:00.000Z">
 <meta property="article:author" content="SukiEva">
 <meta property="article:tag" content="Component">
 <meta name="twitter:card" content="summary">
@@ -139,7 +140,7 @@ body {
   background-color: var(--color-site-body);
   text-rendering: optimizelegibility;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  line-height: 1.6;
+  line-height: 2;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -1872,9 +1873,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655351299072","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655351299072","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655351299072","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655351299072","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655351299072","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655351299072","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655351299072"},"css":{"style":"/css/style.bca4d315.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655393069836","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655393069836","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655393069836","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655393069836","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655393069836","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655393069836","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655393069836"},"css":{"style":"/css/style.bca4d315.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1655351299072),
+    lastupdate: new Date(1655393069836),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2805,7 +2806,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        Android四大组件——Activity
+        Android四大组件之Activity
       </h1>
       <div class='new-meta-box'>
         
@@ -2820,10 +2821,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-12T17:35:12+08:00">
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2021-12-22T15:16:00+08:00">
   <a class='notlink'>
     <i class="fa-duotone fa-calendar-pen fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年6月12日</p>
+    <p>更新于：2021年12月22日</p>
   </a>
 </div>
 
@@ -2856,7 +2857,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>
       <i class="fa-duotone fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="lc-pv" data-title="Android四大组件——Activity" data-path="/Android/Android-Activity/">
+      <span id="lc-pv" data-title="Android四大组件之Activity" data-path="/Android/Android-Activity/">
         <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
       </span>
       
@@ -2878,13 +2879,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p><code>Activity</code> 类是 Android 应用的关键组件，而 Activity 的启动和组合方式则是该平台应用模型的基本组成部分。在编程范式中，应用是通过 <code>main()</code> 方法启动的，而 Android 系统与此不同，它会调用与其生命周期特定阶段相对应的特定回调方法来启动 <code>Activity</code> 实例中的代码。</p>
+    <p><code>Activity</code> 类是 Android 应用的关键组件，而 Activity 的启动和组合方式则是该平台应用模型的基本组成部分。</p>
+<p>在编程范式中，应用是通过 <code>main()</code> 方法启动的，而 Android 系统与此不同，它会调用与其生命周期特定阶段相对应的特定回调方法来启动 <code>Activity</code> 实例中的代码。</p>
 <span id="more"></span>
 
-<blockquote>
-<p>参考：<br><a target="_blank" rel="noopener" href="https://developer.android.com/guide/components/activities/intro-activities?hl=zh-cn">Activity 简介  | Android 开发者  | Android Developers</a><br><a target="_blank" rel="noopener" href="https://guolin.blog.csdn.net/article/details/105233078">《第一行代码 Android 第3版》</a></p>
-</blockquote>
-<div class="story post-story"><h2 id="1、生命周期"><a href="#1、生命周期" class="headerlink" title="1、生命周期"></a>1、生命周期</h2><h3 id="状态"><a href="#状态" class="headerlink" title="状态"></a>状态</h3><p>每个 Activity 至多有4种状态：</p>
+<div class="story post-story"><h2 id="生命周期"><a href="#生命周期" class="headerlink" title="生命周期"></a>生命周期</h2><h3 id="状态"><a href="#状态" class="headerlink" title="状态"></a>状态</h3><p>每个 Activity 至多有4种状态：</p>
 <ul>
 <li>运行状态：Activity 位于返回栈栈顶（系统不回收）</li>
 <li>暂停状态：Activity 不处于栈顶，但仍然可见（只有内存极低时才可能被系统回收）</li>
@@ -2909,7 +2908,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>可见生存期：<code>onStart()</code>→<code>onStop()</code></li>
 <li>前台生存期：<code>onResume()</code>→<code>onPause()</code></li>
 </ul>
-</div><div class="story post-story"><h2 id="2、启动模式"><a href="#2、启动模式" class="headerlink" title="2、启动模式"></a>2、启动模式</h2><p>通过<code>AndroidManifest.xml</code>中为<code>&lt;activity&gt;</code>指定<code>android:launchMode</code></p>
+</div><div class="story post-story"><h2 id="启动模式"><a href="#启动模式" class="headerlink" title="启动模式"></a>启动模式</h2><p>通过<code>AndroidManifest.xml</code>中为<code>&lt;activity&gt;</code>指定<code>android:launchMode</code></p>
 <h3 id="standard"><a href="#standard" class="headerlink" title="standard"></a>standard</h3><p>默认值。每次创建 Activity 的新实例，并将 intent 传送给该实例。</p>
 <p>Activity 可以多次实例化，每个实例可以属于不同的任务，一个任务可以拥有多个实例。</p>
 <h3 id="singleTop"><a href="#singleTop" class="headerlink" title="singleTop"></a>singleTop</h3><p>在启动 Activity 时如果发现返回栈栈顶已经是该 Activity，则直接使用而不创建。</p>
@@ -2921,7 +2920,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>该 Activity 始终是其任务唯一的成员；由该 Activity 启动的任何 Activity 都会在其他的任务中打开。</p>
 <p>即有单独的返回栈管理此 Activity，不管哪个应用访问这个活动，都共用一个返回栈。</p>
 <p>用于其他应用中调用此 Activity。</p>
-</div><div class="story post-story"><h2 id="3、意图"><a href="#3、意图" class="headerlink" title="3、意图"></a>3、意图</h2><h3 id="显示-intent"><a href="#显示-intent" class="headerlink" title="显示 intent"></a>显示 intent</h3><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> intent = Intent(<span class="keyword">this</span>, SecondActivity::<span class="keyword">class</span>.java)</span><br><span class="line">startActivity(intent)</span><br></pre></td></tr></table></figure>
+</div><div class="story post-story"><h2 id="意图"><a href="#意图" class="headerlink" title="意图"></a>意图</h2><h3 id="显示-intent"><a href="#显示-intent" class="headerlink" title="显示 intent"></a>显示 intent</h3><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> intent = Intent(<span class="keyword">this</span>, SecondActivity::<span class="keyword">class</span>.java)</span><br><span class="line">startActivity(intent)</span><br></pre></td></tr></table></figure>
 
 <h3 id="隐式-intent"><a href="#隐式-intent" class="headerlink" title="隐式 intent"></a>隐式 intent</h3><p>在<code>&lt;activity&gt;</code>下配置<code>&lt;intent-filter&gt;</code>，在<code>&lt;action&gt;</code>中指名可以相应的<code>action</code>，<code>&lt;category&gt;</code>中添加附加信息，只有<code>&lt;action&gt;</code>和<code>&lt;category&gt;</code>同时匹配，当前活动才会响应 <code>intent</code></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">activity</span> <span class="attr">android:name</span>=<span class="string">&quot;.ExampleActivity&quot;</span> <span class="attr">android:icon</span>=<span class="string">&quot;@drawable/app_icon&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">intent-filter</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">action</span> <span class="attr">android:name</span>=<span class="string">&quot;com.example.activitytest.ACTION_START&quot;</span> /&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">category</span> <span class="attr">android:name</span>=<span class="string">&quot;android.intent.category.DEFAULT&quot;</span> /&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">intent-filter</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">activity</span>&gt;</span></span><br></pre></td></tr></table></figure>
@@ -2943,15 +2942,33 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='footer'>
        <!-- 参考资料、相关资料等 -->
       
-       <!-- 相关文章 -->
+        <div class='references'>
+          <section class='header'>
+            
+              <i class="fa-duotone fa-quote-left fa-fw" aria-hidden="true"></i>
+            
+            <span>参考资料</span>
+          </section>
+          <section class='body'>
+            <ul>
+              
+                <li>
+                  <a href="https://developer.android.com/guide/components/activities/intro-activities?hl=zh-cn" rel="external nofollow noopener noreferrer" target="_blank">
+                  Activity 简介  | Android 开发者  | Android Developers
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="https://guolin.blog.csdn.net/article/details/105233078" rel="external nofollow noopener noreferrer" target="_blank">
+                  《第一行代码 Android 第3版》
+                  </a>
+                </li>
+              
+            </ul>
+          </section>
+        </div>
       
-        
-  <div class="related_posts">
-    <section class='header'>
-      <i class="fa-duotone fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
-    </section>
-    <section class='body'>
-      <div class="vlts-rps"><a class="item" href="\Android\Android-BroadcastReceiver\" title="Android四大组件——BroadcastReceiver" rel="bookmark "><span class="title">Android四大组件——BroadcastReceiver</span><span class="excerpt">Android 应用与 Android 系统和其他 Android 应用之间可以相互收发广播消息，这与发布-订阅设计模式相...</span></a><a class="item" href="\Android\Android-ContentProvider\" title="Android四大组件——ContentProvider" rel="bookmark "><span class="title">Android四大组件——ContentProvider</span><span class="excerpt">内容提供程序主要目的是不同应用程序间的数据共享。它提供了一套完整的机制，允许一个程序访问另一个程序的数据，同时保证被访问数...</span></a><a class="item" href="\Android\Android-Service\" title="Android四大组件——Service" rel="bookmark "><span class="title">Android四大组件——Service</span><span class="excerpt">Service 是一种可在后台执行长时间运行操作而不提供界面的应用组件。服务可由其他应用组件启动，而且即使用户切换到其他应...</span></a><a class="item" href="\Android\Android-ViewBinding\" title="Android——ViewBinding" rel="bookmark "><span class="title">Android——ViewBinding</span><span class="excerpt">通过视图绑定功能，可以更轻松地编写可与视图交互的代码。在模块中启用视图绑定之后，系统会为该模块中的每个 XML 布局文件生...</span></a><a class="item" href="\Android\Gradle-Build\" title="Gradle——Android Build 构建配置" rel="bookmark "><span class="title">Gradle——Android Build 构建配置</span><span class="excerpt">Android 构建系统会编译应用资源和源代码，然后将它们打包到 APK 或 Android App Bundle 中，供...</span></a></div></section></div>
+       <!-- 相关文章 -->
       
       <!-- 版权声明组件 -->
       
@@ -3042,14 +3059,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class="prev-next">
       
         <a class='prev' href='/Android/Android-BroadcastReceiver/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Android四大组件——BroadcastReceiver</p>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Android四大组件之BroadcastReceiver</p>
           <p class='content'>Android 应用与 Android 系统和其他 Android 应用之间可以相互收发广播消息，这与发布-订阅设计模式相似。这些广播会在所关注的事件发生时发送。
 一般来说，广播可作为跨应用和普...</p>
         </a>
       
       
         <a class='next' href='/Android/Android-ViewBinding/'>
-          <p class='title'>Android——ViewBinding<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='title'>Android ViewBinding<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>通过视图绑定功能，可以更轻松地编写可与视图交互的代码。在模块中启用视图绑定之后，系统会为该模块中的每个 XML 布局文件生成一个绑定类。绑定类的实例包含对在相应布局中具有 ID 的所有视图的直接...</p>
         </a>
       
@@ -3178,7 +3195,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-number">1.</span> <span class="toc-text">1、生命周期</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8A%B6%E6%80%81"><span class="toc-number">1.1.</span> <span class="toc-text">状态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E5%AD%98%E6%9C%9F"><span class="toc-number">1.2.</span> <span class="toc-text">生存期</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.</span> <span class="toc-text">2、启动模式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#standard"><span class="toc-number">2.1.</span> <span class="toc-text">standard</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#singleTop"><span class="toc-number">2.2.</span> <span class="toc-text">singleTop</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#singleTask"><span class="toc-number">2.3.</span> <span class="toc-text">singleTask</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#singleInstance"><span class="toc-number">2.4.</span> <span class="toc-text">singleInstance</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E6%84%8F%E5%9B%BE"><span class="toc-number">3.</span> <span class="toc-text">3、意图</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA-intent"><span class="toc-number">3.1.</span> <span class="toc-text">显示 intent</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%90%E5%BC%8F-intent"><span class="toc-number">3.2.</span> <span class="toc-text">隐式 intent</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%91%E4%B8%8B%E4%B8%80%E4%B8%AA-Activity-%E4%BC%A0%E9%80%92%E6%95%B0%E6%8D%AE"><span class="toc-number">3.3.</span> <span class="toc-text">向下一个 Activity 传递数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%91%E4%B8%8A%E4%B8%80%E4%B8%AAActivity-%E4%BC%A0%E9%80%92%E6%95%B0%E6%8D%AE"><span class="toc-number">3.4.</span> <span class="toc-text">向上一个Activity 传递数据</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="toc-number">1.</span> <span class="toc-text">生命周期</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8A%B6%E6%80%81"><span class="toc-number">1.1.</span> <span class="toc-text">状态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%9F%E5%AD%98%E6%9C%9F"><span class="toc-number">1.2.</span> <span class="toc-text">生存期</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%AF%E5%8A%A8%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.</span> <span class="toc-text">启动模式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#standard"><span class="toc-number">2.1.</span> <span class="toc-text">standard</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#singleTop"><span class="toc-number">2.2.</span> <span class="toc-text">singleTop</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#singleTask"><span class="toc-number">2.3.</span> <span class="toc-text">singleTask</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#singleInstance"><span class="toc-number">2.4.</span> <span class="toc-text">singleInstance</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%84%8F%E5%9B%BE"><span class="toc-number">3.</span> <span class="toc-text">意图</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA-intent"><span class="toc-number">3.1.</span> <span class="toc-text">显示 intent</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9A%90%E5%BC%8F-intent"><span class="toc-number">3.2.</span> <span class="toc-text">隐式 intent</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%91%E4%B8%8B%E4%B8%80%E4%B8%AA-Activity-%E4%BC%A0%E9%80%92%E6%95%B0%E6%8D%AE"><span class="toc-number">3.3.</span> <span class="toc-text">向下一个 Activity 传递数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%91%E4%B8%8A%E4%B8%80%E4%B8%AAActivity-%E4%BC%A0%E9%80%92%E6%95%B0%E6%8D%AE"><span class="toc-number">3.4.</span> <span class="toc-text">向上一个Activity 传递数据</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -3557,7 +3574,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655351299072"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655393069836"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3798,19 +3815,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655351299072")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655393069836")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655351299072")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655393069836")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655351299072")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655393069836")
       }
     
   };
@@ -3906,7 +3923,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655351299072')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655393069836')
   
   })();
 
@@ -4033,7 +4050,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655351299072");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655393069836");
   }
 
   function loadSearchService() {
@@ -4376,7 +4393,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655351299072').then(()=>{
+    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655393069836').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4634,7 +4651,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Android/","name":"Android"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Android/Android-Activity/","name":"Android四大组件——Activity"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Android四大组件——Activity","description":"Activity 类是 Android 应用的关键组件，而 Activity 的启动和组合方式则是该平台应用模型的基本组成部分。在编程范式中，应用是通过 main() 方法启动的，而 Android 系统与此不同，它会调用与其生命周期特定阶段相对应的特定回调方法来启动 Activity 实例中的代码。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Android/Android-Activity/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Android/Android-Activity/","wordCount":151,"datePublished":"2021-09-28T00:45:08.000Z","dateModified":"2022-06-12T09:35:12.067Z","articleSection":"Android","keywords":"Component","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Android/","name":"Android"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Android/Android-Activity/","name":"Android四大组件之Activity"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Android四大组件之Activity","description":"Activity 类是 Android 应用的关键组件，而 Activity 的启动和组合方式则是该平台应用模型的基本组成部分。\n在编程范式中，应用是通过 main() 方法启动的，而 Android 系统与此不同，它会调用与其生命周期特定阶段相对应的特定回调方法来启动 Activity 实例中的代码。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Android/Android-Activity/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Android/Android-Activity/","wordCount":152,"datePublished":"2021-09-28T00:45:08.000Z","dateModified":"2021-12-22T07:16:00.000Z","articleSection":"Android","keywords":"Component","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

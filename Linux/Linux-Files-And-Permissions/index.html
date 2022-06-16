@@ -33,19 +33,19 @@
   <!-- feed -->
         <link rel="alternate" href="/rss.xml" title="千反田" type="application/rss+xml">
   <!-- 页面元数据 -->
-  <title>Linux指令——文件与权限 - 千反田</title>
+  <title>Linux指令之文件与权限 - 千反田</title>
   <meta name="keywords" content="Shell,null">
   <meta desc name="description" content="Linux系统中常用的文件目录管理和文件权限管理命令。 - SukiEva - 千反田">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux指令——文件与权限">
+<meta property="og:title" content="Linux指令之文件与权限">
 <meta property="og:url" content="http://blog.sukiu.top/Linux/Linux-Files-And-Permissions/index.html">
 <meta property="og:site_name" content="千反田">
 <meta property="og:description" content="Linux系统中常用的文件目录管理和文件权限管理命令。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2021-11-07T08:47:19.000Z">
-<meta property="article:modified_time" content="2022-06-12T09:34:28.324Z">
+<meta property="article:modified_time" content="2021-12-22T07:45:00.000Z">
 <meta property="article:author" content="SukiEva">
 <meta property="article:tag" content="Shell">
 <meta name="twitter:card" content="summary">
@@ -139,7 +139,7 @@ body {
   background-color: var(--color-site-body);
   text-rendering: optimizelegibility;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  line-height: 1.6;
+  line-height: 2;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -1872,9 +1872,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655351299072","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655351299072","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655351299072","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655351299072","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655351299072","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655351299072","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655351299072"},"css":{"style":"/css/style.bca4d315.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655393069836","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655393069836","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655393069836","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655393069836","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655393069836","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655393069836","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655393069836"},"css":{"style":"/css/style.bca4d315.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1655351299072),
+    lastupdate: new Date(1655393069836),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2805,7 +2805,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        Linux指令——文件与权限
+        Linux指令之文件与权限
       </h1>
       <div class='new-meta-box'>
         
@@ -2820,10 +2820,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-12T17:34:28+08:00">
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2021-12-22T15:45:00+08:00">
   <a class='notlink'>
     <i class="fa-duotone fa-calendar-pen fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年6月12日</p>
+    <p>更新于：2021年12月22日</p>
   </a>
 </div>
 
@@ -2834,7 +2834,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-duotone fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：1.6k 字</p>
+      <p>字数：1.5k 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -2856,7 +2856,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>
       <i class="fa-duotone fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="lc-pv" data-title="Linux指令——文件与权限" data-path="/Linux/Linux-Files-And-Permissions/">
+      <span id="lc-pv" data-title="Linux指令之文件与权限" data-path="/Linux/Linux-Files-And-Permissions/">
         <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
       </span>
       
@@ -2881,10 +2881,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>Linux系统中常用的文件目录管理和文件权限管理命令。</p>
 <span id="more"></span>
 
-<blockquote>
-<p>以下所有内容都来自 <a target="_blank" rel="noopener" href="https://developer.aliyun.com/">https://developer.aliyun.com/</a>，仅供自己学习用。</p>
-</blockquote>
-<div class="story post-story"><h2 id="1、文件目录管理命令"><a href="#1、文件目录管理命令" class="headerlink" title="1、文件目录管理命令"></a>1、文件目录管理命令</h2><h3 id="tree-：以树状图列出目录的内容"><a href="#tree-：以树状图列出目录的内容" class="headerlink" title="tree ：以树状图列出目录的内容"></a>tree ：以树状图列出目录的内容</h3><p>命令描述：tree命令用于以树状图列出目录的内容。</p>
+<div class="story post-story"><h2 id="文件目录管理命令"><a href="#文件目录管理命令" class="headerlink" title="文件目录管理命令"></a>文件目录管理命令</h2><h3 id="tree-：以树状图列出目录的内容"><a href="#tree-：以树状图列出目录的内容" class="headerlink" title="tree ：以树状图列出目录的内容"></a>tree ：以树状图列出目录的内容</h3><p>命令描述：tree命令用于以树状图列出目录的内容。</p>
 <p>tree命令没有内置在系统中，使用tree命令需要执行以下命令来安装：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install -y tree</span><br></pre></td></tr></table></figure>
 
@@ -3019,7 +3016,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>参数    说明<br>-i    若指定目录已有同名文件，则先询问是否覆盖旧文件<br>-f    如果目标文件已经存在，不会询问而直接覆盖</p>
 <h3 id="rename-：批量改变文件名"><a href="#rename-：批量改变文件名" class="headerlink" title="rename ：批量改变文件名"></a>rename ：批量改变文件名</h3><p>命令描述：rename命令用字符串替换的方式批量改变文件名。rename命令有C语言和Perl语言两个版本，这里介绍C语言版本的rename命令，不支持正则表达式。</p>
 <p>命令格式：rename [原值] [替换值]</p>
-</div><div class="story post-story"><h2 id="2、文件权限管理"><a href="#2、文件权限管理" class="headerlink" title="2、文件权限管理"></a>2、文件权限管理</h2><p>ls命令可以查看Linux系统上的文件、目录和设备的权限。</p>
+</div><div class="story post-story"><h2 id="文件权限管理"><a href="#文件权限管理" class="headerlink" title="文件权限管理"></a>文件权限管理</h2><p>ls命令可以查看Linux系统上的文件、目录和设备的权限。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -l /boot/</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWcuYWxpY2RuLmNvbS90ZnMvVEIxMmdYY0hORDFnSzBqU1pGS1hYY0pyVlhhLTg2OS00MjAucG5n?x-oss-process=image/format,png#pic_center" class="lazyload" data-srcset="https://imgconvert.csdnimg.cn/aHR0cHM6Ly9pbWcuYWxpY2RuLmNvbS90ZnMvVEIxMmdYY0hORDFnSzBqU1pGS1hYY0pyVlhhLTg2OS00MjAucG5n?x-oss-process=image/format,png#pic_center" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="ls"><br>上述ls -l命令中显示的第一列就是文件权限信息，共11位字符，分5部分。</p>
@@ -3079,15 +3076,27 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='footer'>
        <!-- 参考资料、相关资料等 -->
       
-       <!-- 相关文章 -->
+        <div class='references'>
+          <section class='header'>
+            
+              <i class="fa-duotone fa-quote-left fa-fw" aria-hidden="true"></i>
+            
+            <span>参考资料</span>
+          </section>
+          <section class='body'>
+            <ul>
+              
+                <li>
+                  <a href="https://developer.aliyun.com/" rel="external nofollow noopener noreferrer" target="_blank">
+                  阿里云
+                  </a>
+                </li>
+              
+            </ul>
+          </section>
+        </div>
       
-        
-  <div class="related_posts">
-    <section class='header'>
-      <i class="fa-duotone fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
-    </section>
-    <section class='body'>
-      <div class="vlts-rps"><a class="item" href="\Linux\Linux-System-Management\" title="Linux指令——系统管理" rel="bookmark "><span class="title">Linux指令——系统管理</span><span class="excerpt">Linux中常用的系统工作命令以及系统状态检测命令。</span></a><a class="item" href="\Linux\Linux-Text-Processing\" title="Linux指令——文本处理" rel="bookmark "><span class="title">Linux指令——文本处理</span><span class="excerpt">如何使用Linux系统中的文本编辑工具Vim以及文本处理命令。</span></a><a class="item" href="\Language\Shell\" title="Shell" rel="bookmark "><span class="title">Shell</span><span class="excerpt">Shell 脚本的一些注意点</span></a></div></section></div>
+       <!-- 相关文章 -->
       
       <!-- 版权声明组件 -->
       
@@ -3178,14 +3187,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class="prev-next">
       
         <a class='prev' href='/Linux/Linux-Text-Processing/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Linux指令——文本处理</p>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Linux指令之文本处理</p>
           <p class='content'>如何使用Linux系统中的文本编辑工具Vim以及文本处理命令。
 
 
+文本编辑工具Vimvim的三种操作模式：
 
-以下所有内容都来自 https://developer.aliyun.com/，仅供自己学习用。
-
-1、文本编辑工具Vimv...</p>
+命令模式（Command mode）
+输入模式（Insert mode）
+底线命令...</p>
         </a>
       
       
@@ -3206,9 +3216,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
+递归遍历递归三要素：
 
-参考：
-代码随想录 (...</p>
+...</p>
         </a>
       
     </div>
@@ -3336,7 +3346,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86%E5%91%BD%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text">1、文件目录管理命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#tree-%EF%BC%9A%E4%BB%A5%E6%A0%91%E7%8A%B6%E5%9B%BE%E5%88%97%E5%87%BA%E7%9B%AE%E5%BD%95%E7%9A%84%E5%86%85%E5%AE%B9"><span class="toc-number">1.1.</span> <span class="toc-text">tree ：以树状图列出目录的内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ls-%EF%BC%9A%E6%98%BE%E7%A4%BA%E6%8C%87%E5%AE%9A%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84%E5%86%85%E5%AE%B9"><span class="toc-number">1.2.</span> <span class="toc-text">ls ：显示指定工作目录下的内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pwd-%EF%BC%9A%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E7%9A%84%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="toc-number">1.3.</span> <span class="toc-text">pwd ：获取当前工作目录的绝对路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cd-%EF%BC%9A%E5%88%87%E6%8D%A2%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95"><span class="toc-number">1.4.</span> <span class="toc-text">cd ：切换工作目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#touch-%EF%BC%9A%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%88%96%E8%80%85%E7%9B%AE%E5%BD%95%E7%9A%84%E6%97%B6%E9%97%B4%E5%B1%9E%E6%80%A7"><span class="toc-number">1.5.</span> <span class="toc-text">touch ：修改文件或者目录的时间属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mkdir-%EF%BC%9A%E6%96%B0%E5%BB%BA%E5%AD%90%E7%9B%AE%E5%BD%95"><span class="toc-number">1.6.</span> <span class="toc-text">mkdir ：新建子目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rm-%EF%BC%9A%E5%88%A0%E9%99%A4%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E6%88%96%E8%80%85%E7%9B%AE%E5%BD%95"><span class="toc-number">1.7.</span> <span class="toc-text">rm ：删除一个文件或者目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cp-%EF%BC%9A%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95"><span class="toc-number">1.8.</span> <span class="toc-text">cp ：复制文件或目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mv-%EF%BC%9A%E4%B8%BA%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95%E6%94%B9%E5%90%8D-%E5%B0%86%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95%E7%A7%BB%E5%85%A5%E5%85%B6%E5%AE%83%E4%BD%8D%E7%BD%AE"><span class="toc-number">1.9.</span> <span class="toc-text">mv ：为文件或目录改名 &#x2F; 将文件或目录移入其它位置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rename-%EF%BC%9A%E6%89%B9%E9%87%8F%E6%94%B9%E5%8F%98%E6%96%87%E4%BB%B6%E5%90%8D"><span class="toc-number">1.10.</span> <span class="toc-text">rename ：批量改变文件名</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">2、文件权限管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#chmod-%EF%BC%9A%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90"><span class="toc-number">2.1.</span> <span class="toc-text">chmod ：修改文件权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#chown-%EF%BC%9A%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E7%9A%84%E5%B1%9E%E4%B8%BB%E5%92%8C%E5%B1%9E%E7%BB%84"><span class="toc-number">2.2.</span> <span class="toc-text">chown ：修改文件的属主和属组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#chgrp-%EF%BC%9A%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E7%9A%84%E5%B1%9E%E7%BB%84"><span class="toc-number">2.3.</span> <span class="toc-text">chgrp ：修改文件的属组</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95%E7%AE%A1%E7%90%86%E5%91%BD%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text">文件目录管理命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#tree-%EF%BC%9A%E4%BB%A5%E6%A0%91%E7%8A%B6%E5%9B%BE%E5%88%97%E5%87%BA%E7%9B%AE%E5%BD%95%E7%9A%84%E5%86%85%E5%AE%B9"><span class="toc-number">1.1.</span> <span class="toc-text">tree ：以树状图列出目录的内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ls-%EF%BC%9A%E6%98%BE%E7%A4%BA%E6%8C%87%E5%AE%9A%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84%E5%86%85%E5%AE%B9"><span class="toc-number">1.2.</span> <span class="toc-text">ls ：显示指定工作目录下的内容</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#pwd-%EF%BC%9A%E8%8E%B7%E5%8F%96%E5%BD%93%E5%89%8D%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95%E7%9A%84%E7%BB%9D%E5%AF%B9%E8%B7%AF%E5%BE%84"><span class="toc-number">1.3.</span> <span class="toc-text">pwd ：获取当前工作目录的绝对路径</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cd-%EF%BC%9A%E5%88%87%E6%8D%A2%E5%B7%A5%E4%BD%9C%E7%9B%AE%E5%BD%95"><span class="toc-number">1.4.</span> <span class="toc-text">cd ：切换工作目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#touch-%EF%BC%9A%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%88%96%E8%80%85%E7%9B%AE%E5%BD%95%E7%9A%84%E6%97%B6%E9%97%B4%E5%B1%9E%E6%80%A7"><span class="toc-number">1.5.</span> <span class="toc-text">touch ：修改文件或者目录的时间属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mkdir-%EF%BC%9A%E6%96%B0%E5%BB%BA%E5%AD%90%E7%9B%AE%E5%BD%95"><span class="toc-number">1.6.</span> <span class="toc-text">mkdir ：新建子目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rm-%EF%BC%9A%E5%88%A0%E9%99%A4%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6%E6%88%96%E8%80%85%E7%9B%AE%E5%BD%95"><span class="toc-number">1.7.</span> <span class="toc-text">rm ：删除一个文件或者目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cp-%EF%BC%9A%E5%A4%8D%E5%88%B6%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95"><span class="toc-number">1.8.</span> <span class="toc-text">cp ：复制文件或目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#mv-%EF%BC%9A%E4%B8%BA%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95%E6%94%B9%E5%90%8D-%E5%B0%86%E6%96%87%E4%BB%B6%E6%88%96%E7%9B%AE%E5%BD%95%E7%A7%BB%E5%85%A5%E5%85%B6%E5%AE%83%E4%BD%8D%E7%BD%AE"><span class="toc-number">1.9.</span> <span class="toc-text">mv ：为文件或目录改名 &#x2F; 将文件或目录移入其它位置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#rename-%EF%BC%9A%E6%89%B9%E9%87%8F%E6%94%B9%E5%8F%98%E6%96%87%E4%BB%B6%E5%90%8D"><span class="toc-number">1.10.</span> <span class="toc-text">rename ：批量改变文件名</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90%E7%AE%A1%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">文件权限管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#chmod-%EF%BC%9A%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E6%9D%83%E9%99%90"><span class="toc-number">2.1.</span> <span class="toc-text">chmod ：修改文件权限</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#chown-%EF%BC%9A%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E7%9A%84%E5%B1%9E%E4%B8%BB%E5%92%8C%E5%B1%9E%E7%BB%84"><span class="toc-number">2.2.</span> <span class="toc-text">chown ：修改文件的属主和属组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#chgrp-%EF%BC%9A%E4%BF%AE%E6%94%B9%E6%96%87%E4%BB%B6%E7%9A%84%E5%B1%9E%E7%BB%84"><span class="toc-number">2.3.</span> <span class="toc-text">chgrp ：修改文件的属组</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -3715,7 +3725,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655351299072"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655393069836"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3956,19 +3966,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655351299072")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655393069836")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655351299072")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655393069836")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655351299072")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655393069836")
       }
     
   };
@@ -4064,7 +4074,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655351299072')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655393069836')
   
   })();
 
@@ -4191,7 +4201,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655351299072");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655393069836");
   }
 
   function loadSearchService() {
@@ -4534,7 +4544,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655351299072').then(()=>{
+    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655393069836').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4792,7 +4802,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Linux/","name":"Linux"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Linux/Linux-Files-And-Permissions/","name":"Linux指令——文件与权限"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Linux指令——文件与权限","description":"Linux系统中常用的文件目录管理和文件权限管理命令。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Linux/Linux-Files-And-Permissions/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Linux/Linux-Files-And-Permissions/","wordCount":27,"datePublished":"2021-11-07T08:47:19.000Z","dateModified":"2022-06-12T09:34:28.324Z","articleSection":"Linux","keywords":"Shell","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Linux/","name":"Linux"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Linux/Linux-Files-And-Permissions/","name":"Linux指令之文件与权限"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Linux指令之文件与权限","description":"Linux系统中常用的文件目录管理和文件权限管理命令。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Linux/Linux-Files-And-Permissions/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Linux/Linux-Files-And-Permissions/","wordCount":27,"datePublished":"2021-11-07T08:47:19.000Z","dateModified":"2021-12-22T07:45:00.000Z","articleSection":"Linux","keywords":"Shell","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

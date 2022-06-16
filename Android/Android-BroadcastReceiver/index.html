@@ -33,20 +33,20 @@
   <!-- feed -->
         <link rel="alternate" href="/rss.xml" title="千反田" type="application/rss+xml">
   <!-- 页面元数据 -->
-  <title>Android四大组件——BroadcastReceiver - 千反田</title>
+  <title>Android四大组件之BroadcastReceiver - 千反田</title>
   <meta name="keywords" content="Component,null">
   <meta desc name="description" content="Android 应用与 Android 系统和其他 Android 应用之间可以相互收发广播消息，这与发布-订阅设计模式相似。这些广播会在所关注的事件发生时发送。
 一般来说，广播可作为跨应用和普通用户流之外的消息传递系统。 - SukiEva - 千反田">
   
 <meta property="og:type" content="article">
-<meta property="og:title" content="Android四大组件——BroadcastReceiver">
+<meta property="og:title" content="Android四大组件之BroadcastReceiver">
 <meta property="og:url" content="http://blog.sukiu.top/Android/Android-BroadcastReceiver/index.html">
 <meta property="og:site_name" content="千反田">
 <meta property="og:description" content="Android 应用与 Android 系统和其他 Android 应用之间可以相互收发广播消息，这与发布-订阅设计模式相似。这些广播会在所关注的事件发生时发送。 一般来说，广播可作为跨应用和普通用户流之外的消息传递系统。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2021-09-28T11:37:11.000Z">
-<meta property="article:modified_time" content="2022-06-12T09:35:09.284Z">
+<meta property="article:modified_time" content="2021-12-22T07:19:00.000Z">
 <meta property="article:author" content="SukiEva">
 <meta property="article:tag" content="Component">
 <meta name="twitter:card" content="summary">
@@ -140,7 +140,7 @@ body {
   background-color: var(--color-site-body);
   text-rendering: optimizelegibility;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  line-height: 1.6;
+  line-height: 2;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -1873,9 +1873,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655351299072","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655351299072","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655351299072","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655351299072","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655351299072","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655351299072","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655351299072"},"css":{"style":"/css/style.bca4d315.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655393069836","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655393069836","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655393069836","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655393069836","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655393069836","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655393069836","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655393069836"},"css":{"style":"/css/style.bca4d315.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1655351299072),
+    lastupdate: new Date(1655393069836),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2806,7 +2806,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        Android四大组件——BroadcastReceiver
+        Android四大组件之BroadcastReceiver
       </h1>
       <div class='new-meta-box'>
         
@@ -2821,10 +2821,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-12T17:35:09+08:00">
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2021-12-22T15:19:00+08:00">
   <a class='notlink'>
     <i class="fa-duotone fa-calendar-pen fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年6月12日</p>
+    <p>更新于：2021年12月22日</p>
   </a>
 </div>
 
@@ -2835,7 +2835,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <div class="new-meta-item wordcount">
     <a class='notlink'>
       <i class="fa-duotone fa-keyboard fa-fw" aria-hidden="true"></i>
-      <p>字数：811 字</p>
+      <p>字数：783 字</p>
     </a>
   </div>
   <div class="new-meta-item readtime">
@@ -2857,7 +2857,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>
       <i class="fa-duotone fa-eye fa-fw" aria-hidden="true"></i>
       
-      <span id="lc-pv" data-title="Android四大组件——BroadcastReceiver" data-path="/Android/Android-BroadcastReceiver/">
+      <span id="lc-pv" data-title="Android四大组件之BroadcastReceiver" data-path="/Android/Android-BroadcastReceiver/">
         <span id='number'><i class="fa-solid fa-loader fa-spin fa-fw" aria-hidden="true"></i></span>
       </span>
       
@@ -2883,12 +2883,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>一般来说，广播可作为跨应用和普通用户流之外的消息传递系统。</p>
 <span id="more"></span>
 
-<blockquote>
-<p>参考：</p>
-<p><a target="_blank" rel="noopener" href="https://developer.android.com/guide/components/broadcasts?hl=zh-cn">广播概览  | Android 开发者  | Android Developers</a></p>
-<p><a target="_blank" rel="noopener" href="https://guolin.blog.csdn.net/article/details/105233078">《第一行代码 Android 第3版》</a></p>
-</blockquote>
-<div class="story post-story"><h2 id="1、广播类型"><a href="#1、广播类型" class="headerlink" title="1、广播类型"></a>1、广播类型</h2><ul>
+<div class="story post-story"><h2 id="广播类型"><a href="#广播类型" class="headerlink" title="广播类型"></a>广播类型</h2><ul>
 <li>标准广播：异步执行，所有的 BroadcastReceiver 均会收到消息，没有先后顺序。<ul>
 <li>优点：效率高</li>
 <li>缺点：无法被截断</li>
@@ -2900,24 +2895,26 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ul>
 </li>
 </ul>
-</div><div class="story post-story"><h2 id="2、系统广播"><a href="#2、系统广播" class="headerlink" title="2、系统广播"></a>2、系统广播</h2><p>Android 内置很多系统级别的广播，可以监听这些广播来得到各种系统状态信息。</p>
+</div><div class="story post-story"><h2 id="系统广播"><a href="#系统广播" class="headerlink" title="系统广播"></a>系统广播</h2><p>Android 内置很多系统级别的广播，可以监听这些广播来得到各种系统状态信息。</p>
 <p>可以在<code>&lt;Android SDK&gt;/platforms/&lt;任意api&gt;/data/broadcast_actions.txt</code>中查看</p>
-<h3 id="1、动态注册"><a href="#1、动态注册" class="headerlink" title="1、动态注册"></a>1、动态注册</h3><p>程序启动之后才能接收广播</p>
+<h3 id="动态注册"><a href="#动态注册" class="headerlink" title="动态注册"></a>动态注册</h3><p>程序启动之后才能接收广播</p>
 <figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">lateinit</span> <span class="keyword">var</span> timeChangeReceiver: TimeChangeReceiver</span><br><span class="line"></span><br><span class="line"><span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onCreate</span><span class="params">(savedInstanceState: <span class="type">Bundle</span>?)</span></span> &#123;</span><br><span class="line">    <span class="keyword">super</span>.onCreate(savedInstanceState)</span><br><span class="line">    setContentView(R.layout.activity_main)</span><br><span class="line">    <span class="keyword">val</span> intentFilter = IntentFilter()</span><br><span class="line">    intentFilter.addAction(<span class="string">&quot;android.intent.action.TIME_TICK&quot;</span>) <span class="comment">// 系统广播动作</span></span><br><span class="line">    timeChangeReceiver = TimeChangeReceiver()</span><br><span class="line">    registerReceiver(timeChangeReceiver, intentFilter) <span class="comment">// 动态注册</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onDestroy</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">super</span>.onDestroy()</span><br><span class="line">    unregisterReceiver(timeChangeReceiver) <span class="comment">// 取消注册</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 内部类注册</span></span><br><span class="line"><span class="keyword">inner</span> <span class="class"><span class="keyword">class</span> <span class="title">TimeChangeReceiver</span> : <span class="type">BroadcastReceiver</span></span>() &#123; <span class="comment">// 继承 BroadcastReceiver</span></span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onReceive</span><span class="params">(p0: <span class="type">Context</span>?, p1: <span class="type">Intent</span>?)</span></span> &#123;</span><br><span class="line">        <span class="comment">// 不允许多线程，所以不能执行耗时操作</span></span><br><span class="line">        p0?.let &#123;</span><br><span class="line">            <span class="string">&quot;Time has changed&quot;</span>.showToast(it)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="2、静态注册"><a href="#2、静态注册" class="headerlink" title="2、静态注册"></a>2、静态注册</h3><p>由于大量恶意程序利用静态注册机制在程序未启动时监听系统广播，从而使任意应用都可以频繁从后台唤醒，因此 Android 每个版本都在削减静态注册 BroadcastReceiver 的功能。</p>
+<h3 id="静态注册"><a href="#静态注册" class="headerlink" title="静态注册"></a>静态注册</h3><p>由于大量恶意程序利用静态注册机制在程序未启动时监听系统广播，从而使任意应用都可以频繁从后台唤醒，因此 Android 每个版本都在削减静态注册 BroadcastReceiver 的功能。</p>
 <p>Android 8.0 以后，所有隐式广播（没有指定发送给哪个程序的广播，大多数系统广播都属于此）都不允许使用静态注册接收。</p>
 <p>例外情况见 <a target="_blank" rel="noopener" href="https://developer.android.com/guide/components/broadcast-exceptions?hl=zh-cn">隐式广播例外情况  | Android 开发者  | Android Developers</a></p>
 <p><strong>注意</strong>：尽管这些隐式广播仍在后台运行，但应避免为其注册监听器</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">receiver</span> <span class="attr">android:name</span>=<span class="string">&quot;.MyBroadcastReceiver&quot;</span>  <span class="attr">android:exported</span>=<span class="string">&quot;true&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">intent-filter</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 需要权限 android.permission.RECEIVE_BOOT_COMPLETED--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">action</span> <span class="attr">android:name</span>=<span class="string">&quot;android.intent.action.BOOT_COMPLETED&quot;</span>/&gt;</span> </span><br><span class="line">        <span class="tag">&lt;<span class="name">action</span> <span class="attr">android:name</span>=<span class="string">&quot;android.intent.action.INPUT_METHOD_CHANGED&quot;</span> /&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">intent-filter</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">receiver</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="3、自定义广播"><a href="#3、自定义广播" class="headerlink" title="3、自定义广播"></a>3、自定义广播</h2><h3 id="1、发送标准广播"><a href="#1、发送标准广播" class="headerlink" title="1、发送标准广播"></a>1、发送标准广播</h3><h4 id="创建-BroadcastReceiver"><a href="#创建-BroadcastReceiver" class="headerlink" title="创建 BroadcastReceiver"></a>创建 BroadcastReceiver</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyBroadcastReceiver</span> : <span class="type">BroadcastReceiver</span></span>() &#123;</span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onReceive</span><span class="params">(p0: <span class="type">Context</span>?, p1: <span class="type">Intent</span>?)</span></span> &#123;</span><br><span class="line">        <span class="comment">// <span class="doctag">TODO:</span> 2021/9/28  </span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</div><div class="story post-story"><h2 id="自定义广播"><a href="#自定义广播" class="headerlink" title="自定义广播"></a>自定义广播</h2><br>
+
+<h3 id="发送标准广播"><a href="#发送标准广播" class="headerlink" title="发送标准广播"></a>发送标准广播</h3><h4 id="创建-BroadcastReceiver"><a href="#创建-BroadcastReceiver" class="headerlink" title="创建 BroadcastReceiver"></a>创建 BroadcastReceiver</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyBroadcastReceiver</span> : <span class="type">BroadcastReceiver</span></span>() &#123;</span><br><span class="line">    <span class="keyword">override</span> <span class="function"><span class="keyword">fun</span> <span class="title">onReceive</span><span class="params">(p0: <span class="type">Context</span>?, p1: <span class="type">Intent</span>?)</span></span> &#123;</span><br><span class="line">        <span class="comment">// <span class="doctag">TODO:</span> 2021/9/28  </span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h4 id="注册广播"><a href="#注册广播" class="headerlink" title="注册广播"></a>注册广播</h4><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">receiver</span> <span class="attr">android:name</span>=<span class="string">&quot;.MyBroadcastReceiver&quot;</span>  <span class="attr">android:exported</span>=<span class="string">&quot;true&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">intent-filter</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">action</span> <span class="attr">android:name</span>=<span class="string">&quot;com.example.MY_BROADCAST&quot;</span>/&gt;</span> </span><br><span class="line">    <span class="tag">&lt;/<span class="name">intent-filter</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">receiver</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <h4 id="发送广播"><a href="#发送广播" class="headerlink" title="发送广播"></a>发送广播</h4><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">val</span> intent = Intent(<span class="string">&quot;com.example.MY_BROADCAST&quot;</span>)</span><br><span class="line">intent.setPackage(packageName) <span class="comment">// 指定包名，使其成为显示广播</span></span><br><span class="line">sendBroadcast(intent)</span><br></pre></td></tr></table></figure>
 
-<h3 id="2、发送有序广播"><a href="#2、发送有序广播" class="headerlink" title="2、发送有序广播"></a>2、发送有序广播</h3><p>前面与标准广播相同，发送广播时选择 <code>sendOrderedBroadcast(intent,null)</code> （参数2是与权限相关的字符串）</p>
+<h3 id="发送有序广播"><a href="#发送有序广播" class="headerlink" title="发送有序广播"></a>发送有序广播</h3><p>前面与标准广播相同，发送广播时选择 <code>sendOrderedBroadcast(intent,null)</code> （参数2是与权限相关的字符串）</p>
 <h4 id="设置优先级"><a href="#设置优先级" class="headerlink" title="设置优先级"></a>设置优先级</h4><p>因为有序广播可以被截断，在静态注册时指定优先级：</p>
 <p><code>&lt;intent-filter android:priority=&quot;100&quot;&gt;</code></p>
 <h4 id="截断"><a href="#截断" class="headerlink" title="截断"></a>截断</h4><p>使用 <code>abortBroadcast()</code></p>
@@ -2931,15 +2928,33 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='footer'>
        <!-- 参考资料、相关资料等 -->
       
-       <!-- 相关文章 -->
+        <div class='references'>
+          <section class='header'>
+            
+              <i class="fa-duotone fa-quote-left fa-fw" aria-hidden="true"></i>
+            
+            <span>参考资料</span>
+          </section>
+          <section class='body'>
+            <ul>
+              
+                <li>
+                  <a href="https://developer.android.com/guide/components/broadcasts?hl=zh-cn" rel="external nofollow noopener noreferrer" target="_blank">
+                  广播概览  | Android 开发者  | Android Developers
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="https://guolin.blog.csdn.net/article/details/105233078" rel="external nofollow noopener noreferrer" target="_blank">
+                  《第一行代码 Android 第3版》
+                  </a>
+                </li>
+              
+            </ul>
+          </section>
+        </div>
       
-        
-  <div class="related_posts">
-    <section class='header'>
-      <i class="fa-duotone fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
-    </section>
-    <section class='body'>
-      <div class="vlts-rps"><a class="item" href="\Android\Android-Activity\" title="Android四大组件——Activity" rel="bookmark "><span class="title">Android四大组件——Activity</span><span class="excerpt">Activity 类是 Android 应用的关键组件，而 Activity 的启动和组合方式则是该平台应用模型的基本组成...</span></a><a class="item" href="\Android\Android-ContentProvider\" title="Android四大组件——ContentProvider" rel="bookmark "><span class="title">Android四大组件——ContentProvider</span><span class="excerpt">内容提供程序主要目的是不同应用程序间的数据共享。它提供了一套完整的机制，允许一个程序访问另一个程序的数据，同时保证被访问数...</span></a><a class="item" href="\Android\Android-Service\" title="Android四大组件——Service" rel="bookmark "><span class="title">Android四大组件——Service</span><span class="excerpt">Service 是一种可在后台执行长时间运行操作而不提供界面的应用组件。服务可由其他应用组件启动，而且即使用户切换到其他应...</span></a><a class="item" href="\Android\Android-ViewBinding\" title="Android——ViewBinding" rel="bookmark "><span class="title">Android——ViewBinding</span><span class="excerpt">通过视图绑定功能，可以更轻松地编写可与视图交互的代码。在模块中启用视图绑定之后，系统会为该模块中的每个 XML 布局文件生...</span></a><a class="item" href="\Android\Gradle-Build\" title="Gradle——Android Build 构建配置" rel="bookmark "><span class="title">Gradle——Android Build 构建配置</span><span class="excerpt">Android 构建系统会编译应用资源和源代码，然后将它们打包到 APK 或 Android App Bundle 中，供...</span></a></div></section></div>
+       <!-- 相关文章 -->
       
       <!-- 版权声明组件 -->
       
@@ -3030,14 +3045,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class="prev-next">
       
         <a class='prev' href='/Android/Android-ContentProvider/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Android四大组件——ContentProvider</p>
-          <p class='content'>内容提供程序主要目的是不同应用程序间的数据共享。它提供了一套完整的机制，允许一个程序访问另一个程序的数据，同时保证被访问数据的安全性。目前，使用 ContentProvider 是 Androi...</p>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Android四大组件之ContentProvider</p>
+          <p class='content'>内容提供程序主要目的是不同应用程序间的数据共享。
+它提供了一套完整的机制，允许一个程序访问另一个程序的数据，同时保证被访问数据的安全性。
+目前，使用 ContentProvider 是 Andr...</p>
         </a>
       
       
         <a class='next' href='/Android/Android-Activity/'>
-          <p class='title'>Android四大组件——Activity<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>Activity 类是 Android 应用的关键组件，而 Activity 的启动和组合方式则是该平台应用模型的基本组成部分。在编程范式中，应用是通过 main() 方法启动的，而 Andro...</p>
+          <p class='title'>Android四大组件之Activity<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Activity 类是 Android 应用的关键组件，而 Activity 的启动和组合方式则是该平台应用模型的基本组成部分。
+在编程范式中，应用是通过 main() 方法启动的，而 Andr...</p>
         </a>
       
     </div>
@@ -3165,7 +3183,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E5%B9%BF%E6%92%AD%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.</span> <span class="toc-text">1、广播类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E7%B3%BB%E7%BB%9F%E5%B9%BF%E6%92%AD"><span class="toc-number">2.</span> <span class="toc-text">2、系统广播</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E5%8A%A8%E6%80%81%E6%B3%A8%E5%86%8C"><span class="toc-number">2.1.</span> <span class="toc-text">1、动态注册</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E9%9D%99%E6%80%81%E6%B3%A8%E5%86%8C"><span class="toc-number">2.2.</span> <span class="toc-text">2、静态注册</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B9%BF%E6%92%AD"><span class="toc-number">3.</span> <span class="toc-text">3、自定义广播</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E5%8F%91%E9%80%81%E6%A0%87%E5%87%86%E5%B9%BF%E6%92%AD"><span class="toc-number">3.1.</span> <span class="toc-text">1、发送标准广播</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA-BroadcastReceiver"><span class="toc-number">3.1.1.</span> <span class="toc-text">创建 BroadcastReceiver</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C%E5%B9%BF%E6%92%AD"><span class="toc-number">3.1.2.</span> <span class="toc-text">注册广播</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%91%E9%80%81%E5%B9%BF%E6%92%AD"><span class="toc-number">3.1.3.</span> <span class="toc-text">发送广播</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E5%8F%91%E9%80%81%E6%9C%89%E5%BA%8F%E5%B9%BF%E6%92%AD"><span class="toc-number">3.2.</span> <span class="toc-text">2、发送有序广播</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E4%BC%98%E5%85%88%E7%BA%A7"><span class="toc-number">3.2.1.</span> <span class="toc-text">设置优先级</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%88%AA%E6%96%AD"><span class="toc-number">3.2.2.</span> <span class="toc-text">截断</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%B9%BF%E6%92%AD%E7%B1%BB%E5%9E%8B"><span class="toc-number">1.</span> <span class="toc-text">广播类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E5%B9%BF%E6%92%AD"><span class="toc-number">2.</span> <span class="toc-text">系统广播</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A8%E6%80%81%E6%B3%A8%E5%86%8C"><span class="toc-number">2.1.</span> <span class="toc-text">动态注册</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%99%E6%80%81%E6%B3%A8%E5%86%8C"><span class="toc-number">2.2.</span> <span class="toc-text">静态注册</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E5%B9%BF%E6%92%AD"><span class="toc-number">3.</span> <span class="toc-text">自定义广播</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%91%E9%80%81%E6%A0%87%E5%87%86%E5%B9%BF%E6%92%AD"><span class="toc-number">3.1.</span> <span class="toc-text">发送标准广播</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA-BroadcastReceiver"><span class="toc-number">3.1.1.</span> <span class="toc-text">创建 BroadcastReceiver</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B3%A8%E5%86%8C%E5%B9%BF%E6%92%AD"><span class="toc-number">3.1.2.</span> <span class="toc-text">注册广播</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8F%91%E9%80%81%E5%B9%BF%E6%92%AD"><span class="toc-number">3.1.3.</span> <span class="toc-text">发送广播</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%91%E9%80%81%E6%9C%89%E5%BA%8F%E5%B9%BF%E6%92%AD"><span class="toc-number">3.2.</span> <span class="toc-text">发送有序广播</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E4%BC%98%E5%85%88%E7%BA%A7"><span class="toc-number">3.2.1.</span> <span class="toc-text">设置优先级</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%88%AA%E6%96%AD"><span class="toc-number">3.2.2.</span> <span class="toc-text">截断</span></a></li></ol></li></ol></li></ol>
     </div>
   </section>
 
@@ -3544,7 +3562,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655351299072"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655393069836"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3785,19 +3803,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655351299072")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655393069836")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655351299072")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655393069836")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655351299072")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655393069836")
       }
     
   };
@@ -3893,7 +3911,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655351299072')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655393069836')
   
   })();
 
@@ -4020,7 +4038,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655351299072");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655393069836");
   }
 
   function loadSearchService() {
@@ -4363,7 +4381,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655351299072').then(()=>{
+    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655393069836').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4621,7 +4639,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Android/","name":"Android"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Android/Android-BroadcastReceiver/","name":"Android四大组件——BroadcastReceiver"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Android四大组件——BroadcastReceiver","description":"Android 应用与 Android 系统和其他 Android 应用之间可以相互收发广播消息，这与发布-订阅设计模式相似。这些广播会在所关注的事件发生时发送。\n一般来说，广播可作为跨应用和普通用户流之外的消息传递系统。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Android/Android-BroadcastReceiver/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Android/Android-BroadcastReceiver/","wordCount":111,"datePublished":"2021-09-28T11:37:11.000Z","dateModified":"2022-06-12T09:35:09.284Z","articleSection":"Android","keywords":"Component","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Android/","name":"Android"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Android/Android-BroadcastReceiver/","name":"Android四大组件之BroadcastReceiver"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Android四大组件之BroadcastReceiver","description":"Android 应用与 Android 系统和其他 Android 应用之间可以相互收发广播消息，这与发布-订阅设计模式相似。这些广播会在所关注的事件发生时发送。\n一般来说，广播可作为跨应用和普通用户流之外的消息传递系统。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Android/Android-BroadcastReceiver/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Android/Android-BroadcastReceiver/","wordCount":111,"datePublished":"2021-09-28T11:37:11.000Z","dateModified":"2021-12-22T07:19:00.000Z","articleSection":"Android","keywords":"Component","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

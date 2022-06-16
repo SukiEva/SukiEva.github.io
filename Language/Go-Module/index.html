@@ -47,7 +47,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2021-11-17T00:54:42.000Z">
-<meta property="article:modified_time" content="2022-06-12T09:34:12.144Z">
+<meta property="article:modified_time" content="2021-12-22T07:46:00.000Z">
 <meta property="article:author" content="SukiEva">
 <meta property="article:tag" content="Go">
 <meta name="twitter:card" content="summary">
@@ -141,7 +141,7 @@ body {
   background-color: var(--color-site-body);
   text-rendering: optimizelegibility;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  line-height: 1.6;
+  line-height: 2;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -1874,9 +1874,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655351299072","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655351299072","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655351299072","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655351299072","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655351299072","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655351299072","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655351299072"},"css":{"style":"/css/style.bca4d315.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655393069836","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655393069836","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655393069836","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655393069836","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655393069836","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655393069836","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655393069836"},"css":{"style":"/css/style.bca4d315.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1655351299072),
+    lastupdate: new Date(1655393069836),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2822,10 +2822,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-12T17:34:12+08:00">
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2021-12-22T15:46:00+08:00">
   <a class='notlink'>
     <i class="fa-duotone fa-calendar-pen fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年6月12日</p>
+    <p>更新于：2021年12月22日</p>
   </a>
 </div>
 
@@ -2886,11 +2886,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>go.mod 文件所在的顶层目录也被称为 module 的根目录，module 根目录以及它子目录下的所有 Go 包均归属于这个 Go Module，这个 module 也被称为 main module。</p>
 <span id="more"></span>
 
-<blockquote>
-<p>参考：</p>
-<p><a target="_blank" rel="noopener" href="https://time.geekbang.org/column/article/429941">06｜构建模式：Go是怎么解决包依赖管理问题的？ (geekbang.org)</a></p>
-</blockquote>
-<div class="story post-story"><h2 id="1、Go-Module-构建模式"><a href="#1、Go-Module-构建模式" class="headerlink" title="1、Go Module 构建模式"></a>1、Go Module 构建模式</h2><h3 id="语义导入版本机制"><a href="#语义导入版本机制" class="headerlink" title="语义导入版本机制"></a>语义导入版本机制</h3><p>在 Go Module 构建模式下，一个符合 Go Module 要求的版本号，由前缀 v 和一个满足语义版本规范的版本号组成</p>
+<div class="story post-story"><h2 id="Go-Module-构建模式"><a href="#Go-Module-构建模式" class="headerlink" title="Go Module 构建模式"></a>Go Module 构建模式</h2><h3 id="语义导入版本机制"><a href="#语义导入版本机制" class="headerlink" title="语义导入版本机制"></a>语义导入版本机制</h3><p>在 Go Module 构建模式下，一个符合 Go Module 要求的版本号，由前缀 v 和一个满足语义版本规范的版本号组成</p>
 <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/468323b3294cce2ea7f4c1da3699c5a2.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/468323b3294cce2ea7f4c1da3699c5a2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="语义版本号规范" style="zoom: 50%;" />
 
 <p>按照语义版本规范，</p>
@@ -2911,7 +2907,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>当前存在的主流编程语言，以及 Go Module 出现之前的很多 Go 包依赖管理工具都会选择依赖项的“最新最大 (Latest Greatest) 版本”，对应到图中的例子，这个版本就是 <code>v1.7.0</code>。</p>
 <p>不过，Go 会在该项目依赖项的所有版本中，选出<strong>符合项目整体要求</strong>的“最小版本”</p>
 <p>这个例子中，<code>C v1.3.0</code> 是符合项目整体要求的版本集合中的版本最小的那个，于是 Go 命令选择了 <code>C v1.3.0</code>，而不是最新最大的 <code>C v1.7.0</code>。</p>
-</div><div class="story post-story"><h2 id="2、Go-module-版本管理"><a href="#2、Go-module-版本管理" class="headerlink" title="2、Go module 版本管理"></a>2、Go module 版本管理</h2><h3 id="（1）Go-Module-创建"><a href="#（1）Go-Module-创建" class="headerlink" title="（1）Go Module 创建"></a>（1）Go Module 创建</h3><p>创建一个 Go Module，通常有如下几个步骤：</p>
+</div><div class="story post-story"><h2 id="Go-module-版本管理"><a href="#Go-module-版本管理" class="headerlink" title="Go module 版本管理"></a>Go module 版本管理</h2><h3 id="（1）Go-Module-创建"><a href="#（1）Go-Module-创建" class="headerlink" title="（1）Go Module 创建"></a>（1）Go Module 创建</h3><p>创建一个 Go Module，通常有如下几个步骤：</p>
 <ol>
 <li><p>通过 <code>go mod init</code> 创建 go.mod 文件，将当前项目变为一个 Go Module；</p>
 </li>
@@ -2930,7 +2926,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>在 Go 1.14 及以后版本中，如果 Go 项目的顶层目录下存在 vendor 目录，那么 go build 默认也会优先基于 vendor 构建，除非 go build 传入 <code>-mod=mod</code> 的参数。</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash">go mod vendor</span></span><br><span class="line"><span class="meta">$</span><span class="bash">tree -LF 2 vendor</span></span><br><span class="line">vendor</span><br><span class="line">├── github.com/</span><br><span class="line">│   ├── google/</span><br><span class="line">│   ├── magefile/</span><br><span class="line">│   └── sirupsen/</span><br><span class="line">├── golang.org/</span><br><span class="line">│   └── x/</span><br><span class="line">└── modules.txt</span><br></pre></td></tr></table></figure>
 
-<h3 id="3、空导入"><a href="#3、空导入" class="headerlink" title="3、空导入"></a>3、空导入</h3><p>像下面代码这样的包导入方式被称为“空导入”：<code>import _ &quot;foo&quot;</code></p>
+<h3 id="空导入"><a href="#空导入" class="headerlink" title="空导入"></a>空导入</h3><p>像下面代码这样的包导入方式被称为“空导入”：<code>import _ &quot;foo&quot;</code></p>
 <p>空导入也是导入，意味着我们将依赖foo这个路径下的包。</p>
 <p>由于是空导入，我们并没有显式使用这个包中的任何语法元素。</p>
 <p>通常实践中空导入意味着期望依赖包的init函数得到执行，这个init函数中有我们需要的逻辑。</p>
@@ -2943,15 +2939,27 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='footer'>
        <!-- 参考资料、相关资料等 -->
       
-       <!-- 相关文章 -->
+        <div class='references'>
+          <section class='header'>
+            
+              <i class="fa-duotone fa-quote-left fa-fw" aria-hidden="true"></i>
+            
+            <span>参考资料</span>
+          </section>
+          <section class='body'>
+            <ul>
+              
+                <li>
+                  <a href="https://time.geekbang.org/column/article/429941" rel="external nofollow noopener noreferrer" target="_blank">
+                  06｜构建模式：Go是怎么解决包依赖管理问题的？ (geekbang.org)
+                  </a>
+                </li>
+              
+            </ul>
+          </section>
+        </div>
       
-        
-  <div class="related_posts">
-    <section class='header'>
-      <i class="fa-duotone fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
-    </section>
-    <section class='body'>
-      <div class="vlts-rps"><a class="item" href="\Design-Pattern\Go-Design-Pattern\" title="Go的设计模式" rel="bookmark "><span class="title">Go的设计模式</span><span class="excerpt">Go语言的设计模式之美。</span></a><a class="item" href="\Language\Language-Golang\" title="Golang" rel="bookmark "><span class="title">Golang</span><span class="excerpt">Go（又称Golang）是Google开发的一种静态强类型、编译型、并发型，并具有垃圾回收功能的编程语言。</span></a><a class="item" href="\Language\Language-Kotlin\" title="Kotlin" rel="bookmark "><span class="title">Kotlin</span><span class="excerpt">Kotlin 是一种在 Java 虚拟机上运行的静态类型编程语言，被称之为Android 世界的Swift，由JetBra...</span></a></div></section></div>
+       <!-- 相关文章 -->
       
       <!-- 版权声明组件 -->
       
@@ -3056,9 +3064,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 本文分享自用的情景模式，不定期更新~
 
 
-
-官方文档：
-http...</p>
+GPS 相关GPS自动...</p>
         </a>
       
       
@@ -3194,7 +3200,7 @@ http...</p>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81Go-Module-%E6%9E%84%E5%BB%BA%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text">1、Go Module 构建模式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%AD%E4%B9%89%E5%AF%BC%E5%85%A5%E7%89%88%E6%9C%AC%E6%9C%BA%E5%88%B6"><span class="toc-number">1.1.</span> <span class="toc-text">语义导入版本机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E5%B0%8F%E7%89%88%E6%9C%AC%E9%80%89%E6%8B%A9%E5%8E%9F%E5%88%99"><span class="toc-number">1.2.</span> <span class="toc-text">最小版本选择原则</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81Go-module-%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">2、Go module 版本管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%881%EF%BC%89Go-Module-%E5%88%9B%E5%BB%BA"><span class="toc-number">2.1.</span> <span class="toc-text">（1）Go Module 创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E4%B8%BA%E5%BD%93%E5%89%8D-module-%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AA%E4%BE%9D%E8%B5%96"><span class="toc-number">2.2.</span> <span class="toc-text">（2）为当前 module 添加一个依赖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%883%EF%BC%89%E5%8D%87%E7%BA%A7-%E9%99%8D%E7%BA%A7%E4%BE%9D%E8%B5%96%E7%9A%84%E7%89%88%E6%9C%AC"><span class="toc-number">2.3.</span> <span class="toc-text">（3）升级 &#x2F; 降级依赖的版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%884%EF%BC%89%E7%A7%BB%E9%99%A4%E4%B8%80%E4%B8%AA%E4%BE%9D%E8%B5%96"><span class="toc-number">2.4.</span> <span class="toc-text">（4）移除一个依赖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%885%EF%BC%89vendor"><span class="toc-number">2.5.</span> <span class="toc-text">（5）vendor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E7%A9%BA%E5%AF%BC%E5%85%A5"><span class="toc-number">2.6.</span> <span class="toc-text">3、空导入</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Go-Module-%E6%9E%84%E5%BB%BA%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text">Go Module 构建模式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%AD%E4%B9%89%E5%AF%BC%E5%85%A5%E7%89%88%E6%9C%AC%E6%9C%BA%E5%88%B6"><span class="toc-number">1.1.</span> <span class="toc-text">语义导入版本机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%80%E5%B0%8F%E7%89%88%E6%9C%AC%E9%80%89%E6%8B%A9%E5%8E%9F%E5%88%99"><span class="toc-number">1.2.</span> <span class="toc-text">最小版本选择原则</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Go-module-%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text">Go module 版本管理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%881%EF%BC%89Go-Module-%E5%88%9B%E5%BB%BA"><span class="toc-number">2.1.</span> <span class="toc-text">（1）Go Module 创建</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%882%EF%BC%89%E4%B8%BA%E5%BD%93%E5%89%8D-module-%E6%B7%BB%E5%8A%A0%E4%B8%80%E4%B8%AA%E4%BE%9D%E8%B5%96"><span class="toc-number">2.2.</span> <span class="toc-text">（2）为当前 module 添加一个依赖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%883%EF%BC%89%E5%8D%87%E7%BA%A7-%E9%99%8D%E7%BA%A7%E4%BE%9D%E8%B5%96%E7%9A%84%E7%89%88%E6%9C%AC"><span class="toc-number">2.3.</span> <span class="toc-text">（3）升级 &#x2F; 降级依赖的版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%884%EF%BC%89%E7%A7%BB%E9%99%A4%E4%B8%80%E4%B8%AA%E4%BE%9D%E8%B5%96"><span class="toc-number">2.4.</span> <span class="toc-text">（4）移除一个依赖</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%EF%BC%885%EF%BC%89vendor"><span class="toc-number">2.5.</span> <span class="toc-text">（5）vendor</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%A9%BA%E5%AF%BC%E5%85%A5"><span class="toc-number">2.6.</span> <span class="toc-text">空导入</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -3573,7 +3579,7 @@ http...</p>
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655351299072"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655393069836"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3814,19 +3820,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655351299072")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655393069836")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655351299072")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655393069836")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655351299072")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655393069836")
       }
     
   };
@@ -3922,7 +3928,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655351299072')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655393069836')
   
   })();
 
@@ -4049,7 +4055,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655351299072");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655393069836");
   }
 
   function loadSearchService() {
@@ -4392,7 +4398,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655351299072').then(()=>{
+    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655393069836').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4650,7 +4656,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Language/","name":"Language"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Language/Go-Module/","name":"Go Module"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Go Module","description":"从 Go 1.11 版本开始，除了 GOPATH 构建模式外，Go 又增加了一种 Go Module 构建模式。\n在 Go Module 模式下，通常一个代码仓库对应一个 Go Module。\n一个 Go Module 的顶层目录下会放置一个 go.mod 文件，每个 go.mod 文件会定义唯一一个 module，也就是说 Go Module 与 go.mod 是一一对应的。\ngo.mod 文件所在的顶层目录也被称为 module 的根目录，module 根目录以及它子目录下的所有 Go 包均归属于这个 Go Module，这个 module 也被称为 main module。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Language/Go-Module/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Language/Go-Module/","wordCount":293,"datePublished":"2021-11-17T00:54:42.000Z","dateModified":"2022-06-12T09:34:12.144Z","articleSection":"Language","keywords":"Go","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Language/","name":"Language"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Language/Go-Module/","name":"Go Module"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Go Module","description":"从 Go 1.11 版本开始，除了 GOPATH 构建模式外，Go 又增加了一种 Go Module 构建模式。\n在 Go Module 模式下，通常一个代码仓库对应一个 Go Module。\n一个 Go Module 的顶层目录下会放置一个 go.mod 文件，每个 go.mod 文件会定义唯一一个 module，也就是说 Go Module 与 go.mod 是一一对应的。\ngo.mod 文件所在的顶层目录也被称为 module 的根目录，module 根目录以及它子目录下的所有 Go 包均归属于这个 Go Module，这个 module 也被称为 main module。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Language/Go-Module/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Language/Go-Module/","wordCount":293,"datePublished":"2021-11-17T00:54:42.000Z","dateModified":"2021-12-22T07:46:00.000Z","articleSection":"Language","keywords":"Go","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

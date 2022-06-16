@@ -35,19 +35,19 @@
   <!-- 页面元数据 -->
   <title>Kotlin - 千反田</title>
   <meta name="keywords" content="Kotlin,null">
-  <meta desc name="description" content="Kotlin 是一种在 Java 虚拟机上运行的静态类型编程语言，被称之为Android 世界的Swift，由JetBrains 设计开发并开源。
+  <meta desc name="description" content="Kotlin 是一种在 Java 虚拟机上运行的静态类型编程语言，被称之为 Android 世界的 Swift，由 JetBrains 设计开发并开源。
 Kotlin 可以编译成 Java 字节码，也可以编译成 JavaScript，方便在没有 JVM 的设备上运行。
-用了Kotlin就不想回到Java，本文主要记录一... - SukiEva - 千反田">
+用了Kotlin就不想回到Java，本文主要... - SukiEva - 千反田">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="Kotlin">
 <meta property="og:url" content="http://blog.sukiu.top/Language/Language-Kotlin/index.html">
 <meta property="og:site_name" content="千反田">
-<meta property="og:description" content="Kotlin 是一种在 Java 虚拟机上运行的静态类型编程语言，被称之为Android 世界的Swift，由JetBrains 设计开发并开源。 Kotlin 可以编译成 Java 字节码，也可以编译成 JavaScript，方便在没有 JVM 的设备上运行。 用了Kotlin就不想回到Java，本文主要记录一些高级用法">
+<meta property="og:description" content="Kotlin 是一种在 Java 虚拟机上运行的静态类型编程语言，被称之为 Android 世界的 Swift，由 JetBrains 设计开发并开源。 Kotlin 可以编译成 Java 字节码，也可以编译成 JavaScript，方便在没有 JVM 的设备上运行。 用了Kotlin就不想回到Java，本文主要记录一些高级用法">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2021-10-01T11:45:40.000Z">
-<meta property="article:modified_time" content="2022-06-12T09:34:51.486Z">
+<meta property="article:modified_time" content="2021-12-22T07:24:00.000Z">
 <meta property="article:author" content="SukiEva">
 <meta property="article:tag" content="Kotlin">
 <meta name="twitter:card" content="summary">
@@ -141,7 +141,7 @@ body {
   background-color: var(--color-site-body);
   text-rendering: optimizelegibility;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
-  line-height: 1.6;
+  line-height: 2;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
@@ -1874,9 +1874,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655351299072","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655351299072","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655351299072","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655351299072","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655351299072","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655351299072","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655351299072"},"css":{"style":"/css/style.bca4d315.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655393069836","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655393069836","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655393069836","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655393069836","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655393069836","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655393069836","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655393069836"},"css":{"style":"/css/style.bca4d315.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1655351299072),
+    lastupdate: new Date(1655393069836),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2822,10 +2822,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-12T17:34:51+08:00">
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2021-12-22T15:24:00+08:00">
   <a class='notlink'>
     <i class="fa-duotone fa-calendar-pen fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年6月12日</p>
+    <p>更新于：2021年12月22日</p>
   </a>
 </div>
 
@@ -2880,18 +2880,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>Kotlin 是一种在 Java 虚拟机上运行的静态类型编程语言，被称之为Android 世界的Swift，由JetBrains 设计开发并开源。</p>
+    <p>Kotlin 是一种在 Java 虚拟机上运行的静态类型编程语言，被称之为 Android 世界的 Swift，由 JetBrains 设计开发并开源。</p>
 <p>Kotlin 可以编译成 Java 字节码，也可以编译成 JavaScript，方便在没有 JVM 的设备上运行。</p>
 <p><del>用了Kotlin就不想回到Java，本文主要记录一些高级用法</del></p>
 <span id="more"></span>
 
-<blockquote>
-<p>参考：</p>
-<p><a target="_blank" rel="noopener" href="https://developer.android.com/kotlin/coroutines?hl=zh-cn">Android 上的 Kotlin 协程  | Android 开发者  | Android Developers</a></p>
-<p><a target="_blank" rel="noopener" href="https://guolin.blog.csdn.net/article/details/105233078">《第一行代码 Android 第3版》</a></p>
-</blockquote>
 <p>更多细节可查看：<a target="_blank" rel="noopener" href="https://www.kotlincn.net/docs/reference/basic-syntax.html">基本语法 - Kotlin 语言中文站 (kotlincn.net)</a></p>
-<div class="story post-story"><h2 id="1、基本知识"><a href="#1、基本知识" class="headerlink" title="1、基本知识"></a>1、基本知识</h2><h3 id="区间"><a href="#区间" class="headerlink" title="区间"></a>区间</h3><ul>
+<div class="story post-story"><h2 id="基本知识"><a href="#基本知识" class="headerlink" title="基本知识"></a>基本知识</h2><h3 id="区间"><a href="#区间" class="headerlink" title="区间"></a>区间</h3><ul>
 <li>左闭右闭：<code>0..10</code></li>
 <li>左闭右开：<code>0 unitil 10 (step 2)</code></li>
 <li>降序（左闭右闭）：<code>10 downto 1</code></li>
@@ -2913,7 +2908,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ul>
 <h3 id="Lambda"><a href="#Lambda" class="headerlink" title="Lambda"></a>Lambda</h3><p>简而言之，就是可以作为参数传递的代码。</p>
 <p>太常用也太多了，写写就会了</p>
-</div><div class="story post-story"><h2 id="2、标准函数"><a href="#2、标准函数" class="headerlink" title="2、标准函数"></a>2、标准函数</h2><p>只介绍最常用的3个</p>
+</div><div class="story post-story"><h2 id="标准函数"><a href="#标准函数" class="headerlink" title="标准函数"></a>标准函数</h2><p>只介绍最常用的3个</p>
 <h3 id="with"><a href="#with" class="headerlink" title="with"></a>with</h3><p>一个非扩展函数：<strong>上下文对象</strong>作为参数传递，但是在 lambda 表达式内部，它可以作为接收者（<code>this</code>）使用。 <strong>返回值</strong>是 lambda 表达式结果。</p>
 <p>接收2个参数：</p>
 <ul>
@@ -2978,7 +2973,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <td align="left">是</td>
 </tr>
 </tbody></table>
-</div><div class="story post-story"><h2 id="3、拓展函数和运算符重载"><a href="#3、拓展函数和运算符重载" class="headerlink" title="3、拓展函数和运算符重载"></a>3、拓展函数和运算符重载</h2><h3 id="拓展函数"><a href="#拓展函数" class="headerlink" title="拓展函数"></a>拓展函数</h3><p>基本格式：</p>
+</div><div class="story post-story"><h2 id="拓展函数和运算符重载"><a href="#拓展函数和运算符重载" class="headerlink" title="拓展函数和运算符重载"></a>拓展函数和运算符重载</h2><h3 id="拓展函数"><a href="#拓展函数" class="headerlink" title="拓展函数"></a>拓展函数</h3><p>基本格式：</p>
 <figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fun</span> ClassName.<span class="title">methodName</span><span class="params">(pararm: <span class="type">Int</span>)</span></span>:<span class="built_in">Int</span>&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>例子：</p>
@@ -2987,14 +2982,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h3 id="运算符重载"><a href="#运算符重载" class="headerlink" title="运算符重载"></a>运算符重载</h3><p>例子：</p>
 <figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Money</span></span>(<span class="keyword">val</span> value:<span class="built_in">Int</span>)&#123;</span><br><span class="line">    <span class="keyword">operator</span> <span class="function"><span class="keyword">fun</span> <span class="title">plus</span><span class="params">(money:<span class="type">Money</span>)</span></span>:Money&#123;</span><br><span class="line">        <span class="keyword">return</span> Money(value+money.value)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="4、高阶函数和内联函数"><a href="#4、高阶函数和内联函数" class="headerlink" title="4、高阶函数和内联函数"></a>4、高阶函数和内联函数</h2><h3 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h3><p>如果一个函数接收另一个函数作为参数，或者韩非子的类型是另一个函数，则称之为高阶函数。</p>
+</div><div class="story post-story"><h2 id="高阶函数和内联函数"><a href="#高阶函数和内联函数" class="headerlink" title="高阶函数和内联函数"></a>高阶函数和内联函数</h2><h3 id="高阶函数"><a href="#高阶函数" class="headerlink" title="高阶函数"></a>高阶函数</h3><p>如果一个函数接收另一个函数作为参数，或者韩非子的类型是另一个函数，则称之为高阶函数。</p>
 <p>基本规则：<code>() -&gt; Unit</code></p>
 <p>例子如下，相当于能嵌套函数</p>
 <figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">CardItem</span><span class="params">(</span></span></span><br><span class="line"><span class="params"><span class="function">    onClick: () -&gt; <span class="type">Unit</span> = &#123;&#125;</span></span></span><br><span class="line"><span class="params"><span class="function">)</span></span> </span><br></pre></td></tr></table></figure>
 
 <h3 id="内联函数"><a href="#内联函数" class="headerlink" title="内联函数"></a>内联函数</h3><p>高阶函数实现的 Lambda 表达式在底层被转换为匿名类，每次调用都会创建一个新的匿名类实例，造成额外开销</p>
 <p>函数前添加<code>inline</code>可消除开销：<code>inline fun example()&#123;&#125;</code></p>
-</div><div class="story post-story"><h2 id="5、泛型和委托"><a href="#5、泛型和委托" class="headerlink" title="5、泛型和委托"></a>5、泛型和委托</h2><h3 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h3><p>一般编程模式下，需要给任何一个变量指定具体的类型，而泛型允许我们在不指定具体类型的情况下进行编程，这样的代码会有更好的拓展性。</p>
+</div><div class="story post-story"><h2 id="泛型和委托"><a href="#泛型和委托" class="headerlink" title="泛型和委托"></a>泛型和委托</h2><h3 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h3><p>一般编程模式下，需要给任何一个变量指定具体的类型，而泛型允许我们在不指定具体类型的情况下进行编程，这样的代码会有更好的拓展性。</p>
 <p><strong>泛型类：</strong></p>
 <figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyClass</span>&lt;<span class="type">T</span>&gt;</span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">fun</span> <span class="title">method</span><span class="params">(param: <span class="type">T</span>)</span></span>: T&#123;</span><br><span class="line">        <span class="keyword">return</span> param</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">val</span> myClass = MyClass&lt;<span class="built_in">Int</span>&gt;() <span class="comment">// 指定 Int 泛型</span></span><br><span class="line"><span class="keyword">val</span> result = myClass.method(<span class="number">123</span>) <span class="comment">// 得到 Int 返回值</span></span><br></pre></td></tr></table></figure>
 
@@ -3021,7 +3016,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h3 id="泛型协变和逆变"><a href="#泛型协变和逆变" class="headerlink" title="泛型协变和逆变"></a>泛型协变和逆变</h3><blockquote>
 <p>Todo</p>
 </blockquote>
-</div><div class="story post-story"><h2 id="6、协程"><a href="#6、协程" class="headerlink" title="6、协程"></a>6、协程</h2><p>可以理解为轻量级的线程，可以在单线程中模拟多线程效果，与线程不同点在于：</p>
+</div><div class="story post-story"><h2 id="协程"><a href="#协程" class="headerlink" title="协程"></a>协程</h2><p>可以理解为轻量级的线程，可以在单线程中模拟多线程效果，与线程不同点在于：</p>
 <ul>
 <li>线程依靠操作系统调度实现不同线程切换</li>
 <li>协程在编程语言层面实现不同协程切换，大大提高并发编程的运行效率</li>
@@ -3074,16 +3069,33 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='footer'>
        <!-- 参考资料、相关资料等 -->
       
-       <!-- 相关文章 -->
+        <div class='references'>
+          <section class='header'>
+            
+              <i class="fa-duotone fa-quote-left fa-fw" aria-hidden="true"></i>
+            
+            <span>参考资料</span>
+          </section>
+          <section class='body'>
+            <ul>
+              
+                <li>
+                  <a href="https://developer.android.com/kotlin/coroutines?hl=zh-cn" rel="external nofollow noopener noreferrer" target="_blank">
+                  Android 上的 Kotlin 协程  | Android 开发者  | Android Developers
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="https://qingmei2.blog.csdn.net/article/details/79029657" rel="external nofollow noopener noreferrer" target="_blank">
+                  Android官方架构组件:Lifecycle详解&原理分析_却把清梅嗅的博客-CSDN博客_lifecycle原理
+                  </a>
+                </li>
+              
+            </ul>
+          </section>
+        </div>
       
-        
-  <div class="related_posts">
-    <section class='header'>
-      <i class="fa-duotone fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
-    </section>
-    <section class='body'>
-      <div class="vlts-rps"><a class="item" href="\Language\Go-Module\" title="Go Module" rel="bookmark "><span class="title">Go Module</span><span class="excerpt">从 Go 1.11 版本开始，除了 GOPATH 构建模式外，Go 又增加了一种 Go Module 构建模式。
-在 Go...</span></a></div></section></div>
+       <!-- 相关文章 -->
       
       <!-- 版权声明组件 -->
       
@@ -3185,13 +3197,15 @@ ne...</p>
       
       
         <a class='next' href='/Android/Jetpack-Lifecycle/'>
-          <p class='title'>Jetpack——Lifecycle<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='title'>Jetpack Lifecycle<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>Lifecycle组件可以让任何一个类都能轻松感知到Activity的生命周期，同时不需要再Activity中编写太多额外的逻辑。
 
 
+生命周期生命周期和状态事件如图所示：
 
-参考：
-Lifecycle  | Android 开发者...</p>
+
+
+## Life...</p>
         </a>
       
     </div>
@@ -3319,7 +3333,7 @@ Lifecycle  | Android 开发者...</p>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86"><span class="toc-number">1.</span> <span class="toc-text">1、基本知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%BA%E9%97%B4"><span class="toc-number">1.1.</span> <span class="toc-text">区间</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B1%BB"><span class="toc-number">1.2.</span> <span class="toc-text">类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="toc-number">1.2.1.</span> <span class="toc-text">主构造函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AC%A1%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="toc-number">1.2.2.</span> <span class="toc-text">次构造函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="toc-number">1.2.3.</span> <span class="toc-text">修饰符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%92%8C%E5%8D%95%E4%BE%8B%E7%B1%BB"><span class="toc-number">1.2.4.</span> <span class="toc-text">数据类和单例类</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Lambda"><span class="toc-number">1.3.</span> <span class="toc-text">Lambda</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E6%A0%87%E5%87%86%E5%87%BD%E6%95%B0"><span class="toc-number">2.</span> <span class="toc-text">2、标准函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#with"><span class="toc-number">2.1.</span> <span class="toc-text">with</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#run"><span class="toc-number">2.2.</span> <span class="toc-text">run</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#apply"><span class="toc-number">2.3.</span> <span class="toc-text">apply</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E9%80%89%E6%8B%A9"><span class="toc-number">2.4.</span> <span class="toc-text">函数选择</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81%E6%8B%93%E5%B1%95%E5%87%BD%E6%95%B0%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD"><span class="toc-number">3.</span> <span class="toc-text">3、拓展函数和运算符重载</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8B%93%E5%B1%95%E5%87%BD%E6%95%B0"><span class="toc-number">3.1.</span> <span class="toc-text">拓展函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD"><span class="toc-number">3.2.</span> <span class="toc-text">运算符重载</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%92%8C%E5%86%85%E8%81%94%E5%87%BD%E6%95%B0"><span class="toc-number">4.</span> <span class="toc-text">4、高阶函数和内联函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0"><span class="toc-number">4.1.</span> <span class="toc-text">高阶函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E8%81%94%E5%87%BD%E6%95%B0"><span class="toc-number">4.2.</span> <span class="toc-text">内联函数</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81%E6%B3%9B%E5%9E%8B%E5%92%8C%E5%A7%94%E6%89%98"><span class="toc-number">5.</span> <span class="toc-text">5、泛型和委托</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%9B%E5%9E%8B"><span class="toc-number">5.1.</span> <span class="toc-text">泛型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A7%94%E6%89%98"><span class="toc-number">5.2.</span> <span class="toc-text">委托</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%9B%E5%9E%8B%E5%AE%9E%E5%8C%96"><span class="toc-number">5.3.</span> <span class="toc-text">泛型实化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%9B%E5%9E%8B%E5%8D%8F%E5%8F%98%E5%92%8C%E9%80%86%E5%8F%98"><span class="toc-number">5.4.</span> <span class="toc-text">泛型协变和逆变</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E3%80%81%E5%8D%8F%E7%A8%8B"><span class="toc-number">6.</span> <span class="toc-text">6、协程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%9E%84%E5%BB%BA%E5%99%A8"><span class="toc-number">6.1.</span> <span class="toc-text">作用域构建器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E6%89%A7%E8%A1%8C%E7%BB%93%E6%9E%9C"><span class="toc-number">6.2.</span> <span class="toc-text">获取执行结果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E5%8F%82%E6%95%B0"><span class="toc-number">6.3.</span> <span class="toc-text">线程参数</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E7%9F%A5%E8%AF%86"><span class="toc-number">1.</span> <span class="toc-text">基本知识</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8C%BA%E9%97%B4"><span class="toc-number">1.1.</span> <span class="toc-text">区间</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B1%BB"><span class="toc-number">1.2.</span> <span class="toc-text">类</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%B8%BB%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="toc-number">1.2.1.</span> <span class="toc-text">主构造函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%AC%A1%E6%9E%84%E9%80%A0%E5%87%BD%E6%95%B0"><span class="toc-number">1.2.2.</span> <span class="toc-text">次构造函数</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BF%AE%E9%A5%B0%E7%AC%A6"><span class="toc-number">1.2.3.</span> <span class="toc-text">修饰符</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%92%8C%E5%8D%95%E4%BE%8B%E7%B1%BB"><span class="toc-number">1.2.4.</span> <span class="toc-text">数据类和单例类</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Lambda"><span class="toc-number">1.3.</span> <span class="toc-text">Lambda</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%87%E5%87%86%E5%87%BD%E6%95%B0"><span class="toc-number">2.</span> <span class="toc-text">标准函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#with"><span class="toc-number">2.1.</span> <span class="toc-text">with</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#run"><span class="toc-number">2.2.</span> <span class="toc-text">run</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#apply"><span class="toc-number">2.3.</span> <span class="toc-text">apply</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%BD%E6%95%B0%E9%80%89%E6%8B%A9"><span class="toc-number">2.4.</span> <span class="toc-text">函数选择</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8B%93%E5%B1%95%E5%87%BD%E6%95%B0%E5%92%8C%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD"><span class="toc-number">3.</span> <span class="toc-text">拓展函数和运算符重载</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8B%93%E5%B1%95%E5%87%BD%E6%95%B0"><span class="toc-number">3.1.</span> <span class="toc-text">拓展函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E7%AE%97%E7%AC%A6%E9%87%8D%E8%BD%BD"><span class="toc-number">3.2.</span> <span class="toc-text">运算符重载</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0%E5%92%8C%E5%86%85%E8%81%94%E5%87%BD%E6%95%B0"><span class="toc-number">4.</span> <span class="toc-text">高阶函数和内联函数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%AB%98%E9%98%B6%E5%87%BD%E6%95%B0"><span class="toc-number">4.1.</span> <span class="toc-text">高阶函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%85%E8%81%94%E5%87%BD%E6%95%B0"><span class="toc-number">4.2.</span> <span class="toc-text">内联函数</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B3%9B%E5%9E%8B%E5%92%8C%E5%A7%94%E6%89%98"><span class="toc-number">5.</span> <span class="toc-text">泛型和委托</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%9B%E5%9E%8B"><span class="toc-number">5.1.</span> <span class="toc-text">泛型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A7%94%E6%89%98"><span class="toc-number">5.2.</span> <span class="toc-text">委托</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%9B%E5%9E%8B%E5%AE%9E%E5%8C%96"><span class="toc-number">5.3.</span> <span class="toc-text">泛型实化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B3%9B%E5%9E%8B%E5%8D%8F%E5%8F%98%E5%92%8C%E9%80%86%E5%8F%98"><span class="toc-number">5.4.</span> <span class="toc-text">泛型协变和逆变</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%8F%E7%A8%8B"><span class="toc-number">6.</span> <span class="toc-text">协程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%9E%84%E5%BB%BA%E5%99%A8"><span class="toc-number">6.1.</span> <span class="toc-text">作用域构建器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E6%89%A7%E8%A1%8C%E7%BB%93%E6%9E%9C"><span class="toc-number">6.2.</span> <span class="toc-text">获取执行结果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BA%BF%E7%A8%8B%E5%8F%82%E6%95%B0"><span class="toc-number">6.3.</span> <span class="toc-text">线程参数</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -3698,7 +3712,7 @@ Lifecycle  | Android 开发者...</p>
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655351299072"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655393069836"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3939,19 +3953,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655351299072")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655393069836")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655351299072")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655393069836")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655351299072")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655393069836")
       }
     
   };
@@ -4047,7 +4061,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655351299072')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655393069836')
   
   })();
 
@@ -4174,7 +4188,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655351299072");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655393069836");
   }
 
   function loadSearchService() {
@@ -4517,7 +4531,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655351299072').then(()=>{
+    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655393069836').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4775,7 +4789,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Language/","name":"Language"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Language/Language-Kotlin/","name":"Kotlin"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Kotlin","description":"Kotlin 是一种在 Java 虚拟机上运行的静态类型编程语言，被称之为Android 世界的Swift，由JetBrains 设计开发并开源。\nKotlin 可以编译成 Java 字节码，也可以编译成 JavaScript，方便在没有 JVM 的设备上运行。\n用了Kotlin就不想回到Java，本文主要记录一些高级用法","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Language/Language-Kotlin/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Language/Language-Kotlin/","wordCount":162,"datePublished":"2021-10-01T11:45:40.000Z","dateModified":"2022-06-12T09:34:51.486Z","articleSection":"Language","keywords":"Kotlin","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Language/","name":"Language"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Language/Language-Kotlin/","name":"Kotlin"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Kotlin","description":"Kotlin 是一种在 Java 虚拟机上运行的静态类型编程语言，被称之为 Android 世界的 Swift，由 JetBrains 设计开发并开源。\nKotlin 可以编译成 Java 字节码，也可以编译成 JavaScript，方便在没有 JVM 的设备上运行。\n用了Kotlin就不想回到Java，本文主要记录一些高级用法","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Language/Language-Kotlin/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Language/Language-Kotlin/","wordCount":165,"datePublished":"2021-10-01T11:45:40.000Z","dateModified":"2021-12-22T07:24:00.000Z","articleSection":"Language","keywords":"Kotlin","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
