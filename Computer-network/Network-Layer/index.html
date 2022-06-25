@@ -35,18 +35,18 @@
   <!-- 页面元数据 -->
   <title>网络层 - 千反田</title>
   <meta name="keywords" content="Network,null">
-  <meta desc name="description" content="网络层（Network Layer）是 OSI模型 中的第三层（TCP/IP模型中的网际层），提供路由和寻址的功能，使两终端系统能够互连且决定最佳路径，并具有一定的拥塞控制和流量控制的能力。由于TCP/IP协议体系中的网络层功能由IP协议规定和实现，故又称IP层。
-网络层协议负责提供主机间的逻辑通信；传输层协议负... - SukiEva - 千反田">
+  <meta desc name="description" content="网络层（Network Layer）是 OSI 模型 中的第三层（TCP/IP 模型中的网际层），提供路由和寻址的功能，使两终端系统能够互连且决定最佳路径，并具有一定的拥塞控制和流量控制的能力。由于 TCP/IP 协议体系中的网络层功能由 IP 协议规定和实现，故又称 IP 层。
+网络层协议负责提供主机间的逻辑通... - SukiEva - 千反田">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="网络层">
 <meta property="og:url" content="http://blog.sukiu.top/Computer-Network/Network-Layer/index.html">
 <meta property="og:site_name" content="千反田">
-<meta property="og:description" content="网络层（Network Layer）是 OSI模型 中的第三层（TCP&#x2F;IP模型中的网际层），提供路由和寻址的功能，使两终端系统能够互连且决定最佳路径，并具有一定的拥塞控制和流量控制的能力。由于TCP&#x2F;IP协议体系中的网络层功能由IP协议规定和实现，故又称IP层。 网络层协议负责提供主机间的逻辑通信；传输层协议负责提供进程间的逻辑通信。 功能：  路由选择与分组转发 最佳路径 异构网络互联 拥塞控">
+<meta property="og:description" content="网络层（Network Layer）是 OSI 模型 中的第三层（TCP&#x2F;IP 模型中的网际层），提供路由和寻址的功能，使两终端系统能够互连且决定最佳路径，并具有一定的拥塞控制和流量控制的能力。由于 TCP&#x2F;IP 协议体系中的网络层功能由 IP 协议规定和实现，故又称 IP 层。 网络层协议负责提供主机间的逻辑通信；传输层协议负责提供进程间的逻辑通信。 功能：  路由选择与分组转发 最佳路径 异构">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2021-12-22T06:57:49.000Z">
-<meta property="article:modified_time" content="2021-12-22T09:33:00.000Z">
+<meta property="article:published_time" content="2021-12-22T06:57:00.000Z">
+<meta property="article:modified_time" content="2021-12-22T06:57:00.000Z">
 <meta property="article:author" content="SukiEva">
 <meta property="article:tag" content="Network">
 <meta name="twitter:card" content="summary">
@@ -1873,9 +1873,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655443923574","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655443923574","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655443923574","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655443923574","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655443923574","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655443923574","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655443923574"},"css":{"style":"/css/style.bca4d315.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1656151540248","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1656151540248","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1656151540248","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1656151540248","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1656151540248","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1656151540248","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1656151540248"},"css":{"style":"/css/style.bca4d315.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1655443923574),
+    lastupdate: new Date(1656151540248),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2811,7 +2811,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div class='new-meta-box'>
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-12-22T14:57:49+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-12-22T14:57:00+08:00">
   <a class='notlink'>
     <i class="fa-duotone fa-calendar fa-fw" aria-hidden="true"></i>
     <p>发布于：2021年12月22日</p>
@@ -2821,7 +2821,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateModified" datetime="2021-12-22T17:33:00+08:00">
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2021-12-22T14:57:00+08:00">
   <a class='notlink'>
     <i class="fa-duotone fa-calendar-pen fa-fw" aria-hidden="true"></i>
     <p>更新于：2021年12月22日</p>
@@ -2879,7 +2879,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p><strong>网络层</strong>（<strong>Network Layer</strong>）是 OSI模型 中的第三层（TCP/IP模型中的网际层），提供路由和寻址的功能，使两终端系统能够互连且决定最佳路径，并具有一定的拥塞控制和流量控制的能力。<br>由于TCP/IP协议体系中的网络层功能由IP协议规定和实现，故又称IP层。</p>
+    <p><strong>网络层</strong>（<strong>Network Layer</strong>）是 OSI 模型 中的第三层（TCP/IP 模型中的网际层），提供路由和寻址的功能，使两终端系统能够互连且决定最佳路径，并具有一定的拥塞控制和流量控制的能力。<br>由于 TCP/IP 协议体系中的网络层功能由 IP 协议规定和实现，故又称 IP 层。</p>
 <p>网络层协议负责提供<strong>主机</strong>间的逻辑通信；传输层协议负责提供<strong>进程</strong>间的逻辑通信。</p>
 <p>功能：</p>
 <ul>
@@ -2899,24 +2899,24 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ul>
 <span id="more"></span>
 
-<div class="story post-story"><h2 id="IP"><a href="#IP" class="headerlink" title="IP"></a>IP</h2><p>该协议工作在网络层，主要目的就是为了提高网络的可扩展性。</p>
-<p>和传输层 TCP 相比，IP 协议提供一种无连接/不可靠、尽力而为的数据包传输服务，其与TCP协议（传输控制协议）一起构成了TCP/IP 协议族的核心。</p>
+<h1 id="IP"><a href="#IP" class="headerlink" title="IP"></a>IP</h1><p>该协议工作在网络层，主要目的就是为了提高网络的可扩展性。</p>
+<p>和传输层 TCP 相比，IP 协议提供一种无连接/不可靠、尽力而为的数据包传输服务，其与 TCP 协议（传输控制协议）一起构成了 TCP/IP 协议族的核心。</p>
 <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221614969.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221614969.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom: 67%;" />
 
 <p>IP 协议主要有以下几个作用：</p>
 <ul>
-<li><strong>寻址和路由</strong>：在IP 数据包中会携带源 IP 地址和目的 IP 地址来标识该数据包的源主机和目的主机。IP 数据报在传输过程中，每个中间节点（IP 网关、路由器）只根据网络地址进行转发，如果中间节点是路由器，则路由器会根据路由表选择合适的路径。IP 协议根据路由选择协议提供的路由信息对 IP 数据报进行转发，直至抵达目的主机。</li>
+<li><strong>寻址和路由</strong>：在 IP 数据包中会携带源 IP 地址和目的 IP 地址来标识该数据包的源主机和目的主机。IP 数据报在传输过程中，每个中间节点（IP 网关、路由器）只根据网络地址进行转发，如果中间节点是路由器，则路由器会根据路由表选择合适的路径。IP 协议根据路由选择协议提供的路由信息对 IP 数据报进行转发，直至抵达目的主机。</li>
 <li><strong>分段与重组</strong>：IP 数据包在传输过程中可能会经过不同的网络，在不同的网络中数据包的最大长度限制是不同的，IP 协议通过给每个 IP 数据包分配一个标识符以及分段与组装的相关信息，使得数据包在不同的网络中能够传输，被分段后的 IP 数据报可以独立地在网络中进行转发，在到达目的主机后由目的主机完成重组工作，恢复出原来的 IP 数据包。</li>
 </ul>
-<h3 id="数据报"><a href="#数据报" class="headerlink" title="数据报"></a>数据报</h3><p>总长度单位1B，片位移单位8B，首部单位4B</p>
+<div class="story post-story"><h2 id="数据报"><a href="#数据报" class="headerlink" title="数据报"></a>数据报</h2><p>总长度单位 1B，片位移单位 8B，首部单位 4B</p>
 <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221622589.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221622589.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom:50%;" />
 
 <blockquote>
 <p><strong>生存时间</strong> ：TTL，它的存在是为了防止无法交付的数据报在互联网中不断兜圈子。以路由器跳数为单位，当 TTL 为 0 时就丢弃数据报。</p>
 </blockquote>
-<h4 id="分片"><a href="#分片" class="headerlink" title="分片"></a>分片</h4><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221624491.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221624491.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom: 60%;" />
+<h3 id="分片"><a href="#分片" class="headerlink" title="分片"></a>分片</h3><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221624491.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221624491.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom: 60%;" />
 
-<h3 id="IPV4"><a href="#IPV4" class="headerlink" title="IPV4"></a>IPV4</h3><h4 id="IP地址分类"><a href="#IP地址分类" class="headerlink" title="IP地址分类"></a>IP地址分类</h4><p>IP地址由两部分组成，网络号和主机号，其中不同分类具有不同的网络号长度，并且是固定的。</p>
+</div><div class="story post-story"><h2 id="IPV4"><a href="#IPV4" class="headerlink" title="IPV4"></a>IPV4</h2><h3 id="IP-地址分类"><a href="#IP-地址分类" class="headerlink" title="IP 地址分类"></a>IP 地址分类</h3><p>IP 地址由两部分组成，网络号和主机号，其中不同分类具有不同的网络号长度，并且是固定的。</p>
 <p><code>IP 地址 ::= &#123;&lt; 网络号 &gt;, &lt; 主机号 &gt;&#125;</code></p>
 <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221637019.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221637019.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom: 33%;" />
 
@@ -2926,55 +2926,55 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>另外还有私有地址（局域网）：</p>
 <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221641441.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221641441.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom: 33%;" />
 
-<h4 id="子网划分"><a href="#子网划分" class="headerlink" title="子网划分"></a>子网划分</h4><p>通过在主机号字段中拿一部分作为子网号，把两级 IP 地址划分为三级 IP 地址。</p>
+<h3 id="子网划分"><a href="#子网划分" class="headerlink" title="子网划分"></a>子网划分</h3><p>通过在主机号字段中拿一部分作为子网号，把两级 IP 地址划分为三级 IP 地址。</p>
 <p><code>IP 地址 ::= &#123;&lt; 网络号 &gt;, &lt; 子网号 &gt;, &lt; 主机号 &gt;&#125;</code></p>
 <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221643433.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221643433.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom: 40%;" />
 
-<p>子网掩码：主机位全0，其他全1（网络位、子网位）</p>
-<h4 id="NAT-网络地址转换"><a href="#NAT-网络地址转换" class="headerlink" title="NAT 网络地址转换"></a>NAT 网络地址转换</h4><p>NAT（Network Address Translation)，它是一种把内部私有网络地址翻译成公有网络 IP 地址的技术。</p>
+<p>子网掩码：主机位全 0，其他全 1（网络位、子网位）</p>
+<h3 id="NAT-网络地址转换"><a href="#NAT-网络地址转换" class="headerlink" title="NAT 网络地址转换"></a>NAT 网络地址转换</h3><p>NAT（Network Address Translation)，它是一种把内部私有网络地址翻译成公有网络 IP 地址的技术。</p>
 <p>该技术不仅能解决 IP 地址不足的问题，而且还能隐藏和保护网络内部主机，从而避免来自外部网络的攻击。</p>
 <blockquote>
-<p>在专用网连接到因特网（公用地址）的路由器上安装NAT软件（NAT路由器），它至少有一个有效的外部全球IP地址</p>
+<p>在专用网连接到因特网（公用地址）的路由器上安装 NAT 软件（NAT 路由器），它至少有一个有效的外部全球 IP 地址</p>
 <ul>
-<li>NAT路由器根据转换表替换源IP地址或者目的IP地址和端口号，所以转发数据报时需查看和转换传输层的端口号</li>
-<li>普通路由器仅工作在网络层，不改变源IP和目的IP</li>
+<li>NAT 路由器根据转换表替换源 IP 地址或者目的 IP 地址和端口号，所以转发数据报时需查看和转换传输层的端口号</li>
+<li>普通路由器仅工作在网络层，不改变源 IP 和目的 IP</li>
 </ul>
 </blockquote>
 <p>NAT 的实现有三种方式：</p>
 <ul>
 <li>静态转换，一对一，一个私有对应一个公有</li>
 <li>动态转换，一对多，一个私有每次转换的公有不唯一</li>
-<li>端口多路复用，多对一，多个私有共享一个合法的外部IP，映射到了不同的端口上</li>
+<li>端口多路复用，多对一，多个私有共享一个合法的外部 IP，映射到了不同的端口上</li>
 </ul>
-<h4 id="CIDR-无分类域间路由选择"><a href="#CIDR-无分类域间路由选择" class="headerlink" title="CIDR 无分类域间路由选择"></a>CIDR 无分类域间路由选择</h4><p>CIDR（Classless Inter-Domain Routing）</p>
+<h3 id="CIDR-无分类域间路由选择"><a href="#CIDR-无分类域间路由选择" class="headerlink" title="CIDR 无分类域间路由选择"></a>CIDR 无分类域间路由选择</h3><p>CIDR（Classless Inter-Domain Routing）</p>
 <p>无分类编址 CIDR 消除了传统 A 类、B 类和 C 类地址以及划分子网的概念，使用网络前缀和主机号来对 IP 地址进行编码，网络前缀的长度可以根据需要变化。</p>
 <p><code>IP 地址 ::= &#123;&lt; 网络前缀号 &gt;, &lt; 主机号 &gt;&#125;</code></p>
 <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221647430.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221647430.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom: 40%;" />
 
-<h3 id="IPV6"><a href="#IPV6" class="headerlink" title="IPV6"></a>IPV6</h3><p>从根本上解决 IPV4 地址不够的问题。</p>
+</div><div class="story post-story"><h2 id="IPV6"><a href="#IPV6" class="headerlink" title="IPV6"></a>IPV6</h2><p>从根本上解决 IPV4 地址不够的问题。</p>
 <blockquote>
-<p>其他方法：<br>NAT：网络地址转换<br>DHCP：动态主机配置协议。动态分配 IP 地址，只给接入网络的设备分配IP地址<br>（DHCP是应用层协议，使用客户/服务器方式，客户端和服务端通过广播方式进行交互，基于UDP）</p>
+<p>其他方法：<br>NAT：网络地址转换<br>DHCP：动态主机配置协议。动态分配 IP 地址，只给接入网络的设备分配 IP 地址<br>（DHCP 是应用层协议，使用客户/服务器方式，客户端和服务端通过广播方式进行交互，基于 UDP）</p>
 </blockquote>
-<p>IPV6 将地址从32位（4B）扩大到了128位（64B）</p>
+<p>IPV6 将地址从 32 位（4B）扩大到了 128 位（64B）</p>
 <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221715771.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221715771.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom: 78%;" />
 
-</div><div class="story post-story"><h2 id="ARP"><a href="#ARP" class="headerlink" title="ARP"></a>ARP</h2><p>ARP（Address Resolution Protocol）地址解析协议，完成IP地址到MAC地址的映射（解决下一跳走哪的问题）</p>
-<h3 id="使用过程"><a href="#使用过程" class="headerlink" title="使用过程"></a>使用过程</h3><ol>
-<li>检查ARP高速缓存，有对应表项则写入MAC帧，没有则用目的MAC地址为FF-FF-FF-FF-FF-FF的帧封装并<strong>广播ARP请求分组</strong>，同一局域网内所有主机都能受到该请求</li>
-<li>目的主机收到请求后就会向源主机单播一个ARP响应分组，源主机收到后将此映射写入ARP缓存（10～20min更新一次）</li>
+<h1 id="ARP"><a href="#ARP" class="headerlink" title="ARP"></a>ARP</h1><p>ARP（Address Resolution Protocol）地址解析协议，完成 IP 地址到 MAC 地址的映射（解决下一跳走哪的问题）</p>
+</div><div class="story post-story"><h2 id="使用过程"><a href="#使用过程" class="headerlink" title="使用过程"></a>使用过程</h2><ol>
+<li>检查 ARP 高速缓存，有对应表项则写入 MAC 帧，没有则用目的 MAC 地址为 FF-FF-FF-FF-FF-FF 的帧封装并<strong>广播 ARP 请求分组</strong>，同一局域网内所有主机都能受到该请求</li>
+<li>目的主机收到请求后就会向源主机单播一个 ARP 响应分组，源主机收到后将此映射写入 ARP 缓存（10～20min 更新一次）</li>
 </ol>
-<h3 id="典型情况"><a href="#典型情况" class="headerlink" title="典型情况"></a>典型情况</h3><ul>
-<li>主机A发给本网络上的主机B：用ARP找到B的硬件地址</li>
-<li>主机A发给另一网络上的主机B：用ARP找到本网络上一个路由器（网关）的硬件地址</li>
-<li>路由器发给本网络的主机B：用ARP找到B的硬件地址</li>
-<li>路由器发给另一网络的主机B：用ARP找到本网络上的一个路由器的硬件地址</li>
+</div><div class="story post-story"><h2 id="典型情况"><a href="#典型情况" class="headerlink" title="典型情况"></a>典型情况</h2><ul>
+<li>主机 A 发给本网络上的主机 B：用 ARP 找到 B 的硬件地址</li>
+<li>主机 A 发给另一网络上的主机 B：用 ARP 找到本网络上一个路由器（网关）的硬件地址</li>
+<li>路由器发给本网络的主机 B：用 ARP 找到 B 的硬件地址</li>
+<li>路由器发给另一网络的主机 B：用 ARP 找到本网络上的一个路由器的硬件地址</li>
 </ul>
-</div><div class="story post-story"><h2 id="ICMP"><a href="#ICMP" class="headerlink" title="ICMP"></a>ICMP</h2><p>ICMP（Internet Control Message Protocol）是网际控制报文协议，主要是实现 IP 协议中未实现的部分功能，是一种网络层协议。该协议并不传输数据，只传输控制信息来辅助网络层通信。</p>
-<h4 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h4><ul>
+<h1 id="ICMP"><a href="#ICMP" class="headerlink" title="ICMP"></a>ICMP</h1><p>ICMP（Internet Control Message Protocol）是网际控制报文协议，主要是实现 IP 协议中未实现的部分功能，是一种网络层协议。该协议并不传输数据，只传输控制信息来辅助网络层通信。</p>
+</div><div class="story post-story"><h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><ul>
 <li>验证网络是否畅通（确认接收方是否成功接收到 IP 数据包）</li>
 <li>辅助 IP 协议实现可靠传输（若发生 IP 丢包，ICMP 会通知发送方 IP 数据包被丢弃的原因，之后发送方会进行相应的处理）</li>
 </ul>
-<h4 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h4><ul>
+</div><div class="story post-story"><h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><ul>
 <li><strong>Ping</strong>：测试两个主机间的连通性，使用 ICMP 会送请求和回答报文</li>
 <li><strong>TraceRoute</strong>：跟踪一个分组从源点到终点的路径，使用 ICMP 时间超过差错报告报文</li>
 </ul>
@@ -2988,23 +2988,25 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>两台设备间的网络延迟是否过大（例如路由设置不合理），导致 ICMP 报文无法在规定的时间内收到</li>
 </ul>
 </blockquote>
-</div><div class="story post-story"><h2 id="IGMP"><a href="#IGMP" class="headerlink" title="IGMP"></a>IGMP</h2><p>IGMP（Internet Group Management Protocol）网际组管理协议，让路由器知道局域网上是否有主机（的进程）参加或退出某个组播组。</p>
+<p> IGMP</p>
+<p>IGMP（Internet Group Management Protocol）网际组管理协议，让路由器知道局域网上是否有主机（的进程）参加或退出某个组播组。</p>
 <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221718842.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112221718842.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom: 67%;" />
 
-</div><div class="story post-story"><h2 id="路由器"><a href="#路由器" class="headerlink" title="路由器"></a>路由器</h2><p>路由器是网络层设备，通过数据包中的目的 IP 地址识别不同的网络从而确定数据转发的目的地址，网络号是唯一的。</p>
+<p> 路由器</p>
+<p>路由器是网络层设备，通过数据包中的目的 IP 地址识别不同的网络从而确定数据转发的目的地址，网络号是唯一的。</p>
 <p>路由器根据路由选择协议和路由表信息从而确定数据的转发路径，直到到达目的网络，它工作于网络层。</p>
 <blockquote>
 <p>交换机用于局域网，利用主机的物理地址（MAC 地址）确定数据转发的目的地址，它工作于数据链路层。</p>
 </blockquote>
-<h3 id="分组转发流程"><a href="#分组转发流程" class="headerlink" title="分组转发流程"></a>分组转发流程</h3><ol>
+<h1 id="分组转发流程"><a href="#分组转发流程" class="headerlink" title="分组转发流程"></a>分组转发流程</h1><ol>
 <li>从 IP 数据包中提取出目的主机的 IP 地址，找到其所在的网络</li>
 <li>判断目的 IP 地址所在的网络是否与本路由器直接相连，如果是，则不需要经过其它路由器<strong>直接交付</strong>，否则执行 3</li>
 <li>检查路由表中是否有目的 IP 地址的特定主机路由。如果有，则按照路由表传送到下一跳路由器中，否则执行 4</li>
-<li>逐条检查路由表，使用每一行的子网掩码与目的IP匹配。若找到匹配路由，则按照路由表转发到下一跳路由器中，否则执行步骤 5</li>
+<li>逐条检查路由表，使用每一行的子网掩码与目的 IP 匹配。若找到匹配路由，则按照路由表转发到下一跳路由器中，否则执行步骤 5</li>
 <li>若路由表中设置有默认路由，则按照默认路由转发到默认路由器中，否则执行步骤 6</li>
 <li>无法找到合适路由，向源主机报错</li>
 </ol>
-<h3 id="路由协议"><a href="#路由协议" class="headerlink" title="路由协议"></a>路由协议</h3><ul>
+<h1 id="路由协议"><a href="#路由协议" class="headerlink" title="路由协议"></a>路由协议</h1><ul>
 <li>RIP（Routing Information Protocol）路由信息协议</li>
 <li>OSPF（Open Shortest Path First）开放式最短路径优先</li>
 <li>BGP（Border Gateway Protocol）边界网关协议</li>
@@ -3276,7 +3278,7 @@ Aurora 家族成员...</p>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#IP"><span class="toc-number">1.</span> <span class="toc-text">IP</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E6%8A%A5"><span class="toc-number">1.1.</span> <span class="toc-text">数据报</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E7%89%87"><span class="toc-number">1.1.1.</span> <span class="toc-text">分片</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IPV4"><span class="toc-number">1.2.</span> <span class="toc-text">IPV4</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#IP%E5%9C%B0%E5%9D%80%E5%88%86%E7%B1%BB"><span class="toc-number">1.2.1.</span> <span class="toc-text">IP地址分类</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%AD%90%E7%BD%91%E5%88%92%E5%88%86"><span class="toc-number">1.2.2.</span> <span class="toc-text">子网划分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#NAT-%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2"><span class="toc-number">1.2.3.</span> <span class="toc-text">NAT 网络地址转换</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#CIDR-%E6%97%A0%E5%88%86%E7%B1%BB%E5%9F%9F%E9%97%B4%E8%B7%AF%E7%94%B1%E9%80%89%E6%8B%A9"><span class="toc-number">1.2.4.</span> <span class="toc-text">CIDR 无分类域间路由选择</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#IPV6"><span class="toc-number">1.3.</span> <span class="toc-text">IPV6</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ARP"><span class="toc-number">2.</span> <span class="toc-text">ARP</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B"><span class="toc-number">2.1.</span> <span class="toc-text">使用过程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B8%E5%9E%8B%E6%83%85%E5%86%B5"><span class="toc-number">2.2.</span> <span class="toc-text">典型情况</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ICMP"><span class="toc-number">3.</span> <span class="toc-text">ICMP</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD"><span class="toc-number">3.0.1.</span> <span class="toc-text">功能</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BA%94%E7%94%A8"><span class="toc-number">3.0.2.</span> <span class="toc-text">应用</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IGMP"><span class="toc-number">4.</span> <span class="toc-text">IGMP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%AF%E7%94%B1%E5%99%A8"><span class="toc-number">5.</span> <span class="toc-text">路由器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E7%BB%84%E8%BD%AC%E5%8F%91%E6%B5%81%E7%A8%8B"><span class="toc-number">5.1.</span> <span class="toc-text">分组转发流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%AF%E7%94%B1%E5%8D%8F%E8%AE%AE"><span class="toc-number">5.2.</span> <span class="toc-text">路由协议</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E6%8A%A5"><span class="toc-number">1.</span> <span class="toc-text">数据报</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E7%89%87"><span class="toc-number">1.1.</span> <span class="toc-text">分片</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IPV4"><span class="toc-number">2.</span> <span class="toc-text">IPV4</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#IP-%E5%9C%B0%E5%9D%80%E5%88%86%E7%B1%BB"><span class="toc-number">2.1.</span> <span class="toc-text">IP 地址分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%90%E7%BD%91%E5%88%92%E5%88%86"><span class="toc-number">2.2.</span> <span class="toc-text">子网划分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#NAT-%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2"><span class="toc-number">2.3.</span> <span class="toc-text">NAT 网络地址转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#CIDR-%E6%97%A0%E5%88%86%E7%B1%BB%E5%9F%9F%E9%97%B4%E8%B7%AF%E7%94%B1%E9%80%89%E6%8B%A9"><span class="toc-number">2.4.</span> <span class="toc-text">CIDR 无分类域间路由选择</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#IPV6"><span class="toc-number">3.</span> <span class="toc-text">IPV6</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E8%BF%87%E7%A8%8B"><span class="toc-number">4.</span> <span class="toc-text">使用过程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B8%E5%9E%8B%E6%83%85%E5%86%B5"><span class="toc-number">5.</span> <span class="toc-text">典型情况</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8A%9F%E8%83%BD"><span class="toc-number">6.</span> <span class="toc-text">功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%94%E7%94%A8"><span class="toc-number">7.</span> <span class="toc-text">应用</span></a></li></ol>
     </div>
   </section>
 
@@ -3655,7 +3657,7 @@ Aurora 家族成员...</p>
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655443923574"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1656151540248"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3896,19 +3898,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655443923574")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1656151540248")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655443923574")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1656151540248")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655443923574")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1656151540248")
       }
     
   };
@@ -4004,7 +4006,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655443923574')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1656151540248')
   
   })();
 
@@ -4131,7 +4133,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655443923574");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1656151540248");
   }
 
   function loadSearchService() {
@@ -4474,7 +4476,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655443923574').then(()=>{
+    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1656151540248').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4732,7 +4734,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Computer-Network/","name":"Computer Network"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Computer-Network/Network-Layer/","name":"网络层"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"网络层","description":"网络层（Network Layer）是 OSI模型 中的第三层（TCP/IP模型中的网际层），提供路由和寻址的功能，使两终端系统能够互连且决定最佳路径，并具有一定的拥塞控制和流量控制的能力。由于TCP/IP协议体系中的网络层功能由IP协议规定和实现，故又称IP层。\n网络层协议负责提供主机间的逻辑通信；传输层协议负责提供进程间的逻辑通信。\n功能：\n\n路由选择与分组转发 最佳路径\n异构网络互联\n拥塞控制\n\n网络层重要协议：\n\nIP（Internet Protocol）网际互连协议\n\n与 IP 协议配套使用的还有三个协议：\n\nARP（Address Resolution Protocol）地址解析协议\nICMP（Internet Control Message Protocol）网际控制报文协议\nIGMP（Internet Group Management Protocol）网际组管理协议\n","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Computer-Network/Network-Layer/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Computer-Network/Network-Layer/","wordCount":398,"datePublished":"2021-12-22T06:57:49.000Z","dateModified":"2021-12-22T09:33:00.000Z","articleSection":"Computer Network","keywords":"Network","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Computer-Network/","name":"Computer Network"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Computer-Network/Network-Layer/","name":"网络层"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"网络层","description":"网络层（Network Layer）是 OSI 模型 中的第三层（TCP/IP 模型中的网际层），提供路由和寻址的功能，使两终端系统能够互连且决定最佳路径，并具有一定的拥塞控制和流量控制的能力。由于 TCP/IP 协议体系中的网络层功能由 IP 协议规定和实现，故又称 IP 层。\n网络层协议负责提供主机间的逻辑通信；传输层协议负责提供进程间的逻辑通信。\n功能：\n\n路由选择与分组转发 最佳路径\n异构网络互联\n拥塞控制\n\n网络层重要协议：\n\nIP（Internet Protocol）网际互连协议\n\n与 IP 协议配套使用的还有三个协议：\n\nARP（Address Resolution Protocol）地址解析协议\nICMP（Internet Control Message Protocol）网际控制报文协议\nIGMP（Internet Group Management Protocol）网际组管理协议\n","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Computer-Network/Network-Layer/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Computer-Network/Network-Layer/","wordCount":406,"datePublished":"2021-12-22T06:57:00.000Z","dateModified":"2021-12-22T06:57:00.000Z","articleSection":"Computer Network","keywords":"Network","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

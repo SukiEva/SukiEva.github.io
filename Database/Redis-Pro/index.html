@@ -46,8 +46,8 @@
 <meta property="og:description" content="《Redis 设计与实现》一书全面而完整地讲解了 Redis 的内部运行机制， 对 Redis 的大多数单机功能以及所有多机功能的实现原理进行了介绍， 展示了这些功能的核心数据结构以及关键的算法思想。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2022-03-03T04:02:35.000Z">
-<meta property="article:modified_time" content="2022-06-12T06:37:00.000Z">
+<meta property="article:published_time" content="2022-03-03T04:02:00.000Z">
+<meta property="article:modified_time" content="2022-03-03T04:02:00.000Z">
 <meta property="article:author" content="SukiEva">
 <meta property="article:tag" content="Redis">
 <meta name="twitter:card" content="summary">
@@ -1874,9 +1874,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655443923574","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655443923574","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655443923574","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655443923574","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655443923574","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655443923574","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655443923574"},"css":{"style":"/css/style.bca4d315.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1656151540248","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1656151540248","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1656151540248","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1656151540248","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1656151540248","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1656151540248","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1656151540248"},"css":{"style":"/css/style.bca4d315.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1655443923574),
+    lastupdate: new Date(1656151540248),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2812,7 +2812,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div class='new-meta-box'>
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-03-03T12:02:35+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-03-03T12:02:00+08:00">
   <a class='notlink'>
     <i class="fa-duotone fa-calendar fa-fw" aria-hidden="true"></i>
     <p>发布于：2022年3月3日</p>
@@ -2822,10 +2822,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateModified" datetime="2022-06-12T14:37:00+08:00">
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2022-03-03T12:02:00+08:00">
   <a class='notlink'>
     <i class="fa-duotone fa-calendar-pen fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年6月12日</p>
+    <p>更新于：2022年3月3日</p>
   </a>
 </div>
 
@@ -2885,7 +2885,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </blockquote>
 <span id="more"></span>
 
-<div class="story post-story"><h2 id="底层数据结构"><a href="#底层数据结构" class="headerlink" title="底层数据结构"></a>底层数据结构</h2><h3 id="简单动态字符串"><a href="#简单动态字符串" class="headerlink" title="简单动态字符串"></a>简单动态字符串</h3><blockquote>
+<h1 id="底层数据结构"><a href="#底层数据结构" class="headerlink" title="底层数据结构"></a>底层数据结构</h1><div class="story post-story"><h2 id="简单动态字符串"><a href="#简单动态字符串" class="headerlink" title="简单动态字符串"></a>简单动态字符串</h2><blockquote>
 <ul>
 <li>Redis 只会使用 C 字符串作为字面量， 在大多数情况下， Redis 使用 SDS （Simple Dynamic String，简单动态字符串）作为字符串表示。</li>
 <li>比起 C 字符串， SDS 具有以下优点：<ol>
@@ -2909,7 +2909,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>键值对的键是一个字符串对象， 对象的底层实现是一个保存着字符串 <code>&quot;msg&quot;</code> 的 SDS 。</li>
 <li>键值对的值也是一个字符串对象， 对象的底层实现是一个保存着字符串 <code>&quot;hello world&quot;</code> 的 SDS 。</li>
 </ul>
-<h4 id="底层实现"><a href="#底层实现" class="headerlink" title="底层实现"></a>底层实现</h4><p>每个 <code>sds.h/sdshdr</code> 结构表示一个 SDS 值：</p>
+<h3 id="底层实现"><a href="#底层实现" class="headerlink" title="底层实现"></a>底层实现</h3><p>每个 <code>sds.h/sdshdr</code> 结构表示一个 SDS 值：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">sdshdr</span> &#123;</span></span><br><span class="line">    <span class="comment">// 记录 buf 数组中已使用字节的数量</span></span><br><span class="line">    <span class="comment">// 等于 SDS 所保存字符串的长度</span></span><br><span class="line">    <span class="keyword">int</span> len;</span><br><span class="line">    <span class="comment">// 记录 buf 数组中未使用字节的数量</span></span><br><span class="line">    <span class="keyword">int</span> free;</span><br><span class="line">    <span class="comment">// 字节数组，用于保存字符串</span></span><br><span class="line">    <span class="keyword">char</span> buf[];</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 <p>一个 SDS 示例：</p>
@@ -2923,11 +2923,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <blockquote>
 <p>SDS 遵循 C 字符串以空字符结尾的惯例， 保存空字符的 <code>1</code> 字节空间不计算在 SDS 的 <code>len</code> 属性里面， 并且为空字符分配额外的 <code>1</code> 字节空间， 以及添加空字符到字符串末尾等操作都是由 SDS 函数自动完成的， 所以这个空字符对于 SDS 的使用者来说是完全透明的。</p>
 <p>遵循空字符结尾这一惯例的好处是， SDS 可以直接重用一部分 C 字符串函数库里面的函数。</p>
-<p>如果有个指针 s 指向SDS，那么可以通过<code>printf(&quot;%s&quot;, s-&gt;buf);</code>打印</p>
+<p>如果有个指针 s 指向 SDS，那么可以通过 <code>printf(&quot;%s&quot;, s-&gt;buf);</code> 打印</p>
 </blockquote>
 <p>下面这个 SDS 为 <code>buf</code> 数组分配了五字节未使用空间， 所以它的 <code>free</code> 属性的值为 <code>5</code></p>
 <p><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202203031221680.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202203031221680.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="未使用空间SDS"></p>
-<h4 id="SDS-与-C-字符串的区别"><a href="#SDS-与-C-字符串的区别" class="headerlink" title="SDS 与 C 字符串的区别"></a>SDS 与 C 字符串的区别</h4><p>C 语言使用长度为 <code>N+1</code> 的字符数组来表示长度为 <code>N</code> 的字符串， 并且字符数组的最后一个元素总是空字符 <code>&#39;\0&#39;</code></p>
+<h3 id="SDS-与-C-字符串的区别"><a href="#SDS-与-C-字符串的区别" class="headerlink" title="SDS 与 C 字符串的区别"></a>SDS 与 C 字符串的区别</h3><p>C 语言使用长度为 <code>N+1</code> 的字符数组来表示长度为 <code>N</code> 的字符串， 并且字符数组的最后一个元素总是空字符 <code>&#39;\0&#39;</code></p>
 <p><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202203031223573.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202203031223573.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="C字符串"></p>
 <p>以上并不能满足 Redis 对字符串在安全性、效率、以及功能方面的要求：</p>
 <p>SDS 通过未使用空间解除了字符串长度和底层数组长度之间的关联：</p>
@@ -2946,9 +2946,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li><strong>惰性空间释放</strong>：优化 SDS 的字符串缩短操作，程序并不立即使用内存重分配来回收缩短后多出来的字节， 而是使用 <code>free</code> 属性将这些字节的数量记录起来， 并等待将来使用。</li>
 </ul>
 </blockquote>
-<table><thead><tr><th>C 字符串</th><th>SDS</th></tr></thead><tbody><tr><td>获取字符串长度的复杂度为&nbsp;O(N)&nbsp;</td><td>获取字符串长度的复杂度为&nbsp;O(1)&nbsp;</td></tr><tr><td>API 是不安全的，可能会造成缓冲区溢出</td><td>API 是安全的，不会造成缓冲区溢出，自动将 SDS 的空间扩展至执行修改所需的大小</td></tr><tr><td>修改字符串长度&nbsp;<code>N</code>&nbsp;次<b>必然</b>需要执行&nbsp;<code>N</code>&nbsp;次内存重分配</td><td>修改字符串长度&nbsp;<code>N</code>&nbsp;次<b>最多</b>需要执行&nbsp;<code>N</code>&nbsp;次内存重分配。</td></tr><tr><td>只能保存文本数据</td><td>可以保存文本或者二进制数据，以处理二进制的方式来处理 SDS 存放在 buf 数组里的数据，</td></tr><tr><td>可以使用所有&nbsp;<code>&lt;string.h&gt;</code>&nbsp;库中的函数</td><td>可以使用一部分&nbsp;<code>&lt;string.h&gt;</code>&nbsp;库中的函数</td></tr></tbody></table>
+<table><thead><tr><th>C 字符串</th><th>SDS</th></tr></thead><tbody><tr><td>获取字符串长度的复杂度为&nbsp;O(N)&nbsp;</td><td>获取字符串长度的复杂度为&nbsp;O(1)&nbsp;</td></tr><tr><td>API 是不安全的，可能会造成缓冲区溢出</td><td>API 是安全的，不会造成缓冲区溢出，自动将 SDS 的空间扩展至执行修改所需的大小</td></tr><tr><td>修改字符串长度&nbsp;<code>N</code>&nbsp; 次<b>必然</b>需要执行&nbsp;<code>N</code>&nbsp; 次内存重分配</td><td>修改字符串长度&nbsp;<code>N</code>&nbsp; 次<b>最多</b>需要执行&nbsp;<code>N</code>&nbsp; 次内存重分配。</td></tr><tr><td>只能保存文本数据</td><td>可以保存文本或者二进制数据，以处理二进制的方式来处理 SDS 存放在 buf 数组里的数据，</td></tr><tr><td>可以使用所有&nbsp;<code>&lt;string.h&gt;</code>&nbsp; 库中的函数</td><td>可以使用一部分&nbsp;<code>&lt;string.h&gt;</code>&nbsp; 库中的函数</td></tr></tbody></table>
 
-<h3 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h3><blockquote>
+</div><div class="story post-story"><h2 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h2><blockquote>
 <ul>
 <li>链表被广泛用于实现 Redis 的各种功能， 比如列表键， 发布与订阅， 慢查询， 监视器， 等等。</li>
 <li>每个链表节点由一个 <code>listNode</code> 结构来表示， 每个节点都有一个指向前置节点和后置节点的指针， 所以 Redis 的链表实现是双端链表。</li>
@@ -2957,23 +2957,23 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>通过为链表设置不同的类型特定函数， Redis 的链表可以用于保存各种不同类型的值。</li>
 </ul>
 </blockquote>
-<h4 id="底层实现-1"><a href="#底层实现-1" class="headerlink" title="底层实现"></a>底层实现</h4><p>每个链表节点使用一个 <code>adlist.h/listNode</code> 结构来表示，即一个双向链表：</p>
+<h3 id="底层实现-1"><a href="#底层实现-1" class="headerlink" title="底层实现"></a>底层实现</h3><p>每个链表节点使用一个 <code>adlist.h/listNode</code> 结构来表示，即一个双向链表：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">listNode</span> &#123;</span></span><br><span class="line">    <span class="comment">// 前置节点</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">listNode</span> *<span class="title">prev</span>;</span></span><br><span class="line">    <span class="comment">// 后置节点</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">listNode</span> *<span class="title">next</span>;</span></span><br><span class="line">    <span class="comment">// 节点的值</span></span><br><span class="line">    <span class="keyword">void</span> *value;</span><br><span class="line">&#125; listNode;</span><br></pre></td></tr></table></figure>
 
 <p>使用 <code>adlist.h/list</code> 来持有链表的话， 操作起来会更方便：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">list</span> &#123;</span></span><br><span class="line">    <span class="comment">// 表头节点</span></span><br><span class="line">    listNode *head;</span><br><span class="line">    <span class="comment">// 表尾节点</span></span><br><span class="line">    listNode *tail;</span><br><span class="line">    <span class="comment">// 链表所包含的节点数量</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">long</span> len;</span><br><span class="line">    <span class="comment">// 节点值复制函数</span></span><br><span class="line">    <span class="keyword">void</span> *(*dup)(<span class="keyword">void</span> *ptr);</span><br><span class="line">    <span class="comment">// 节点值释放函数</span></span><br><span class="line">    <span class="built_in"><span class="keyword">void</span></span> (*free)(<span class="keyword">void</span> *ptr);</span><br><span class="line">    <span class="comment">// 节点值对比函数</span></span><br><span class="line">    <span class="built_in"><span class="keyword">int</span></span> (*match)(<span class="keyword">void</span> *ptr, <span class="keyword">void</span> *key);</span><br><span class="line">&#125; list;</span><br></pre></td></tr></table></figure>
 
-<img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202203031244834.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202203031244834.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="list结构" style="zoom: 80%;" />
+<img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202203031244834.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202203031244834.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="list 结构 " style="zoom: 80%;" />
 
-<h4 id="链表特性"><a href="#链表特性" class="headerlink" title="链表特性"></a>链表特性</h4><p>Redis 的链表实现的特性可以总结如下：</p>
+<h3 id="链表特性"><a href="#链表特性" class="headerlink" title="链表特性"></a>链表特性</h3><p>Redis 的链表实现的特性可以总结如下：</p>
 <ul>
 <li>双端： 链表节点带有 <code>prev</code> 和 <code>next</code> 指针， 获取某个节点的前置节点和后置节点的复杂度都是 $O(1)$。</li>
 <li>无环： 表头节点的 <code>prev</code> 指针和表尾节点的 <code>next</code> 指针都指向 <code>NULL</code> ， 对链表的访问以 <code>NULL</code> 为终点。</li>
 <li>带表头指针和表尾指针： 通过 <code>list</code> 结构的 <code>head</code> 指针和 <code>tail</code> 指针， 程序获取链表的表头节点和表尾节点的复杂度为 $O(1)$。</li>
-<li>带链表长度计数器： 程序使用 <code>list</code> 结构的 <code>len</code> 属性来对 <code>list</code> 持有的链表节点进行计数， 程序获取链表中节点数量的复杂度为$O(1)$。</li>
+<li>带链表长度计数器： 程序使用 <code>list</code> 结构的 <code>len</code> 属性来对 <code>list</code> 持有的链表节点进行计数， 程序获取链表中节点数量的复杂度为 $O(1)$。</li>
 <li>多态： 链表节点使用 <code>void*</code> 指针来保存节点值， 并且可以通过 <code>list</code> 结构的 <code>dup</code> 、 <code>free</code> 、 <code>match</code> 三个属性为节点值设置类型特定函数， 所以链表可以用于保存各种不同类型的值。</li>
 </ul>
-<h3 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h3><blockquote>
+</div><div class="story post-story"><h2 id="字典"><a href="#字典" class="headerlink" title="字典"></a>字典</h2><blockquote>
 <ul>
 <li>字典被广泛用于实现 Redis 的各种功能， 其中包括数据库和哈希键。</li>
 <li>Redis 中的字典使用<strong>哈希表</strong>作为底层实现， 每个字典带有两个哈希表， 一个用于平时使用， 另一个仅在进行 rehash 时使用。</li>
@@ -2982,7 +2982,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>在对哈希表进行扩展或者收缩操作时， 程序需要将现有哈希表包含的所有键值对 rehash 到新哈希表里面， 并且这个 rehash 过程并不是一次性地完成的， 而是渐进式地完成的。</li>
 </ul>
 </blockquote>
-<h4 id="底层实现-2"><a href="#底层实现-2" class="headerlink" title="底层实现"></a>底层实现</h4><p>Redis 字典所使用的哈希表由 <code>dict.h/dictht</code> 结构定义：</p>
+<h3 id="底层实现-2"><a href="#底层实现-2" class="headerlink" title="底层实现"></a>底层实现</h3><p>Redis 字典所使用的哈希表由 <code>dict.h/dictht</code> 结构定义：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">dictht</span> &#123;</span></span><br><span class="line">    <span class="comment">// 哈希表数组</span></span><br><span class="line">    <span class="comment">// 数组中的每个元素都是一个指向 dict.h/dictEntry 结构的指针， 每个 dictEntry 结构保存着一个键值对。</span></span><br><span class="line">    dictEntry **table;</span><br><span class="line">    <span class="comment">// 哈希表大小</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">long</span> size;</span><br><span class="line">    <span class="comment">// 哈希表大小掩码，用于计算索引值</span></span><br><span class="line">    <span class="comment">// 总是等于 size - 1</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">long</span> sizemask;</span><br><span class="line">    <span class="comment">// 该哈希表已有节点的数量</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">long</span> used;</span><br><span class="line">&#125; dictht;</span><br></pre></td></tr></table></figure>
 
 <p>哈希表节点使用 <code>dictEntry</code> 结构表示， 每个 <code>dictEntry</code> 结构都保存着一个键值对：</p>
@@ -2993,7 +2993,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202203052058867.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202203052058867.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img" style="zoom: 67%;" />
 
-<h4 id="哈希算法"><a href="#哈希算法" class="headerlink" title="哈希算法"></a>哈希算法</h4><p>Redis 计算哈希值和索引值的方法如下：</p>
+<h3 id="哈希算法"><a href="#哈希算法" class="headerlink" title="哈希算法"></a>哈希算法</h3><p>Redis 计算哈希值和索引值的方法如下：</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 使用字典设置的哈希函数，计算键 key 的哈希值</span></span><br><span class="line">hash = dict-&gt;type-&gt;hashFunction(key);</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 使用哈希表的 sizemask 属性和哈希值，计算出索引值</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 根据情况不同， ht[x] 可以是 ht[0] 或者 ht[1]</span></span><br><span class="line">index = hash &amp; dict-&gt;ht[x].sizemask;</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash">假设计算得出的哈希值为 8 ， 那么程序会继续使用语句：</span></span><br><span class="line">index = hash &amp; dict-&gt;ht[0].sizemask = 8 &amp; 3 = 0;</span><br></pre></td></tr></table></figure>
 
 <table><tr>
@@ -3004,17 +3004,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <blockquote>
 <p>当字典被用作数据库的底层实现， 或者哈希键的底层实现时， Redis 使用 MurmurHash2 算法来计算键的哈希值。</p>
 <p>MurmurHash 算法最初由 Austin Appleby 于 2008 年发明， 这种算法的优点在于， 即使输入的键是有规律的， 算法仍能给出一个很好的随机分布性， 并且算法的计算速度也非常快。</p>
-<p>MurmurHash 算法目前的最新版本为 MurmurHash3 ， 而 Redis 使用的是 MurmurHash2 ， 关于 MurmurHash 算法的更多信息可以参考该算法的主页： <a target="_blank" rel="noopener" href="http://code.google.com/p/smhasher/">http://code.google.com/p/smhasher/</a> 。</p>
+<p>MurmurHash 算法目前的最新版本为 MurmurHash3 ， 而 Redis 使用的是 MurmurHash2 ， 关于 MurmurHash 算法的更多信息可以参考该算法的主页： &lt;<a target="_blank" rel="noopener" href="http://code.google.com/p/smhasher/">http://code.google.com/p/smhasher/</a>&gt; 。</p>
 </blockquote>
-<h4 id="哈希冲突"><a href="#哈希冲突" class="headerlink" title="哈希冲突"></a>哈希冲突</h4><p>Redis 的哈希表使用链地址法（separate chaining）（拉链法）来解决键冲突： <a href="https://blog.sukiu.top/Data-structure/Hash-Insider/#%E6%8B%89%E9%93%BE%E6%B3%95%E8%A7%A3%E5%86%B3%E7%A2%B0%E6%92%9E">哈希 - 千反田</a></p>
+<h3 id="哈希冲突"><a href="#哈希冲突" class="headerlink" title="哈希冲突"></a>哈希冲突</h3><p>Redis 的哈希表使用链地址法（separate chaining）（拉链法）来解决键冲突： <a href="https://blog.sukiu.top/Data-structure/Hash-Insider/#%E6%8B%89%E9%93%BE%E6%B3%95%E8%A7%A3%E5%86%B3%E7%A2%B0%E6%92%9E">哈希 - 千反田</a></p>
 <p>每个哈希表节点都有一个 <code>next</code> 指针， 多个哈希表节点可以用 <code>next</code> 指针构成一个单向链表， 被分配到同一个索引上的多个节点可以用这个单向链表连接起来， 这就解决了键冲突的问题。</p>
 <p>因为 <code>dictEntry</code> 节点组成的链表没有指向链表表尾的指针， 所以为了速度考虑， 程序总是将新节点添加到链表的表头位置（复杂度为 $O(1)$)， 排在其他已有节点的前面。</p>
 <img src="https://box.kancloud.cn/2015-09-13_55f512c4d7f99.png" class="lazyload" data-srcset="https://box.kancloud.cn/2015-09-13_55f512c4d7f99.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="img" style="zoom:67%;" />
 
-<h4 id="rehash"><a href="#rehash" class="headerlink" title="rehash"></a>rehash</h4><p>随着操作的不断执行， 哈希表保存的键值对会逐渐地增多或者减少， 为了让哈希表的负载因子（load factor）维持在一个合理的范围之内， 当哈希表保存的键值对数量太多或者太少时， 程序需要对哈希表的大小进行相应的扩展或者收缩。</p>
+<h3 id="Rehash"><a href="#Rehash" class="headerlink" title="Rehash"></a>Rehash</h3><p>随着操作的不断执行， 哈希表保存的键值对会逐渐地增多或者减少， 为了让哈希表的负载因子（load factor）维持在一个合理的范围之内， 当哈希表保存的键值对数量太多或者太少时， 程序需要对哈希表的大小进行相应的扩展或者收缩。</p>
 <p>扩展和收缩哈希表的工作可以通过执行 <strong>rehash （重新散列）</strong>操作来完成， Redis 对字典的哈希表执行 rehash 的步骤如下：</p>
 <ol>
-<li><p>为字典的 <code>ht[1]</code>哈希表分配空间， 这个哈希表的空间大小取决于要执行的操作， 以及 <code>ht[0]</code>当前包含的键值对数量 （也即是<code>ht[0].used</code>属性的值）：</p>
+<li><p>为字典的 <code>ht[1]</code> 哈希表分配空间， 这个哈希表的空间大小取决于要执行的操作， 以及 <code>ht[0]</code> 当前包含的键值对数量 （也即是 <code>ht[0].used</code> 属性的值）：</p>
 <pre><code> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- 如果执行的是扩展操作， 那么 `ht[1]` 的大小为第一个大于等于 `ht[0].used * 2` 的 $2^n$（`2` 的 `n` 次方幂）；</span><br><span class="line">- 如果执行的是收缩操作， 那么 `ht[1]` 的大小为第一个大于等于 `ht[0].used` 的 $2^n$。</span><br></pre></td></tr></table></figure>
 </code></pre>
 </li>
@@ -3031,11 +3031,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>其中哈希表的负载因子可以通过公式：<strong>负载因子 = 哈希表已保存节点数量 / 哈希表大小</strong></p>
 <p>$load_factor = ht[0].used  /  ht[0].size$</p>
 <blockquote>
-<p>在执行 BGSAVE 命令或BGREWRITEAOF 命令的过程中， Redis 需要创建当前服务器进程的子进程， 而大多数操作系统都采用写时复制（<a target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/Copy-on-write">copy-on-write</a>）技术来优化子进程的使用效率。</p>
+<p>在执行 BGSAVE 命令或 BGREWRITEAOF 命令的过程中， Redis 需要创建当前服务器进程的子进程， 而大多数操作系统都采用写时复制（<a target="_blank" rel="noopener" href="http://en.wikipedia.org/wiki/Copy-on-write">copy-on-write</a>）技术来优化子进程的使用效率。</p>
 <p>所以在子进程存在期间， 服务器会提高执行扩展操作所需的负载因子， 从而尽可能地避免在子进程存在期间进行哈希表扩展操作， 这可以避免不必要的内存写入操作， 最大限度地节约内存。</p>
 <p>另一方面， 当哈希表的负载因子小于 <code>0.1</code> 时， 程序自动开始对哈希表执行收缩操作。</p>
 </blockquote>
-<h4 id="渐进式-rehash"><a href="#渐进式-rehash" class="headerlink" title="渐进式 rehash"></a>渐进式 rehash</h4><blockquote>
+<h3 id="渐进式-Rehash"><a href="#渐进式-Rehash" class="headerlink" title="渐进式 Rehash"></a>渐进式 Rehash</h3><blockquote>
 <p>如果哈希表里保存的键值对数量是四百万、四千万甚至四亿个键值对， 那么要一次性将这些键值对全部 rehash 到 <code>ht[1]</code> 的话， 庞大的计算量可能会导致服务器在一段时间内停止服务。</p>
 </blockquote>
 <p>为了避免 rehash 对服务器性能造成影响， 服务器不是一次性将 <code>ht[0]</code> 里面的所有键值对全部 rehash 到 <code>ht[1]</code> ， 而是分多次、渐进式地将 <code>ht[0]</code> 里面的键值对慢慢地 rehash 到 <code>ht[1]</code> 。</p>
@@ -3055,7 +3055,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </li>
 </ul>
 </blockquote>
-<h3 id="跳表"><a href="#跳表" class="headerlink" title="跳表"></a>跳表</h3><blockquote>
+</div><div class="story post-story"><h2 id="跳表"><a href="#跳表" class="headerlink" title="跳表"></a>跳表</h2><blockquote>
 <ul>
 <li>跳跃表是<strong>有序集合</strong>的底层实现之一， 除此之外它在 Redis 中没有其他应用。</li>
 <li>Redis 的跳跃表实现由 <code>zskiplist</code> 和 <code>zskiplistNode</code> 两个结构组成， 其中 <code>zskiplist</code> 用于保存跳跃表信息（比如表头节点、表尾节点、长度）， 而 <code>zskiplistNode</code> 则用于表示跳跃表节点。</li>
@@ -3064,7 +3064,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>跳跃表中的节点按照分值大小进行排序， 当分值相同时， 节点按照成员对象的大小进行排序。</li>
 </ul>
 </blockquote>
-<h4 id="底层实现-3"><a href="#底层实现-3" class="headerlink" title="底层实现"></a>底层实现</h4><p>跳跃表节点的实现由 <code>redis.h/zskiplistNode</code> 结构定义：</p>
+<h3 id="底层实现-3"><a href="#底层实现-3" class="headerlink" title="底层实现"></a>底层实现</h3><p>跳跃表节点的实现由 <code>redis.h/zskiplistNode</code> 结构定义：</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">zskiplistNode</span> &#123;</span></span><br><span class="line">    <span class="comment">// 后退指针</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">zskiplistNode</span> *<span class="title">backward</span>;</span></span><br><span class="line">    <span class="comment">// 分值，节点按各自所保存的分值从小到大排列</span></span><br><span class="line">    <span class="keyword">double</span> score;</span><br><span class="line">    <span class="comment">// 成员对象</span></span><br><span class="line">    robj *obj;</span><br><span class="line">    <span class="comment">// 层</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">zskiplistLevel</span> &#123;</span></span><br><span class="line">        <span class="comment">// 前进指针：访问位于表尾方向的其他节点</span></span><br><span class="line">        <span class="class"><span class="keyword">struct</span> <span class="title">zskiplistNode</span> *<span class="title">forward</span>;</span></span><br><span class="line">        <span class="comment">// 跨度：记录了前进指针所指向节点和当前节点的距离</span></span><br><span class="line">        <span class="keyword">unsigned</span> <span class="keyword">int</span> span;</span><br><span class="line">    &#125; level[];</span><br><span class="line">&#125; zskiplistNode;</span><br></pre></td></tr></table></figure>
 
 <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202203052123925.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202203052123925.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom: 67%;" />
@@ -3203,11 +3203,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <p class='content'>面试智力题汇总
 
 
-1000瓶药水找毒药一共 1000 瓶药水，其中 1 瓶有毒药。
+1000 瓶药水找毒药一共 1000 瓶药水，其中 1 瓶有毒药。
 已知小白鼠喝毒药一天内死，若想在一天内找到毒药，最少需要几只小白鼠？
 
 答案：10 只。
-解析：二进制思想。...</p>
+解析：二进制思想...</p>
         </a>
       
     </div>
@@ -3335,7 +3335,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%95%E5%B1%82%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84"><span class="toc-number">1.</span> <span class="toc-text">底层数据结构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E5%8A%A8%E6%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">1.1.</span> <span class="toc-text">简单动态字符串</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.1.1.</span> <span class="toc-text">底层实现</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#SDS-%E4%B8%8E-C-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.1.2.</span> <span class="toc-text">SDS 与 C 字符串的区别</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%93%BE%E8%A1%A8"><span class="toc-number">1.2.</span> <span class="toc-text">链表</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0-1"><span class="toc-number">1.2.1.</span> <span class="toc-text">底层实现</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%93%BE%E8%A1%A8%E7%89%B9%E6%80%A7"><span class="toc-number">1.2.2.</span> <span class="toc-text">链表特性</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E5%85%B8"><span class="toc-number">1.3.</span> <span class="toc-text">字典</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0-2"><span class="toc-number">1.3.1.</span> <span class="toc-text">底层实现</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95"><span class="toc-number">1.3.2.</span> <span class="toc-text">哈希算法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%93%88%E5%B8%8C%E5%86%B2%E7%AA%81"><span class="toc-number">1.3.3.</span> <span class="toc-text">哈希冲突</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#rehash"><span class="toc-number">1.3.4.</span> <span class="toc-text">rehash</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B8%90%E8%BF%9B%E5%BC%8F-rehash"><span class="toc-number">1.3.5.</span> <span class="toc-text">渐进式 rehash</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B7%B3%E8%A1%A8"><span class="toc-number">1.4.</span> <span class="toc-text">跳表</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0-3"><span class="toc-number">1.4.1.</span> <span class="toc-text">底层实现</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AE%80%E5%8D%95%E5%8A%A8%E6%80%81%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">1.</span> <span class="toc-text">简单动态字符串</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.1.</span> <span class="toc-text">底层实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#SDS-%E4%B8%8E-C-%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="toc-number">1.2.</span> <span class="toc-text">SDS 与 C 字符串的区别</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%93%BE%E8%A1%A8"><span class="toc-number">2.</span> <span class="toc-text">链表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0-1"><span class="toc-number">2.1.</span> <span class="toc-text">底层实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%93%BE%E8%A1%A8%E7%89%B9%E6%80%A7"><span class="toc-number">2.2.</span> <span class="toc-text">链表特性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%97%E5%85%B8"><span class="toc-number">3.</span> <span class="toc-text">字典</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0-2"><span class="toc-number">3.1.</span> <span class="toc-text">底层实现</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%93%88%E5%B8%8C%E7%AE%97%E6%B3%95"><span class="toc-number">3.2.</span> <span class="toc-text">哈希算法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%93%88%E5%B8%8C%E5%86%B2%E7%AA%81"><span class="toc-number">3.3.</span> <span class="toc-text">哈希冲突</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Rehash"><span class="toc-number">3.4.</span> <span class="toc-text">Rehash</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%90%E8%BF%9B%E5%BC%8F-Rehash"><span class="toc-number">3.5.</span> <span class="toc-text">渐进式 Rehash</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%B3%E8%A1%A8"><span class="toc-number">4.</span> <span class="toc-text">跳表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0-3"><span class="toc-number">4.1.</span> <span class="toc-text">底层实现</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -3714,7 +3714,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655443923574"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1656151540248"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3955,19 +3955,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655443923574")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1656151540248")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655443923574")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1656151540248")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655443923574")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1656151540248")
       }
     
   };
@@ -4063,7 +4063,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655443923574')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1656151540248')
   
   })();
 
@@ -4190,7 +4190,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655443923574");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1656151540248");
   }
 
   function loadSearchService() {
@@ -4533,7 +4533,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655443923574').then(()=>{
+    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1656151540248').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4791,7 +4791,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Database/","name":"Database"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Database/Redis-Pro/","name":"Redis设计与实现"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Redis设计与实现","description":"\n《Redis 设计与实现》一书全面而完整地讲解了 Redis 的内部运行机制， 对 Redis 的大多数单机功能以及所有多机功能的实现原理进行了介绍， 展示了这些功能的核心数据结构以及关键的算法思想。\n","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Database/Redis-Pro/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Database/Redis-Pro/","wordCount":102,"datePublished":"2022-03-03T04:02:35.000Z","dateModified":"2022-06-12T06:37:00.000Z","articleSection":"Database","keywords":"Redis","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Database/","name":"Database"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Database/Redis-Pro/","name":"Redis设计与实现"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Redis设计与实现","description":"\n《Redis 设计与实现》一书全面而完整地讲解了 Redis 的内部运行机制， 对 Redis 的大多数单机功能以及所有多机功能的实现原理进行了介绍， 展示了这些功能的核心数据结构以及关键的算法思想。\n","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Database/Redis-Pro/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Database/Redis-Pro/","wordCount":102,"datePublished":"2022-03-03T04:02:00.000Z","dateModified":"2022-03-03T04:02:00.000Z","articleSection":"Database","keywords":"Redis","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

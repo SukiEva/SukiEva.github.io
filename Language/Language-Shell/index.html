@@ -44,8 +44,8 @@
 <meta property="og:description" content="Shell 脚本的一些注意点">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2021-12-28T12:14:49.000Z">
-<meta property="article:modified_time" content="2021-12-28T12:16:00.000Z">
+<meta property="article:published_time" content="2021-12-28T12:14:00.000Z">
+<meta property="article:modified_time" content="2021-12-28T12:14:00.000Z">
 <meta property="article:author" content="SukiEva">
 <meta property="article:tag" content="Shell">
 <meta name="twitter:card" content="summary">
@@ -1872,9 +1872,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655443923574","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655443923574","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655443923574","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655443923574","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655443923574","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655443923574","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655443923574"},"css":{"style":"/css/style.bca4d315.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1656151540248","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1656151540248","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1656151540248","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1656151540248","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1656151540248","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1656151540248","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1656151540248"},"css":{"style":"/css/style.bca4d315.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1655443923574),
+    lastupdate: new Date(1656151540248),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2810,7 +2810,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div class='new-meta-box'>
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-12-28T20:14:49+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-12-28T20:14:00+08:00">
   <a class='notlink'>
     <i class="fa-duotone fa-calendar fa-fw" aria-hidden="true"></i>
     <p>发布于：2021年12月28日</p>
@@ -2820,7 +2820,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateModified" datetime="2021-12-28T20:16:00+08:00">
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2021-12-28T20:14:00+08:00">
   <a class='notlink'>
     <i class="fa-duotone fa-calendar-pen fa-fw" aria-hidden="true"></i>
     <p>更新于：2021年12月28日</p>
@@ -2881,13 +2881,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>Shell 脚本的一些注意点</p>
 <span id="more"></span>
 
-<h3 id="文件测试"><a href="#文件测试" class="headerlink" title="文件测试"></a>文件测试</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> [ -e file/dir ] <span class="comment"># 如果文件/目录存在  </span></span><br><span class="line"><span class="keyword">if</span> [ -f file ] <span class="comment"># 如果文件存在  </span></span><br><span class="line"><span class="keyword">if</span> [ -d dir ]  <span class="comment"># 如果目录存在  </span></span><br><span class="line"><span class="keyword">if</span> [ -s file ] <span class="comment"># 如果文件存在且非空  </span></span><br><span class="line"><span class="keyword">if</span> [ -r file ] <span class="comment"># 如果文件存在且可读  </span></span><br><span class="line"><span class="keyword">if</span> [ -w file ] <span class="comment"># 如果文件存在且可写  </span></span><br><span class="line"><span class="keyword">if</span> [ -x file ] <span class="comment"># 如果文件存在且可执行</span></span><br></pre></td></tr></table></figure>
+<h1 id="文件测试"><a href="#文件测试" class="headerlink" title="文件测试"></a>文件测试</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> [ -e file/dir ] <span class="comment"># 如果文件/目录存在  </span></span><br><span class="line"><span class="keyword">if</span> [ -f file ] <span class="comment"># 如果文件存在  </span></span><br><span class="line"><span class="keyword">if</span> [ -d dir ]  <span class="comment"># 如果目录存在  </span></span><br><span class="line"><span class="keyword">if</span> [ -s file ] <span class="comment"># 如果文件存在且非空  </span></span><br><span class="line"><span class="keyword">if</span> [ -r file ] <span class="comment"># 如果文件存在且可读  </span></span><br><span class="line"><span class="keyword">if</span> [ -w file ] <span class="comment"># 如果文件存在且可写  </span></span><br><span class="line"><span class="keyword">if</span> [ -x file ] <span class="comment"># 如果文件存在且可执行</span></span><br></pre></td></tr></table></figure>
 
+<h1 id="整数比较"><a href="#整数比较" class="headerlink" title="整数比较"></a>整数比较</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> [ int1 -eq int2 ] <span class="comment"># 如果 ==  </span></span><br><span class="line"><span class="keyword">if</span> [ int1 -ne int2 ] <span class="comment"># 如果 !=  </span></span><br><span class="line"><span class="keyword">if</span> [ int1 -ge int2 ] <span class="comment"># 如果 &gt;=  </span></span><br><span class="line"><span class="keyword">if</span> [ int1 -gt int2 ] <span class="comment"># 如果 &gt;  </span></span><br><span class="line"><span class="keyword">if</span> [ int1 -le int2 ] <span class="comment"># 如果 &lt;=  </span></span><br><span class="line"><span class="keyword">if</span> [ int1 -lt int2 ] <span class="comment"># 如果 &lt;</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="整数比较"><a href="#整数比较" class="headerlink" title="整数比较"></a>整数比较</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> [ int1 -eq int2 ] <span class="comment"># 如果 ==  </span></span><br><span class="line"><span class="keyword">if</span> [ int1 -ne int2 ] <span class="comment"># 如果 !=  </span></span><br><span class="line"><span class="keyword">if</span> [ int1 -ge int2 ] <span class="comment"># 如果 &gt;=  </span></span><br><span class="line"><span class="keyword">if</span> [ int1 -gt int2 ] <span class="comment"># 如果 &gt;  </span></span><br><span class="line"><span class="keyword">if</span> [ int1 -le int2 ] <span class="comment"># 如果 &lt;=  </span></span><br><span class="line"><span class="keyword">if</span> [ int1 -lt int2 ] <span class="comment"># 如果 &lt;</span></span><br></pre></td></tr></table></figure>
+<h1 id="字符串比较"><a href="#字符串比较" class="headerlink" title="字符串比较"></a>字符串比较</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> [ <span class="variable">$string1</span> == <span class="variable">$string2</span> ] <span class="comment"># 如果 == (字符串允许使用赋值号做等号)  </span></span><br><span class="line"><span class="keyword">if</span> [ <span class="variable">$string1</span> != <span class="variable">$string2</span> ] <span class="comment"># 如果 !=  </span></span><br><span class="line"><span class="keyword">if</span> [ -n <span class="variable">$string</span> ]           <span class="comment"># 如果string 长度非0 </span></span><br><span class="line"><span class="keyword">if</span> [ -z <span class="variable">$string</span> ]           <span class="comment"># 如果string 长度为0  </span></span><br></pre></td></tr></table></figure>
 
-
-<h3 id="字符串比较"><a href="#字符串比较" class="headerlink" title="字符串比较"></a>字符串比较</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> [ <span class="variable">$string1</span> == <span class="variable">$string2</span> ] <span class="comment"># 如果 == (字符串允许使用赋值号做等号)  </span></span><br><span class="line"><span class="keyword">if</span> [ <span class="variable">$string1</span> != <span class="variable">$string2</span> ] <span class="comment"># 如果 !=  </span></span><br><span class="line"><span class="keyword">if</span> [ -n <span class="variable">$string</span> ]           <span class="comment"># 如果string 长度非0 </span></span><br><span class="line"><span class="keyword">if</span> [ -z <span class="variable">$string</span> ]           <span class="comment"># 如果string 长度为0  </span></span><br></pre></td></tr></table></figure>
 
   </div>
   
@@ -2988,11 +2987,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='prev' href='/Algorithm/Dynamic-Programming/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>动态规划</p>
-          <p class='content'>动态规划（Dynamic Programming，简称DP），如果某一问题有很多重叠子问题，使用动态规划是最有效的。
+          <p class='content'>动态规划（Dynamic Programming，简称 DP），如果某一问题有很多重叠子问题，使用动态规划是最有效的。
 和贪心的区别在于：
 
 动态规划中每一个状态一定是由上一个状态推导出来的
-贪心...</p>
+贪...</p>
         </a>
       
       
@@ -3001,8 +3000,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <p class='content'>回溯的本质是穷举，穷举所有可能，然后选出想要的答案，如果想让回溯法高效一些，需要进行剪枝操作。
 回溯法，一般可以解决如下几种问题：
 
-组合问题：N个数里面按一定规则找出k个数的集合
-切割问题：一...</p>
+组合问题：N 个数里面按一定规则找出 k 个数的集合
+切割问...</p>
         </a>
       
     </div>
@@ -3130,7 +3129,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E6%B5%8B%E8%AF%95"><span class="toc-number">1.</span> <span class="toc-text">文件测试</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%95%B4%E6%95%B0%E6%AF%94%E8%BE%83"><span class="toc-number">2.</span> <span class="toc-text">整数比较</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%AF%94%E8%BE%83"><span class="toc-number">3.</span> <span class="toc-text">字符串比较</span></a></li></ol>
+        
     </div>
   </section>
 
@@ -3509,7 +3508,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655443923574"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1656151540248"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3750,19 +3749,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655443923574")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1656151540248")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655443923574")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1656151540248")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655443923574")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1656151540248")
       }
     
   };
@@ -3858,7 +3857,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655443923574')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1656151540248')
   
   })();
 
@@ -3985,7 +3984,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655443923574");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1656151540248");
   }
 
   function loadSearchService() {
@@ -4328,7 +4327,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655443923574').then(()=>{
+    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1656151540248').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4586,7 +4585,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Language/","name":"Language"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Language/Language-Shell/","name":"Shell"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Shell","description":"Shell 脚本的一些注意点","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Language/Language-Shell/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Language/Language-Shell/","wordCount":14,"datePublished":"2021-12-28T12:14:49.000Z","dateModified":"2021-12-28T12:16:00.000Z","articleSection":"Language","keywords":"Shell","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Language/","name":"Language"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Language/Language-Shell/","name":"Shell"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Shell","description":"Shell 脚本的一些注意点","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Language/Language-Shell/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Language/Language-Shell/","wordCount":14,"datePublished":"2021-12-28T12:14:00.000Z","dateModified":"2021-12-28T12:14:00.000Z","articleSection":"Language","keywords":"Shell","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

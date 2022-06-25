@@ -46,8 +46,8 @@
 <meta property="og:description" content="内容提供程序主要目的是不同应用程序间的数据共享。 它提供了一套完整的机制，允许一个程序访问另一个程序的数据，同时保证被访问数据的安全性。 目前，使用 ContentProvider 是 Android 实现跨程序共享数据的标准方式。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2021-09-28T14:05:18.000Z">
-<meta property="article:modified_time" content="2021-12-22T07:20:00.000Z">
+<meta property="article:published_time" content="2021-09-28T14:05:00.000Z">
+<meta property="article:modified_time" content="2021-09-28T14:05:00.000Z">
 <meta property="article:author" content="SukiEva">
 <meta property="article:tag" content="Component">
 <meta name="twitter:card" content="summary">
@@ -1874,9 +1874,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655443923574","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655443923574","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655443923574","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655443923574","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655443923574","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655443923574","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655443923574"},"css":{"style":"/css/style.bca4d315.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1656151540248","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1656151540248","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1656151540248","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1656151540248","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1656151540248","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1656151540248","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1656151540248"},"css":{"style":"/css/style.bca4d315.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1655443923574),
+    lastupdate: new Date(1656151540248),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2812,7 +2812,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div class='new-meta-box'>
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-09-28T22:05:18+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-09-28T22:05:00+08:00">
   <a class='notlink'>
     <i class="fa-duotone fa-calendar fa-fw" aria-hidden="true"></i>
     <p>发布于：2021年9月28日</p>
@@ -2822,10 +2822,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateModified" datetime="2021-12-22T15:20:00+08:00">
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2021-09-28T22:05:00+08:00">
   <a class='notlink'>
     <i class="fa-duotone fa-calendar-pen fa-fw" aria-hidden="true"></i>
-    <p>更新于：2021年12月22日</p>
+    <p>更新于：2021年9月28日</p>
   </a>
 </div>
 
@@ -3018,16 +3018,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <p class='content'>使用 JetpackCompose 的一些笔记。
 
 
-关键术语 - 组合：Jetpack Compose 在执行可组合项时构建的界面描述。
-初始组合：通过首次运行可组合项创建组合。
-重组：在数据...</p>
+关键术语 - 组合：Jetpack Compose 在执行可组合项时构建的界面描述。初始组合：通过首次运行可组合项创建组合。重组：在数据发生...</p>
         </a>
       
       
         <a class='next' href='/Android/Android-BroadcastReceiver/'>
           <p class='title'>Android四大组件之BroadcastReceiver<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>Android 应用与 Android 系统和其他 Android 应用之间可以相互收发广播消息，这与发布-订阅设计模式相似。这些广播会在所关注的事件发生时发送。
-一般来说，广播可作为跨应用和普...</p>
+          <p class='content'>Android 应用与 Android 系统和其他 Android 应用之间可以相互收发广播消息，这与 发布-订阅 设计模式相似。这些广播会在所关注的事件发生时发送。
+一般来说，广播可作为跨应用...</p>
         </a>
       
     </div>
@@ -3524,7 +3522,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655443923574"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1656151540248"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3765,19 +3763,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655443923574")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1656151540248")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655443923574")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1656151540248")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655443923574")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1656151540248")
       }
     
   };
@@ -3873,7 +3871,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655443923574')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1656151540248')
   
   })();
 
@@ -4000,7 +3998,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655443923574");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1656151540248");
   }
 
   function loadSearchService() {
@@ -4343,7 +4341,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655443923574').then(()=>{
+    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1656151540248').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4601,7 +4599,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Android/","name":"Android"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Android/Android-ContentProvider/","name":"Android四大组件之ContentProvider"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Android四大组件之ContentProvider","description":"内容提供程序主要目的是不同应用程序间的数据共享。\n它提供了一套完整的机制，允许一个程序访问另一个程序的数据，同时保证被访问数据的安全性。\n目前，使用 ContentProvider 是 Android 实现跨程序共享数据的标准方式。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Android/Android-ContentProvider/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Android/Android-ContentProvider/","wordCount":116,"datePublished":"2021-09-28T14:05:18.000Z","dateModified":"2021-12-22T07:20:00.000Z","articleSection":"Android","keywords":"Component","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Android/","name":"Android"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Android/Android-ContentProvider/","name":"Android四大组件之ContentProvider"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Android四大组件之ContentProvider","description":"内容提供程序主要目的是不同应用程序间的数据共享。\n它提供了一套完整的机制，允许一个程序访问另一个程序的数据，同时保证被访问数据的安全性。\n目前，使用 ContentProvider 是 Android 实现跨程序共享数据的标准方式。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Android/Android-ContentProvider/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Android/Android-ContentProvider/","wordCount":116,"datePublished":"2021-09-28T14:05:00.000Z","dateModified":"2021-09-28T14:05:00.000Z","articleSection":"Android","keywords":"Component","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

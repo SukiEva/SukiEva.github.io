@@ -35,20 +35,20 @@
   <!-- 页面元数据 -->
   <title>B Tree - 千反田</title>
   <meta name="keywords" content="Tree,null">
-  <meta desc name="description" content="B树相对于平衡二叉树的不同是：每个节点包含的关键字增多了。
+  <meta desc name="description" content="B 树相对于平衡二叉树的不同是：每个节点包含的关键字增多了。
 
-特别是在B树应用到数据库中的时候，数据库充分利用了磁盘块的原理（磁盘数据存储是采用块的形式存储的，每个块的大小为4K，每次IO进行数据读取时，同一个磁盘块的数据可以一次性读取出来）把节点大小限制和充分使用在磁盘快大小范围；
-把树的节点关键字增多后树的层... - SukiEva - 千反田">
+特别是在 B 树应用到数据库中的时候，数据库充分利用了磁盘块的原理（磁盘数据存储是采用块的形式存储的，每个块的大小为 4K，每次 IO 进行数据读取时，同一个磁盘块的数据可以一次性读取出来）把节点大小限制和充分使用在磁盘快大小范围；
+把树的节点关键字... - SukiEva - 千反田">
   
 <meta property="og:type" content="article">
 <meta property="og:title" content="B Tree">
 <meta property="og:url" content="http://blog.sukiu.top/Data-Structure/B-Tree/index.html">
 <meta property="og:site_name" content="千反田">
-<meta property="og:description" content="B树相对于平衡二叉树的不同是：每个节点包含的关键字增多了。  特别是在B树应用到数据库中的时候，数据库充分利用了磁盘块的原理（磁盘数据存储是采用块的形式存储的，每个块的大小为4K，每次IO进行数据读取时，同一个磁盘块的数据可以一次性读取出来）把节点大小限制和充分使用在磁盘快大小范围； 把树的节点关键字增多后树的层级比原来的二叉树少了，减少数据查找的次数和复杂度。">
+<meta property="og:description" content="B 树相对于平衡二叉树的不同是：每个节点包含的关键字增多了。  特别是在 B 树应用到数据库中的时候，数据库充分利用了磁盘块的原理（磁盘数据存储是采用块的形式存储的，每个块的大小为 4K，每次 IO 进行数据读取时，同一个磁盘块的数据可以一次性读取出来）把节点大小限制和充分使用在磁盘快大小范围； 把树的节点关键字增多后树的层级比原来的二叉树少了，减少数据查找的次数和复杂度。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2021-11-29T11:07:44.000Z">
-<meta property="article:modified_time" content="2021-12-22T07:46:00.000Z">
+<meta property="article:published_time" content="2021-11-29T11:07:00.000Z">
+<meta property="article:modified_time" content="2021-11-29T11:07:00.000Z">
 <meta property="article:author" content="SukiEva">
 <meta property="article:tag" content="Tree">
 <meta name="twitter:card" content="summary">
@@ -1875,9 +1875,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655443923574","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655443923574","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655443923574","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655443923574","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655443923574","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655443923574","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655443923574"},"css":{"style":"/css/style.bca4d315.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1656151540248","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1656151540248","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1656151540248","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1656151540248","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1656151540248","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1656151540248","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1656151540248"},"css":{"style":"/css/style.bca4d315.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1655443923574),
+    lastupdate: new Date(1656151540248),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2813,7 +2813,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div class='new-meta-box'>
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-11-29T19:07:44+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-11-29T19:07:00+08:00">
   <a class='notlink'>
     <i class="fa-duotone fa-calendar fa-fw" aria-hidden="true"></i>
     <p>发布于：2021年11月29日</p>
@@ -2823,10 +2823,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateModified" datetime="2021-12-22T15:46:00+08:00">
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2021-11-29T19:07:00+08:00">
   <a class='notlink'>
     <i class="fa-duotone fa-calendar-pen fa-fw" aria-hidden="true"></i>
-    <p>更新于：2021年12月22日</p>
+    <p>更新于：2021年11月29日</p>
   </a>
 </div>
 
@@ -2881,33 +2881,33 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>B树相对于平衡二叉树的不同是：每个节点包含的关键字增多了。</p>
+    <p>B 树相对于平衡二叉树的不同是：每个节点包含的关键字增多了。</p>
 <ul>
-<li>特别是在B树应用到数据库中的时候，数据库充分利用了磁盘块的原理（磁盘数据存储是采用块的形式存储的，每个块的大小为4K，每次IO进行数据读取时，同一个磁盘块的数据可以一次性读取出来）把节点大小限制和充分使用在磁盘快大小范围；</li>
+<li>特别是在 B 树应用到数据库中的时候，数据库充分利用了磁盘块的原理（磁盘数据存储是采用块的形式存储的，每个块的大小为 4K，每次 IO 进行数据读取时，同一个磁盘块的数据可以一次性读取出来）把节点大小限制和充分使用在磁盘快大小范围；</li>
 <li>把树的节点关键字增多后树的层级比原来的二叉树少了，减少数据查找的次数和复杂度。</li>
 </ul>
 <span id="more"></span>
 
-<div class="story post-story"><h2 id="B-树-B-tree"><a href="#B-树-B-tree" class="headerlink" title="B 树(B-tree)"></a>B 树(B-tree)</h2><blockquote>
-<p>注意:之前有看到有很多文章把 B 树和 B-tree 理解成了两种不同类别的树，其实这两个是同一种树;</p>
+<h1 id="B-树-B-tree"><a href="#B-树-B-tree" class="headerlink" title="B 树 (B-tree)"></a>B 树 (B-tree)</h1><blockquote>
+<p>注意: 之前有看到有很多文章把 B 树和 B-tree 理解成了两种不同类别的树，其实这两个是同一种树;</p>
 </blockquote>
-<h3 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h3><p>B 树和平衡二叉树稍有不同的是 B 树属于多叉树又名平衡多路查找树（查找路径不只两个），数据库索引技术里大量使用者 B 树和 B+树的数据结构</p>
+<div class="story post-story"><h2 id="概念"><a href="#概念" class="headerlink" title="概念"></a>概念</h2><p>B 树和平衡二叉树稍有不同的是 B 树属于多叉树又名平衡多路查找树（查找路径不只两个），数据库索引技术里大量使用者 B 树和 B+ 树的数据结构</p>
 <p><strong>规则：</strong></p>
 <ul>
 <li>（1）排序方式：所有节点关键字是按递增次序排列，并遵循左小右大原则</li>
 <li>（2）子节点数：非叶节点的子节点数&gt;1，且&lt;=M ，且 M&gt;=2，空树除外（注：M 阶代表一个树节点最多有多少个查找路径，M=M 路,当 M=2 则是 2 叉树,M=3 则是 3 叉）</li>
-<li>（3）关键字数：枝节点的关键字数量大于等于 ceil(m/2)-1 个且小于等于 M-1 个（注：ceil()是个朝正无穷方向取整的函数如 ceil(1.1)结果为 2)</li>
+<li>（3）关键字数：枝节点的关键字数量大于等于 ceil(m/2)-1 个且小于等于 M-1 个（注：ceil() 是个朝正无穷方向取整的函数如 ceil(1.1) 结果为 2)</li>
 <li>（4）所有叶子节点均在同一层、叶子节点除了包含了关键字和关键字记录的指针外也有指向其子节点的指针只不过其指针地址都为 null 对应下图最后一层节点的空格子</li>
 </ul>
 <p><strong>例子：</strong></p>
 <p>来理解 B 树（为了理解方便直接用实际字母的大小来排列 C&gt;B&gt;A） <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/v2-2c2264cc1c6c603dfeca4f84a2575901_b.jpg" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/v2-2c2264cc1c6c603dfeca4f84a2575901_b.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></p>
-<h3 id="B-树的查询"><a href="#B-树的查询" class="headerlink" title="B 树的查询"></a>B 树的查询</h3><p>如上图我要从上图中找到 E 字母，查找流程如下</p>
+</div><div class="story post-story"><h2 id="B-树的查询"><a href="#B-树的查询" class="headerlink" title="B 树的查询"></a>B 树的查询</h2><p>如上图我要从上图中找到 E 字母，查找流程如下</p>
 <ul>
 <li>（1）获取根节点的关键字进行比较，当前根节点关键字为 M，E&lt;M（26 个字母顺序），所以往找到指向左边的子节点（二分法规则，左小右大，左边放小于当前节点值的子节点、右边放大于当前节点值的子节点）；</li>
 <li>（2）拿到关键字 D 和 G，D&lt;E&lt;G 所以直接找到 D 和 G 中间的节点；</li>
 <li>（3）拿到 E 和 F，因为 E=E 所以直接返回关键字和指针信息（如果树结构里面没有包含所要查找的节点则返回 null）；</li>
 </ul>
-<h3 id="B-树的插入"><a href="#B-树的插入" class="headerlink" title="B 树的插入"></a>B 树的插入</h3><p>定义一个 5 阶树（平衡 5 路查找树;），现在我们要把 3、8、31、11、23、29、50、28 这些数字构建出一个 5 阶树出来;</p>
+</div><div class="story post-story"><h2 id="B-树的插入"><a href="#B-树的插入" class="headerlink" title="B 树的插入"></a>B 树的插入</h2><p>定义一个 5 阶树（平衡 5 路查找树;），现在我们要把 3、8、31、11、23、29、50、28 这些数字构建出一个 5 阶树出来;</p>
 <ul>
 <li>（1）节点拆分规则：当前是要组成一个 5 路查找树，那么此时 m=5,关键字数必须&lt;=5-1（这里关键字数&gt;4 就要进行节点拆分）；</li>
 <li>（2）排序规则：满足节点本身比左边节点大，比右边节点小的排序规则;</li>
@@ -2917,30 +2917,30 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>再插入 23、29 <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/v2-66cdb6187cbc5227fd8c4aabe7282e6c_b.jpg" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/v2-66cdb6187cbc5227fd8c4aabe7282e6c_b.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></li>
 <li>再插入 50、28 <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/v2-3057eaab2b1764dd51c2a8658791cc98_b.jpg" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/v2-3057eaab2b1764dd51c2a8658791cc98_b.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></li>
 </ol>
-<h3 id="B-树的删除"><a href="#B-树的删除" class="headerlink" title="B 树的删除"></a>B 树的删除</h3><ul>
-<li>（1）节点合并规则：当前是要组成一个5路查找树，那么此时m=5,关键字数必须大于等于ceil（5/2）（这里关键字数&lt;2就要进行节点合并）；</li>
+</div><div class="story post-story"><h2 id="B-树的删除"><a href="#B-树的删除" class="headerlink" title="B 树的删除"></a>B 树的删除</h2><ul>
+<li>（1）节点合并规则：当前是要组成一个 5 路查找树，那么此时 m=5,关键字数必须大于等于 ceil（5/2）（这里关键字数&lt;2 就要进行节点合并）；</li>
 <li>（2）满足节点本身比左边节点大，比右边节点小的排序规则;</li>
 <li>（3）关键字数小于二时先从子节点取，子节点没有符合条件时就向向父节点取，取中间值往父节点放；</li>
 </ul>
 <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/v2-a0f981fc847772cb28869927cd4fe66d_b.jpg" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/v2-a0f981fc847772cb28869927cd4fe66d_b.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
 
-</div><div class="story post-story"><h2 id="2、B-树"><a href="#2、B-树" class="headerlink" title="2、B+树"></a>2、B+树</h2><h3 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h3><p>B+树是 B 树的一个升级版，相对于 B 树来说 B+树更充分的利用了节点的空间，让查询<u>速度</u>更加稳定，其速度完全接近于二分法查找。为什么说 B+树查找的效率要比 B 树更高、更稳定；我们先看看两者的区别</p>
+<h1 id="2、B-树"><a href="#2、B-树" class="headerlink" title="2、B+ 树"></a>2、B+ 树</h1></div><div class="story post-story"><h2 id="概念-1"><a href="#概念-1" class="headerlink" title="概念"></a>概念</h2><p>B+ 树是 B 树的一个升级版，相对于 B 树来说 B+ 树更充分的利用了节点的空间，让查询<u>速度</u>更加稳定，其速度完全接近于二分法查找。为什么说 B+ 树查找的效率要比 B 树更高、更稳定；我们先看看两者的区别</p>
 <ul>
-<li>（1）B+跟B树不同B+树的<b>非叶子</b>节点不保存关键字记录的指针，只进行数据索引，这样使得B+树每个<b>非叶子</b>节点所能保存的关键字大大增加；</li>
-<li>（2）B+树<b>叶子</b>节点保存了父节点的所有关键字记录的指针，所有数据地址必须要到叶子节点才能获取到。所以每次数据查询的次数都一样；</li>
-<li>（3）B+树叶子节点的关键字从小到大有序排列，左边结尾数据都会保存右边节点开始数据的指针。</li>
-<li>（4）非叶子节点的子节点数=关键字数（来源百度百科）（根据各种资料这里有两种算法的实现方式，另一种为非叶节点的关键字数=子节点数-1（来源维基百科)，虽然他们数据排列结构不一样，但其原理还是一样的Mysql的B+树是用第一种方式实现）;</li>
+<li>（1）B+ 跟 B 树不同 B+ 树的<b>非叶子</b>节点不保存关键字记录的指针，只进行数据索引，这样使得 B+ 树每个<b>非叶子</b>节点所能保存的关键字大大增加；</li>
+<li>（2）B+ 树<b>叶子</b>节点保存了父节点的所有关键字记录的指针，所有数据地址必须要到叶子节点才能获取到。所以每次数据查询的次数都一样；</li>
+<li>（3）B+ 树叶子节点的关键字从小到大有序排列，左边结尾数据都会保存右边节点开始数据的指针。</li>
+<li>（4）非叶子节点的子节点数=关键字数（来源百度百科）（根据各种资料这里有两种算法的实现方式，另一种为非叶节点的关键字数=子节点数 -1（来源维基百科)，虽然他们数据排列结构不一样，但其原理还是一样的 Mysql 的 B+ 树是用第一种方式实现）;</li>
 </ul>
 <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/v2-5f069fd820637db1b877fdd6799a2b67_b.jpg" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/v2-5f069fd820637db1b877fdd6799a2b67_b.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
 
 <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/v2-9644d1a1f83d3e45da779f2e63c35d55_b.jpg" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/v2-9644d1a1f83d3e45da779f2e63c35d55_b.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/>
 
-<h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3><p>1、B+<b>树的层级更少</b>：相较于 B 树 B+每个<b>非叶子</b>节点存储的关键字数更多，树的层级更少所以查询数据更快；</p>
-<p>2、B+<b>树查询速度更稳定</b>：B+所有关键字数据地址都存在<b>叶子</b>节点上，所以每次查找的次数都相同所以查询速度要比 B 树更稳定;</p>
-<p>3、B+<b>树天然具备排序功能：</b>B+树所有的<b>叶子</b>节点数据构成了一个有序链表，在查询大小区间的数据时候更方便，数据紧密性很高，缓存的命中率也会比 B 树高。</p>
-<p>4、B+<b>树全节点遍历更快：</b>B+树遍历整棵树只需要遍历所有的<b>叶子</b>节点即可，，而不需要像 B 树一样需要对每一层进行遍历，这有利于数据库做全表扫描。 <b>B 树</b>相对于<b>B+树</b>的优点是，如果经常访问的数据离根节点很近，而<b>B 树</b>的<b>非叶子</b>节点本身存有关键字其数据的地址，所以这种数据检索的时候会要比<b>B+树</b>快。</p>
-</div><div class="story post-story"><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><h3 id="相同思想和策略"><a href="#相同思想和策略" class="headerlink" title="相同思想和策略"></a>相同思想和策略</h3><p>从平衡二叉树、B 树、B+树、B*树总体来看它们的贯彻的思想是相同的，都是采用二分法和数据平衡策略来提升查找数据的速度；</p>
-<h3 id="不同的方式的磁盘空间利用"><a href="#不同的方式的磁盘空间利用" class="headerlink" title="不同的方式的磁盘空间利用"></a>不同的方式的磁盘空间利用</h3><p>不同点是他们一个一个在演变的过程中通过 IO 从磁盘读取数据的原理进行一步步的演变，每一次演变都是为了让节点的空间更合理的运用起来，从而使树的层级减少达到快速查找数据的目的；</p>
+</div><div class="story post-story"><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><p>1、B+<b>树的层级更少</b>：相较于 B 树 B+ 每个<b>非叶子</b>节点存储的关键字数更多，树的层级更少所以查询数据更快；</p>
+<p>2、B+<b>树查询速度更稳定</b>：B+ 所有关键字数据地址都存在<b>叶子</b>节点上，所以每次查找的次数都相同所以查询速度要比 B 树更稳定;</p>
+<p>3、B+<b>树天然具备排序功能：</b>B+ 树所有的<b>叶子</b>节点数据构成了一个有序链表，在查询大小区间的数据时候更方便，数据紧密性很高，缓存的命中率也会比 B 树高。</p>
+<p>4、B+<b>树全节点遍历更快：</b>B+ 树遍历整棵树只需要遍历所有的<b>叶子</b>节点即可，，而不需要像 B 树一样需要对每一层进行遍历，这有利于数据库做全表扫描。 <b>B 树</b>相对于<b>B+ 树</b>的优点是，如果经常访问的数据离根节点很近，而<b>B 树</b>的<b>非叶子</b>节点本身存有关键字其数据的地址，所以这种数据检索的时候会要比<b>B+ 树</b>快。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1></div><div class="story post-story"><h2 id="相同思想和策略"><a href="#相同思想和策略" class="headerlink" title="相同思想和策略"></a>相同思想和策略</h2><p>从平衡二叉树、B 树、B+ 树、B* 树总体来看它们的贯彻的思想是相同的，都是采用二分法和数据平衡策略来提升查找数据的速度；</p>
+</div><div class="story post-story"><h2 id="不同的方式的磁盘空间利用"><a href="#不同的方式的磁盘空间利用" class="headerlink" title="不同的方式的磁盘空间利用"></a>不同的方式的磁盘空间利用</h2><p>不同点是他们一个一个在演变的过程中通过 IO 从磁盘读取数据的原理进行一步步的演变，每一次演变都是为了让节点的空间更合理的运用起来，从而使树的层级减少达到快速查找数据的目的；</p>
 
 </div>
   </div>
@@ -3071,8 +3071,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='next' href='/Database/Database-Introduction/'>
           <p class='title'>数据库<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>数据库（Database） 是保存有组织的数据的容器（通常是一个文件或一组文件），是通过 数据库管理系统（DataBase- Management System，DBMS） 创建和操纵的容器。
-...</p>
+          <p class='content'>数据库（Database） 是保存有组织的数据的容器（通常是一个文件或一组文件），是通过 数据库管理系统（DataBaseManagement System，DBMS） 创建和操纵的容器。DBM...</p>
         </a>
       
     </div>
@@ -3200,7 +3199,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#B-%E6%A0%91-B-tree"><span class="toc-number">1.</span> <span class="toc-text">B 树(B-tree)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.</span> <span class="toc-text">概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#B-%E6%A0%91%E7%9A%84%E6%9F%A5%E8%AF%A2"><span class="toc-number">1.2.</span> <span class="toc-text">B 树的查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#B-%E6%A0%91%E7%9A%84%E6%8F%92%E5%85%A5"><span class="toc-number">1.3.</span> <span class="toc-text">B 树的插入</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#B-%E6%A0%91%E7%9A%84%E5%88%A0%E9%99%A4"><span class="toc-number">1.4.</span> <span class="toc-text">B 树的删除</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81B-%E6%A0%91"><span class="toc-number">2.</span> <span class="toc-text">2、B+树</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5-1"><span class="toc-number">2.1.</span> <span class="toc-text">概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E7%82%B9"><span class="toc-number">2.2.</span> <span class="toc-text">特点</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-number">3.</span> <span class="toc-text">总结</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B8%E5%90%8C%E6%80%9D%E6%83%B3%E5%92%8C%E7%AD%96%E7%95%A5"><span class="toc-number">3.1.</span> <span class="toc-text">相同思想和策略</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8D%E5%90%8C%E7%9A%84%E6%96%B9%E5%BC%8F%E7%9A%84%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4%E5%88%A9%E7%94%A8"><span class="toc-number">3.2.</span> <span class="toc-text">不同的方式的磁盘空间利用</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5"><span class="toc-number">1.</span> <span class="toc-text">概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#B-%E6%A0%91%E7%9A%84%E6%9F%A5%E8%AF%A2"><span class="toc-number">2.</span> <span class="toc-text">B 树的查询</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#B-%E6%A0%91%E7%9A%84%E6%8F%92%E5%85%A5"><span class="toc-number">3.</span> <span class="toc-text">B 树的插入</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#B-%E6%A0%91%E7%9A%84%E5%88%A0%E9%99%A4"><span class="toc-number">4.</span> <span class="toc-text">B 树的删除</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5-1"><span class="toc-number">5.</span> <span class="toc-text">概念</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%B9%E7%82%B9"><span class="toc-number">6.</span> <span class="toc-text">特点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%B8%E5%90%8C%E6%80%9D%E6%83%B3%E5%92%8C%E7%AD%96%E7%95%A5"><span class="toc-number">7.</span> <span class="toc-text">相同思想和策略</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8D%E5%90%8C%E7%9A%84%E6%96%B9%E5%BC%8F%E7%9A%84%E7%A3%81%E7%9B%98%E7%A9%BA%E9%97%B4%E5%88%A9%E7%94%A8"><span class="toc-number">8.</span> <span class="toc-text">不同的方式的磁盘空间利用</span></a></li></ol>
     </div>
   </section>
 
@@ -3579,7 +3578,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655443923574"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1656151540248"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3820,19 +3819,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655443923574")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1656151540248")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655443923574")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1656151540248")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655443923574")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1656151540248")
       }
     
   };
@@ -3928,7 +3927,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655443923574')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1656151540248')
   
   })();
 
@@ -4055,7 +4054,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655443923574");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1656151540248");
   }
 
   function loadSearchService() {
@@ -4398,7 +4397,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655443923574').then(()=>{
+    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1656151540248').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4656,7 +4655,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Data-Structure/","name":"Data Structure"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Data-Structure/B-Tree/","name":"B Tree"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"B Tree","description":"B树相对于平衡二叉树的不同是：每个节点包含的关键字增多了。\n\n特别是在B树应用到数据库中的时候，数据库充分利用了磁盘块的原理（磁盘数据存储是采用块的形式存储的，每个块的大小为4K，每次IO进行数据读取时，同一个磁盘块的数据可以一次性读取出来）把节点大小限制和充分使用在磁盘快大小范围；\n把树的节点关键字增多后树的层级比原来的二叉树少了，减少数据查找的次数和复杂度。\n","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Data-Structure/B-Tree/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Data-Structure/B-Tree/","wordCount":183,"datePublished":"2021-11-29T11:07:44.000Z","dateModified":"2021-12-22T07:46:00.000Z","articleSection":"Data Structure","keywords":"Tree","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Data-Structure/","name":"Data Structure"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Data-Structure/B-Tree/","name":"B Tree"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"B Tree","description":"B 树相对于平衡二叉树的不同是：每个节点包含的关键字增多了。\n\n特别是在 B 树应用到数据库中的时候，数据库充分利用了磁盘块的原理（磁盘数据存储是采用块的形式存储的，每个块的大小为 4K，每次 IO 进行数据读取时，同一个磁盘块的数据可以一次性读取出来）把节点大小限制和充分使用在磁盘快大小范围；\n把树的节点关键字增多后树的层级比原来的二叉树少了，减少数据查找的次数和复杂度。\n","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Data-Structure/B-Tree/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Data-Structure/B-Tree/","wordCount":189,"datePublished":"2021-11-29T11:07:00.000Z","dateModified":"2021-11-29T11:07:00.000Z","articleSection":"Data Structure","keywords":"Tree","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 

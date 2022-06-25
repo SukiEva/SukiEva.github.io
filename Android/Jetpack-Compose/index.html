@@ -44,8 +44,8 @@
 <meta property="og:description" content="使用 JetpackCompose 的一些笔记。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2021-09-29T13:30:56.000Z">
-<meta property="article:modified_time" content="2021-12-22T07:21:00.000Z">
+<meta property="article:published_time" content="2021-09-29T13:30:00.000Z">
+<meta property="article:modified_time" content="2021-09-29T13:30:00.000Z">
 <meta property="article:author" content="SukiEva">
 <meta property="article:tag" content="Jetpack">
 <meta name="twitter:card" content="summary">
@@ -1872,9 +1872,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655443923574","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1655443923574","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655443923574","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655443923574","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655443923574","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655443923574","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655443923574"},"css":{"style":"/css/style.bca4d315.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1656151540248","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1656151540248","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1656151540248","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1656151540248","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1656151540248","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1656151540248","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1656151540248"},"css":{"style":"/css/style.bca4d315.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1655443923574),
+    lastupdate: new Date(1656151540248),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2810,7 +2810,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div class='new-meta-box'>
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-09-29T21:30:56+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2021-09-29T21:30:00+08:00">
   <a class='notlink'>
     <i class="fa-duotone fa-calendar fa-fw" aria-hidden="true"></i>
     <p>发布于：2021年9月29日</p>
@@ -2820,10 +2820,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateModified" datetime="2021-12-22T15:21:00+08:00">
+            <div class="new-meta-item date" itemprop="dateModified" datetime="2021-09-29T21:30:00+08:00">
   <a class='notlink'>
     <i class="fa-duotone fa-calendar-pen fa-fw" aria-hidden="true"></i>
-    <p>更新于：2021年12月22日</p>
+    <p>更新于：2021年9月29日</p>
   </a>
 </div>
 
@@ -2881,18 +2881,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>使用 JetpackCompose 的一些笔记。</p>
 <span id="more"></span>
 
-<p><strong>关键术语</strong> - <strong>组合</strong>：Jetpack Compose 在执行可组合项时构建的界面描述。</p>
-<p><strong>初始组合</strong>：通过首次运行可组合项创建组合。</p>
-<p><strong>重组</strong>：在数据发生变化时重新运行可组合项以更新组合。</p>
+<p><strong>关键术语</strong> - <strong>组合</strong>：Jetpack Compose 在执行可组合项时构建的界面描述。<br><strong>初始组合</strong>：通过首次运行可组合项创建组合。<br><strong>重组</strong>：在数据发生变化时重新运行可组合项以更新组合。</p>
 <p><code> &#39;Surface&#39; A surface container using the &#39;background&#39; color from the theme</code></p>
 <p><code>&#39;Divider&#39; is a provided composable function that creates a horizontal divider.</code></p>
-<h3 id="可组合项中的状态"><a href="#可组合项中的状态" class="headerlink" title="可组合项中的状态"></a>可组合项中的状态</h3><p>可组合函数可以使用 <code>remember</code> 可组合项记住单个对象。</p>
+<h1 id="可组合项中的状态"><a href="#可组合项中的状态" class="headerlink" title="可组合项中的状态"></a>可组合项中的状态</h1><p>可组合函数可以使用 <code>remember</code> 可组合项记住单个对象。</p>
 <p>系统会在初始组合期间将由 <code>remember</code> 计算的值存储在组合中，并在重组期间返回存储的值。</p>
 <ul>
-<li><p><code>remember</code> 既可用于存储可变对象，又可用于存储不可变对象。</p>
-</li>
-<li><p><code>mutableStateOf</code>会创建可观察的 <code>MutableState</code> 会创建可观察的 <code>MutableState</code>，后者是与 Compose 运行时集成的可观察类型。</p>
-</li>
+<li><code>remember</code> 既可用于存储可变对象，又可用于存储不可变对象。</li>
+<li><code>mutableStateOf</code> 会创建可观察的 <code>MutableState</code> 会创建可观察的 <code>MutableState</code>，后者是与 Compose 运行时集成的可观察类型。</li>
 </ul>
 <p>在可组合项中声明 <code>MutableState</code> 对象的方法有三种（等价）：</p>
 <ul>
@@ -2902,13 +2898,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ul>
 <figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Composable</span></span><br><span class="line"><span class="function"><span class="keyword">fun</span> <span class="title">Counter</span><span class="params">()</span></span> &#123;</span><br><span class="line">    <span class="keyword">val</span> count = remember &#123; mutableStateOf(<span class="number">0</span>) &#125;</span><br><span class="line">    Button(onClick = &#123; count.value++ &#125;) &#123;</span><br><span class="line">        Text(<span class="string">&quot;I&#x27;ve been clicked <span class="subst">$&#123;count.value&#125;</span> times&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<h3 id="Color"><a href="#Color" class="headerlink" title="Color"></a>Color</h3><center><img src="https://developer.android.com/codelabs/jetpack-compose-theming/img/bb8ab0b2d8f9bca8.png?hl=zh-cn" class="lazyload" data-srcset="https://developer.android.com/codelabs/jetpack-compose-theming/img/bb8ab0b2d8f9bca8.png?hl=zh-cn" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Material Design Color"  /></center>
+<h1 id="Color"><a href="#Color" class="headerlink" title="Color"></a>Color</h1><center><img src="https://developer.android.com/codelabs/jetpack-compose-theming/img/bb8ab0b2d8f9bca8.png?hl=zh-cn" class="lazyload" data-srcset="https://developer.android.com/codelabs/jetpack-compose-theming/img/bb8ab0b2d8f9bca8.png?hl=zh-cn" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Material Design Color"  /></center>
 
 <ul>
 <li><code>primary</code>：main brand color</li>
 <li><code>secondary</code>：provide accents</li>
 </ul>
-<h3 id="Typography"><a href="#Typography" class="headerlink" title="Typography"></a>Typography</h3><center><img src="https://developer.android.com/codelabs/jetpack-compose-theming/img/767fd40cb6938dc4.png?hl=zh-cn" class="lazyload" data-srcset="https://developer.android.com/codelabs/jetpack-compose-theming/img/767fd40cb6938dc4.png?hl=zh-cn" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Typographies" style="zoom: 50%;" /></center>
+<h1 id="Typography"><a href="#Typography" class="headerlink" title="Typography"></a>Typography</h1><center><img src="https://developer.android.com/codelabs/jetpack-compose-theming/img/767fd40cb6938dc4.png?hl=zh-cn" class="lazyload" data-srcset="https://developer.android.com/codelabs/jetpack-compose-theming/img/767fd40cb6938dc4.png?hl=zh-cn" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Typographies" style="zoom: 50%;" /></center>
 
 
   </div>
@@ -3010,8 +3006,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class='prev' href='/Android/Jetpack-ViewModel/'>
           <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>Jetpack ViewModel</p>
-          <p class='content'>ViewModel 类旨在以注重生命周期的方式存储和管理界面相关的数据。ViewModel类让数据可在发生屏幕旋转等配置更改后继续留存。
-ViewModel 具有生命周期意识，会自动存储和管理 ...</p>
+          <p class='content'>ViewModel 类旨在以注重生命周期的方式存储和管理界面相关的数据。ViewModel 类让数据可在发生屏幕旋转等配置更改后继续留存。
+ViewModel 具有生命周期意识，会自动存储和管理...</p>
         </a>
       
       
@@ -3147,7 +3143,7 @@ ViewModel 具有生命周期意识，会自动存储和管理 ...</p>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%AF%E7%BB%84%E5%90%88%E9%A1%B9%E4%B8%AD%E7%9A%84%E7%8A%B6%E6%80%81"><span class="toc-number">1.</span> <span class="toc-text">可组合项中的状态</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Color"><span class="toc-number">2.</span> <span class="toc-text">Color</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Typography"><span class="toc-number">3.</span> <span class="toc-text">Typography</span></a></li></ol>
+        
     </div>
   </section>
 
@@ -3526,7 +3522,7 @@ ViewModel 具有生命周期意识，会自动存储和管理 ...</p>
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1655443923574"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1656151540248"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3767,19 +3763,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1655443923574")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1656151540248")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1655443923574")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1656151540248")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1655443923574")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1656151540248")
       }
     
   };
@@ -3875,7 +3871,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1655443923574')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1656151540248')
   
   })();
 
@@ -4002,7 +3998,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1655443923574");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1656151540248");
   }
 
   function loadSearchService() {
@@ -4345,7 +4341,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1655443923574').then(()=>{
+    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1656151540248').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4603,7 +4599,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Android/","name":"Android"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Android/Jetpack-Compose/","name":"Jetpack Compose"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Jetpack Compose","description":"使用 JetpackCompose 的一些笔记。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Android/Jetpack-Compose/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Android/Jetpack-Compose/","wordCount":24,"datePublished":"2021-09-29T13:30:56.000Z","dateModified":"2021-12-22T07:21:00.000Z","articleSection":"Android","keywords":"Jetpack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Android/","name":"Android"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Android/Jetpack-Compose/","name":"Jetpack Compose"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Jetpack Compose","description":"使用 JetpackCompose 的一些笔记。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Android/Jetpack-Compose/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Android/Jetpack-Compose/","wordCount":24,"datePublished":"2021-09-29T13:30:00.000Z","dateModified":"2021-09-29T13:30:00.000Z","articleSection":"Android","keywords":"Jetpack","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
