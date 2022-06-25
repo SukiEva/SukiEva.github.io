@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN,en,default">
-    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.4.0'>
-  <meta name="generator" content="Hexo 5.4.0">
-  <meta name="Volantis" content="5.4.0">
+    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.5.0'>
+  <meta name="generator" content="Hexo 6.2.0">
+  <meta name="Volantis" content="5.5.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -26,7 +26,7 @@
   
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://fastly.jsdelivr.net/gh/SukiEva/assets/blog/favicon.png">
-  <link rel="preload" href="/css/style.bca4d315.css" as="style">
+  <link rel="preload" href="/css/style.806ec192.css" as="style">
   <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
 
@@ -72,14 +72,14 @@
   --color-card: #fff;
   --color-text: #444;
   --color-block: #f6f6f6;
-  --color-inlinecode: #d56d28;
+  --color-inlinecode: #c74f00;
   --color-codeblock: #fff7ea;
-  --color-h1: #444;
-  --color-h2: #444;
-  --color-h3: #444;
+  --color-h1: #3a3a3a;
+  --color-h2: #3a3a3a;
+  --color-h3: #333;
   --color-h4: #444;
-  --color-h5: #444;
-  --color-h6: #444;
+  --color-h5: #555;
+  --color-h6: #666;
   --color-p: #444;
   --color-list: #666;
   --color-list-hl: #36ac91;
@@ -804,37 +804,37 @@ button {
   }
   :root:not([color-scheme]) {
     --color-site-body: #121212;
-    --color-read-bkg: #121212;
-    --color-read-post: #121212;
-    --color-site-bg: #121212;
-    --color-site-inner: #eee;
-    --color-site-footer: #aaa;
-    --color-card: #121212;
-    --color-text: #eee;
-    --color-block: #3a3a3a;
-    --color-codeblock: #343a3c;
+    --color-read-bkg: #1f1f1f;
+    --color-read-post: #1f1f1f;
+    --color-site-bg: #1f1f1f;
+    --color-site-inner: rgba(238,238,238,0.871);
+    --color-site-footer: rgba(170,170,170,0.871);
+    --color-card: #1f1f1f;
+    --color-text: rgba(238,238,238,0.871);
+    --color-block: #434343;
+    --color-codeblock: #1f1f1f;
     --color-inlinecode: #d56d28;
-    --color-h1: #eee;
-    --color-h2: #eee;
-    --color-h3: #ddd;
-    --color-h4: #ddd;
-    --color-h5: #ddd;
-    --color-h6: #ddd;
-    --color-p: #bbb;
-    --color-list: #aaa;
+    --color-h1: rgba(255,255,255,0.871);
+    --color-h2: rgba(255,255,255,0.871);
+    --color-h3: rgba(255,255,255,0.6);
+    --color-h4: rgba(255,255,255,0.6);
+    --color-h5: rgba(255,255,255,0.6);
+    --color-h6: rgba(255,255,255,0.6);
+    --color-p: rgba(217,217,217,0.871);
+    --color-list: rgba(217,217,217,0.871);
     --color-list-hl: #69dfc4;
-    --color-meta: #888;
-    --color-link: #888;
+    --color-meta: rgba(191,191,191,0.871);
+    --color-link: rgba(191,191,191,0.871);
     --color-copyright-bkg: #21252b;
   }
   :root:not([color-scheme]) img {
     filter: brightness(70%) !important;
   }
   :root:not([color-scheme]) .blur {
-    background: rgba(18,18,18,0.9) !important;
+    background: rgba(31,31,31,0.9) !important;
   }
   :root:not([color-scheme]) .white-box.blur {
-    background: rgba(18,18,18,0.9) !important;
+    background: rgba(31,31,31,0.9) !important;
   }
   :root:not([color-scheme]) .nav-main .u-search-input {
     background: var(--color-card) !important;
@@ -876,37 +876,37 @@ button {
 }
 [color-scheme='dark'] {
   --color-site-body: #121212;
-  --color-read-bkg: #121212;
-  --color-read-post: #121212;
-  --color-site-bg: #121212;
-  --color-site-inner: #eee;
-  --color-site-footer: #aaa;
-  --color-card: #121212;
-  --color-text: #eee;
-  --color-block: #3a3a3a;
-  --color-codeblock: #343a3c;
+  --color-read-bkg: #1f1f1f;
+  --color-read-post: #1f1f1f;
+  --color-site-bg: #1f1f1f;
+  --color-site-inner: rgba(238,238,238,0.871);
+  --color-site-footer: rgba(170,170,170,0.871);
+  --color-card: #1f1f1f;
+  --color-text: rgba(238,238,238,0.871);
+  --color-block: #434343;
+  --color-codeblock: #1f1f1f;
   --color-inlinecode: #d56d28;
-  --color-h1: #eee;
-  --color-h2: #eee;
-  --color-h3: #ddd;
-  --color-h4: #ddd;
-  --color-h5: #ddd;
-  --color-h6: #ddd;
-  --color-p: #bbb;
-  --color-list: #aaa;
+  --color-h1: rgba(255,255,255,0.871);
+  --color-h2: rgba(255,255,255,0.871);
+  --color-h3: rgba(255,255,255,0.6);
+  --color-h4: rgba(255,255,255,0.6);
+  --color-h5: rgba(255,255,255,0.6);
+  --color-h6: rgba(255,255,255,0.6);
+  --color-p: rgba(217,217,217,0.871);
+  --color-list: rgba(217,217,217,0.871);
   --color-list-hl: #69dfc4;
-  --color-meta: #888;
-  --color-link: #888;
+  --color-meta: rgba(191,191,191,0.871);
+  --color-link: rgba(191,191,191,0.871);
   --color-copyright-bkg: #21252b;
 }
 [color-scheme='dark'] img {
   filter: brightness(70%) !important;
 }
 [color-scheme='dark'] .blur {
-  background: rgba(18,18,18,0.9) !important;
+  background: rgba(31,31,31,0.9) !important;
 }
 [color-scheme='dark'] .white-box.blur {
-  background: rgba(18,18,18,0.9) !important;
+  background: rgba(31,31,31,0.9) !important;
 }
 [color-scheme='dark'] .nav-main .u-search-input {
   background: var(--color-card) !important;
@@ -1793,8 +1793,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.bca4d315.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.bca4d315.css"></noscript>
+  <link rel="stylesheet" href="/css/style.806ec192.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.806ec192.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1829,7 +1829,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     '<div class="kill-ie">'+
         `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
         `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support"><strong>了解详情 ></strong></a>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
     '</div>');
 </script>
 
@@ -1872,9 +1872,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1656152424995","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1656152424995","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1656152424995","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1656152424995","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1656152424995","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1656152424995","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1656152424995"},"css":{"style":"/css/style.bca4d315.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/parallax.js?time=1656167342546","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/rightMenu.js?time=1656167342546","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/rightMenus.js?time=1656167342546","sites":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/sites.js?time=1656167342546","friends":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/friends.js?time=1656167342546","contributors":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/contributors.js?time=1656167342546","search":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/search/hexo.js?time=1656167342546"},"css":{"style":"/css/style.806ec192.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1656152424995),
+    lastupdate: new Date(1656167342546),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2945,8 +2945,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <table><caption></caption><colgroup><col><col></colgroup><thead><tr><th data-spm-anchor-id="a2c6h.13858378.0.i38.31941d111Dv71Z">参数</th><th>说明</th></tr></thead><tbody><tr><td>-n [行数]</td><td>显示开头指定行的文件内容，默认为 10</td></tr><tr><td>-c [字符数]</td><td>显示开头指定个数的字符数</td></tr><tr><td>-q</td><td>不显示文件名字信息，适用于多个文件，多文件时默认会显示文件名</td></tr></tbody></table>
 
 <p>命令使用示例：</p>
-<p>查看/etc/passwd 文件的前 5 行内容。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">head -5 /etc/passwd</span><br></pre></td></tr></table></figure>
+<p>查看&#x2F;etc&#x2F;passwd 文件的前 5 行内容。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">head</span> -5 /etc/passwd</span><br></pre></td></tr></table></figure>
 
 </div><div class="story post-story"><h2 id="Tail-：查看文档的后-N-行或持续刷新内容"><a href="#Tail-：查看文档的后-N-行或持续刷新内容" class="headerlink" title="Tail ：查看文档的后 N 行或持续刷新内容"></a>Tail ：查看文档的后 N 行或持续刷新内容</h2><p>命令描述：tail 命令用于查看文档的后 N 行或持续刷新内容。</p>
 <p>命令格式：<code>tail [参数] [文件]</code></p>
@@ -2954,12 +2954,12 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <table><caption></caption><colgroup><col><col></colgroup><thead><tr><th data-spm-anchor-id="a2c6h.13858378.0.i41.31941d111Dv71Z">参数</th><th>说明</th></tr></thead><tbody><tr><td>-f</td><td>显示文件最新追加的内容</td></tr><tr><td>-q</td><td>当有多个文件参数时，不输出各个文件名</td></tr><tr><td>-v</td><td>当有多个文件参数时，总是输出各个文件名</td></tr><tr><td>-c [字节数]</td><td>显示文件的尾部 n 个字节内容</td></tr><tr><td>-n [行数]</td><td>显示文件的尾部 n 行内容</td></tr></tbody></table>
 
 <p>命令使用示例：</p>
-<p>查看/var/log/messages 系统日志文件的最新 10 行，并保持实时刷新。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tail -f -n 10 /var/<span class="built_in">log</span>/messages</span><br></pre></td></tr></table></figure>
+<p>查看&#x2F;var&#x2F;log&#x2F;messages 系统日志文件的最新 10 行，并保持实时刷新。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">tail</span> -f -n 10 /var/log/messages</span><br></pre></td></tr></table></figure>
 
 </div><div class="story post-story"><h2 id="Stat-：显示文件的详细信息"><a href="#Stat-：显示文件的详细信息" class="headerlink" title="Stat ：显示文件的详细信息"></a>Stat ：显示文件的详细信息</h2><p>命令描述：用来显示文件的详细信息，包括 inode、atime、mtime、ctime 等。</p>
 <p>命令使用示例：</p>
-<p>查看/etc/passwd 文件的详细信息。</p>
+<p>查看&#x2F;etc&#x2F;passwd 文件的详细信息。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">stat</span> /etc/passwd</span><br></pre></td></tr></table></figure>
 
 </div><div class="story post-story"><h2 id="Wc-：统计指定文本的行数、字数、字节数"><a href="#Wc-：统计指定文本的行数、字数、字节数" class="headerlink" title="Wc ：统计指定文本的行数、字数、字节数"></a>Wc ：统计指定文本的行数、字数、字节数</h2><p>命令描述：wc 命令用于统计指定文本的行数、字数、字节数。</p>
@@ -2968,8 +2968,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <table><caption></caption><colgroup><col><col></colgroup><thead><tr><th data-spm-anchor-id="a2c6h.13858378.0.i46.31941d111Dv71Z">参数</th><th>说明</th></tr></thead><tbody><tr><td>-l</td><td>只显示行数</td></tr><tr><td>-w</td><td>只显示单词数</td></tr><tr><td>-c</td><td>只显示字节数</td></tr></tbody></table>
 
 <p>命令使用示例：</p>
-<p>统计/etc/passwd 文件的行数。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wc -l /etc/passwd</span><br></pre></td></tr></table></figure>
+<p>统计&#x2F;etc&#x2F;passwd 文件的行数。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">wc</span> -l /etc/passwd</span><br></pre></td></tr></table></figure>
 
 </div><div class="story post-story"><h2 id="File-：辨识文件类型"><a href="#File-：辨识文件类型" class="headerlink" title="File ：辨识文件类型"></a>File ：辨识文件类型</h2><p>命令描述： file 命令用于辨识文件类型。</p>
 <p>命令格式：<code>file [参数] [文件]</code></p>
@@ -2977,8 +2977,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <table><caption></caption><colgroup><col><col></colgroup><thead><tr><th data-spm-anchor-id="a2c6h.13858378.0.i48.31941d111Dv71Z">参数</th><th>说明</th></tr></thead><tbody><tr><td data-spm-anchor-id="a2c6h.13858378.0.i47.31941d111Dv71Z">-b</td><td>列出辨识结果时，不显示文件名称</td></tr><tr><td>-c</td><td>详细显示指令执行过程，便于排错或分析程序执行的情形</td></tr><tr><td>-f [文件]</td><td>指定名称文件，其内容有一个或多个文件名称时，让 file 依序辨识这些文件，格式为每列一个文件名称</td></tr><tr><td>-L</td><td>直接显示符号连接所指向的文件类别</td></tr></tbody></table>
 
 <p>命令使用示例：</p>
-<p>查看/var/log/messages 文件的文件类型。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file /var/<span class="built_in">log</span>/messages</span><br></pre></td></tr></table></figure>
+<p>查看&#x2F;var&#x2F;log&#x2F;messages 文件的文件类型。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">file /var/log/messages</span><br></pre></td></tr></table></figure>
 
 </div><div class="story post-story"><h2 id="Diff-：比较文件的差异"><a href="#Diff-：比较文件的差异" class="headerlink" title="Diff ：比较文件的差异"></a>Diff ：比较文件的差异</h2><p>命令描述：diff 命令用于比较文件的差异。</p>
 <p>命令格式：<code>diff [文件] [文件]</code></p>
@@ -3053,7 +3053,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ifconfig eth0 |awk <span class="string">&#x27;/inet/&#123;print $2&#125;&#x27;</span></span><br></pre></td></tr></table></figure>
 
 <p>查看本机剩余磁盘容量。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">df -h |awk <span class="string">&#x27;/\/$/&#123;print $4&#125;&#x27;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">df</span> -h |awk <span class="string">&#x27;/\/$/&#123;print $4&#125;&#x27;</span></span><br></pre></td></tr></table></figure>
 
 <p>统计系统用户个数。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">awk -F: <span class="string">&#x27;$3&lt;1000&#123;x++&#125; END&#123;print x&#125;&#x27;</span> /etc/passwd</span><br></pre></td></tr></table></figure>
@@ -3061,8 +3061,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>输出其中登录 Shell 不以 nologin 结尾（对第 7 个字段做!~反向匹配）的用户名、登录 Shell 信息。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">awk -F: <span class="string">&#x27;$7!~/nologin$/&#123;print $1,$7&#125;&#x27;</span> /etc/passwd</span><br></pre></td></tr></table></figure>
 
-<p>输出/etc/passwd 文件中前三行记录的用户名和用户 uid。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">head -3 /etc/passwd | awk  <span class="string">&#x27;BEGIN&#123;FS=&quot;:&quot;;print &quot;name\tuid&quot;&#125;&#123;print $1,&quot;\t&quot;$3&#125;END&#123;print &quot;sum lines &quot;NR&#125;&#x27;</span></span><br></pre></td></tr></table></figure>
+<p>输出&#x2F;etc&#x2F;passwd 文件中前三行记录的用户名和用户 uid。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">head</span> -3 /etc/passwd | awk  <span class="string">&#x27;BEGIN&#123;FS=&quot;:&quot;;print &quot;name\tuid&quot;&#125;&#123;print $1,&quot;\t&quot;$3&#125;END&#123;print &quot;sum lines &quot;NR&#125;&#x27;</span></span><br></pre></td></tr></table></figure>
 
 <p>查看 tcp 连接数。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">netstat -na | awk <span class="string">&#x27;/^tcp/ &#123;++S[$NF]&#125; END &#123;for(a in S) print a, S[a]&#125;&#x27;</span></span><br></pre></td></tr></table></figure>
@@ -3082,16 +3082,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <p>命令使用示例：</p>
 <p>将输入字符由大写转换为小写。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;HELLO WORLD&quot;</span> | tr <span class="string">&#x27;A-Z&#x27;</span> <span class="string">&#x27;a-z&#x27;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;HELLO WORLD&quot;</span> | <span class="built_in">tr</span> <span class="string">&#x27;A-Z&#x27;</span> <span class="string">&#x27;a-z&#x27;</span></span><br></pre></td></tr></table></figure>
 
 <p>删除字符。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;hello 123 world 456&quot;</span> | tr -d <span class="string">&#x27;0-9&#x27;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;hello 123 world 456&quot;</span> | <span class="built_in">tr</span> -d <span class="string">&#x27;0-9&#x27;</span></span><br></pre></td></tr></table></figure>
 
 <p>压缩字符。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;thissss is      a text linnnnnnne.&quot;</span> | tr -s <span class="string">&#x27; sn&#x27;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> <span class="string">&quot;thissss is      a text linnnnnnne.&quot;</span> | <span class="built_in">tr</span> -s <span class="string">&#x27; sn&#x27;</span></span><br></pre></td></tr></table></figure>
 
 <p>产生随机密码。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /dev/urandom | tr -dc a-zA-Z0-9 | head -c 13</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cat</span> /dev/urandom | <span class="built_in">tr</span> -dc a-zA-Z0-9 | <span class="built_in">head</span> -c 13</span><br></pre></td></tr></table></figure>
 
 </div>
   </div>
@@ -3156,13 +3156,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class='donate'>
           <iframe src="https://sukiu.top/donate/drinks/" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;"  frameborder="0" scrolling="no"></iframe>
-          <!-- <div class='imgs'>
-            
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/qrcode/github@volantis.png'>
-            
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/qrcode/github@volantis.png'>
-            
-          </div> -->
         </div>
       
     </div>
@@ -3355,7 +3348,7 @@ tree 命令没有内置在系统...</p>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text">命令模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.</span> <span class="toc-text">输入模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%95%E7%BA%BF%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F"><span class="toc-number">3.</span> <span class="toc-text">底线命令模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Cat-%EF%BC%9A%E6%9F%A5%E7%9C%8B%E5%86%85%E5%AE%B9%E8%BE%83%E5%B0%91%E7%9A%84%E7%BA%AF%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6"><span class="toc-number">4.</span> <span class="toc-text">Cat ：查看内容较少的纯文本文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#More-%EF%BC%9A%E4%BB%8E%E5%89%8D%E5%90%91%E5%90%8E%E5%88%86%E9%A1%B5%E6%98%BE%E7%A4%BA%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9"><span class="toc-number">5.</span> <span class="toc-text">More ：从前向后分页显示文件内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Less-%EF%BC%9A%E5%AF%B9%E6%96%87%E4%BB%B6%E6%88%96%E5%85%B6%E5%AE%83%E8%BE%93%E5%87%BA%E8%BF%9B%E8%A1%8C%E5%88%86%E9%A1%B5%E6%98%BE%E7%A4%BA"><span class="toc-number">6.</span> <span class="toc-text">Less ：对文件或其它输出进行分页显示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Head-%EF%BC%9A%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%BC%80%E5%A4%B4%E6%8C%87%E5%AE%9A%E8%A1%8C%E6%95%B0%E7%9A%84%E5%86%85%E5%AE%B9"><span class="toc-number">7.</span> <span class="toc-text">Head ：查看文件开头指定行数的内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tail-%EF%BC%9A%E6%9F%A5%E7%9C%8B%E6%96%87%E6%A1%A3%E7%9A%84%E5%90%8E-N-%E8%A1%8C%E6%88%96%E6%8C%81%E7%BB%AD%E5%88%B7%E6%96%B0%E5%86%85%E5%AE%B9"><span class="toc-number">8.</span> <span class="toc-text">Tail ：查看文档的后 N 行或持续刷新内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Stat-%EF%BC%9A%E6%98%BE%E7%A4%BA%E6%96%87%E4%BB%B6%E7%9A%84%E8%AF%A6%E7%BB%86%E4%BF%A1%E6%81%AF"><span class="toc-number">9.</span> <span class="toc-text">Stat ：显示文件的详细信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Wc-%EF%BC%9A%E7%BB%9F%E8%AE%A1%E6%8C%87%E5%AE%9A%E6%96%87%E6%9C%AC%E7%9A%84%E8%A1%8C%E6%95%B0%E3%80%81%E5%AD%97%E6%95%B0%E3%80%81%E5%AD%97%E8%8A%82%E6%95%B0"><span class="toc-number">10.</span> <span class="toc-text">Wc ：统计指定文本的行数、字数、字节数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#File-%EF%BC%9A%E8%BE%A8%E8%AF%86%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B"><span class="toc-number">11.</span> <span class="toc-text">File ：辨识文件类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Diff-%EF%BC%9A%E6%AF%94%E8%BE%83%E6%96%87%E4%BB%B6%E7%9A%84%E5%B7%AE%E5%BC%82"><span class="toc-number">12.</span> <span class="toc-text">Diff ：比较文件的差异</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Grep-%EF%BC%9A%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E9%87%8C%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">13.</span> <span class="toc-text">Grep ：查找文件里符合条件的字符串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sed-%EF%BC%9A%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86"><span class="toc-number">14.</span> <span class="toc-text">Sed ：文本处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Awk-%EF%BC%9A%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86"><span class="toc-number">15.</span> <span class="toc-text">Awk ：文本处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Cut-%EF%BC%9A%E5%88%87%E5%89%B2%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">16.</span> <span class="toc-text">Cut ：切割字符串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tr-%EF%BC%9A%E5%AF%B9%E6%9D%A5%E8%87%AA%E6%A0%87%E5%87%86%E8%BE%93%E5%85%A5%E7%9A%84%E5%AD%97%E7%AC%A6%E8%BF%9B%E8%A1%8C%E6%9B%BF%E6%8D%A2%E3%80%81%E5%8E%8B%E7%BC%A9%E5%92%8C%E5%88%A0%E9%99%A4"><span class="toc-number">17.</span> <span class="toc-text">Tr ：对来自标准输入的字符进行替换、压缩和删除</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%B7%A5%E5%85%B7-Vim"><span class="toc-number">1.</span> <span class="toc-text">文本编辑工具 Vim</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.1.</span> <span class="toc-text">命令模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BE%93%E5%85%A5%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.2.</span> <span class="toc-text">输入模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BA%95%E7%BA%BF%E5%91%BD%E4%BB%A4%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.3.</span> <span class="toc-text">底线命令模式</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6%E6%9F%A5%E7%9C%8B%E5%91%BD%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text">文本文件查看命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Cat-%EF%BC%9A%E6%9F%A5%E7%9C%8B%E5%86%85%E5%AE%B9%E8%BE%83%E5%B0%91%E7%9A%84%E7%BA%AF%E6%96%87%E6%9C%AC%E6%96%87%E4%BB%B6"><span class="toc-number">2.1.</span> <span class="toc-text">Cat ：查看内容较少的纯文本文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#More-%EF%BC%9A%E4%BB%8E%E5%89%8D%E5%90%91%E5%90%8E%E5%88%86%E9%A1%B5%E6%98%BE%E7%A4%BA%E6%96%87%E4%BB%B6%E5%86%85%E5%AE%B9"><span class="toc-number">2.2.</span> <span class="toc-text">More ：从前向后分页显示文件内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Less-%EF%BC%9A%E5%AF%B9%E6%96%87%E4%BB%B6%E6%88%96%E5%85%B6%E5%AE%83%E8%BE%93%E5%87%BA%E8%BF%9B%E8%A1%8C%E5%88%86%E9%A1%B5%E6%98%BE%E7%A4%BA"><span class="toc-number">2.3.</span> <span class="toc-text">Less ：对文件或其它输出进行分页显示</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Head-%EF%BC%9A%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E5%BC%80%E5%A4%B4%E6%8C%87%E5%AE%9A%E8%A1%8C%E6%95%B0%E7%9A%84%E5%86%85%E5%AE%B9"><span class="toc-number">2.4.</span> <span class="toc-text">Head ：查看文件开头指定行数的内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tail-%EF%BC%9A%E6%9F%A5%E7%9C%8B%E6%96%87%E6%A1%A3%E7%9A%84%E5%90%8E-N-%E8%A1%8C%E6%88%96%E6%8C%81%E7%BB%AD%E5%88%B7%E6%96%B0%E5%86%85%E5%AE%B9"><span class="toc-number">2.5.</span> <span class="toc-text">Tail ：查看文档的后 N 行或持续刷新内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Stat-%EF%BC%9A%E6%98%BE%E7%A4%BA%E6%96%87%E4%BB%B6%E7%9A%84%E8%AF%A6%E7%BB%86%E4%BF%A1%E6%81%AF"><span class="toc-number">2.6.</span> <span class="toc-text">Stat ：显示文件的详细信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Wc-%EF%BC%9A%E7%BB%9F%E8%AE%A1%E6%8C%87%E5%AE%9A%E6%96%87%E6%9C%AC%E7%9A%84%E8%A1%8C%E6%95%B0%E3%80%81%E5%AD%97%E6%95%B0%E3%80%81%E5%AD%97%E8%8A%82%E6%95%B0"><span class="toc-number">2.7.</span> <span class="toc-text">Wc ：统计指定文本的行数、字数、字节数</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#File-%EF%BC%9A%E8%BE%A8%E8%AF%86%E6%96%87%E4%BB%B6%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.8.</span> <span class="toc-text">File ：辨识文件类型</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Diff-%EF%BC%9A%E6%AF%94%E8%BE%83%E6%96%87%E4%BB%B6%E7%9A%84%E5%B7%AE%E5%BC%82"><span class="toc-number">2.9.</span> <span class="toc-text">Diff ：比较文件的差异</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4"><span class="toc-number">3.</span> <span class="toc-text">文本处理命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Grep-%EF%BC%9A%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E9%87%8C%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">3.1.</span> <span class="toc-text">Grep ：查找文件里符合条件的字符串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Sed-%EF%BC%9A%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86"><span class="toc-number">3.2.</span> <span class="toc-text">Sed ：文本处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Awk-%EF%BC%9A%E6%96%87%E6%9C%AC%E5%A4%84%E7%90%86"><span class="toc-number">3.3.</span> <span class="toc-text">Awk ：文本处理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Cut-%EF%BC%9A%E5%88%87%E5%89%B2%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="toc-number">3.4.</span> <span class="toc-text">Cut ：切割字符串</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Tr-%EF%BC%9A%E5%AF%B9%E6%9D%A5%E8%87%AA%E6%A0%87%E5%87%86%E8%BE%93%E5%85%A5%E7%9A%84%E5%AD%97%E7%AC%A6%E8%BF%9B%E8%A1%8C%E6%9B%BF%E6%8D%A2%E3%80%81%E5%8E%8B%E7%BC%A9%E5%92%8C%E5%88%A0%E9%99%A4"><span class="toc-number">3.5.</span> <span class="toc-text">Tr ：对来自标准输入的字符进行替换、压缩和删除</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -3734,7 +3727,7 @@ tree 命令没有内置在系统...</p>
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1656152424995"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/rightMenus.js?time=1656167342546"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3975,19 +3968,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1656152424995")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/sites.js?time=1656167342546")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1656152424995")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/friends.js?time=1656167342546")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1656152424995")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/contributors.js?time=1656167342546")
       }
     
   };
@@ -4083,7 +4076,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1656152424995')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/aplayer.js?time=1656167342546')
   
   })();
 
@@ -4210,7 +4203,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1656152424995");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/search/hexo.js?time=1656167342546");
   }
 
   function loadSearchService() {
@@ -4553,7 +4546,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1656152424995').then(()=>{
+    volantis.js('https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/parallax.js?time=1656167342546').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4809,6 +4802,21 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 </script>
 
+
+<script>
+  document.onreadystatechange = function () {
+    if (document.readyState == 'complete') {
+      // 页面加载完毕 样式加载失败，或是当前网速慢，或是开启了省流模式
+      const { saveData, effectiveType } = navigator.connection || navigator.mozConnection || navigator.webkitConnection || {}
+      if (getComputedStyle(document.querySelector("#safearea"), null)["display"] == "none" || saveData || /2g/.test(effectiveType)) {
+        document.querySelectorAll(".reveal").forEach(function (e) {
+          e.style["opacity"] = "1";
+        });
+        document.querySelector("#safearea").style["display"] = "block";
+      }
+    }
+  }
+</script>
 
 
   <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Linux/","name":"Linux"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Linux/Linux-Text-Processing/","name":"Linux指令之文本处理"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Linux指令之文本处理","description":"如何使用 Linux 系统中的文本编辑工具 Vim 以及文本处理命令。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Linux/Linux-Text-Processing/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Linux/Linux-Text-Processing/","wordCount":35,"datePublished":"2021-11-07T14:38:00.000Z","dateModified":"2021-11-07T14:38:00.000Z","articleSection":"Linux","keywords":"Shell","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>

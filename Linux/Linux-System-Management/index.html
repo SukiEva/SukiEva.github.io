@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN,en,default">
-    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.4.0'>
-  <meta name="generator" content="Hexo 5.4.0">
-  <meta name="Volantis" content="5.4.0">
+    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.5.0'>
+  <meta name="generator" content="Hexo 6.2.0">
+  <meta name="Volantis" content="5.5.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -26,7 +26,7 @@
   
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://fastly.jsdelivr.net/gh/SukiEva/assets/blog/favicon.png">
-  <link rel="preload" href="/css/style.bca4d315.css" as="style">
+  <link rel="preload" href="/css/style.806ec192.css" as="style">
   <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
 
@@ -72,14 +72,14 @@
   --color-card: #fff;
   --color-text: #444;
   --color-block: #f6f6f6;
-  --color-inlinecode: #d56d28;
+  --color-inlinecode: #c74f00;
   --color-codeblock: #fff7ea;
-  --color-h1: #444;
-  --color-h2: #444;
-  --color-h3: #444;
+  --color-h1: #3a3a3a;
+  --color-h2: #3a3a3a;
+  --color-h3: #333;
   --color-h4: #444;
-  --color-h5: #444;
-  --color-h6: #444;
+  --color-h5: #555;
+  --color-h6: #666;
   --color-p: #444;
   --color-list: #666;
   --color-list-hl: #36ac91;
@@ -804,37 +804,37 @@ button {
   }
   :root:not([color-scheme]) {
     --color-site-body: #121212;
-    --color-read-bkg: #121212;
-    --color-read-post: #121212;
-    --color-site-bg: #121212;
-    --color-site-inner: #eee;
-    --color-site-footer: #aaa;
-    --color-card: #121212;
-    --color-text: #eee;
-    --color-block: #3a3a3a;
-    --color-codeblock: #343a3c;
+    --color-read-bkg: #1f1f1f;
+    --color-read-post: #1f1f1f;
+    --color-site-bg: #1f1f1f;
+    --color-site-inner: rgba(238,238,238,0.871);
+    --color-site-footer: rgba(170,170,170,0.871);
+    --color-card: #1f1f1f;
+    --color-text: rgba(238,238,238,0.871);
+    --color-block: #434343;
+    --color-codeblock: #1f1f1f;
     --color-inlinecode: #d56d28;
-    --color-h1: #eee;
-    --color-h2: #eee;
-    --color-h3: #ddd;
-    --color-h4: #ddd;
-    --color-h5: #ddd;
-    --color-h6: #ddd;
-    --color-p: #bbb;
-    --color-list: #aaa;
+    --color-h1: rgba(255,255,255,0.871);
+    --color-h2: rgba(255,255,255,0.871);
+    --color-h3: rgba(255,255,255,0.6);
+    --color-h4: rgba(255,255,255,0.6);
+    --color-h5: rgba(255,255,255,0.6);
+    --color-h6: rgba(255,255,255,0.6);
+    --color-p: rgba(217,217,217,0.871);
+    --color-list: rgba(217,217,217,0.871);
     --color-list-hl: #69dfc4;
-    --color-meta: #888;
-    --color-link: #888;
+    --color-meta: rgba(191,191,191,0.871);
+    --color-link: rgba(191,191,191,0.871);
     --color-copyright-bkg: #21252b;
   }
   :root:not([color-scheme]) img {
     filter: brightness(70%) !important;
   }
   :root:not([color-scheme]) .blur {
-    background: rgba(18,18,18,0.9) !important;
+    background: rgba(31,31,31,0.9) !important;
   }
   :root:not([color-scheme]) .white-box.blur {
-    background: rgba(18,18,18,0.9) !important;
+    background: rgba(31,31,31,0.9) !important;
   }
   :root:not([color-scheme]) .nav-main .u-search-input {
     background: var(--color-card) !important;
@@ -876,37 +876,37 @@ button {
 }
 [color-scheme='dark'] {
   --color-site-body: #121212;
-  --color-read-bkg: #121212;
-  --color-read-post: #121212;
-  --color-site-bg: #121212;
-  --color-site-inner: #eee;
-  --color-site-footer: #aaa;
-  --color-card: #121212;
-  --color-text: #eee;
-  --color-block: #3a3a3a;
-  --color-codeblock: #343a3c;
+  --color-read-bkg: #1f1f1f;
+  --color-read-post: #1f1f1f;
+  --color-site-bg: #1f1f1f;
+  --color-site-inner: rgba(238,238,238,0.871);
+  --color-site-footer: rgba(170,170,170,0.871);
+  --color-card: #1f1f1f;
+  --color-text: rgba(238,238,238,0.871);
+  --color-block: #434343;
+  --color-codeblock: #1f1f1f;
   --color-inlinecode: #d56d28;
-  --color-h1: #eee;
-  --color-h2: #eee;
-  --color-h3: #ddd;
-  --color-h4: #ddd;
-  --color-h5: #ddd;
-  --color-h6: #ddd;
-  --color-p: #bbb;
-  --color-list: #aaa;
+  --color-h1: rgba(255,255,255,0.871);
+  --color-h2: rgba(255,255,255,0.871);
+  --color-h3: rgba(255,255,255,0.6);
+  --color-h4: rgba(255,255,255,0.6);
+  --color-h5: rgba(255,255,255,0.6);
+  --color-h6: rgba(255,255,255,0.6);
+  --color-p: rgba(217,217,217,0.871);
+  --color-list: rgba(217,217,217,0.871);
   --color-list-hl: #69dfc4;
-  --color-meta: #888;
-  --color-link: #888;
+  --color-meta: rgba(191,191,191,0.871);
+  --color-link: rgba(191,191,191,0.871);
   --color-copyright-bkg: #21252b;
 }
 [color-scheme='dark'] img {
   filter: brightness(70%) !important;
 }
 [color-scheme='dark'] .blur {
-  background: rgba(18,18,18,0.9) !important;
+  background: rgba(31,31,31,0.9) !important;
 }
 [color-scheme='dark'] .white-box.blur {
-  background: rgba(18,18,18,0.9) !important;
+  background: rgba(31,31,31,0.9) !important;
 }
 [color-scheme='dark'] .nav-main .u-search-input {
   background: var(--color-card) !important;
@@ -1793,8 +1793,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.bca4d315.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.bca4d315.css"></noscript>
+  <link rel="stylesheet" href="/css/style.806ec192.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.806ec192.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1829,7 +1829,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     '<div class="kill-ie">'+
         `<span class="kill-t"><b>抱歉，您的浏览器无法访问本站</b></span><br/>`+
         `<span class="kill-c">微软已经于2016年终止了对 Internet Explorer (IE) 10 及更早版本的支持，<br/>继续使用存在极大的安全隐患，请使用当代主流的浏览器进行访问。</span><br/>`+
-        `<a target="_blank" rel="noopener" href="https://www.microsoft.com/zh-cn/WindowsForBusiness/End-of-IE-support"><strong>了解详情 ></strong></a>`+
+        `<a target="_blank" rel="noopener" href="https://blogs.windows.com/windowsexperience/2021/05/19/the-future-of-internet-explorer-on-windows-10-is-in-microsoft-edge/"><strong>了解详情 ></strong></a>`+
     '</div>');
 </script>
 
@@ -1872,9 +1872,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1656152424995","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenu.js?time=1656152424995","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1656152424995","sites":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1656152424995","friends":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1656152424995","contributors":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1656152424995","search":"https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1656152424995"},"css":{"style":"/css/style.bca4d315.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/parallax.js?time=1656167342546","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/rightMenu.js?time=1656167342546","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/rightMenus.js?time=1656167342546","sites":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/sites.js?time=1656167342546","friends":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/friends.js?time=1656167342546","contributors":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/contributors.js?time=1656167342546","search":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/search/hexo.js?time=1656167342546"},"css":{"style":"/css/style.806ec192.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1656152424995),
+    lastupdate: new Date(1656167342546),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2897,7 +2897,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><strong>显示命令执行结果</strong><br>以下命令将会在终端显示当前的工作路径。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> `<span class="built_in">pwd</span>`</span><br></pre></td></tr></table></figure>
 
-<p>注意：pwd 命令是用一对反引号（``）包裹，而不是一对单引号（’’）。<br>使用 <code>$(command)</code> 形式可以达到相同效果。</p>
+<p>注意：pwd 命令是用一对反引号（&#96;&#96;）包裹，而不是一对单引号（’’）。<br>使用 <code>$(command)</code> 形式可以达到相同效果。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> $(<span class="built_in">pwd</span>)</span><br></pre></td></tr></table></figure>
 
 </div><div class="story post-story"><h2 id="Date-：显示和设置系统的时间和日期"><a href="#Date-：显示和设置系统的时间和日期" class="headerlink" title="Date ：显示和设置系统的时间和日期"></a>Date ：显示和设置系统的时间和日期</h2><p>命令描述：date 命令用于显示和设置系统的时间和日期。</p>
@@ -2907,16 +2907,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <p>命令用法示例：</p>
 <p><strong>按照默认格式查看当前系统时间</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">date</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">date</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>按照指定格式查看当前系统时间</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">date <span class="string">&quot;+%Y-%m-%d %H:%M:%S&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">date</span> <span class="string">&quot;+%Y-%m-%d %H:%M:%S&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>查看今天是当年中的第几天</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">date <span class="string">&quot;+%j&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">date</span> <span class="string">&quot;+%j&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>将系统的当前时间设置为 2020 年 02 月 20 日 20 点 20 分 20 秒</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">date -s <span class="string">&quot;20200220 20:20:20&quot;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">date</span> -s <span class="string">&quot;20200220 20:20:20&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>校正系统时间，与网络时间同步</strong></p>
 <p>a. 安装 ntp 校时工具</p>
@@ -2931,7 +2931,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <table><caption></caption><colgroup><col><col></colgroup><thead><tr><th data-spm-anchor-id="a2c6h.13858378.0.i24.25da70089Mos0m">参数</th><th>作用</th></tr></thead><tbody><tr><td>-b</td><td>后台下载</td></tr><tr><td>-P</td><td>下载到指定目录</td></tr><tr><td>-t</td><td>最大重试次数</td></tr><tr><td>-c</td><td>断点续传</td></tr><tr><td>-p</td><td>下载页面内所有资源，包括图片、视频等</td></tr><tr><td>-r</td><td>递归下载</td></tr></tbody></table>
 
 <p>命令使用示例：</p>
-<p><strong>下载一张图片到路径/root/static/img/中，-p 参数默认值为当前路径，如果指定路径不存在会自动创建。</strong></p>
+<p><strong>下载一张图片到路径&#x2F;root&#x2F;static&#x2F;img&#x2F;中，-p 参数默认值为当前路径，如果指定路径不存在会自动创建。</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -P /root/static/img/ http://img.alicdn.com/tfs/TB1.R._t7L0gK0jSZFxXXXWHVXa-2666-1500.png</span><br></pre></td></tr></table></figure>
 
 </div><div class="story post-story"><h2 id="Ps-：查看系统中的进程状态"><a href="#Ps-：查看系统中的进程状态" class="headerlink" title="Ps ：查看系统中的进程状态"></a>Ps ：查看系统中的进程状态</h2><p>命令描述：ps 命令用于查看系统中的进程状态。</p>
@@ -2958,7 +2958,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>第五行信息依次为：虚拟内存总量、虚拟内存使用量、虚拟内存空闲量、预加载内存量。</li>
 </ul>
 </li>
-<li>进程信息区 <table> <caption></caption><colgroup><col><col></colgroup><thead><tr><th data-spm-anchor-id="a2c6h.13858378.0.i35.25da70089Mos0m">列名</th><th>含义</th></tr></thead><tbody><tr><td>PID</td><td>进程 ID</td></tr><tr><td>USER</td><td>进程所有者的用户名</td></tr><tr><td>PR</td><td>进程优先级</td></tr><tr><td>NI</td><td>nice 值。负值表示高优先级，正值表示低优先级</td></tr><tr><td>VIRT</td><td>进程使用的虚拟内存总量，单位 kb</td></tr><tr><td>RES</td><td>进程使用的、未被换出的物理内存大小，单位 kb</td></tr><tr><td>SHR</td><td data-spm-anchor-id="a2c6h.13858378.0.i34.25da70089Mos0m">共享内存大小，单位 kb</td></tr><tr><td>S</td><td>进程状态<ul><li>D：不可中断的睡眠状态</li><li>R：正在运行</li><li>S：睡眠</li><li>T：停止</li><li>Z：僵尸进程</li></ul></td></tr><tr><td>%CPU</td><td>上次更新到现在的 CPU 时间占用百分比</td></tr><tr><td>%MEM</td><td>进程使用的物理内存百分比</td></tr><tr><td>TIME+</td><td>进程使用的 CPU 时间总计，单位 1/100 秒</td></tr><tr><td>COMMAND</td><td>命令名</td></tr></tbody> </table><br>  按 q 键退出监控页面。</li>
+<li>进程信息区 <table> <caption></caption><colgroup><col><col></colgroup><thead><tr><th data-spm-anchor-id="a2c6h.13858378.0.i35.25da70089Mos0m">列名</th><th>含义</th></tr></thead><tbody><tr><td>PID</td><td>进程 ID</td></tr><tr><td>USER</td><td>进程所有者的用户名</td></tr><tr><td>PR</td><td>进程优先级</td></tr><tr><td>NI</td><td>nice 值。负值表示高优先级，正值表示低优先级</td></tr><tr><td>VIRT</td><td>进程使用的虚拟内存总量，单位 kb</td></tr><tr><td>RES</td><td>进程使用的、未被换出的物理内存大小，单位 kb</td></tr><tr><td>SHR</td><td data-spm-anchor-id="a2c6h.13858378.0.i34.25da70089Mos0m">共享内存大小，单位 kb</td></tr><tr><td>S</td><td>进程状态<ul><li>D：不可中断的睡眠状态</li><li>R：正在运行</li><li>S：睡眠</li><li>T：停止</li><li>Z：僵尸进程</li></ul></td></tr><tr><td>%CPU</td><td>上次更新到现在的 CPU 时间占用百分比</td></tr><tr><td>%MEM</td><td>进程使用的物理内存百分比</td></tr><tr><td>TIME+</td><td>进程使用的 CPU 时间总计，单位 1&#x2F;100 秒</td></tr><tr><td>COMMAND</td><td>命令名</td></tr></tbody> </table><br>  按 q 键退出监控页面。</li>
 </ul>
 </div><div class="story post-story"><h2 id="Pidof-：查询指定服务进程的-PID-值"><a href="#Pidof-：查询指定服务进程的-PID-值" class="headerlink" title="Pidof ：查询指定服务进程的 PID 值"></a>Pidof ：查询指定服务进程的 PID 值</h2><p>命令描述：pidof 命令用于查询指定服务进程的 PID 值。</p>
 <p>命令格式：<code>pidof [服务名称]</code></p>
@@ -2987,8 +2987,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>命令参数说明：</p>
 <ul>
 <li>-n：保存数据后再重新启动系统。</li>
-<li>-w：仅做测试，并不是真的将系统重新开机，只会把重新开机的数据写入记录文件/var/log/wtmp。</li>
-<li>-d：重新启动时不把数据写入记录文件/var/tmp/wtmp。</li>
+<li>-w：仅做测试，并不是真的将系统重新开机，只会把重新开机的数据写入记录文件&#x2F;var&#x2F;log&#x2F;wtmp。</li>
+<li>-d：重新启动时不把数据写入记录文件&#x2F;var&#x2F;tmp&#x2F;wtmp。</li>
 <li>-f：强制重新开机，不调用 shutdown 指令的功能。</li>
 <li>-i：关闭网络设置之后再重新启动系统。</li>
 </ul>
@@ -3016,7 +3016,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>broadcast（广播地址）：172.16.143.255。</li>
 <li>netmask（掩码地址）：255.255.240.0。</li>
 <li>RX 表示接收数据包的情况，TX 表示发送数据包的情况。</li>
-<li>lo 表示主机的回环网卡，是一种特殊的网络接口，不与任何实际设备连接，而是完全由软件实现。与回环地址（127.0.0.0/8 或 ::1/128）不同，回环网卡对系统显示为一块硬件。任何发送到该网卡上的数据都将立刻被同一网卡接收到。</li>
+<li>lo 表示主机的回环网卡，是一种特殊的网络接口，不与任何实际设备连接，而是完全由软件实现。与回环地址（127.0.0.0&#x2F;8 或 ::1&#x2F;128）不同，回环网卡对系统显示为一块硬件。任何发送到该网卡上的数据都将立刻被同一网卡接收到。</li>
 </ul>
 </li>
 </ul>
@@ -3024,19 +3024,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>命令语法：<code>uname [-amnrsv][--help][--version]</code></p>
 <p>命令使用示例：</p>
 <p><strong>显示系统信息。</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname -a</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">uname</span> -a</span><br></pre></td></tr></table></figure>
 
 <p><strong>显示当前系统的硬件架构。</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname -i</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">uname</span> -i</span><br></pre></td></tr></table></figure>
 
 <p><strong>显示操作系统发行编号。</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname -r</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">uname</span> -r</span><br></pre></td></tr></table></figure>
 
 <p><strong>显示操作系统名称。</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname -s</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">uname</span> -s</span><br></pre></td></tr></table></figure>
 
 <p><strong>显示主机名称。</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">uname -n</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">uname</span> -n</span><br></pre></td></tr></table></figure>
 
 </div><div class="story post-story"><h2 id="Uptime-：查看系统的负载信息"><a href="#Uptime-：查看系统的负载信息" class="headerlink" title="Uptime ：查看系统的负载信息"></a>Uptime ：查看系统的负载信息</h2><p>命令描述：uptime 用于查看系统的负载信息。</p>
 <p>命令使用示例：</p>
@@ -3057,22 +3057,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </div><div class="story post-story"><h2 id="Who-：显示关于当前在本地系统上的所有用户的信息"><a href="#Who-：显示关于当前在本地系统上的所有用户的信息" class="headerlink" title="Who ：显示关于当前在本地系统上的所有用户的信息"></a>Who ：显示关于当前在本地系统上的所有用户的信息</h2><p>命令描述：who 命令显示关于当前在本地系统上的所有用户的信息。</p>
 <p>命令使用示例：</p>
 <p><strong>显示当前登录系统的用户</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">who</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">who</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>显示用户登录来源</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">who -l -H</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">who</span> -l -H</span><br></pre></td></tr></table></figure>
 
 <p><strong>只显示当前用户</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">who -m -H</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">who</span> -m -H</span><br></pre></td></tr></table></figure>
 
 <p><strong>精简模式显示</strong></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">who -q</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">who</span> -q</span><br></pre></td></tr></table></figure>
 
 </div><div class="story post-story"><h2 id="Last-：显示用户最近登录信息"><a href="#Last-：显示用户最近登录信息" class="headerlink" title="Last ：显示用户最近登录信息"></a>Last ：显示用户最近登录信息</h2><p>命令描述： last 命令用于显示用户最近登录信息。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">last</span><br></pre></td></tr></table></figure>
 
 </div><div class="story post-story"><h2 id="History-：显示历史执行过的命令"><a href="#History-：显示历史执行过的命令" class="headerlink" title="History ：显示历史执行过的命令"></a>History ：显示历史执行过的命令</h2><p>命令描述：history 命令用于显示历史执行过的命令。</p>
-<p>bash 默认记录 1000 条执行过的历史命令，被记录在~/.bash_history 文件中。</p>
+<p>bash 默认记录 1000 条执行过的历史命令，被记录在~&#x2F;.bash_history 文件中。</p>
 <p>命令使用示例：</p>
 <p><strong>显示最新 10 条执行过的命令。</strong></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">history</span> 10</span><br></pre></td></tr></table></figure>
@@ -3143,13 +3143,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class='donate'>
           <iframe src="https://sukiu.top/donate/drinks/" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;"  frameborder="0" scrolling="no"></iframe>
-          <!-- <div class='imgs'>
-            
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/qrcode/github@volantis.png'>
-            
-              <img src='https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/qrcode/github@volantis.png'>
-            
-          </div> -->
         </div>
       
     </div>
@@ -3345,7 +3338,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Echo-%EF%BC%9A%E5%9C%A8%E7%BB%88%E7%AB%AF%E8%BE%93%E5%87%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%96%E5%8F%98%E9%87%8F%E6%8F%90%E5%8F%96%E5%90%8E%E7%9A%84%E5%80%BC"><span class="toc-number">1.</span> <span class="toc-text">Echo ：在终端输出字符串或变量提取后的值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Date-%EF%BC%9A%E6%98%BE%E7%A4%BA%E5%92%8C%E8%AE%BE%E7%BD%AE%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%97%B6%E9%97%B4%E5%92%8C%E6%97%A5%E6%9C%9F"><span class="toc-number">2.</span> <span class="toc-text">Date ：显示和设置系统的时间和日期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Wget-%EF%BC%9A%E5%9C%A8%E7%BB%88%E7%AB%AF%E4%B8%AD%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6"><span class="toc-number">3.</span> <span class="toc-text">Wget ：在终端中下载文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Ps-%EF%BC%9A%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81"><span class="toc-number">4.</span> <span class="toc-text">Ps ：查看系统中的进程状态</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Top-%EF%BC%9A%E5%8A%A8%E6%80%81%E5%9C%B0%E7%9B%91%E8%A7%86%E8%BF%9B%E7%A8%8B%E6%B4%BB%E5%8A%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E8%B4%9F%E8%BD%BD%E7%AD%89%E4%BF%A1%E6%81%AF"><span class="toc-number">5.</span> <span class="toc-text">Top ：动态地监视进程活动与系统负载等信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pidof-%EF%BC%9A%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E6%9C%8D%E5%8A%A1%E8%BF%9B%E7%A8%8B%E7%9A%84-PID-%E5%80%BC"><span class="toc-number">6.</span> <span class="toc-text">Pidof ：查询指定服务进程的 PID 值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Kill-%EF%BC%9A%E7%BB%88%E6%AD%A2%E6%8C%87%E5%AE%9A-PID-%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%BF%9B%E7%A8%8B"><span class="toc-number">7.</span> <span class="toc-text">Kill ：终止指定 PID 的服务进程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Killall-%EF%BC%9A%E7%BB%88%E6%AD%A2%E6%8C%87%E5%AE%9A%E5%90%8D%E7%A7%B0%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%AF%B9%E5%BA%94%E7%9A%84%E5%85%A8%E9%83%A8%E8%BF%9B%E7%A8%8B"><span class="toc-number">8.</span> <span class="toc-text">Killall ：终止指定名称的服务对应的全部进程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Reboot-%EF%BC%9A%E9%87%8D%E5%90%AF%E7%B3%BB%E7%BB%9F"><span class="toc-number">9.</span> <span class="toc-text">Reboot ：重启系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Poweroff-%EF%BC%9A%E5%85%B3%E9%97%AD%E7%B3%BB%E7%BB%9F"><span class="toc-number">10.</span> <span class="toc-text">Poweroff ：关闭系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Ifconfig-%EF%BC%9A%E8%8E%B7%E5%8F%96%E7%BD%91%E5%8D%A1%E9%85%8D%E7%BD%AE%E4%B8%8E%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81%E7%AD%89%E4%BF%A1%E6%81%AF"><span class="toc-number">11.</span> <span class="toc-text">Ifconfig ：获取网卡配置与网络状态等信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Uname-%EF%BC%9A%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E5%86%85%E6%A0%B8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E7%89%88%E6%9C%AC%E7%AD%89%E4%BF%A1%E6%81%AF"><span class="toc-number">12.</span> <span class="toc-text">Uname ：查看系统内核与系统版本等信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Uptime-%EF%BC%9A%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%B4%9F%E8%BD%BD%E4%BF%A1%E6%81%AF"><span class="toc-number">13.</span> <span class="toc-text">Uptime ：查看系统的负载信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Free-%EF%BC%9A%E6%98%BE%E7%A4%BA%E5%BD%93%E5%89%8D%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%86%85%E5%AD%98%E7%9A%84%E4%BD%BF%E7%94%A8%E9%87%8F%E4%BF%A1%E6%81%AF"><span class="toc-number">14.</span> <span class="toc-text">Free ：显示当前系统中内存的使用量信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Who-%EF%BC%9A%E6%98%BE%E7%A4%BA%E5%85%B3%E4%BA%8E%E5%BD%93%E5%89%8D%E5%9C%A8%E6%9C%AC%E5%9C%B0%E7%B3%BB%E7%BB%9F%E4%B8%8A%E7%9A%84%E6%89%80%E6%9C%89%E7%94%A8%E6%88%B7%E7%9A%84%E4%BF%A1%E6%81%AF"><span class="toc-number">15.</span> <span class="toc-text">Who ：显示关于当前在本地系统上的所有用户的信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Last-%EF%BC%9A%E6%98%BE%E7%A4%BA%E7%94%A8%E6%88%B7%E6%9C%80%E8%BF%91%E7%99%BB%E5%BD%95%E4%BF%A1%E6%81%AF"><span class="toc-number">16.</span> <span class="toc-text">Last ：显示用户最近登录信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#History-%EF%BC%9A%E6%98%BE%E7%A4%BA%E5%8E%86%E5%8F%B2%E6%89%A7%E8%A1%8C%E8%BF%87%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="toc-number">17.</span> <span class="toc-text">History ：显示历史执行过的命令</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E7%B3%BB%E7%BB%9F%E5%B7%A5%E4%BD%9C%E5%91%BD%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text">常用系统工作命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Echo-%EF%BC%9A%E5%9C%A8%E7%BB%88%E7%AB%AF%E8%BE%93%E5%87%BA%E5%AD%97%E7%AC%A6%E4%B8%B2%E6%88%96%E5%8F%98%E9%87%8F%E6%8F%90%E5%8F%96%E5%90%8E%E7%9A%84%E5%80%BC"><span class="toc-number">1.1.</span> <span class="toc-text">Echo ：在终端输出字符串或变量提取后的值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Date-%EF%BC%9A%E6%98%BE%E7%A4%BA%E5%92%8C%E8%AE%BE%E7%BD%AE%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%97%B6%E9%97%B4%E5%92%8C%E6%97%A5%E6%9C%9F"><span class="toc-number">1.2.</span> <span class="toc-text">Date ：显示和设置系统的时间和日期</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Wget-%EF%BC%9A%E5%9C%A8%E7%BB%88%E7%AB%AF%E4%B8%AD%E4%B8%8B%E8%BD%BD%E6%96%87%E4%BB%B6"><span class="toc-number">1.3.</span> <span class="toc-text">Wget ：在终端中下载文件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Ps-%EF%BC%9A%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E4%B8%AD%E7%9A%84%E8%BF%9B%E7%A8%8B%E7%8A%B6%E6%80%81"><span class="toc-number">1.4.</span> <span class="toc-text">Ps ：查看系统中的进程状态</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Top-%EF%BC%9A%E5%8A%A8%E6%80%81%E5%9C%B0%E7%9B%91%E8%A7%86%E8%BF%9B%E7%A8%8B%E6%B4%BB%E5%8A%A8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E8%B4%9F%E8%BD%BD%E7%AD%89%E4%BF%A1%E6%81%AF"><span class="toc-number">1.5.</span> <span class="toc-text">Top ：动态地监视进程活动与系统负载等信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Pidof-%EF%BC%9A%E6%9F%A5%E8%AF%A2%E6%8C%87%E5%AE%9A%E6%9C%8D%E5%8A%A1%E8%BF%9B%E7%A8%8B%E7%9A%84-PID-%E5%80%BC"><span class="toc-number">1.6.</span> <span class="toc-text">Pidof ：查询指定服务进程的 PID 值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Kill-%EF%BC%9A%E7%BB%88%E6%AD%A2%E6%8C%87%E5%AE%9A-PID-%E7%9A%84%E6%9C%8D%E5%8A%A1%E8%BF%9B%E7%A8%8B"><span class="toc-number">1.7.</span> <span class="toc-text">Kill ：终止指定 PID 的服务进程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Killall-%EF%BC%9A%E7%BB%88%E6%AD%A2%E6%8C%87%E5%AE%9A%E5%90%8D%E7%A7%B0%E7%9A%84%E6%9C%8D%E5%8A%A1%E5%AF%B9%E5%BA%94%E7%9A%84%E5%85%A8%E9%83%A8%E8%BF%9B%E7%A8%8B"><span class="toc-number">1.8.</span> <span class="toc-text">Killall ：终止指定名称的服务对应的全部进程</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Reboot-%EF%BC%9A%E9%87%8D%E5%90%AF%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.9.</span> <span class="toc-text">Reboot ：重启系统</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Poweroff-%EF%BC%9A%E5%85%B3%E9%97%AD%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.10.</span> <span class="toc-text">Poweroff ：关闭系统</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E7%8A%B6%E6%80%81%E6%A3%80%E6%B5%8B%E5%91%BD%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text">系统状态检测命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Ifconfig-%EF%BC%9A%E8%8E%B7%E5%8F%96%E7%BD%91%E5%8D%A1%E9%85%8D%E7%BD%AE%E4%B8%8E%E7%BD%91%E7%BB%9C%E7%8A%B6%E6%80%81%E7%AD%89%E4%BF%A1%E6%81%AF"><span class="toc-number">2.1.</span> <span class="toc-text">Ifconfig ：获取网卡配置与网络状态等信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Uname-%EF%BC%9A%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E5%86%85%E6%A0%B8%E4%B8%8E%E7%B3%BB%E7%BB%9F%E7%89%88%E6%9C%AC%E7%AD%89%E4%BF%A1%E6%81%AF"><span class="toc-number">2.2.</span> <span class="toc-text">Uname ：查看系统内核与系统版本等信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Uptime-%EF%BC%9A%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%B4%9F%E8%BD%BD%E4%BF%A1%E6%81%AF"><span class="toc-number">2.3.</span> <span class="toc-text">Uptime ：查看系统的负载信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Free-%EF%BC%9A%E6%98%BE%E7%A4%BA%E5%BD%93%E5%89%8D%E7%B3%BB%E7%BB%9F%E4%B8%AD%E5%86%85%E5%AD%98%E7%9A%84%E4%BD%BF%E7%94%A8%E9%87%8F%E4%BF%A1%E6%81%AF"><span class="toc-number">2.4.</span> <span class="toc-text">Free ：显示当前系统中内存的使用量信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Who-%EF%BC%9A%E6%98%BE%E7%A4%BA%E5%85%B3%E4%BA%8E%E5%BD%93%E5%89%8D%E5%9C%A8%E6%9C%AC%E5%9C%B0%E7%B3%BB%E7%BB%9F%E4%B8%8A%E7%9A%84%E6%89%80%E6%9C%89%E7%94%A8%E6%88%B7%E7%9A%84%E4%BF%A1%E6%81%AF"><span class="toc-number">2.5.</span> <span class="toc-text">Who ：显示关于当前在本地系统上的所有用户的信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Last-%EF%BC%9A%E6%98%BE%E7%A4%BA%E7%94%A8%E6%88%B7%E6%9C%80%E8%BF%91%E7%99%BB%E5%BD%95%E4%BF%A1%E6%81%AF"><span class="toc-number">2.6.</span> <span class="toc-text">Last ：显示用户最近登录信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#History-%EF%BC%9A%E6%98%BE%E7%A4%BA%E5%8E%86%E5%8F%B2%E6%89%A7%E8%A1%8C%E8%BF%87%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="toc-number">2.7.</span> <span class="toc-text">History ：显示历史执行过的命令</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -3724,7 +3717,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/rightMenus.js?time=1656152424995"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/rightMenus.js?time=1656167342546"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3965,19 +3958,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/sites.js?time=1656152424995")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/sites.js?time=1656167342546")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/friends.js?time=1656152424995")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/friends.js?time=1656167342546")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/tags/contributors.js?time=1656152424995")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/contributors.js?time=1656167342546")
       }
     
   };
@@ -4073,7 +4066,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/aplayer.js?time=1656152424995')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/aplayer.js?time=1656167342546')
   
   })();
 
@@ -4200,7 +4193,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/search/hexo.js?time=1656152424995");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/search/hexo.js?time=1656167342546");
   }
 
   function loadSearchService() {
@@ -4543,7 +4536,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.4.0/source/js/plugins/parallax.js?time=1656152424995').then(()=>{
+    volantis.js('https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/parallax.js?time=1656167342546').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4799,6 +4792,21 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 </script>
 
+
+<script>
+  document.onreadystatechange = function () {
+    if (document.readyState == 'complete') {
+      // 页面加载完毕 样式加载失败，或是当前网速慢，或是开启了省流模式
+      const { saveData, effectiveType } = navigator.connection || navigator.mozConnection || navigator.webkitConnection || {}
+      if (getComputedStyle(document.querySelector("#safearea"), null)["display"] == "none" || saveData || /2g/.test(effectiveType)) {
+        document.querySelectorAll(".reveal").forEach(function (e) {
+          e.style["opacity"] = "1";
+        });
+        document.querySelector("#safearea").style["display"] = "block";
+      }
+    }
+  }
+</script>
 
 
   <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Linux/","name":"Linux"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Linux/Linux-System-Management/","name":"Linux指令之系统管理"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"Linux指令之系统管理","description":"Linux 中常用的系统工作命令以及系统状态检测命令。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Linux/Linux-System-Management/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Linux/Linux-System-Management/","wordCount":27,"datePublished":"2021-11-07T14:50:00.000Z","dateModified":"2021-11-07T14:50:00.000Z","articleSection":"Linux","keywords":"Shell","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
