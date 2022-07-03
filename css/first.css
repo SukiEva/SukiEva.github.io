@@ -19,7 +19,7 @@
   --color-text: #444;
   --color-block: #f6f6f6;
   --color-inlinecode: #c74f00;
-  --color-codeblock: #fff7ea;
+  --color-codeblock: #f6f6f6;
   --color-h1: #3a3a3a;
   --color-h2: #3a3a3a;
   --color-h3: #333;
@@ -757,7 +757,7 @@ button {
     --color-site-footer: rgba(170,170,170,0.871);
     --color-card: #1f1f1f;
     --color-text: rgba(238,238,238,0.871);
-    --color-block: #434343;
+    --color-block: #1f1f1f;
     --color-codeblock: #1f1f1f;
     --color-inlinecode: #d56d28;
     --color-h1: rgba(255,255,255,0.871);
@@ -829,7 +829,7 @@ button {
   --color-site-footer: rgba(170,170,170,0.871);
   --color-card: #1f1f1f;
   --color-text: rgba(238,238,238,0.871);
-  --color-block: #434343;
+  --color-block: #1f1f1f;
   --color-codeblock: #1f1f1f;
   --color-inlinecode: #d56d28;
   --color-h1: rgba(255,255,255,0.871);
@@ -1735,5 +1735,97 @@ ul.list-v >li>a:hover {
 @media screen and (prefers-color-scheme: dark) and (max-width: 500px) {
   .l_header .m_search {
     background: var(--color-site-bg) !important;
+  }
+}
+.banner_wave_lk1 {
+  width: auto;
+  height: 65px;
+  background: url("https://image.lkarrie.com/images/2022/02/13/wave_1.png") repeat-x;
+  _filter: alpha(opacity=80);
+  position: absolute;
+  bottom: 0;
+  width: 400%;
+  left: -236px;
+  z-index: 5;
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  transiton-property: opacity, bottom;
+  transition-duration: 0.4s, 0.4s;
+  -webkit-transition-duration: 0.4s, 0.4s;
+  -khtml-transition-duration: 0.4s, 0.4s;
+  -moz-transition-duration: 0.4s, 0.4s;
+  -o-transition-duration: 0.4s, 0.4s;
+  -ms-transition-duration: 0.4s, 0.4s;
+  animation-name: move2;
+  animation-duration: 240s;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.banner_wave_lk2 {
+  width: auto;
+  height: 80px;
+  background: url("https://image.lkarrie.com/images/2022/02/13/wave_2.png") repeat-x;
+  _filter: alpha(opacity=80);
+  position: absolute;
+  bottom: 0;
+  width: 400%;
+  left: 0;
+  z-index: 4;
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  transiton-property: opacity, bottom;
+  transition-duration: 0.4s, 0.4s;
+  -webkit-transition-duration: 0.4s, 0.4s;
+  -khtml-transition-duration: 0.4s, 0.4s;
+  -moz-transition-duration: 0.4s, 0.4s;
+  -o-transition-duration: 0.4s, 0.4s;
+  -ms-transition-duration: 0.4s, 0.4s;
+  animation-name: move2;
+  animation-duration: 160s;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@-moz-keyframes move1 {
+  100% {
+    background-position: 100% 0;
+  }
+}
+@-webkit-keyframes move1 {
+  100% {
+    background-position: 100% 0;
+  }
+}
+@-o-keyframes move1 {
+  100% {
+    background-position: 100% 0;
+  }
+}
+@keyframes move1 {
+  100% {
+    background-position: 100% 0;
+  }
+}
+@-moz-keyframes move2 {
+  100% {
+    background-position: -100% 0;
+  }
+}
+@-webkit-keyframes move2 {
+  100% {
+    background-position: -100% 0;
+  }
+}
+@-o-keyframes move2 {
+  100% {
+    background-position: -100% 0;
+  }
+}
+@keyframes move2 {
+  100% {
+    background-position: -100% 0;
   }
 }

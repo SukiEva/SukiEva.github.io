@@ -26,7 +26,7 @@
   
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://fastly.jsdelivr.net/gh/SukiEva/assets/blog/favicon.png">
-  <link rel="preload" href="/css/style.806ec192.css" as="style">
+  <link rel="preload" href="/css/style.732f925f.css" as="style">
   <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
 
@@ -72,7 +72,7 @@
   --color-text: #444;
   --color-block: #f6f6f6;
   --color-inlinecode: #c74f00;
-  --color-codeblock: #fff7ea;
+  --color-codeblock: #f6f6f6;
   --color-h1: #3a3a3a;
   --color-h2: #3a3a3a;
   --color-h3: #333;
@@ -810,7 +810,7 @@ button {
     --color-site-footer: rgba(170,170,170,0.871);
     --color-card: #1f1f1f;
     --color-text: rgba(238,238,238,0.871);
-    --color-block: #434343;
+    --color-block: #1f1f1f;
     --color-codeblock: #1f1f1f;
     --color-inlinecode: #d56d28;
     --color-h1: rgba(255,255,255,0.871);
@@ -882,7 +882,7 @@ button {
   --color-site-footer: rgba(170,170,170,0.871);
   --color-card: #1f1f1f;
   --color-text: rgba(238,238,238,0.871);
-  --color-block: #434343;
+  --color-block: #1f1f1f;
   --color-codeblock: #1f1f1f;
   --color-inlinecode: #d56d28;
   --color-h1: rgba(255,255,255,0.871);
@@ -1790,10 +1790,102 @@ ul.list-v >li>a:hover {
     background: var(--color-site-bg) !important;
   }
 }
+.banner_wave_lk1 {
+  width: auto;
+  height: 65px;
+  background: url("https://image.lkarrie.com/images/2022/02/13/wave_1.png") repeat-x;
+  _filter: alpha(opacity=80);
+  position: absolute;
+  bottom: 0;
+  width: 400%;
+  left: -236px;
+  z-index: 5;
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  transiton-property: opacity, bottom;
+  transition-duration: 0.4s, 0.4s;
+  -webkit-transition-duration: 0.4s, 0.4s;
+  -khtml-transition-duration: 0.4s, 0.4s;
+  -moz-transition-duration: 0.4s, 0.4s;
+  -o-transition-duration: 0.4s, 0.4s;
+  -ms-transition-duration: 0.4s, 0.4s;
+  animation-name: move2;
+  animation-duration: 240s;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.banner_wave_lk2 {
+  width: auto;
+  height: 80px;
+  background: url("https://image.lkarrie.com/images/2022/02/13/wave_2.png") repeat-x;
+  _filter: alpha(opacity=80);
+  position: absolute;
+  bottom: 0;
+  width: 400%;
+  left: 0;
+  z-index: 4;
+  opacity: 1;
+  -webkit-opacity: 1;
+  -moz-opacity: 1;
+  transiton-property: opacity, bottom;
+  transition-duration: 0.4s, 0.4s;
+  -webkit-transition-duration: 0.4s, 0.4s;
+  -khtml-transition-duration: 0.4s, 0.4s;
+  -moz-transition-duration: 0.4s, 0.4s;
+  -o-transition-duration: 0.4s, 0.4s;
+  -ms-transition-duration: 0.4s, 0.4s;
+  animation-name: move2;
+  animation-duration: 160s;
+  animation-fill-mode: backwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@-moz-keyframes move1 {
+  100% {
+    background-position: 100% 0;
+  }
+}
+@-webkit-keyframes move1 {
+  100% {
+    background-position: 100% 0;
+  }
+}
+@-o-keyframes move1 {
+  100% {
+    background-position: 100% 0;
+  }
+}
+@keyframes move1 {
+  100% {
+    background-position: 100% 0;
+  }
+}
+@-moz-keyframes move2 {
+  100% {
+    background-position: -100% 0;
+  }
+}
+@-webkit-keyframes move2 {
+  100% {
+    background-position: -100% 0;
+  }
+}
+@-o-keyframes move2 {
+  100% {
+    background-position: -100% 0;
+  }
+}
+@keyframes move2 {
+  100% {
+    background-position: -100% 0;
+  }
+}
 
   </style>
-  <link rel="stylesheet" href="/css/style.806ec192.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.806ec192.css"></noscript>
+  <link rel="stylesheet" href="/css/style.732f925f.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.732f925f.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1871,9 +1963,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/parallax.js?time=1656596159261","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/rightMenu.js?time=1656596159261","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/rightMenus.js?time=1656596159261","sites":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/sites.js?time=1656596159261","friends":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/friends.js?time=1656596159261","contributors":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/contributors.js?time=1656596159261","search":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/search/hexo.js?time=1656596159261"},"css":{"style":"/css/style.806ec192.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/parallax.js?time=1656865692221","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/rightMenu.js?time=1656865692221","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/rightMenus.js?time=1656865692221","sites":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/sites.js?time=1656865692221","friends":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/friends.js?time=1656865692221","contributors":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/contributors.js?time=1656865692221","search":"https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/search/hexo.js?time=1656865692221"},"css":{"style":"/css/style.732f925f.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1656596159261),
+    lastupdate: new Date(1656865692221),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2773,6 +2865,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </div>
 
         <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+        <!-- <div class="banner_wave_lk1"></div><div id="banner_wave_2"></div> -->
       </div>
     
   
@@ -2951,7 +3044,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>本站总字数：</div>
-          <div>107.8k 字</div>
+          <div>111.4k 字</div>
         </div>
       
 
@@ -2976,7 +3069,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2022-06-30 日</div>
+          <div id="last-update-show">2022-07-04 日</div>
         </div>
       
     </div>
@@ -3034,6 +3127,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             ><div class='name'>Design Pattern</div><div class='badge'>(2)</div></a></li>
         
           <li><a class="flat-box"
+            title="/categories/Framework/" href="/categories/Framework/"
+            active-action="action-categoriesFramework"
+            ><div class='name'>Framework</div><div class='badge'>(1)</div></a></li>
+        
+          <li><a class="flat-box"
             title="/categories/Knowledge/" href="/categories/Knowledge/"
             active-action="action-categoriesKnowledge"
             ><div class='name'>Knowledge</div><div class='badge'>(2)</div></a></li>
@@ -3051,7 +3149,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           <li><a class="flat-box"
             title="/categories/Mixed/" href="/categories/Mixed/"
             active-action="action-categoriesMixed"
-            ><div class='name'>Mixed</div><div class='badge'>(4)</div></a></li>
+            ><div class='name'>Mixed</div><div class='badge'>(3)</div></a></li>
         
           <li><a class="flat-box"
             title="/categories/Operating-System/" href="/categories/Operating-System/"
@@ -3091,7 +3189,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
     <div class='content'>
-      <a href="/tags/App/" style="font-size: 14px; color: #999">App</a> <a href="/tags/Backtracking/" style="font-size: 14px; color: #999">Backtracking</a> <a href="/tags/Bit-Operation/" style="font-size: 14px; color: #999">Bit Operation</a> <a href="/tags/CloudFlare-Worker/" style="font-size: 14px; color: #999">CloudFlare Worker</a> <a href="/tags/Component/" style="font-size: 22px; color: #636363">Component</a> <a href="/tags/Container/" style="font-size: 14px; color: #999">Container</a> <a href="/tags/DP/" style="font-size: 14px; color: #999">DP</a> <a href="/tags/Database/" style="font-size: 16px; color: #8b8b8b">Database</a> <a href="/tags/Device/" style="font-size: 14px; color: #999">Device</a> <a href="/tags/File/" style="font-size: 14px; color: #999">File</a> <a href="/tags/Go/" style="font-size: 20px; color: #707070">Go</a> <a href="/tags/Gradle/" style="font-size: 16px; color: #8b8b8b">Gradle</a> <a href="/tags/HTTP/" style="font-size: 14px; color: #999">HTTP</a> <a href="/tags/Hash/" style="font-size: 14px; color: #999">Hash</a> <a href="/tags/Interview/" style="font-size: 14px; color: #999">Interview</a> <a href="/tags/Jetpack/" style="font-size: 18px; color: #7e7e7e">Jetpack</a> <a href="/tags/Kotlin/" style="font-size: 14px; color: #999">Kotlin</a> <a href="/tags/License/" style="font-size: 14px; color: #999">License</a> <a href="/tags/Memory/" style="font-size: 14px; color: #999">Memory</a> <a href="/tags/Network/" style="font-size: 24px; color: #555">Network</a> <a href="/tags/Other/" style="font-size: 14px; color: #999">Other</a> <a href="/tags/Patterns/" style="font-size: 16px; color: #8b8b8b">Patterns</a> <a href="/tags/Queue/" style="font-size: 18px; color: #7e7e7e">Queue</a> <a href="/tags/Redis/" style="font-size: 16px; color: #8b8b8b">Redis</a> <a href="/tags/SQL/" style="font-size: 14px; color: #999">SQL</a> <a href="/tags/Search/" style="font-size: 14px; color: #999">Search</a> <a href="/tags/Shell/" style="font-size: 20px; color: #707070">Shell</a> <a href="/tags/Simulation/" style="font-size: 14px; color: #999">Simulation</a> <a href="/tags/Sort/" style="font-size: 14px; color: #999">Sort</a> <a href="/tags/Stack/" style="font-size: 14px; color: #999">Stack</a> <a href="/tags/String/" style="font-size: 14px; color: #999">String</a> <a href="/tags/Thanox/" style="font-size: 14px; color: #999">Thanox</a> <a href="/tags/Thread/" style="font-size: 14px; color: #999">Thread</a> <a href="/tags/Tree/" style="font-size: 18px; color: #7e7e7e">Tree</a>
+      <a href="/tags/App/" style="font-size: 14px; color: #999">App</a> <a href="/tags/Backtracking/" style="font-size: 14px; color: #999">Backtracking</a> <a href="/tags/Bit-Operation/" style="font-size: 14px; color: #999">Bit Operation</a> <a href="/tags/CloudFlare-Worker/" style="font-size: 14px; color: #999">CloudFlare Worker</a> <a href="/tags/Component/" style="font-size: 22px; color: #636363">Component</a> <a href="/tags/Container/" style="font-size: 14px; color: #999">Container</a> <a href="/tags/DP/" style="font-size: 14px; color: #999">DP</a> <a href="/tags/Database/" style="font-size: 16px; color: #8b8b8b">Database</a> <a href="/tags/Device/" style="font-size: 14px; color: #999">Device</a> <a href="/tags/File/" style="font-size: 14px; color: #999">File</a> <a href="/tags/Go/" style="font-size: 20px; color: #707070">Go</a> <a href="/tags/Gradle/" style="font-size: 16px; color: #8b8b8b">Gradle</a> <a href="/tags/HTTP/" style="font-size: 14px; color: #999">HTTP</a> <a href="/tags/Hash/" style="font-size: 14px; color: #999">Hash</a> <a href="/tags/Interview/" style="font-size: 14px; color: #999">Interview</a> <a href="/tags/Jetpack/" style="font-size: 18px; color: #7e7e7e">Jetpack</a> <a href="/tags/Kotlin/" style="font-size: 14px; color: #999">Kotlin</a> <a href="/tags/License/" style="font-size: 14px; color: #999">License</a> <a href="/tags/Memory/" style="font-size: 14px; color: #999">Memory</a> <a href="/tags/MyBatis/" style="font-size: 14px; color: #999">MyBatis</a> <a href="/tags/Network/" style="font-size: 24px; color: #555">Network</a> <a href="/tags/Patterns/" style="font-size: 16px; color: #8b8b8b">Patterns</a> <a href="/tags/Queue/" style="font-size: 18px; color: #7e7e7e">Queue</a> <a href="/tags/Redis/" style="font-size: 16px; color: #8b8b8b">Redis</a> <a href="/tags/SQL/" style="font-size: 14px; color: #999">SQL</a> <a href="/tags/SSM/" style="font-size: 14px; color: #999">SSM</a> <a href="/tags/Search/" style="font-size: 14px; color: #999">Search</a> <a href="/tags/Shell/" style="font-size: 20px; color: #707070">Shell</a> <a href="/tags/Simulation/" style="font-size: 14px; color: #999">Simulation</a> <a href="/tags/Sort/" style="font-size: 14px; color: #999">Sort</a> <a href="/tags/Stack/" style="font-size: 14px; color: #999">Stack</a> <a href="/tags/String/" style="font-size: 14px; color: #999">String</a> <a href="/tags/Thanox/" style="font-size: 14px; color: #999">Thanox</a> <a href="/tags/Thread/" style="font-size: 14px; color: #999">Thread</a> <a href="/tags/Tree/" style="font-size: 18px; color: #7e7e7e">Tree</a>
     </div>
   </section>
 
@@ -3467,7 +3565,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/rightMenus.js?time=1656596159261"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/rightMenus.js?time=1656865692221"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3708,19 +3806,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/sites.js?time=1656596159261")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/sites.js?time=1656865692221")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/friends.js?time=1656596159261")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/friends.js?time=1656865692221")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/contributors.js?time=1656596159261")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/tags/contributors.js?time=1656865692221")
       }
     
   };
@@ -3816,7 +3914,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/aplayer.js?time=1656596159261')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/aplayer.js?time=1656865692221')
   
   })();
 
@@ -3943,7 +4041,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/search/hexo.js?time=1656596159261");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/search/hexo.js?time=1656865692221");
   }
 
   function loadSearchService() {
@@ -4261,7 +4359,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (total>1) {
       IntervalParallax = setInterval(function () {
         next_parallax();
-      }, '10000');
+      }, '60000');
     }
   }
  
@@ -4286,7 +4384,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/parallax.js?time=1656596159261').then(()=>{
+    volantis.js('https://unpkg.com/hexo-theme-volantis@5.5.0/source/js/plugins/parallax.js?time=1656865692221').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
