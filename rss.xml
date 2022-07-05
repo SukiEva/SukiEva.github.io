@@ -6,7 +6,7 @@
   <link href="http://blog.sukiu.top/rss.xml" rel="self"/>
   
   <link href="http://blog.sukiu.top/"/>
-  <updated>2022-07-03T13:51:00.000Z</updated>
+  <updated>2022-07-05T01:24:00.000Z</updated>
   <id>http://blog.sukiu.top/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Spring MVC</title>
+    <link href="http://blog.sukiu.top/Framework/Spring-MVC/"/>
+    <id>http://blog.sukiu.top/Framework/Spring-MVC/</id>
+    <published>2022-07-05T01:16:00.000Z</published>
+    <updated>2022-07-05T01:24:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Spring MVC 提供了模型 - 视图 - 控制的体系结构和可以用来开发灵活、松散耦合的 web 应用程序的组件。</p><p>MVC 模式导致了应用程序的不同方面 (输入逻辑、业务逻辑和 UI 逻辑) 的分离，同时提供了在这些元素之间的松散耦合。</p><ul><li><p><strong>模型</strong>（model）：封装了应用程序数据，并且通常它们由 POJO 组成。</p></li><li><p><strong>视图</strong>（view）：主要用于呈现模型数据，并且通常它生成客户端的浏览器可以解释的 HTML 输出。</p></li><li><p><strong>控制器</strong>（controller）：主要用于处理用户请求，并且构建合适的模型并将其传递到视图呈现。</p></li></ul><span id="more"></span>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;Spring MVC 提供了模型 - 视图 - 控制的体系结构和可以用来开发灵活、松散耦合的 web 应用程序的组件。&lt;/p&gt;
+&lt;p&gt;MVC 模式导致了应用程序的不同方面 (输入逻辑、业务逻辑和 UI 逻辑) 的分离，同时提供了在这些元素之间的松散耦合。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;模型&lt;/strong&gt;（model）：封装了应用程序数据，并且通常它们由 POJO 组成。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;视图&lt;/strong&gt;（view）：主要用于呈现模型数据，并且通常它生成客户端的浏览器可以解释的 HTML 输出。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;控制器&lt;/strong&gt;（controller）：主要用于处理用户请求，并且构建合适的模型并将其传递到视图呈现。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Framework" scheme="http://blog.sukiu.top/categories/Framework/"/>
+    
+    
+    <category term="SSM" scheme="http://blog.sukiu.top/tags/SSM/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Spring</title>
+    <link href="http://blog.sukiu.top/Framework/Spring/"/>
+    <id>http://blog.sukiu.top/Framework/Spring/</id>
+    <published>2022-07-05T01:08:00.000Z</published>
+    <updated>2022-07-05T01:16:00.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>Spring 是一个<strong>容器</strong>。</p><p>Spring 框架的目标是使 J2EE 开发变得更容易使用，通过启用基于 POJO 的编程模型来促进良好的编程实践。</p><span id="more"></span><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><div class="story post-story"><h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><ul><li>轻量级：20 多个模块，每隔 jar 包基本小于 1M，核心包 3M 左右</li><li>面向接口编程：可拓展、可维护</li><li>AOP：面向切面编程，底层原理是动态代理。合并公共代码，单独开发</li><li>整合其他框架</li></ul></div><div class="story post-story"><h2 id="核心"><a href="#核心" class="headerlink" title="核心"></a>核心</h2><ul><li>控制反转（IoC）：“解耦合”，通过依赖注入 DI（Dependency Injection）实现</li><li>面向切面编程（AOP）：“注入”，下面通过 AspectJ 实现</li></ul><h1 id="三层架构"><a href="#三层架构" class="headerlink" title="三层架构"></a>三层架构</h1></div><div class="story post-story"><h2 id="非-Spring"><a href="#非-Spring" class="headerlink" title="非 Spring"></a>非 Spring</h2><ul><li><p>实体类</p></li><li><p>数据访问层 dao</p><ul><li><p>Mapper.java（接口） </p></li><li><p>MapperImpl.java（实现类）</p></li></ul></li><li><p>业务逻辑层</p><ul><li><p>Service.java（接口）</p></li><li><p>ServiceImpl.java（实现类）</p></li></ul></li><li><p>界面层 controller</p></li></ul></div><div class="story post-story"><h2 id="Spring-接管"><a href="#Spring-接管" class="headerlink" title="Spring 接管"></a>Spring 接管</h2><p>不 new 对象，使用 IoC 在 <code>applicationContext.xml</code> 中创建，注意首先需要空构造方法和 <code>setXXX()</code>。</p><h1 id="IoC"><a href="#IoC" class="headerlink" title="IoC"></a>IoC</h1><p>IoC 是一种思想，由 Spring 容器进行对象创建和依赖注入，程序员直接使用。</p><ul><li><p>正转：程序员对象创建和依赖注入</p><p><code>Student stu = new Student()</code></p></li><li><p>反转：Spring 容器对象创建和依赖注入</p><p><code>&lt;bean id=&quot;stu&quot; class=&quot;…&quot;&gt;&lt;/bean&gt;</code></p></li></ul></div><div class="story post-story"><h2 id="基于-XML"><a href="#基于-XML" class="headerlink" title="基于 XML"></a>基于 XML</h2><ul><li>创建对象：<code>&lt;bean id=&quot;stu&quot; class=&quot;…&quot;&gt;&lt;/bean&gt;</code></li><li>对象赋值：<ul><li>setter 注入：必须提供无参构造方法，必须提供 setXXX()<ul><li>简单类型注入：value 属性 <code>&lt;property name=&quot;age&quot; value=&quot;11&quot;/&gt;</code></li><li>引用类型注入：ref 属性 <code>&lt;property name=&quot;school&quot; ref=&quot;sch&quot;/&gt;</code></li></ul></li><li>构造方法注入：<ul><li>使用构造方法的参数名称：<code>&lt;constructor-arg name=&quot;school&quot; value=&quot;Hohai&quot;/&gt;</code></li><li>使用构造方法的参数下标：<code>&lt;constructor-arg index=&quot;0&quot; value=&quot;Hohai&quot;/&gt;</code></li><li>使用默认构造方法的参数顺序：<code>&lt;constructor-arg value=&quot;Hohai&quot;/&gt;</code></li></ul></li></ul></li></ul></div><div class="story post-story"><h2 id="基于注解的-IoC"><a href="#基于注解的-IoC" class="headerlink" title="基于注解的 IoC"></a>基于注解的 IoC</h2><p>也称 DI，是 IoC 是具体实现的技术。即从 xml 换为注解 annotation。</p><ul><li><p>创建对象的注解</p><ul><li><code>@Component</code>：创建任意对象</li><li><code>@Controller</code>：创建控制器对象，接收用户请求，返回结果给客户端</li><li><code>@Service</code>：创建业务逻辑层对象，负责向下访问数据访问层，处理完毕返回结果给界面层</li><li><code>@Respository</code>：创建数据访问层对象，负责数据库增删改查操作</li></ul></li><li><p>依赖注入的注解</p><ul><li>值类型（8 种基本类型和 String）的注入<ul><li><code>@Value</code>：给简单类型注入值</li></ul></li><li>引用类型的注入<ul><li><code>@Autowired</code>：使用类型注入值，从整个 Bean 工厂搜索同源类型的对象进行注入<ul><li>同源：被注入的类型（Student 中的 School）与注入的类型<strong>完全相同&#x2F;父子&#x2F;接口和实现类</strong>的类型</li><li>父子类用下面的注解区别</li></ul></li><li><code>@Qualifier</code>：使用名称注入值，从整个 Bean 工厂搜索相同名称的对象进行注入<ul><li>需要上面那个注解，否则无法注入</li></ul></li></ul></li></ul><p><strong>要在 Spring 的核心配置文件中添加包扫描：</strong><code>&lt;context:component-scan base-package=&quot;top.sukiu.annotation&quot;/&gt;</code></p><ul><li>单个包扫描（推荐）：一个个包扫</li><li>多个包扫描：以逗号&#x2F;空格&#x2F;分号分隔</li><li>扫描根包（不推荐）</li></ul></li></ul><h1 id="AspectJ"><a href="#AspectJ" class="headerlink" title="AspectJ"></a>AspectJ</h1><p>一个优秀的面向切面的框架，拓展 Java 语言，提供强大的切面实现。</p><p><strong>切入点表达式：</strong><code>execution(访问权限 方法返回值 方法声明（参数）异常类型)</code>，简化后 <code>execution(方法返回值 方法声明（参数）</code></p><ul><li><code>*</code>：任意字符</li><li><code>..</code>：出现在<ul><li>方法声明的参数中：任意参数</li><li>路径中：本路径及其所有子路径</li></ul></li></ul><blockquote><p>例子：</p><p><code>execution(public * *(..))</code>：任意的公共方法</p><p><code>execution(* set*(..))</code>：任意以 set 开头的方法</p><p><code>execution(* com.xyz.service.impl.*.*(..))</code>：任意返回值类型，在此包任意类型的任意方法的任意参数</p></blockquote><p>常用的通知类型：</p><ul><li>前置通知 <code>@Before</code>：在目标方法执行前切入切面功能。  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* 前置通知规范：</span></span><br><span class="line"><span class="comment">* 1）权限public</span></span><br><span class="line"><span class="comment">* 2）返回值void</span></span><br><span class="line"><span class="comment">* 3）方法名自定义</span></span><br><span class="line"><span class="comment">* 4）方法无参数，有只能是JoinPoint类型（包含目标方法的签名和参数）</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@Before(value = &quot;execution(public * com.aspect.SomeServiceImpl.*(..))&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">myBefore</span><span class="params">()</span> &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;前置功能切入&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li>后置通知 <code>@AfterReturning</code>：在目标方法执行后切入切面功能。  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* 后置通知规范：</span></span><br><span class="line"><span class="comment">* 1）权限public</span></span><br><span class="line"><span class="comment">* 2）返回值void</span></span><br><span class="line"><span class="comment">* 3）方法名自定义</span></span><br><span class="line"><span class="comment">* 4）方法有/无参数（一般有）</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@AfterReturning(value = &quot;execution(public * com.aspect.SomeServiceImpl.*(..))&quot;, returning = &quot;obj&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">myAfterReturning</span><span class="params">(Object obj)</span> &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;后置功能切入&quot;</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 基本类型和String的返回值无法改变</span></span><br></pre></td></tr></table></figure></li><li>环绕通知 <code>@Around</code>：通过拦截目标方法，在前后增强功能的通知，功能强大，一般事务使用。  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* 环绕通知规范：</span></span><br><span class="line"><span class="comment">* 1）权限public</span></span><br><span class="line"><span class="comment">* 2）返回值 = 目标方法返回值</span></span><br><span class="line"><span class="comment">* 3）方法名自定义</span></span><br><span class="line"><span class="comment">* 4）方法有参数 = 目标方法</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"> <span class="meta">@Around(value = &quot;execution(public * com.aspect.SomeServiceImpl.*(..))&quot;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">myAround</span><span class="params">(ProceedingJoinPoint p)</span> <span class="keyword">throws</span> Throwable&#123;</span><br><span class="line">    <span class="comment">// 前置</span></span><br><span class="line">    System.out.println(<span class="string">&quot;Before&quot;</span>);</span><br><span class="line">    <span class="comment">// 目标方法</span></span><br><span class="line">    <span class="type">Object</span> <span class="variable">obj</span> <span class="operator">=</span> p.proceed(p.getArgs());</span><br><span class="line">    <span class="comment">// 后置</span></span><br><span class="line">    System.out.println(<span class="string">&quot;After&quot;</span>);</span><br><span class="line">    <span class="keyword">return</span> obj.toString().toUpperCase();</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 可以修改返回值</span></span><br></pre></td></tr></table></figure></li><li>最终通知 <code>@After</code>：无论目标方法是否正常执行，最终通知都会执行。  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">* 最终通知规范：</span></span><br><span class="line"><span class="comment">* 1）权限public</span></span><br><span class="line"><span class="comment">* 2）返回值void</span></span><br><span class="line"><span class="comment">* 3）方法名自定义</span></span><br><span class="line"><span class="comment">* 4）方法无参数，有只能是JoinPoint类型（包含目标方法的签名和参数）</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@After(value = &quot;execution(public * com.aspect.SomeServiceImpl.*(..))&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">myAfter</span><span class="params">()</span> &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;最终功能切入&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li><li>定义切入点 <code>@Pointcut</code>：多个切面切入同一个切入点，起别名  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Pointcut(value = &quot;execution(public * com.aspect.SomeServiceImpl.*(..))&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">myCut</span><span class="params">()</span>&#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Before(value = &quot;myCut()&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">myBefore</span><span class="params">()</span> &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;前置功能切入&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul></div><div class="story post-story"><h2 id="JDK-x2F-CGLib-动态代理"><a href="#JDK-x2F-CGLib-动态代理" class="headerlink" title="JDK&#x2F;CGLib 动态代理"></a>JDK&#x2F;CGLib 动态代理</h2><p><code>applicationContext.xml</code> 中：</p><ul><li><code>&lt;aop:aspectj-autoproxy/&gt;</code>：默认 JDK 动态代理，必须使用接口类型</li><li><code>&lt;aop:aspectj-autoproxy proxy-target-class=&quot;true&quot;/&gt;</code>：切换 CGLib 子类代理，可以用接口或者实现类</li></ul><blockquote><p><strong>一直用接口即可！！！</strong></p></blockquote></div>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;Spring 是一个&lt;strong&gt;容器&lt;/strong&gt;。&lt;/p&gt;
+&lt;p&gt;Spring 框架的目标是使 J2EE 开发变得更容易使用，通过启用基于 POJO 的编程模型来促进良好的编程实践。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Framework" scheme="http://blog.sukiu.top/categories/Framework/"/>
+    
+    
+    <category term="SSM" scheme="http://blog.sukiu.top/tags/SSM/"/>
+    
+  </entry>
   
   <entry>
     <title>MyBatis</title>
@@ -436,78 +488,6 @@
     
     
     <category term="Backtracking" scheme="http://blog.sukiu.top/tags/Backtracking/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>物理层</title>
-    <link href="http://blog.sukiu.top/Computer-Network/Physical-Layer/"/>
-    <id>http://blog.sukiu.top/Computer-Network/Physical-Layer/</id>
-    <published>2021-12-23T13:47:00.000Z</published>
-    <updated>2021-12-23T13:47:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>物理层</strong>（Physical Layer）是计算机网络 OSI 模型中最低的一层，也是最基本的一层。简单的说，网络的物理层面确保原始的数据可在各种物理媒体上传输。</p><p>物理层解决如何在连接各种计算机的传输媒体上<strong>传输数据比特流</strong></p><p>物理层主要任务：确定与传输媒体接口有关的一些特性</p><p>四大特性：</p><ul><li>机械特性：定义物理连接的特性，规定物理连接时所采用的规格、接口形状、引线数目、引脚数量和排列情况</li><li>电气特性：规定传输二进制位时，线路上信号的电压范围、阻抗匹配、传输速率和距离限制</li><li>功能特性：指明某条线上出现的某一电平表示何种意义，接口部件的信号线的用途</li><li>规程特性：定义各条物理线路的工作规程和时序关系</li></ul><p>物理层设备：中继器</p><span id="more"></span><h1 id="通信方式"><a href="#通信方式" class="headerlink" title="通信方式"></a>通信方式</h1><p><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112232153357.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112232153357.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p><p>主要考虑：</p><ul><li>单工通信：单向传输</li><li>半双工通信：双向交替传输</li><li>全双工通信：双向同时传输</li></ul><h1 id="数据交换方式"><a href="#数据交换方式" class="headerlink" title="数据交换方式"></a>数据交换方式</h1><ul><li>电路交换</li><li>报文交换</li><li>分组交换</li></ul><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112232156819.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112232156819.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom: 40%;" /><h1 id="传输介质"><a href="#传输介质" class="headerlink" title="传输介质"></a>传输介质</h1><div class="story post-story"><h2 id="导向性传输介质"><a href="#导向性传输介质" class="headerlink" title="导向性传输介质"></a>导向性传输介质</h2><ul><li>双绞线</li><li>同轴电缆</li><li>光纤</li></ul></div><div class="story post-story"><h2 id="非导向性传输介质"><a href="#非导向性传输介质" class="headerlink" title="非导向性传输介质"></a>非导向性传输介质</h2><ul><li>无线电波</li><li>微波</li><li>红外线、激光</li></ul></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;strong&gt;物理层&lt;/strong&gt;（Physical Layer）是计算机网络 OSI 模型中最低的一层，也是最基本的一层。简单的说，网络的物理层面确保原始的数据可在各种物理媒体上传输。&lt;/p&gt;
-&lt;p&gt;物理层解决如何在连接各种计算机的传输媒体上&lt;strong&gt;传输数据比特流&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;物理层主要任务：确定与传输媒体接口有关的一些特性&lt;/p&gt;
-&lt;p&gt;四大特性：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;机械特性：定义物理连接的特性，规定物理连接时所采用的规格、接口形状、引线数目、引脚数量和排列情况&lt;/li&gt;
-&lt;li&gt;电气特性：规定传输二进制位时，线路上信号的电压范围、阻抗匹配、传输速率和距离限制&lt;/li&gt;
-&lt;li&gt;功能特性：指明某条线上出现的某一电平表示何种意义，接口部件的信号线的用途&lt;/li&gt;
-&lt;li&gt;规程特性：定义各条物理线路的工作规程和时序关系&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;物理层设备：中继器&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Computer Network" scheme="http://blog.sukiu.top/categories/Computer-Network/"/>
-    
-    
-    <category term="Network" scheme="http://blog.sukiu.top/tags/Network/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>数据链路层</title>
-    <link href="http://blog.sukiu.top/Computer-Network/Data-Link-Layer/"/>
-    <id>http://blog.sukiu.top/Computer-Network/Data-Link-Layer/</id>
-    <published>2021-12-23T12:57:00.000Z</published>
-    <updated>2021-12-23T12:57:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>数据链路层</strong> 是 OSI 参考模型中的第二层，介乎于物理层和网络层之间。</p><p>功能：在物理层提供服务的基础上向网络层提供服务</p><ul><li>最基本的服务：<strong>将源自于物理层的数据可靠地传输到相邻结点到目标机网络层</strong></li><li>主要作用：加强物理层传输原始比特流的功能，将物理层提供的可能出错的物理连接改造成逻辑上无差错的数据链路，使之对网络层表现为一条无差错的链路</li><li>为网络层提供服务：<ul><li>无确认的无连接服务</li><li>有确认的无连接服务</li><li>有确认的面向连接服务</li></ul></li></ul><p>重要协议：</p><ul><li>PPP（Point to Point Protocol）点 - 点协议</li></ul><p>链路层设备：</p><ul><li>交换机</li><li>网桥</li></ul><span id="more"></span><h1 id="基本问题"><a href="#基本问题" class="headerlink" title="基本问题"></a>基本问题</h1><div class="story post-story"><h2 id="封装成帧"><a href="#封装成帧" class="headerlink" title="封装成帧"></a>封装成帧</h2><p>将网络层传下来的分组添加首部和尾部，用于标记帧的开始和结束。</p></div><div class="story post-story"><h2 id="透明传输"><a href="#透明传输" class="headerlink" title="透明传输"></a>透明传输</h2><p>透明表示一个实际存在的事物看起来好像不存在一样。<br>针对用户是透明的；首尾是界定帧，转义字符去除数据部分和首尾相同引起歧义。</p></div><div class="story post-story"><h2 id="差错控制"><a href="#差错控制" class="headerlink" title="差错控制"></a>差错控制</h2><p>链路层编码针对<strong>一组比特</strong>，通过冗余码的技术实现一组二进制比特串在传输过程中是否出现差错。</p><p>目前数据链路层广泛使用了循环冗余检验（CRC）来检查比特差错。</p><p>主要包括：</p><ul><li>检错编码<ul><li>奇偶校验码</li><li>循环冗余码</li></ul></li><li>纠错编码<ul><li>海明码</li></ul></li></ul><h1 id="流量控制"><a href="#流量控制" class="headerlink" title="流量控制"></a>流量控制</h1><p>主要通过滑动窗口协议，根据窗口大小分为：</p><ul><li>停止 - 等待协议：发送窗口 &#x3D; 1，接收窗口 &#x3D; 1</li><li>后退 N 帧协议（GBN）：发送窗口 &gt; 1，接收窗口 &#x3D; 1</li><li>选择重传协议（SR）：发送窗口 &gt; 1，接收窗口 &gt; 1</li></ul><table><tr>    <td><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112232122980.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112232122980.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /></td>    <td><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112232123547.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112232123547.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /></td>    <td><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112232123892.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112232123892.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /></td></tr></table><h1 id="介质访问控制"><a href="#介质访问控制" class="headerlink" title="介质访问控制"></a>介质访问控制</h1><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112232127804.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112232127804.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom: 33%;" /></div><div class="story post-story"><h2 id="CSMA-x2F-CD"><a href="#CSMA-x2F-CD" class="headerlink" title="CSMA&#x2F;CD"></a>CSMA&#x2F;CD</h2><blockquote><p>CSMA&#x2F;CD 为载波侦听多路访问&#x2F;冲突检测，是像以太网这种广播网络采用的一种机制，我们知道在以太网中多台主机在同一个信道中进行数据传输，CSMA&#x2F;CD 很好的解决了共享信道通信中出现的问题，它的工作原理主要包括两个部分：</p><ul><li><strong>载波监听</strong>：当使用 CSMA&#x2F;CD 协议时，总线上的各个节点都在监听信道上是否有信号在传输，如果有的话，表明信道处于忙碌状态，继续保持监听，直到信道空闲为止。如果发现信道是空闲的，就立即发送数据。</li><li><strong>冲突检测</strong>：当两个或两个以上节点同时监听到信道空闲，便开始发送数据，此时就会发生碰撞（数据的传输延迟也可能引发碰撞）。当两个帧发生冲突时，数据帧就会破坏而失去了继续传输的意义。在数据的发送过程中，以太网是一直在监听信道的，当检测到当前信道冲突，就立即停止这次传输，避免造成网络资源浪费，同时向信道发送一个「冲突」信号，确保其它节点也发现该冲突。之后采用一种二进制退避策略让待发送数据的节点随机退避一段时间之后重新。</li></ul></blockquote><p>CSMA&#x2F;CD 的工作流程可以概括为：</p><ol><li>先听后发</li><li>边发边听</li><li>冲突停发</li><li>随机重发</li></ol><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112232130101.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112232130101.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom:33%;" /><blockquote><p>CSMA&#x2F;CD: 载波监听多路访问 &#x2F; 碰撞检测（Detect），用于有线局域网（LAN）<br>CSMA&#x2F;CA: 载波监听多路访问 &#x2F; 碰撞避免（Avoid），用于无线局域网（WIFI）</p></blockquote><h1 id="PPP-协议"><a href="#PPP-协议" class="headerlink" title="PPP 协议"></a>PPP 协议</h1><p>互联网用户通常需要连接到某个 ISP 之后才能接入到互联网，PPP（点对点） 协议是用户计算机和 ISP 进行通信时所使用的数据链路层协议。</p><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112232140255.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202112232140255.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom: 33%;" /><h1 id="MAC-地址"><a href="#MAC-地址" class="headerlink" title="MAC 地址"></a>MAC 地址</h1><p>MAC 地址是链路层地址，长度为 6 字节（48 位），用于唯一标识网络适配器（网卡）。</p><p>一台主机拥有多少个网络适配器就有多少个 MAC 地址。</p><blockquote><p>MAC 地址是数据链路层和物理层使用的地址，是写在网卡上的物理地址。MAC 地址用来定义网络设备的位置。<br>IP 地址是网络层和以上各层使用的地址，是一种逻辑地址。IP 地址用来区别网络上的计算机。</p></blockquote></div><div class="story post-story"><h2 id="为什么需要-MAC-地址"><a href="#为什么需要-MAC-地址" class="headerlink" title="为什么需要 MAC 地址"></a>为什么需要 MAC 地址</h2><p>只有当设备连入网络时，才能根据他进入了哪个子网来为其分配 IP 地址，在设备还没有 IP 地址的时候或者在分配 IP 地址的过程中，我们需要 MAC 地址来区分不同的设备。</p></div><div class="story post-story"><h2 id="为什么需要-IP-地址"><a href="#为什么需要-IP-地址" class="headerlink" title="为什么需要 IP 地址"></a>为什么需要 IP 地址</h2><p>光有 MAC 地址的话，寻址困难。IP 地址和地域有关，可以分区域寻址，效率更高。</p></div>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;strong&gt;数据链路层&lt;/strong&gt; 是 OSI 参考模型中的第二层，介乎于物理层和网络层之间。&lt;/p&gt;
-&lt;p&gt;功能：在物理层提供服务的基础上向网络层提供服务&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;最基本的服务：&lt;strong&gt;将源自于物理层的数据可靠地传输到相邻结点到目标机网络层&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;主要作用：加强物理层传输原始比特流的功能，将物理层提供的可能出错的物理连接改造成逻辑上无差错的数据链路，使之对网络层表现为一条无差错的链路&lt;/li&gt;
-&lt;li&gt;为网络层提供服务：&lt;ul&gt;
-&lt;li&gt;无确认的无连接服务&lt;/li&gt;
-&lt;li&gt;有确认的无连接服务&lt;/li&gt;
-&lt;li&gt;有确认的面向连接服务&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;重要协议：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;PPP（Point to Point Protocol）点 - 点协议&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;链路层设备：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;交换机&lt;/li&gt;
-&lt;li&gt;网桥&lt;/li&gt;
-&lt;/ul&gt;</summary>
-    
-    
-    
-    <category term="Computer Network" scheme="http://blog.sukiu.top/categories/Computer-Network/"/>
-    
-    
-    <category term="Network" scheme="http://blog.sukiu.top/tags/Network/"/>
     
   </entry>
   
