@@ -26,7 +26,7 @@
   
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://fastly.jsdelivr.net/gh/SukiEva/assets/blog/favicon.png">
-  <link rel="preload" href="/css/style.732f925f.css" as="style">
+  <link rel="preload" href="/css/style.b3e15eee.css" as="style">
   <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
 
@@ -744,71 +744,6 @@ button {
   -webkit-opacity: 1;
   -moz-opacity: 1;
   border-bottom: 2px solid var(--color-site-inner);
-}
-.cover-wrapper #parallax-window {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-}
-.parallax-mirror {
-  animation-delay: 0s;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-  animation-name: fadeIn;
-}
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -1803,10 +1738,152 @@ ul.list-v >li>a:hover {
     background: var(--color-site-bg) !important;
   }
 }
+#l_cover {
+  position: relative;
+}
+.main-hero-waves-area {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  bottom: -10px;
+  font-size: 0;
+}
+.waves-area .waves-svg {
+  width: 100%;
+  height: 4rem;
+}
+.waves-area .parallax > use {
+  -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  -khtml-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  -moz-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  -o-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  -ms-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.waves-area .parallax > use:first-child {
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+  fill: rgba(255,255,255,0.7);
+}
+.waves-area .parallax > use:nth-child(2) {
+  -webkit-animation-delay: -3s;
+  animation-delay: -3s;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  fill: rgba(255,255,255,0.5);
+}
+.waves-area .parallax > use:nth-child(3) {
+  -webkit-animation-delay: -4s;
+  animation-delay: -4s;
+  -webkit-animation-duration: 13s;
+  animation-duration: 13s;
+  fill: rgba(255,255,255,0.3);
+}
+.waves-area .parallax > use:nth-child(4) {
+  -webkit-animation-delay: -5s;
+  animation-delay: -5s;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  fill: #f7f9fe;
+}
+@-webkit-keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+    -webkit-transform: translate3d(-90px, 0, 0);
+    -khtml-transform: translate3d(-90px, 0, 0);
+    -moz-transform: translate3d(-90px, 0, 0);
+    -o-transform: translate3d(-90px, 0, 0);
+    -ms-transform: translate3d(-90px, 0, 0);
+  }
+  to {
+    transform: translate3d(85px, 0, 0);
+    -webkit-transform: translate3d(85px, 0, 0);
+    -khtml-transform: translate3d(85px, 0, 0);
+    -moz-transform: translate3d(85px, 0, 0);
+    -o-transform: translate3d(85px, 0, 0);
+    -ms-transform: translate3d(85px, 0, 0);
+  }
+}
+@-moz-keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+    -webkit-transform: translate3d(-90px, 0, 0);
+    -khtml-transform: translate3d(-90px, 0, 0);
+    -moz-transform: translate3d(-90px, 0, 0);
+    -o-transform: translate3d(-90px, 0, 0);
+    -ms-transform: translate3d(-90px, 0, 0);
+  }
+  to {
+    transform: translate3d(85px, 0, 0);
+    -webkit-transform: translate3d(85px, 0, 0);
+    -khtml-transform: translate3d(85px, 0, 0);
+    -moz-transform: translate3d(85px, 0, 0);
+    -o-transform: translate3d(85px, 0, 0);
+    -ms-transform: translate3d(85px, 0, 0);
+  }
+}
+@-webkit-keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+    -webkit-transform: translate3d(-90px, 0, 0);
+    -khtml-transform: translate3d(-90px, 0, 0);
+    -moz-transform: translate3d(-90px, 0, 0);
+    -o-transform: translate3d(-90px, 0, 0);
+    -ms-transform: translate3d(-90px, 0, 0);
+  }
+  to {
+    transform: translate3d(85px, 0, 0);
+    -webkit-transform: translate3d(85px, 0, 0);
+    -khtml-transform: translate3d(85px, 0, 0);
+    -moz-transform: translate3d(85px, 0, 0);
+    -o-transform: translate3d(85px, 0, 0);
+    -ms-transform: translate3d(85px, 0, 0);
+  }
+}
+@-o-keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+    -webkit-transform: translate3d(-90px, 0, 0);
+    -khtml-transform: translate3d(-90px, 0, 0);
+    -moz-transform: translate3d(-90px, 0, 0);
+    -o-transform: translate3d(-90px, 0, 0);
+    -ms-transform: translate3d(-90px, 0, 0);
+  }
+  to {
+    transform: translate3d(85px, 0, 0);
+    -webkit-transform: translate3d(85px, 0, 0);
+    -khtml-transform: translate3d(85px, 0, 0);
+    -moz-transform: translate3d(85px, 0, 0);
+    -o-transform: translate3d(85px, 0, 0);
+    -ms-transform: translate3d(85px, 0, 0);
+  }
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+    -webkit-transform: translate3d(-90px, 0, 0);
+    -khtml-transform: translate3d(-90px, 0, 0);
+    -moz-transform: translate3d(-90px, 0, 0);
+    -o-transform: translate3d(-90px, 0, 0);
+    -ms-transform: translate3d(-90px, 0, 0);
+  }
+  to {
+    transform: translate3d(85px, 0, 0);
+    -webkit-transform: translate3d(85px, 0, 0);
+    -khtml-transform: translate3d(85px, 0, 0);
+    -moz-transform: translate3d(85px, 0, 0);
+    -o-transform: translate3d(85px, 0, 0);
+    -ms-transform: translate3d(85px, 0, 0);
+  }
+}
 
   </style>
-  <link rel="stylesheet" href="/css/style.732f925f.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.732f925f.css"></noscript>
+  <link rel="stylesheet" href="/css/style.b3e15eee.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.b3e15eee.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1884,9 +1961,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/parallax.js?time=1657010438335","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenu.js?time=1657010438335","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1657010438335","sites":"https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1657010438335","friends":"https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1657010438335","contributors":"https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1657010438335","search":"https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1657010438335"},"css":{"style":"/css/style.732f925f.css"}},
+    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/parallax.js?time=1657382297081","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenu.js?time=1657382297081","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1657382297081","sites":"https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1657382297081","friends":"https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1657382297081","contributors":"https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1657382297081","search":"https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1657382297081"},"css":{"style":"/css/style.b3e15eee.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1657010438335),
+    lastupdate: new Date(1657382297081),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2352,7 +2429,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-home"
                   >
-                  <i class='fa-duotone fa-feather-pointed fa-fw'></i>首页
+                  <i class='fa-duotone fa-feather-pointed teal fa-fw'></i>首页
                 </a>
                 
               </li>
@@ -2367,7 +2444,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-duotone fa-fan fa-spin fa-fw fa-fw'></i>导航
+                  <i class='fa-duotone fa-fan fa-spin PETERRIVE fa-fw'></i>导航
                 </a>
                 
                   <ul class="list-v">
@@ -2382,7 +2459,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-categories"
                   >
-                  <i class='fa-duotone fa-folder-open fa-fw'></i>分类
+                  <i class='fa-duotone fa-folder-open AMETHYST fa-fw'></i>分类
                 </a>
                 
               </li>
@@ -2399,7 +2476,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-tags"
                   >
-                  <i class='fa-duotone fa-tags fa-fw'></i>标签
+                  <i class='fa-duotone fa-tags GREENSEA fa-fw'></i>标签
                 </a>
                 
               </li>
@@ -2416,7 +2493,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-archives"
                   >
-                  <i class='fa-duotone fa-box-archive fa-fw'></i>归档
+                  <i class='fa-duotone fa-box-archive PETERRIVE fa-fw'></i>归档
                 </a>
                 
               </li>
@@ -2433,7 +2510,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-about"
                   >
-                  <i class='fa-duotone fa-circle-info fa-fw'></i>关于
+                  <i class='fa-duotone fa-circle-info ORANGE fa-fw'></i>关于
                 </a>
                 
               </li>
@@ -2456,7 +2533,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-friends"
                   >
-                  <i class='fa-duotone fa-link fa-fw'></i>友链
+                  <i class='fa-duotone fa-link ALIZARIN fa-fw'></i>友链
                 </a>
                 
               </li>
@@ -2473,7 +2550,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-https:travellingslink"
                   >
-                  <i class='fa-duotone fa-train-subway fa-fw'></i>开往
+                  <i class='fa-duotone fa-train-subway NEPHRITIS fa-fw'></i>开往
                 </a>
                 
               </li>
@@ -2484,7 +2561,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box header toggle-mode-btn">
-                  <i class='fa-duotone fa-moon fa-fw'></i>切换
+                  <i class='fa-duotone fa-moon CARROT fa-fw'></i>切换
                 </a>
               <li>
             
@@ -2495,7 +2572,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
                 <li>
                   <a class="menuitem flat-box">
-                    <i class='fa-solid fa-compact-disc fa-fw music'></i>音乐
+                    <i class='fa-solid fa-compact-disc WISTERIA fa-fw music'></i>音乐
                   </a>
                   <ul class="list-v">
                     <li>
@@ -2558,7 +2635,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-home"
                   >
-                  <i class='fa-duotone fa-feather-pointed fa-fw'></i>首页
+                  <i class='fa-duotone fa-feather-pointed teal fa-fw'></i>首页
                 </a>
                 
               </li>
@@ -2573,7 +2650,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                   
                   >
-                  <i class='fa-duotone fa-fan fa-spin fa-fw fa-fw'></i>导航
+                  <i class='fa-duotone fa-fan fa-spin PETERRIVE fa-fw'></i>导航
                 </a>
                 
                   <ul class="list-v">
@@ -2588,7 +2665,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-categories"
                   >
-                  <i class='fa-duotone fa-folder-open fa-fw'></i>分类
+                  <i class='fa-duotone fa-folder-open AMETHYST fa-fw'></i>分类
                 </a>
                 
               </li>
@@ -2605,7 +2682,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-tags"
                   >
-                  <i class='fa-duotone fa-tags fa-fw'></i>标签
+                  <i class='fa-duotone fa-tags GREENSEA fa-fw'></i>标签
                 </a>
                 
               </li>
@@ -2622,7 +2699,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-archives"
                   >
-                  <i class='fa-duotone fa-box-archive fa-fw'></i>归档
+                  <i class='fa-duotone fa-box-archive PETERRIVE fa-fw'></i>归档
                 </a>
                 
               </li>
@@ -2639,7 +2716,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-about"
                   >
-                  <i class='fa-duotone fa-circle-info fa-fw'></i>关于
+                  <i class='fa-duotone fa-circle-info ORANGE fa-fw'></i>关于
                 </a>
                 
               </li>
@@ -2662,7 +2739,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-friends"
                   >
-                  <i class='fa-duotone fa-link fa-fw'></i>友链
+                  <i class='fa-duotone fa-link ALIZARIN fa-fw'></i>友链
                 </a>
                 
               </li>
@@ -2679,7 +2756,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-https:travellingslink"
                   >
-                  <i class='fa-duotone fa-train-subway fa-fw'></i>开往
+                  <i class='fa-duotone fa-train-subway NEPHRITIS fa-fw'></i>开往
                 </a>
                 
               </li>
@@ -2690,7 +2767,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box header toggle-mode-btn">
-                  <i class='fa-duotone fa-moon fa-fw'></i>切换
+                  <i class='fa-duotone fa-moon CARROT fa-fw'></i>切换
                 </a>
               <li>
             
@@ -2721,7 +2798,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
       <div id="half" class='cover-wrapper post search' style="display: ;">
         
-  <div id="parallax-window"></div>
+  <div class='cover-bg lazyload placeholder' data-bg="https://api.sukiu.top/img?type=pc"></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -2787,10 +2864,20 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
         <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
       </div>
+      <section class="main-hero-waves-area waves-area"> 
+        <svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0"></use>
+            <use xlink:href="#gentle-wave" x="48" y="3"></use>
+            <use xlink:href="#gentle-wave" x="48" y="5"></use>
+            <use xlink:href="#gentle-wave" x="48" y="7"></use>
+          </g>
+        </svg>
+      </section>
     
   
 </div>
-
       <div id="safearea">
         <div class="body-wrapper">
           
@@ -3567,7 +3654,7 @@ C++Vector其底层数据结构是数组，由于能动态扩容，所以也称�
 
   </ul>
 </div>
-<script src="https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1657010438335"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1657382297081"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3808,19 +3895,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1657010438335")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1657382297081")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1657010438335")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1657382297081")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1657010438335")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1657382297081")
       }
     
   };
@@ -3916,7 +4003,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/aplayer.js?time=1657010438335')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/aplayer.js?time=1657382297081')
   
   })();
 
@@ -4043,7 +4130,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1657010438335");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1657382297081");
   }
 
   function loadSearchService() {
@@ -4344,57 +4431,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-
-  <script>
-  let total = 175;
-  let index = Math.floor(Math.random() * total) + 1;
-  let IntervalParallax = null;
- 
-  function parallax(){
-    let ParallaxWindow = document.querySelector("#parallax-window");
-    
-    Parallax.window = ParallaxWindow;
-    Parallax.options.fade = 1500;
-    Parallax.cache = 1;
-    next_parallax();
-    Parallax.init();
-    if (total>1) {
-      IntervalParallax = setInterval(function () {
-        next_parallax();
-      }, '60000');
-    }
-  }
- 
-  function next_parallax() {
-    if (typeof Parallax == "undefined") {
-      return
-    }
-    
-      if (!document.querySelector("#full")&&!document.querySelector("#half")) {
-        return
-      }
-    
-    if (total>=1) {
-      Parallax.options.src = "https://fastly.jsdelivr.net/gh/SukiEva/assets/webp/pc/" + index + ".webp";
-      Parallax.start();
-      index = Math.floor(Math.random() * total) + 1;
-      if (Parallax.cache) {
-        fetch("https://fastly.jsdelivr.net/gh/SukiEva/assets/webp/pc/" + index + ".webp?t=" + new Date().getTime());
-      }
-    }
-  }
-  var runningOnBrowser = typeof window !== "undefined";
-  var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
-  if (!isBot) {
-    volantis.js('https://unpkg.com/hexo-theme-volantis@5.6.0/source/js/plugins/parallax.js?time=1657010438335').then(()=>{
-      parallax()
-    })
-    volantis.pjax.send(()=>{
-      clearInterval(IntervalParallax)
-    },"clearIntervalParallax");
-    volantis.pjax.push(parallax);
-  }
-</script>
 
 
 
