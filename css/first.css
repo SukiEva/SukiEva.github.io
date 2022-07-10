@@ -685,16 +685,16 @@ button {
   }
   :root:not([color-scheme]) {
     --color-site-body: #121212;
-    --color-read-bkg: #1f1f1f;
-    --color-read-post: #1f1f1f;
-    --color-site-bg: #1f1f1f;
+    --color-read-bkg: #000;
+    --color-read-post: #121212;
+    --color-site-bg: #000;
     --color-site-inner: rgba(238,238,238,0.871);
     --color-site-footer: rgba(170,170,170,0.871);
-    --color-card: #1f1f1f;
+    --color-card: #121212;
     --color-text: rgba(238,238,238,0.871);
     --color-block: #1f1f1f;
     --color-codeblock: #1f1f1f;
-    --color-inlinecode: #d56d28;
+    --color-inlinecode: #ff003c;
     --color-h1: rgba(255,255,255,0.871);
     --color-h2: rgba(255,255,255,0.871);
     --color-h3: rgba(255,255,255,0.6);
@@ -712,10 +712,10 @@ button {
     filter: brightness(70%) !important;
   }
   :root:not([color-scheme]) .blur {
-    background: rgba(31,31,31,0.9) !important;
+    background: rgba(0,0,0,0.9) !important;
   }
   :root:not([color-scheme]) .white-box.blur {
-    background: rgba(31,31,31,0.9) !important;
+    background: rgba(18,18,18,0.9) !important;
   }
   :root:not([color-scheme]) .nav-main .u-search-input {
     background: var(--color-card) !important;
@@ -757,16 +757,16 @@ button {
 }
 [color-scheme='dark'] {
   --color-site-body: #121212;
-  --color-read-bkg: #1f1f1f;
-  --color-read-post: #1f1f1f;
-  --color-site-bg: #1f1f1f;
+  --color-read-bkg: #000;
+  --color-read-post: #121212;
+  --color-site-bg: #000;
   --color-site-inner: rgba(238,238,238,0.871);
   --color-site-footer: rgba(170,170,170,0.871);
-  --color-card: #1f1f1f;
+  --color-card: #121212;
   --color-text: rgba(238,238,238,0.871);
   --color-block: #1f1f1f;
   --color-codeblock: #1f1f1f;
-  --color-inlinecode: #d56d28;
+  --color-inlinecode: #ff003c;
   --color-h1: rgba(255,255,255,0.871);
   --color-h2: rgba(255,255,255,0.871);
   --color-h3: rgba(255,255,255,0.6);
@@ -784,10 +784,10 @@ button {
   filter: brightness(70%) !important;
 }
 [color-scheme='dark'] .blur {
-  background: rgba(31,31,31,0.9) !important;
+  background: rgba(0,0,0,0.9) !important;
 }
 [color-scheme='dark'] .white-box.blur {
-  background: rgba(31,31,31,0.9) !important;
+  background: rgba(18,18,18,0.9) !important;
 }
 [color-scheme='dark'] .nav-main .u-search-input {
   background: var(--color-card) !important;
