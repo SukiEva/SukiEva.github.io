@@ -63,7 +63,7 @@ html {
   width: 100%;
   height: 100%;
   font-family: FZFWZhuZiAYuanJR, "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Menlo, Monaco, monospace, sans-serif;
-  font-size: 16px;
+  font-size: 17px;
 }
 html >::-webkit-scrollbar {
   height: 4px;
@@ -487,7 +487,7 @@ button {
   text-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 .cover-wrapper .cover-body .subtitle {
-  font-size: 20px;
+  font-size: 21.25px;
 }
 .cover-wrapper .cover-body .logo {
   max-height: 120px;
@@ -962,7 +962,7 @@ button {
   flex-shrink: 0;
   line-height: 64px;
   padding: 0 24px;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-family: Sxls, "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 .l_header #wrapper .nav-main .title img {
