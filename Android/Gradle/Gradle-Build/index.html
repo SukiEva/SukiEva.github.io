@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN,en,default">
-    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.6.0'>
+    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.7.6'>
   <meta name="generator" content="Hexo 6.2.0">
-  <meta name="Volantis" content="5.6.0">
+  <meta name="Volantis" content="5.7.6">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -26,7 +26,7 @@
   
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://fastly.jsdelivr.net/gh/SukiEva/assets/blog/favicon.png">
-  <link rel="preload" href="/css/style.d38cd369.css" as="style">
+  <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
 
@@ -55,15 +55,6 @@ Android Studio 会使用高级构建工具包 Gradle 自动执行和管理构建
     /* 首屏样式 */
     #safearea {
   display: none;
-}
-/*
-  * Workaround for Chrome bug, part 1
-  * Chunk rendering for all but the first article.
-  * /layout/_partial/scripts/content-visibility-scroll-fix.ejs
-*/
-.post-story + .post-story {
-  content-visibility: auto;
-  contain-intrinsic-size: 10px 500px;
 }
 :root {
   --color-site-body: #fff;
@@ -1871,8 +1862,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.d38cd369.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.d38cd369.css"></noscript>
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1945,14 +1936,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   /************这个文件存放不需要重载的全局变量和全局函数*********/
   window.volantis = {}; // volantis 全局变量
-  volantis.debug = false; // 开启调试模式
+  volantis.debug = "env"; // 调试模式
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/parallax.js?time=1665915579978","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenu.js?time=1665915579978","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978"},"css":{"style":"/css/style.d38cd369.css"}},
+    debug: "env",
+    cdn: {"js":{"app":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/parallax.js","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenu.js","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1665915579978),
+    lastupdate: new Date(1668091147913),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2982,7 +2973,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>Android Studio 会使用高级构建工具包 <a target="_blank" rel="noopener" href="http://www.gradle.org/">Gradle</a> 自动执行和管理构建流程，同时也允许定义灵活的自定义 build 配置。</p>
 <span id="more"></span>
 
-<div class="story post-story"><h2 id="构建流程"><a href="#构建流程" class="headerlink" title="构建流程"></a>构建流程</h2><p>典型 Android 应用模块的构建流程按照以下常规步骤执行：</p>
+<h2 id="构建流程"><a href="#构建流程" class="headerlink" title="构建流程"></a>构建流程</h2><p>典型 Android 应用模块的构建流程按照以下常规步骤执行：</p>
 <center>
 <img src="https://developer.android.com/images/tools/studio/build-process_2x.png" class="lazyload" data-srcset="https://developer.android.com/images/tools/studio/build-process_2x.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt=" 典型 Android 应用模块的构建流程 " style="zoom:50%;" />
 
@@ -2999,7 +2990,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>在生成最终 APK 之前，打包器会使用 <a target="_blank" rel="noopener" href="https://developer.android.com/studio/command-line/zipalign">zipalign</a> 工具对应用进行优化，以减少其在设备上运行时所占用的内存。</li>
 </ol>
 <p>构建流程结束时，您将获得应用的调试版或发布版 APK&#x2F;AAB，以用于部署、测试或向外部用户发布。</p>
-</div><div class="story post-story"><h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><h3 id="Gradle-设置文件"><a href="#Gradle-设置文件" class="headerlink" title="Gradle 设置文件"></a>Gradle 设置文件</h3><p><code>settings.gradle</code> 文件位于项目的根目录下，用于指示 Gradle 在构建应用时应将哪些<strong>模块</strong>包含在内。</p>
+<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><h3 id="Gradle-设置文件"><a href="#Gradle-设置文件" class="headerlink" title="Gradle 设置文件"></a>Gradle 设置文件</h3><p><code>settings.gradle</code> 文件位于项目的根目录下，用于指示 Gradle 在构建应用时应将哪些<strong>模块</strong>包含在内。</p>
 <figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">dependencyResolutionManagement &#123;</span><br><span class="line">    repositoriesMode.<span class="keyword">set</span>(RepositoriesMode.FAIL_ON_PROJECT_REPOS)</span><br><span class="line">    repositories &#123;</span><br><span class="line">        google()</span><br><span class="line">        mavenCentral()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">rootProject.name = <span class="string">&quot;hhuer&quot;</span></span><br><span class="line">include(<span class="string">&quot;:app&quot;</span>)</span><br></pre></td></tr></table></figure>
 
 <h3 id="项目-Build-文件"><a href="#项目-Build-文件" class="headerlink" title="项目 Build 文件"></a>项目 Build 文件</h3><p>顶层 <code>build.gradle</code> 文件位于项目的根目录下，用于定义适用于项目中所有模块的构建配置。</p>
@@ -3019,7 +3010,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//声明是Android程序，</span></span><br><span class="line"><span class="comment">//com.android.application 表示这是一个应用程序模块</span></span><br><span class="line"><span class="comment">//com.android.library 标识这是一个库模块</span></span><br><span class="line">plugins &#123;</span><br><span class="line">    id(<span class="string">&quot;com.android.application&quot;</span>)</span><br><span class="line">    id(<span class="string">&quot;kotlin-android&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 上面全局配置的引用</span></span><br><span class="line"><span class="keyword">val</span> androidTargetSdkVersion: <span class="built_in">Int</span> <span class="keyword">by</span> rootProject.extra</span><br><span class="line"></span><br><span class="line"><span class="comment">// 配置项目构建的各种属性</span></span><br><span class="line">android &#123;</span><br><span class="line">    compileSdk = androidCompileSdkVersion <span class="comment">//设置编译时用的Android版本</span></span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    defaultConfig &#123; <span class="comment">// app 相关</span></span><br><span class="line">        applicationId = defaultManagerPackageName <span class="comment">// 包名</span></span><br><span class="line">        minSdk = androidMinSdkVersion <span class="comment">// 最低兼容版本</span></span><br><span class="line">        targetSdk = androidTargetSdkVersion <span class="comment">// 目标安卓版本</span></span><br><span class="line">        versionCode = verCode <span class="comment">// 版本号</span></span><br><span class="line">        versionName = verName <span class="comment">// 版本名称</span></span><br><span class="line">        <span class="comment">//若使用AndroidJUnitRunner进行单元测试</span></span><br><span class="line">        <span class="comment">//testInstrumentationRunner = &quot;android.support.test.runner.AndroidJUnitRunner&quot; </span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">//指定生成安装文件的主要配置，一般包含两个子闭包:</span></span><br><span class="line">    <span class="comment">//一个是debug闭包，用于指定生成测试版安装文件的配置，可以忽略不写；</span></span><br><span class="line">    <span class="comment">//另一个是release闭包，用于指定生成正式版安装文件的配置。</span></span><br><span class="line">    buildTypes &#123;</span><br><span class="line">        release &#123; <span class="comment">// 一般使用如下两项</span></span><br><span class="line">            isMinifyEnabled = <span class="literal">false</span> <span class="comment">//是否对代码进行混淆</span></span><br><span class="line">            proguardFiles(<span class="string">&quot;proguard-rules.pro&quot;</span>) <span class="comment">//指定混淆的规则文件</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    compileOptions &#123;</span><br><span class="line">        sourceCompatibility(androidSourceCompatibility)</span><br><span class="line">        targetCompatibility(androidTargetCompatibility)</span><br><span class="line">    &#125;</span><br><span class="line">    kotlinOptions &#123;</span><br><span class="line">        jvmTarget = <span class="string">&quot;1.8&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    packagingOptions&#123;<span class="comment">//打包时的相关配置</span></span><br><span class="line">        <span class="comment">//这个是在同时使用butterknife、dagger2做的一个处理。同理，遇到类似的问题，只要根据gradle的提示，做类似处理即可。</span></span><br><span class="line">        exclude <span class="string">&#x27;META-INF/services/javax.annotation.processing.Processor&#x27;</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">dependencies &#123; <span class="comment">// 项目的依赖</span></span><br><span class="line">    <span class="comment">// Dependency on a local library module</span></span><br><span class="line">    implementation project(<span class="string">&quot;:mylibrary&quot;</span>)</span><br><span class="line">    <span class="comment">// Dependency on local binaries</span></span><br><span class="line">    implementation fileTree(dir: <span class="string">&#x27;libs&#x27;</span>, include: [<span class="string">&#x27;*.jar&#x27;</span>])</span><br><span class="line">    <span class="comment">// Dependency on a remote binary</span></span><br><span class="line">    implementation <span class="string">&#x27;com.example.android:app-magic:12.3&#x27;</span></span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">configurations.all &#123;</span><br><span class="line">    exclude(group = <span class="string">&quot;androidx.appcompat&quot;</span>, module = <span class="string">&quot;appcompat&quot;</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="更多模块配置项"><a href="#更多模块配置项" class="headerlink" title="更多模块配置项"></a>更多模块配置项</h3><h4 id="设置应用-ID"><a href="#设置应用-ID" class="headerlink" title="设置应用 ID"></a><a target="_blank" rel="noopener" href="https://developer.android.com/studio/build/application-id">设置应用 ID</a></h4><h4 id="添加构建依赖项"><a href="#添加构建依赖项" class="headerlink" title="添加构建依赖项"></a><a target="_blank" rel="noopener" href="https://developer.android.com/studio/build/dependencies">添加构建依赖项</a></h4><h4 id="Android-Gradle-插件可以使用的原生依赖项"><a href="#Android-Gradle-插件可以使用的原生依赖项" class="headerlink" title="Android Gradle 插件可以使用的原生依赖项"></a><a target="_blank" rel="noopener" href="https://developer.android.com/studio/build/native-dependencies">Android Gradle 插件可以使用的原生依赖项</a></h4><h4 id="优化构建速度"><a href="#优化构建速度" class="headerlink" title="优化构建速度"></a><a target="_blank" rel="noopener" href="https://developer.android.com/studio/build/optimize-your-build">优化构建速度</a></h4><h4 id="排查构建性能问题"><a href="#排查构建性能问题" class="headerlink" title="排查构建性能问题"></a><a target="_blank" rel="noopener" href="https://developer.android.com/studio/build/build-analyzer">排查构建性能问题</a></h4><h4 id="分析构建性能"><a href="#分析构建性能" class="headerlink" title="分析构建性能"></a><a target="_blank" rel="noopener" href="https://developer.android.com/studio/build/profile-your-build">分析构建性能</a></h4><h4 id="配置-build-变体"><a href="#配置-build-变体" class="headerlink" title="配置 build 变体"></a><a target="_blank" rel="noopener" href="https://developer.android.com/studio/build/build-variants">配置 build 变体</a></h4><h4 id="构建多个-APK"><a href="#构建多个-APK" class="headerlink" title="构建多个 APK"></a><a target="_blank" rel="noopener" href="https://developer.android.com/studio/build/configure-apk-splits">构建多个 APK</a></h4><h4 id="合并多个清单文件"><a href="#合并多个清单文件" class="headerlink" title="合并多个清单文件"></a><a target="_blank" rel="noopener" href="https://developer.android.com/studio/build/manifest-merge">合并多个清单文件</a></h4><h4 id="将构建变量注入清单"><a href="#将构建变量注入清单" class="headerlink" title="将构建变量注入清单"></a><a target="_blank" rel="noopener" href="https://developer.android.com/studio/build/manifest-build-variables">将构建变量注入清单</a></h4><h4 id="缩减、混淆处理和优化应用"><a href="#缩减、混淆处理和优化应用" class="headerlink" title="缩减、混淆处理和优化应用"></a><a target="_blank" rel="noopener" href="https://developer.android.com/studio/build/shrink-code">缩减、混淆处理和优化应用</a></h4><h4 id="为方法数超过-64K-的应用启用-MultiDex"><a href="#为方法数超过-64K-的应用启用-MultiDex" class="headerlink" title="为方法数超过 64K 的应用启用 MultiDex"></a><a target="_blank" rel="noopener" href="https://developer.android.com/studio/build/multidex">为方法数超过 64K 的应用启用 MultiDex</a></h4><h4 id="使用-APK-分析器分析您的-build"><a href="#使用-APK-分析器分析您的-build" class="headerlink" title="使用 APK 分析器分析您的 build"></a><a target="_blank" rel="noopener" href="https://developer.android.com/studio/build/apk-analyzer">使用 APK 分析器分析您的 build</a></h4><h4 id="使用-Maven-Publish-插件"><a href="#使用-Maven-Publish-插件" class="headerlink" title="使用 Maven Publish 插件"></a><a target="_blank" rel="noopener" href="https://developer.android.com/studio/build/maven-publish-plugin">使用 Maven Publish 插件</a></h4><h4 id="Gradle-提示与诀窍"><a href="#Gradle-提示与诀窍" class="headerlink" title="Gradle 提示与诀窍"></a><a target="_blank" rel="noopener" href="https://developer.android.com/studio/build/gradle-tips">Gradle 提示与诀窍</a></h4><h4 id="将构建配置从-Groovy-迁移到-KTS"><a href="#将构建配置从-Groovy-迁移到-KTS" class="headerlink" title="将构建配置从 Groovy 迁移到 KTS"></a><a target="_blank" rel="noopener" href="https://developer.android.com/studio/build/migrate-to-kts">将构建配置从 Groovy 迁移到 KTS</a></h4>
-</div>
   </div>
   
   
@@ -3078,7 +3068,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                 
               
                 
-                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href=http://blog.sukiu.top/Android/Gradle/Gradle-Build/>http://blog.sukiu.top/Android/Gradle/Gradle-Build/</a></p>
+                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href="http://blog.sukiu.top/Android/Gradle/Gradle-Build/">http://blog.sukiu.top/Android/Gradle/Gradle-Build/</a></p>
                 
               
                 
@@ -3414,7 +3404,7 @@ Groovy 允许使...</p>
 
 <!-- internal -->
 
-<script src="/js/app.af2d54c8.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js"></script>
 
 
 
@@ -3659,7 +3649,7 @@ Groovy 允许使...</p>
 
   </ul>
 </div>
-<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3900,19 +3890,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js")
       }
     
   };
@@ -4008,7 +3998,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/aplayer.js?time=1665915579978')
+    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/aplayer.js')
   
   })();
 
@@ -4135,7 +4125,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978");
+    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js");
   }
 
   function loadSearchService() {
@@ -4594,94 +4584,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 </script>
 
-<script>
-  try {
-    // https://web.dev/content-visibility/
-    // https://www.caniuse.com/?search=content-visibility
-    // https://infrequently.org/2020/12/content-visibility-scroll-fix/
-    // https://infrequently.org/2020/12/resize-resilient-deferred-rendering/
-
-    // 备注 目前已知的问题:
-    // 动态修改导致的内容高度变化(例如评论框异步渲染的外部盒子高度变化) 无法提前获知, 进而导致的首次滚动条跳动无法去除 (wontfix) 事实上不使用 content-visibility 也会有跳动, 不过是比使用 content-visibility 跳动提前
-    // scrollreveal 插件潜在问题 目前尚不明确
-
-    let eqIsh = (a, b, fuzz = 2) => {
-      return Math.abs(a - b) <= fuzz;
-    };
-
-    let rectNotEQ = (a, b) => {
-      return !eqIsh(a.width, b.width) || !eqIsh(a.height, b.height);
-    };
-
-    // Keep a map of elements and the dimensions of
-    // their place-holders, re-setting the element's
-    // intrinsic size when we get updated measurements
-    // from observers.
-    let spaced = new WeakMap();
-
-    // Only call this when known cheap, post layout
-    let reserveSpace = (el, rect = el.getClientBoundingRect()) => {
-      let old = spaced.get(el);
-      // Set intrinsic size to prevent jumping on un-painting:
-      //    https://drafts.csswg.org/css-sizing-4/#intrinsic-size-override
-      if (!old || rectNotEQ(old, rect)) {
-        spaced.set(el, rect);
-        el.style["contain-intrinsic-size"] = `${rect.width}px ${rect.height}px`;
-      }
-    };
-
-    let iObs = new IntersectionObserver(
-      (entries, o) => {
-        entries.forEach((entry) => {
-          // We don't care if the element is intersecting or
-          // has been laid out as our page structure ensures
-          // they'll get the right width.
-          reserveSpace(entry.target, entry.boundingClientRect);
-        });
-      },
-      { rootMargin: "500px 0px 500px 0px" }
-    );
-
-    let rObs = new ResizeObserver((entries, o) => {
-      entries.forEach((entry) => {
-        reserveSpace(entry.target, entry.contentRect);
-      });
-    });
-
-    let resizeResilientDeferredRendering = (Selector) => {
-      let articles = document.querySelectorAll(Selector);
-
-      if (articles.length) {
-        articles.forEach((el) => {
-          iObs.observe(el);
-          rObs.observe(el);
-        });
-
-        // Workaround for Chrome bug, part 2.
-        //
-        // Re-enable browser management of rendering for the
-        // first article after the first paint. Double-rAF
-        // to ensure we get called after a layout.
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            articles[0].style["content-visibility"] = "auto";
-          });
-        });
-      }
-    };
-
-    let contentVisibilityScrollFix = () => {
-      if (!("content-visibility" in document.documentElement.style)) {
-        return;
-      }
-      resizeResilientDeferredRendering(".post-story");
-    };
-    contentVisibilityScrollFix();
-    volantis.pjax.push(contentVisibilityScrollFix);
-  } catch (error) {
-    console.log(error);
-  }
-</script>
 
 
 <script>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN,en,default">
-    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.6.0'>
+    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.7.6'>
   <meta name="generator" content="Hexo 6.2.0">
-  <meta name="Volantis" content="5.6.0">
+  <meta name="Volantis" content="5.7.6">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -26,7 +26,7 @@
   
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://fastly.jsdelivr.net/gh/SukiEva/assets/blog/favicon.png">
-  <link rel="preload" href="/css/style.d38cd369.css" as="style">
+  <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
 
@@ -59,15 +59,6 @@
     /* 首屏样式 */
     #safearea {
   display: none;
-}
-/*
-  * Workaround for Chrome bug, part 1
-  * Chunk rendering for all but the first article.
-  * /layout/_partial/scripts/content-visibility-scroll-fix.ejs
-*/
-.post-story + .post-story {
-  content-visibility: auto;
-  contain-intrinsic-size: 10px 500px;
 }
 :root {
   --color-site-body: #fff;
@@ -1875,8 +1866,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.d38cd369.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.d38cd369.css"></noscript>
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1949,14 +1940,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   /************这个文件存放不需要重载的全局变量和全局函数*********/
   window.volantis = {}; // volantis 全局变量
-  volantis.debug = false; // 开启调试模式
+  volantis.debug = "env"; // 调试模式
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/parallax.js?time=1665915579978","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenu.js?time=1665915579978","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978"},"css":{"style":"/css/style.d38cd369.css"}},
+    debug: "env",
+    cdn: {"js":{"app":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/parallax.js","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenu.js","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1665915579978),
+    lastupdate: new Date(1668091147913),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2990,14 +2981,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </li>
 </ul>
 <span id="more"></span>
-<div class="story post-story"><h2 id="XML-配置"><a href="#XML-配置" class="headerlink" title="XML 配置"></a>XML 配置</h2><p>更多配置参考：<a target="_blank" rel="noopener" href="https://mybatis.org/mybatis-3/zh/configuration.html">官方文档 XML配置项</a></p>
+<h2 id="XML-配置"><a href="#XML-配置" class="headerlink" title="XML 配置"></a>XML 配置</h2><p>更多配置参考：<a target="_blank" rel="noopener" href="https://mybatis.org/mybatis-3/zh/configuration.html">官方文档 XML配置项</a></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span> ?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">configuration</span></span></span><br><span class="line"><span class="meta">        <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Config 3.0//EN&quot;</span></span></span><br><span class="line"><span class="meta">        <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-config.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 读取数据库配置文件 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">properties</span> <span class="attr">resource</span>=<span class="string">&quot;jdbc.properties&quot;</span>/&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 设置日志输出 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">settings</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">setting</span> <span class="attr">name</span>=<span class="string">&quot;logImpl&quot;</span> <span class="attr">value</span>=<span class="string">&quot;STDOUT_LOGGING&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 注册实体类别名 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">typeAliases</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 单个注册别名 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">typeAlias</span> <span class="attr">type</span>=<span class="string">&quot;com.proj.Student&quot;</span> <span class="attr">alias</span>=<span class="string">&quot;student&quot;</span>/&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 批量注册别名：类名的驼峰命名 --&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- &lt;package name=&quot;com.proj&quot;/&gt; --&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">typeAliases</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 数据库配置 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">environments</span> <span class="attr">default</span>=<span class="string">&quot;development&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">environment</span> <span class="attr">id</span>=<span class="string">&quot;development&quot;</span>&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- type：事务管理器</span></span><br><span class="line"><span class="comment">                JDBC：程序员管理</span></span><br><span class="line"><span class="comment">                MANAGED：Spring管理</span></span><br><span class="line"><span class="comment">            --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">transactionManager</span> <span class="attr">type</span>=<span class="string">&quot;JDBC&quot;</span>/&gt;</span></span><br><span class="line">            <span class="comment">&lt;!-- 数据库连接池 --&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">dataSource</span> <span class="attr">type</span>=<span class="string">&quot;POOLED&quot;</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;driver&quot;</span> <span class="attr">value</span>=<span class="string">&quot;$&#123;driver&#125;&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;url&quot;</span> <span class="attr">value</span>=<span class="string">&quot;$&#123;url&#125;&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;username&quot;</span> <span class="attr">value</span>=<span class="string">&quot;$&#123;username&#125;&quot;</span>/&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;password&quot;</span> <span class="attr">value</span>=<span class="string">&quot;$&#123;password&#125;&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">dataSource</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">environment</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">environments</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 注册mapper --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">mappers</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mapper</span> <span class="attr">resource</span>=<span class="string">&quot;StudentMapper.xml&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mappers</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
 <blockquote>
 <p>数据库连接池：</p>
 <p>一个中间层，初始化多个连接，建立连接从连接池取出，断开连接放回连接池，开销比直接连接断开小得多。</p>
 </blockquote>
-</div><div class="story post-story"><h2 id="XML-映射"><a href="#XML-映射" class="headerlink" title="XML 映射"></a>XML 映射</h2><h3 id="占位符的区别"><a href="#占位符的区别" class="headerlink" title="占位符的区别"></a>占位符的区别</h3><ul>
+<h2 id="XML-映射"><a href="#XML-映射" class="headerlink" title="XML 映射"></a>XML 映射</h2><h3 id="占位符的区别"><a href="#占位符的区别" class="headerlink" title="占位符的区别"></a>占位符的区别</h3><ul>
 <li><code>#&#123;&#125;</code>: 对非字符串参数的占位符，可以有效防止 SQL 注入<ul>
 <li>入参是简单数据类型（除 String），<code>#&#123;&#125;</code> 内可以任意写</li>
 <li>入参是对象类型，<code>#&#123;&#125;</code> 内必须是对象成员变量名称</li>
@@ -3023,7 +3014,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h3 id="测试使用"><a href="#测试使用" class="headerlink" title="测试使用"></a>测试使用</h3><p><strong>增删改需要 commit ！！！</strong></p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyTest</span> &#123;</span><br><span class="line">    SqlSession sqlSession;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Before</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">openSqlSession</span><span class="params">()</span> <span class="keyword">throws</span> IOException &#123;</span><br><span class="line">        <span class="comment">// 文件流读取核心配置文件</span></span><br><span class="line">        <span class="type">InputStream</span> <span class="variable">in</span> <span class="operator">=</span> Resources.getResourceAsStream(<span class="string">&quot;SqlMapConfig.xml&quot;</span>);</span><br><span class="line">        <span class="comment">// 创建SqlSessionFactory工厂</span></span><br><span class="line">        <span class="type">SqlSessionFactory</span> <span class="variable">factory</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">SqlSessionFactoryBuilder</span>().build(in);</span><br><span class="line">        <span class="comment">// 取出sqlSession对象</span></span><br><span class="line">        sqlSession = factory.openSession();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@After</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">closeSqlSession</span><span class="params">()</span> &#123;</span><br><span class="line">       <span class="comment">// 关闭sqlSession</span></span><br><span class="line">        sqlSession.close();</span><br><span class="line">    &#125;    </span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">test</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 完成查询操作</span></span><br><span class="line">        List&lt;Student&gt; list = sqlSession.selectList(<span class="string">&quot;om.proj.mapper.UsersMapper&quot;</span>);</span><br><span class="line">        list.forEach(System.out::println);</span><br><span class="line">        <span class="comment">// 增删改需要commit</span></span><br><span class="line">        <span class="comment">// sqlSession.commit();</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="动态代理"><a href="#动态代理" class="headerlink" title="动态代理"></a>动态代理</h2><p>动态代理后就不需要从 xml 中取出执行方法，通过统一的代理接口直接调用。</p>
+<h2 id="动态代理"><a href="#动态代理" class="headerlink" title="动态代理"></a>动态代理</h2><p>动态代理后就不需要从 xml 中取出执行方法，通过统一的代理接口直接调用。</p>
 <h3 id="创建代理接口"><a href="#创建代理接口" class="headerlink" title="创建代理接口"></a>创建代理接口</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.proj.mapper;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> com.proj.pojo.Users;</span><br><span class="line"><span class="keyword">import</span> org.apache.ibatis.annotations.Param;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.util.List;</span><br><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">UsersMapper</span> &#123;</span><br><span class="line"></span><br><span class="line">    List&lt;Users&gt; <span class="title function_">getAll</span><span class="params">()</span>;</span><br><span class="line"></span><br><span class="line">    Users <span class="title function_">getById</span><span class="params">(<span class="type">int</span> id)</span>;</span><br><span class="line"></span><br><span class="line">    List&lt;Users&gt; <span class="title function_">getByName</span><span class="params">(String userName)</span>;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> <span class="title function_">insert</span><span class="params">(Users users)</span>;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> <span class="title function_">delete</span><span class="params">(<span class="type">int</span> id)</span>;</span><br><span class="line"></span><br><span class="line">    <span class="type">int</span> <span class="title function_">update</span><span class="params">(Users users)</span>;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 多个参数使用@Param</span></span><br><span class="line">    List&lt;Users&gt; <span class="title function_">getByNameOrAddress</span><span class="params">(</span></span><br><span class="line"><span class="params">            <span class="meta">@Param(&quot;col&quot;)</span></span></span><br><span class="line"><span class="params">            String col,</span></span><br><span class="line"><span class="params">            <span class="meta">@Param(&quot;val&quot;)</span></span></span><br><span class="line"><span class="params">            String val</span></span><br><span class="line"><span class="params">    )</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h3 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h3><p>更改为代理接口的 <code>reference</code></p>
@@ -3031,7 +3022,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <h3 id="测试使用-1"><a href="#测试使用-1" class="headerlink" title="测试使用"></a>测试使用</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyTest</span> &#123;</span><br><span class="line"></span><br><span class="line">    SqlSession sqlSession;</span><br><span class="line">    UsersMapper usersMapper;</span><br><span class="line">    <span class="type">SimpleDateFormat</span> <span class="variable">dateFormat</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">SimpleDateFormat</span>(<span class="string">&quot;yyyy-MM-dd&quot;</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="meta">@Before</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">openSqlSession</span><span class="params">()</span> <span class="keyword">throws</span> IOException &#123;</span><br><span class="line">        <span class="comment">// 文件流读取核心配置文件</span></span><br><span class="line">        <span class="type">InputStream</span> <span class="variable">in</span> <span class="operator">=</span> Resources.getResourceAsStream(<span class="string">&quot;SqlMapConfig.xml&quot;</span>);</span><br><span class="line">        <span class="comment">// 创建SqlSessionFactory工厂</span></span><br><span class="line">        <span class="type">SqlSessionFactory</span> <span class="variable">factory</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">SqlSessionFactoryBuilder</span>().build(in);</span><br><span class="line">        <span class="comment">// 取出sqlSession对象</span></span><br><span class="line">        sqlSession = factory.openSession();</span><br><span class="line">        <span class="comment">// 动态代理对象</span></span><br><span class="line">        usersMapper = sqlSession.getMapper(UsersMapper.class);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@After</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">closeSqlSession</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 关闭sqlSession</span></span><br><span class="line">        sqlSession.close();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">testGetAll</span><span class="params">()</span> &#123;</span><br><span class="line">        List&lt;Users&gt; list = usersMapper.getAll();</span><br><span class="line">        list.forEach(System.out::println);   </span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">testGetByNameOrAddress</span><span class="params">()</span>&#123;</span><br><span class="line">        <span class="comment">//  List&lt;Users&gt; list1 = usersMapper.getByNameOrAddress(&quot;username&quot;,&quot;小&quot;);</span></span><br><span class="line">        <span class="comment">//  list1.forEach(System.out::println);</span></span><br><span class="line">        List&lt;Users&gt; list2= usersMapper.getByNameOrAddress(<span class="string">&quot;address&quot;</span>,<span class="string">&quot;市&quot;</span>);</span><br><span class="line">        list2.forEach(System.out::println);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="meta">@Test</span></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">testInsert</span><span class="params">()</span> <span class="keyword">throws</span> ParseException &#123;</span><br><span class="line">        <span class="type">Users</span> <span class="variable">u</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Users</span>(<span class="string">&quot;新增&quot;</span>, dateFormat.parse(<span class="string">&quot;2000-01-01&quot;</span>), <span class="string">&quot;1&quot;</span>, <span class="string">&quot;北京市&quot;</span>);</span><br><span class="line">        <span class="type">int</span> <span class="variable">num</span> <span class="operator">=</span> usersMapper.insert(u);</span><br><span class="line">        sqlSession.commit();</span><br><span class="line">        <span class="comment">// 获取主键</span></span><br><span class="line">        System.out.println(u.getId());</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="动态-SQL"><a href="#动态-SQL" class="headerlink" title="动态 SQL"></a>动态 SQL</h2><p>官方文档：<a target="_blank" rel="noopener" href="https://mybatis.org/mybatis-3/zh/dynamic-sql.html">动态SQL</a></p>
+<h2 id="动态-SQL"><a href="#动态-SQL" class="headerlink" title="动态 SQL"></a>动态 SQL</h2><p>官方文档：<a target="_blank" rel="noopener" href="https://mybatis.org/mybatis-3/zh/dynamic-sql.html">动态SQL</a></p>
 <p>动态 SQL 使条件判断更为简单：</p>
 <ul>
 <li>定义代码片段</li>
@@ -3099,7 +3090,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><strong>返回多行 map</strong></p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">   <span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">   List&lt;Map&gt; getMulMap();</span></span><br><span class="line"><span class="comment">--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;getMulMap&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;map&quot;</span>&gt;</span></span><br><span class="line">       select</span><br><span class="line">       <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;allCols&quot;</span>/&gt;</span></span><br><span class="line">       from users</span><br><span class="line">   <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="resultMap"><a href="#resultMap" class="headerlink" title="resultMap"></a>resultMap</h2><p>使用 <code>resultMap</code> 手动完成映射：</p>
+<h2 id="resultMap"><a href="#resultMap" class="headerlink" title="resultMap"></a>resultMap</h2><p>使用 <code>resultMap</code> 手动完成映射：</p>
 <ul>
 <li><code>property</code>：实体类成员变量名</li>
 <li><code>column</code>：数据库列名</li>
@@ -3137,7 +3128,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>一方持有另一方的对象，使用 <code>&lt;association&gt;</code></li>
 </ul>
 </blockquote>
-</div><div class="story post-story"><h2 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h2><p>简而言之，多个 CRUD 操作对应一个事务操作。</p>
+<h2 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h2><p>简而言之，多个 CRUD 操作对应一个事务操作。</p>
 <p>在 MyBatis 框架中设置事务：</p>
 <ul>
 <li><code>&lt;transactionManager type=&quot;JDBC&quot;/&gt;</code>：程序员自己控制提交和回滚</li>
@@ -3146,7 +3137,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <ul>
 <li><code>sqlSession = factory.openSession(true);</code>：默认是 false，手动提交之后不需要手动 commit</li>
 </ul>
-</div><div class="story post-story"><h2 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h2><p>Mybatis 提供两级缓存：一级缓存和二级缓存，默认开启一级缓存。</p>
+<h2 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h2><p>Mybatis 提供两级缓存：一级缓存和二级缓存，默认开启一级缓存。</p>
 <h3 id="查询流程"><a href="#查询流程" class="headerlink" title="查询流程"></a>查询流程</h3><p>缓存查询流程：</p>
 <ol>
 <li>查询先查缓存，如果没有则查询数据库，存在缓存中，再返回给客户端</li>
@@ -3162,7 +3153,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>Java 语言中以对象的方式操作数据，数据库中以表的方式存储，对象中的成员变量与表中的列之间的数据互换。</p>
 </blockquote>
 
-</div>
   </div>
   
   
@@ -3195,7 +3185,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                 
               
                 
-                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href=http://blog.sukiu.top/Framework/SSM/MyBatis/>http://blog.sukiu.top/Framework/SSM/MyBatis/</a></p>
+                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href="http://blog.sukiu.top/Framework/SSM/MyBatis/">http://blog.sukiu.top/Framework/SSM/MyBatis/</a></p>
                 
               
                 
@@ -3543,7 +3533,7 @@ Spring 框架的目标是使 J2EE 开发变得更容易使用，通过启用基�
 
 <!-- internal -->
 
-<script src="/js/app.af2d54c8.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js"></script>
 
 
 
@@ -3788,7 +3778,7 @@ Spring 框架的目标是使 J2EE 开发变得更容易使用，通过启用基�
 
   </ul>
 </div>
-<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -4029,19 +4019,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js")
       }
     
   };
@@ -4137,7 +4127,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/aplayer.js?time=1665915579978')
+    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/aplayer.js')
   
   })();
 
@@ -4264,7 +4254,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978");
+    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js");
   }
 
   function loadSearchService() {
@@ -4723,94 +4713,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 </script>
 
-<script>
-  try {
-    // https://web.dev/content-visibility/
-    // https://www.caniuse.com/?search=content-visibility
-    // https://infrequently.org/2020/12/content-visibility-scroll-fix/
-    // https://infrequently.org/2020/12/resize-resilient-deferred-rendering/
-
-    // 备注 目前已知的问题:
-    // 动态修改导致的内容高度变化(例如评论框异步渲染的外部盒子高度变化) 无法提前获知, 进而导致的首次滚动条跳动无法去除 (wontfix) 事实上不使用 content-visibility 也会有跳动, 不过是比使用 content-visibility 跳动提前
-    // scrollreveal 插件潜在问题 目前尚不明确
-
-    let eqIsh = (a, b, fuzz = 2) => {
-      return Math.abs(a - b) <= fuzz;
-    };
-
-    let rectNotEQ = (a, b) => {
-      return !eqIsh(a.width, b.width) || !eqIsh(a.height, b.height);
-    };
-
-    // Keep a map of elements and the dimensions of
-    // their place-holders, re-setting the element's
-    // intrinsic size when we get updated measurements
-    // from observers.
-    let spaced = new WeakMap();
-
-    // Only call this when known cheap, post layout
-    let reserveSpace = (el, rect = el.getClientBoundingRect()) => {
-      let old = spaced.get(el);
-      // Set intrinsic size to prevent jumping on un-painting:
-      //    https://drafts.csswg.org/css-sizing-4/#intrinsic-size-override
-      if (!old || rectNotEQ(old, rect)) {
-        spaced.set(el, rect);
-        el.style["contain-intrinsic-size"] = `${rect.width}px ${rect.height}px`;
-      }
-    };
-
-    let iObs = new IntersectionObserver(
-      (entries, o) => {
-        entries.forEach((entry) => {
-          // We don't care if the element is intersecting or
-          // has been laid out as our page structure ensures
-          // they'll get the right width.
-          reserveSpace(entry.target, entry.boundingClientRect);
-        });
-      },
-      { rootMargin: "500px 0px 500px 0px" }
-    );
-
-    let rObs = new ResizeObserver((entries, o) => {
-      entries.forEach((entry) => {
-        reserveSpace(entry.target, entry.contentRect);
-      });
-    });
-
-    let resizeResilientDeferredRendering = (Selector) => {
-      let articles = document.querySelectorAll(Selector);
-
-      if (articles.length) {
-        articles.forEach((el) => {
-          iObs.observe(el);
-          rObs.observe(el);
-        });
-
-        // Workaround for Chrome bug, part 2.
-        //
-        // Re-enable browser management of rendering for the
-        // first article after the first paint. Double-rAF
-        // to ensure we get called after a layout.
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            articles[0].style["content-visibility"] = "auto";
-          });
-        });
-      }
-    };
-
-    let contentVisibilityScrollFix = () => {
-      if (!("content-visibility" in document.documentElement.style)) {
-        return;
-      }
-      resizeResilientDeferredRendering(".post-story");
-    };
-    contentVisibilityScrollFix();
-    volantis.pjax.push(contentVisibilityScrollFix);
-  } catch (error) {
-    console.log(error);
-  }
-</script>
 
 
 <script>

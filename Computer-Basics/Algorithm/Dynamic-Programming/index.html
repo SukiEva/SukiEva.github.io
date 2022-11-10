@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN,en,default">
-    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.6.0'>
+    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.7.6'>
   <meta name="generator" content="Hexo 6.2.0">
-  <meta name="Volantis" content="5.6.0">
+  <meta name="Volantis" content="5.7.6">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -26,7 +26,7 @@
   
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://fastly.jsdelivr.net/gh/SukiEva/assets/blog/favicon.png">
-  <link rel="preload" href="/css/style.d38cd369.css" as="style">
+  <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
 
@@ -59,15 +59,6 @@
     /* 首屏样式 */
     #safearea {
   display: none;
-}
-/*
-  * Workaround for Chrome bug, part 1
-  * Chunk rendering for all but the first article.
-  * /layout/_partial/scripts/content-visibility-scroll-fix.ejs
-*/
-.post-story + .post-story {
-  content-visibility: auto;
-  contain-intrinsic-size: 10px 500px;
 }
 :root {
   --color-site-body: #fff;
@@ -1875,8 +1866,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.d38cd369.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.d38cd369.css"></noscript>
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1949,14 +1940,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   /************这个文件存放不需要重载的全局变量和全局函数*********/
   window.volantis = {}; // volantis 全局变量
-  volantis.debug = false; // 开启调试模式
+  volantis.debug = "env"; // 调试模式
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/parallax.js?time=1665915579978","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenu.js?time=1665915579978","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978"},"css":{"style":"/css/style.d38cd369.css"}},
+    debug: "env",
+    cdn: {"js":{"app":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/parallax.js","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenu.js","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1665915579978),
+    lastupdate: new Date(1668091147913),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -3000,7 +2991,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ol>
 <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201031418164.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201031418164.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom: 50%;" />
 
-<div class="story post-story"><h2 id="背包问题"><a href="#背包问题" class="headerlink" title="背包问题"></a>背包问题</h2><blockquote>
+<h2 id="背包问题"><a href="#背包问题" class="headerlink" title="背包问题"></a>背包问题</h2><blockquote>
 <p>对于面试，掌握 01 背包和完全背包就够用了，最多可以再来一个多重背包。</p>
 </blockquote>
 <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201061504469.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201061504469.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom:80%;" />
@@ -3057,7 +3048,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </blockquote>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ! 转换成 01 背包</span></span><br><span class="line"><span class="comment">// - O(m*n*k)</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">bagProblem</span><span class="params">(weight, value, nums []<span class="type">int</span>, bagweight <span class="type">int</span>)</span></span> <span class="type">int</span> &#123;</span><br><span class="line">    dp := <span class="built_in">make</span>([]<span class="type">int</span>, bagweight+<span class="number">1</span>)</span><br><span class="line">    <span class="keyword">for</span> i := <span class="keyword">range</span> weight &#123;</span><br><span class="line">        <span class="keyword">for</span> j := bagweight; j &gt;= weight[i]; j-- &#123;</span><br><span class="line">            <span class="comment">// 遍历背包个数</span></span><br><span class="line">            <span class="keyword">for</span> k := <span class="number">1</span>; k &lt;= nums[i] &amp;&amp; j-k*weight[i] &gt;= <span class="number">0</span>; k++ &#123;</span><br><span class="line">                dp[j] = max(dp[j], dp[j-k*weight[i]]+k*value[i])</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">//fmt.Println(dp)</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> dp[bagweight]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="打家劫舍"><a href="#打家劫舍" class="headerlink" title="打家劫舍"></a>打家劫舍</h2><h3 id="一条边"><a href="#一条边" class="headerlink" title="一条边"></a>一条边</h3><blockquote>
+<h2 id="打家劫舍"><a href="#打家劫舍" class="headerlink" title="打家劫舍"></a>打家劫舍</h2><h3 id="一条边"><a href="#一条边" class="headerlink" title="一条边"></a>一条边</h3><blockquote>
 <p>你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，<strong>如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警</strong>。</p>
 <p>给定一个代表每个房屋存放金额的非负整数数组，计算你 <strong>不触动警报装置的情况下</strong> ，一夜之内能够偷窃到的最高金额。</p>
 </blockquote>
@@ -3103,7 +3094,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ul>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">   <span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">rob</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        vector&lt;<span class="type">int</span>&gt; ans = <span class="built_in">robTree</span>(root);</span><br><span class="line">        <span class="keyword">return</span> <span class="built_in">max</span>(ans[<span class="number">0</span>], ans[<span class="number">1</span>]);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">robTree</span><span class="params">(TreeNode* root)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (root == <span class="literal">nullptr</span>) <span class="keyword">return</span> &#123;<span class="number">0</span>, <span class="number">0</span>&#125;;</span><br><span class="line">        vector&lt;<span class="type">int</span>&gt; left = <span class="built_in">robTree</span>(root-&gt;left);</span><br><span class="line">        vector&lt;<span class="type">int</span>&gt; right = <span class="built_in">robTree</span>(root-&gt;right);</span><br><span class="line">        <span class="type">int</span> v1 = <span class="built_in">max</span>(left[<span class="number">0</span>], left[<span class="number">1</span>]) + <span class="built_in">max</span>(right[<span class="number">0</span>], right[<span class="number">1</span>]);</span><br><span class="line">        <span class="type">int</span> v2 = left[<span class="number">0</span>] + right[<span class="number">0</span>] + root-&gt;val;</span><br><span class="line">        <span class="keyword">return</span> &#123;v1, v2&#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="股票问题"><a href="#股票问题" class="headerlink" title="股票问题"></a>股票问题</h2><p>主要通过二维数组记录各个状态，分析好每个状态的转移公式即可。</p>
+<h2 id="股票问题"><a href="#股票问题" class="headerlink" title="股票问题"></a>股票问题</h2><p>主要通过二维数组记录各个状态，分析好每个状态的转移公式即可。</p>
 <p>也可以滚动数组优化到一维，相当于覆盖前面的状态，不过不容易理解。</p>
 <h3 id="买卖-1-次"><a href="#买卖-1-次" class="headerlink" title="买卖 1 次"></a>买卖 1 次</h3><p>给定一个数组 <code>prices</code> ，它的第 <code>i</code> 个元素 <code>prices[i]</code> 表示一支给定股票第 <code>i</code> 天的价格。</p>
 <p>你只能选择 <strong>某一天</strong> 买入这只股票，并选择在 <strong>未来的某一个不同的日子</strong> 卖出该股票。设计一个算法来计算你所能获取的最大利润。</p>
@@ -3166,7 +3157,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>跟买卖多次差不多，添上手续费即可</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">   <span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">maxProfit</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; prices, <span class="type">int</span> fee)</span> </span>&#123;</span><br><span class="line">        vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">dp</span>(prices.<span class="built_in">size</span>(), <span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;(<span class="number">2</span>));</span><br><span class="line"></span><br><span class="line">        dp[<span class="number">0</span>][<span class="number">0</span>] = -prices[<span class="number">0</span>];</span><br><span class="line">        dp[<span class="number">0</span>][<span class="number">1</span>] = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; prices.<span class="built_in">size</span>(); i++) &#123;</span><br><span class="line">            dp[i][<span class="number">0</span>] = <span class="built_in">max</span>(dp[i - <span class="number">1</span>][<span class="number">1</span>] - prices[i], dp[i - <span class="number">1</span>][<span class="number">0</span>]);</span><br><span class="line">            dp[i][<span class="number">1</span>] = <span class="built_in">max</span>(dp[i - <span class="number">1</span>][<span class="number">0</span>] + prices[i] - fee, dp[i - <span class="number">1</span>][<span class="number">1</span>]); <span class="comment">// 这里减去手续费</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[prices.<span class="built_in">size</span>() - <span class="number">1</span>][<span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="子序列问题"><a href="#子序列问题" class="headerlink" title="子序列问题"></a>子序列问题</h2><h3 id="最长递增子序列"><a href="#最长递增子序列" class="headerlink" title="最长递增子序列"></a>最长递增子序列</h3><h4 id="子序列不连续"><a href="#子序列不连续" class="headerlink" title="子序列不连续"></a>子序列不连续</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">lengthOfLIS</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">dp</span><span class="params">(nums.size(),<span class="number">1</span>)</span></span>;</span><br><span class="line">        <span class="type">int</span> ans = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">1</span>; i&lt;nums.<span class="built_in">size</span>(); i++)&#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j=<span class="number">0</span>; j&lt;i; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span> (nums[j]&lt;nums[i])&#123;</span><br><span class="line">                    dp[i] = <span class="built_in">max</span>(dp[i],dp[j]+<span class="number">1</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            ans = <span class="built_in">max</span>(dp[i],ans);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 贪心 + 二分 nlogn</span></span><br><span class="line"><span class="comment">// 贪心：每次在上升子序列最后加上的那个数尽可能的小</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">   <span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">lengthOfLIS</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">dp</span><span class="params">(nums.size(), <span class="number">1</span>)</span></span>;  <span class="comment">// 严格单调增，类似单调栈，更新栈顶</span></span><br><span class="line">        <span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> num : nums) &#123;</span><br><span class="line">            <span class="type">int</span> l = <span class="number">0</span>, r = ans; <span class="comment">// 右边界 = 现有dp数组的长度</span></span><br><span class="line">            <span class="keyword">while</span> (l &lt; r) &#123; <span class="comment">// 在现有的dp数组中查找比num大的数，用num取代它；如果没有，就添加入dp</span></span><br><span class="line">                <span class="type">int</span> m = (l + r) / <span class="number">2</span>;</span><br><span class="line">                <span class="keyword">if</span> (dp[m] &lt; num) </span><br><span class="line">                    l = m + <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">else</span> </span><br><span class="line">                    r = m;</span><br><span class="line">            &#125;</span><br><span class="line">            dp[l] = num; <span class="comment">// 保证最右边的数尽可能小</span></span><br><span class="line">            <span class="keyword">if</span> (ans == r) ans++; <span class="comment">// dp数组中的数都比num小，添加入dp，长度+1</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h2 id="子序列问题"><a href="#子序列问题" class="headerlink" title="子序列问题"></a>子序列问题</h2><h3 id="最长递增子序列"><a href="#最长递增子序列" class="headerlink" title="最长递增子序列"></a>最长递增子序列</h3><h4 id="子序列不连续"><a href="#子序列不连续" class="headerlink" title="子序列不连续"></a>子序列不连续</h4><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">lengthOfLIS</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">dp</span><span class="params">(nums.size(),<span class="number">1</span>)</span></span>;</span><br><span class="line">        <span class="type">int</span> ans = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">1</span>; i&lt;nums.<span class="built_in">size</span>(); i++)&#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j=<span class="number">0</span>; j&lt;i; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span> (nums[j]&lt;nums[i])&#123;</span><br><span class="line">                    dp[i] = <span class="built_in">max</span>(dp[i],dp[j]+<span class="number">1</span>);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            ans = <span class="built_in">max</span>(dp[i],ans);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 贪心 + 二分 nlogn</span></span><br><span class="line"><span class="comment">// 贪心：每次在上升子序列最后加上的那个数尽可能的小</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">   <span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">lengthOfLIS</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">dp</span><span class="params">(nums.size(), <span class="number">1</span>)</span></span>;  <span class="comment">// 严格单调增，类似单调栈，更新栈顶</span></span><br><span class="line">        <span class="type">int</span> ans = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> num : nums) &#123;</span><br><span class="line">            <span class="type">int</span> l = <span class="number">0</span>, r = ans; <span class="comment">// 右边界 = 现有dp数组的长度</span></span><br><span class="line">            <span class="keyword">while</span> (l &lt; r) &#123; <span class="comment">// 在现有的dp数组中查找比num大的数，用num取代它；如果没有，就添加入dp</span></span><br><span class="line">                <span class="type">int</span> m = (l + r) / <span class="number">2</span>;</span><br><span class="line">                <span class="keyword">if</span> (dp[m] &lt; num) </span><br><span class="line">                    l = m + <span class="number">1</span>;</span><br><span class="line">                <span class="keyword">else</span> </span><br><span class="line">                    r = m;</span><br><span class="line">            &#125;</span><br><span class="line">            dp[l] = num; <span class="comment">// 保证最右边的数尽可能小</span></span><br><span class="line">            <span class="keyword">if</span> (ans == r) ans++; <span class="comment">// dp数组中的数都比num小，添加入dp，长度+1</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
 <h4 id="记录路径-1"><a href="#记录路径-1" class="headerlink" title="记录路径"></a>记录路径</h4><p>使用 dp 的话，本身就能倒推出路径；使用贪心 + 二分，记录的不一定是路径，模拟一下会发现小的会替代 dp 数组中的大值，导致顺序不对。</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">lengthOfLIS</span><span class="params">(vector&lt;<span class="type">int</span>&gt;&amp; nums)</span> </span>&#123;</span><br><span class="line">        <span class="type">int</span> n = nums.<span class="built_in">size</span>();</span><br><span class="line">        <span class="function">vector&lt;<span class="type">int</span>&gt; <span class="title">dp</span><span class="params">(n,<span class="number">1</span>)</span></span>;</span><br><span class="line">        <span class="type">int</span> ans = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i=<span class="number">1</span>; i&lt;n; i++)&#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j=<span class="number">0</span>; j&lt;i; j++)&#123;</span><br><span class="line">                <span class="keyword">if</span> (nums[j]&lt;nums[i]) dp[i] = <span class="built_in">max</span>(dp[i],dp[j]+<span class="number">1</span>);</span><br><span class="line">            &#125;</span><br><span class="line">             ans = <span class="built_in">max</span>(ans,dp[i]);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> target = ans;</span><br><span class="line">        vector&lt;<span class="type">int</span>&gt; path;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = dp.<span class="built_in">size</span>()<span class="number">-1</span>; i&gt;=<span class="number">0</span>; i--)&#123;</span><br><span class="line">            <span class="keyword">if</span> (dp[i]==target)&#123;</span><br><span class="line">                path.<span class="built_in">push_back</span>(nums[i]);</span><br><span class="line">                target--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = path.<span class="built_in">size</span>()<span class="number">-1</span>; i&gt;=<span class="number">0</span>; i--)</span><br><span class="line">            cout&lt;&lt;path[i]&lt;&lt;<span class="string">&quot; &quot;</span>;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
@@ -3273,7 +3264,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ul>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">   <span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="type">int</span> <span class="title">longestPalindromeSubseq</span><span class="params">(string s)</span> </span>&#123;</span><br><span class="line">        vector&lt;vector&lt;<span class="type">int</span>&gt;&gt; <span class="built_in">dp</span>(s.<span class="built_in">size</span>(), <span class="built_in">vector</span>&lt;<span class="type">int</span>&gt;(s.<span class="built_in">size</span>()));</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; s.<span class="built_in">size</span>(); i++) dp[i][i] = <span class="number">1</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="type">int</span> i = s.<span class="built_in">size</span>() - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = i + <span class="number">1</span>; j &lt; s.<span class="built_in">size</span>(); j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (s[i] == s[j])</span><br><span class="line">                    dp[i][j] = dp[i + <span class="number">1</span>][j - <span class="number">1</span>] + <span class="number">2</span>;</span><br><span class="line">                <span class="keyword">else</span></span><br><span class="line">                    dp[i][j] = <span class="built_in">max</span>(dp[i + <span class="number">1</span>][j], dp[i][j - <span class="number">1</span>]);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dp[<span class="number">0</span>][s.<span class="built_in">size</span>() - <span class="number">1</span>];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 
-</div>
   </div>
   
   
@@ -3326,7 +3316,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                 
               
                 
-                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href=http://blog.sukiu.top/Computer-Basics/Algorithm/Dynamic-Programming/>http://blog.sukiu.top/Computer-Basics/Algorithm/Dynamic-Programming/</a></p>
+                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href="http://blog.sukiu.top/Computer-Basics/Algorithm/Dynamic-Programming/">http://blog.sukiu.top/Computer-Basics/Algorithm/Dynamic-Programming/</a></p>
                 
               
                 
@@ -3663,7 +3653,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.af2d54c8.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js"></script>
 
 
 
@@ -3908,7 +3898,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -4149,19 +4139,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js")
       }
     
   };
@@ -4257,7 +4247,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/aplayer.js?time=1665915579978')
+    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/aplayer.js')
   
   })();
 
@@ -4384,7 +4374,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978");
+    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js");
   }
 
   function loadSearchService() {
@@ -4843,94 +4833,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 </script>
 
-<script>
-  try {
-    // https://web.dev/content-visibility/
-    // https://www.caniuse.com/?search=content-visibility
-    // https://infrequently.org/2020/12/content-visibility-scroll-fix/
-    // https://infrequently.org/2020/12/resize-resilient-deferred-rendering/
-
-    // 备注 目前已知的问题:
-    // 动态修改导致的内容高度变化(例如评论框异步渲染的外部盒子高度变化) 无法提前获知, 进而导致的首次滚动条跳动无法去除 (wontfix) 事实上不使用 content-visibility 也会有跳动, 不过是比使用 content-visibility 跳动提前
-    // scrollreveal 插件潜在问题 目前尚不明确
-
-    let eqIsh = (a, b, fuzz = 2) => {
-      return Math.abs(a - b) <= fuzz;
-    };
-
-    let rectNotEQ = (a, b) => {
-      return !eqIsh(a.width, b.width) || !eqIsh(a.height, b.height);
-    };
-
-    // Keep a map of elements and the dimensions of
-    // their place-holders, re-setting the element's
-    // intrinsic size when we get updated measurements
-    // from observers.
-    let spaced = new WeakMap();
-
-    // Only call this when known cheap, post layout
-    let reserveSpace = (el, rect = el.getClientBoundingRect()) => {
-      let old = spaced.get(el);
-      // Set intrinsic size to prevent jumping on un-painting:
-      //    https://drafts.csswg.org/css-sizing-4/#intrinsic-size-override
-      if (!old || rectNotEQ(old, rect)) {
-        spaced.set(el, rect);
-        el.style["contain-intrinsic-size"] = `${rect.width}px ${rect.height}px`;
-      }
-    };
-
-    let iObs = new IntersectionObserver(
-      (entries, o) => {
-        entries.forEach((entry) => {
-          // We don't care if the element is intersecting or
-          // has been laid out as our page structure ensures
-          // they'll get the right width.
-          reserveSpace(entry.target, entry.boundingClientRect);
-        });
-      },
-      { rootMargin: "500px 0px 500px 0px" }
-    );
-
-    let rObs = new ResizeObserver((entries, o) => {
-      entries.forEach((entry) => {
-        reserveSpace(entry.target, entry.contentRect);
-      });
-    });
-
-    let resizeResilientDeferredRendering = (Selector) => {
-      let articles = document.querySelectorAll(Selector);
-
-      if (articles.length) {
-        articles.forEach((el) => {
-          iObs.observe(el);
-          rObs.observe(el);
-        });
-
-        // Workaround for Chrome bug, part 2.
-        //
-        // Re-enable browser management of rendering for the
-        // first article after the first paint. Double-rAF
-        // to ensure we get called after a layout.
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            articles[0].style["content-visibility"] = "auto";
-          });
-        });
-      }
-    };
-
-    let contentVisibilityScrollFix = () => {
-      if (!("content-visibility" in document.documentElement.style)) {
-        return;
-      }
-      resizeResilientDeferredRendering(".post-story");
-    };
-    contentVisibilityScrollFix();
-    volantis.pjax.push(contentVisibilityScrollFix);
-  } catch (error) {
-    console.log(error);
-  }
-</script>
 
 
 <script>

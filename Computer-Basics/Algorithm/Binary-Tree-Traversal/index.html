@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN,en,default">
-    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.6.0'>
+    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.7.6'>
   <meta name="generator" content="Hexo 6.2.0">
-  <meta name="Volantis" content="5.6.0">
+  <meta name="Volantis" content="5.7.6">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -26,7 +26,7 @@
   
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://fastly.jsdelivr.net/gh/SukiEva/assets/blog/favicon.png">
-  <link rel="preload" href="/css/style.d38cd369.css" as="style">
+  <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
 
@@ -66,15 +66,6 @@
     /* 首屏样式 */
     #safearea {
   display: none;
-}
-/*
-  * Workaround for Chrome bug, part 1
-  * Chunk rendering for all but the first article.
-  * /layout/_partial/scripts/content-visibility-scroll-fix.ejs
-*/
-.post-story + .post-story {
-  content-visibility: auto;
-  contain-intrinsic-size: 10px 500px;
 }
 :root {
   --color-site-body: #fff;
@@ -1882,8 +1873,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.d38cd369.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.d38cd369.css"></noscript>
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1956,14 +1947,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   /************这个文件存放不需要重载的全局变量和全局函数*********/
   window.volantis = {}; // volantis 全局变量
-  volantis.debug = false; // 开启调试模式
+  volantis.debug = "env"; // 调试模式
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/parallax.js?time=1665915579978","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenu.js?time=1665915579978","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978"},"css":{"style":"/css/style.d38cd369.css"}},
+    debug: "env",
+    cdn: {"js":{"app":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/parallax.js","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenu.js","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1665915579978),
+    lastupdate: new Date(1668091147913),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -3004,7 +2995,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ul>
 <span id="more"></span>
 
-<div class="story post-story"><h2 id="递归遍历"><a href="#递归遍历" class="headerlink" title="递归遍历"></a>递归遍历</h2><p><strong>递归三要素：</strong></p>
+<h2 id="递归遍历"><a href="#递归遍历" class="headerlink" title="递归遍历"></a>递归遍历</h2><p><strong>递归三要素：</strong></p>
 <ol>
 <li><strong>确定递归函数的参数和返回值：</strong> 确定哪些参数是递归的过程中需要处理的，那么就在递归函数里加上这个参数， 并且还要明确每次递归的返回值是什么进而确定递归函数的返回类型。</li>
 <li><strong>确定终止条件：</strong> 写完了递归算法, 运行的时候，经常会遇到栈溢出的错误，就是没写终止条件或者终止条件写的不对，操作系统也是用一个栈的结构来保存每一层递归的信息，如果递归没有终止，操作系统的内存栈必然就会溢出。</li>
@@ -3019,7 +3010,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <h3 id="后序遍历"><a href="#后序遍历" class="headerlink" title="后序遍历"></a>后序遍历</h3><p>即 左 - 右 - 根</p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">postorderTraversal</span><span class="params">(root *TreeNode)</span></span> []<span class="type">int</span> &#123;</span><br><span class="line">    ans := <span class="built_in">make</span>([]<span class="type">int</span>, <span class="number">0</span>)</span><br><span class="line">    <span class="keyword">var</span> postorder <span class="function"><span class="keyword">func</span><span class="params">(root *TreeNode)</span></span></span><br><span class="line">    postorder = <span class="function"><span class="keyword">func</span><span class="params">(root *TreeNode)</span></span> &#123;</span><br><span class="line">        <span class="keyword">if</span> root == <span class="literal">nil</span> &#123;</span><br><span class="line">            <span class="keyword">return</span></span><br><span class="line">        &#125;</span><br><span class="line">        postorder(root.Left)</span><br><span class="line">        postorder(root.Right)</span><br><span class="line">        ans = <span class="built_in">append</span>(ans, root.Val)</span><br><span class="line">    &#125;</span><br><span class="line">    postorder(root)</span><br><span class="line">    <span class="keyword">return</span> ans</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="迭代遍历"><a href="#迭代遍历" class="headerlink" title="迭代遍历"></a>迭代遍历</h2><p><strong>要处理的节点放入栈之后，紧接着放入一个空指针作为标记。</strong> 通过这种标记法实现二叉树的统一迭代遍历。</p>
+<h2 id="迭代遍历"><a href="#迭代遍历" class="headerlink" title="迭代遍历"></a>迭代遍历</h2><p><strong>要处理的节点放入栈之后，紧接着放入一个空指针作为标记。</strong> 通过这种标记法实现二叉树的统一迭代遍历。</p>
 <p><img src="https://tva1.sinaimg.cn/large/008eGmZEly1gnbmq3btubg30em09ue82.gif" class="lazyload" data-srcset="https://tva1.sinaimg.cn/large/008eGmZEly1gnbmq3btubg30em09ue82.gif" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="中序遍历"></p>
 <h3 id="前序遍历-1"><a href="#前序遍历-1" class="headerlink" title="前序遍历"></a>前序遍历</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">preorderTraversal</span><span class="params">(root *TreeNode)</span></span> []<span class="type">int</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> root == <span class="literal">nil</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">    &#125;</span><br><span class="line">    ans := <span class="built_in">make</span>([]<span class="type">int</span>, <span class="number">0</span>)</span><br><span class="line">    stack := list.New()</span><br><span class="line">    stack.PushBack(root)</span><br><span class="line">    <span class="keyword">var</span> node *TreeNode</span><br><span class="line">    <span class="keyword">for</span> stack.Len() &gt; <span class="number">0</span> &#123;</span><br><span class="line">        back := stack.Back()</span><br><span class="line">        stack.Remove(back)</span><br><span class="line">        <span class="keyword">if</span> back.Value != <span class="literal">nil</span> &#123; </span><br><span class="line">            node = back.Value.(*TreeNode) <span class="comment">// interface 为 nil 无法 断言类型转换</span></span><br><span class="line">            <span class="keyword">if</span> node.Right != <span class="literal">nil</span> &#123; </span><br><span class="line">                stack.PushBack(node.Right) <span class="comment">// 右</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> node.Left != <span class="literal">nil</span> &#123;</span><br><span class="line">                stack.PushBack(node.Left) <span class="comment">// 左</span></span><br><span class="line">            &#125;</span><br><span class="line">            stack.PushBack(node) <span class="comment">// 根</span></span><br><span class="line">            stack.PushBack(<span class="literal">nil</span>)</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            node = stack.Remove(stack.Back()).(*TreeNode)</span><br><span class="line">            ans = <span class="built_in">append</span>(ans, node.Val)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -3027,9 +3018,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <h3 id="后序遍历-1"><a href="#后序遍历-1" class="headerlink" title="后序遍历"></a>后序遍历</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">postorderTraversal</span><span class="params">(root *TreeNode)</span></span> []<span class="type">int</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> root == <span class="literal">nil</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">    &#125;</span><br><span class="line">    ans := <span class="built_in">make</span>([]<span class="type">int</span>, <span class="number">0</span>)</span><br><span class="line">    stack := list.New()</span><br><span class="line">    stack.PushBack(root)</span><br><span class="line">    <span class="keyword">var</span> node *TreeNode</span><br><span class="line">    <span class="keyword">for</span> stack.Len() &gt; <span class="number">0</span> &#123;</span><br><span class="line">        back := stack.Back()</span><br><span class="line">        stack.Remove(back)</span><br><span class="line">        <span class="keyword">if</span> back.Value != <span class="literal">nil</span> &#123;</span><br><span class="line">            node = back.Value.(*TreeNode) <span class="comment">// interface 为 nil 无法 断言类型转换</span></span><br><span class="line">            stack.PushBack(node) <span class="comment">// 根</span></span><br><span class="line">            stack.PushBack(<span class="literal">nil</span>)</span><br><span class="line">            <span class="keyword">if</span> node.Right != <span class="literal">nil</span> &#123;</span><br><span class="line">                stack.PushBack(node.Right) <span class="comment">// 右</span></span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> node.Left != <span class="literal">nil</span> &#123;</span><br><span class="line">                stack.PushBack(node.Left) <span class="comment">// 左</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            node = stack.Remove(stack.Back()).(*TreeNode)</span><br><span class="line">            ans = <span class="built_in">append</span>(ans, node.Val)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="层序遍历"><a href="#层序遍历" class="headerlink" title="层序遍历"></a>层序遍历</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">levelOrder</span><span class="params">(root *TreeNode)</span></span> [][]<span class="type">int</span> &#123;</span><br><span class="line">    ans := [][]<span class="type">int</span>&#123;&#125;</span><br><span class="line">    <span class="keyword">if</span> root == <span class="literal">nil</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> ans</span><br><span class="line">    &#125;</span><br><span class="line">    queue := list.New()</span><br><span class="line">    queue.PushBack(root)</span><br><span class="line">    t := <span class="built_in">make</span>([]<span class="type">int</span>, <span class="number">0</span>)</span><br><span class="line">    <span class="keyword">for</span> queue.Len() &gt; <span class="number">0</span> &#123;</span><br><span class="line">        l := queue.Len()</span><br><span class="line">        <span class="keyword">for</span> i := <span class="number">0</span>; i &lt; l; i++ &#123;</span><br><span class="line">            node := queue.Remove(queue.Front()).(*TreeNode)</span><br><span class="line">            t = <span class="built_in">append</span>(t, node.Val)</span><br><span class="line">            <span class="keyword">if</span> node.Left != <span class="literal">nil</span> &#123;</span><br><span class="line">                queue.PushBack(node.Left)</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> node.Right != <span class="literal">nil</span> &#123;</span><br><span class="line">                queue.PushBack(node.Right)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        ans = <span class="built_in">append</span>(ans, t)</span><br><span class="line">        t = []<span class="type">int</span>&#123;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="层序遍历"><a href="#层序遍历" class="headerlink" title="层序遍历"></a>层序遍历</h2><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">levelOrder</span><span class="params">(root *TreeNode)</span></span> [][]<span class="type">int</span> &#123;</span><br><span class="line">    ans := [][]<span class="type">int</span>&#123;&#125;</span><br><span class="line">    <span class="keyword">if</span> root == <span class="literal">nil</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> ans</span><br><span class="line">    &#125;</span><br><span class="line">    queue := list.New()</span><br><span class="line">    queue.PushBack(root)</span><br><span class="line">    t := <span class="built_in">make</span>([]<span class="type">int</span>, <span class="number">0</span>)</span><br><span class="line">    <span class="keyword">for</span> queue.Len() &gt; <span class="number">0</span> &#123;</span><br><span class="line">        l := queue.Len()</span><br><span class="line">        <span class="keyword">for</span> i := <span class="number">0</span>; i &lt; l; i++ &#123;</span><br><span class="line">            node := queue.Remove(queue.Front()).(*TreeNode)</span><br><span class="line">            t = <span class="built_in">append</span>(t, node.Val)</span><br><span class="line">            <span class="keyword">if</span> node.Left != <span class="literal">nil</span> &#123;</span><br><span class="line">                queue.PushBack(node.Left)</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span> node.Right != <span class="literal">nil</span> &#123;</span><br><span class="line">                queue.PushBack(node.Right)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        ans = <span class="built_in">append</span>(ans, t)</span><br><span class="line">        t = []<span class="type">int</span>&#123;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</div>
   </div>
   
   
@@ -3082,7 +3072,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                 
               
                 
-                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href=http://blog.sukiu.top/Computer-Basics/Algorithm/Binary-Tree-Traversal/>http://blog.sukiu.top/Computer-Basics/Algorithm/Binary-Tree-Traversal/</a></p>
+                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href="http://blog.sukiu.top/Computer-Basics/Algorithm/Binary-Tree-Traversal/">http://blog.sukiu.top/Computer-Basics/Algorithm/Binary-Tree-Traversal/</a></p>
                 
               
                 
@@ -3425,7 +3415,7 @@ C++Vector其底层数据结构是数组，由于能动态扩容，所以也称�
 
 <!-- internal -->
 
-<script src="/js/app.af2d54c8.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js"></script>
 
 
 
@@ -3670,7 +3660,7 @@ C++Vector其底层数据结构是数组，由于能动态扩容，所以也称�
 
   </ul>
 </div>
-<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3911,19 +3901,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js")
       }
     
   };
@@ -4019,7 +4009,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/aplayer.js?time=1665915579978')
+    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/aplayer.js')
   
   })();
 
@@ -4146,7 +4136,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978");
+    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js");
   }
 
   function loadSearchService() {
@@ -4605,94 +4595,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 </script>
 
-<script>
-  try {
-    // https://web.dev/content-visibility/
-    // https://www.caniuse.com/?search=content-visibility
-    // https://infrequently.org/2020/12/content-visibility-scroll-fix/
-    // https://infrequently.org/2020/12/resize-resilient-deferred-rendering/
-
-    // 备注 目前已知的问题:
-    // 动态修改导致的内容高度变化(例如评论框异步渲染的外部盒子高度变化) 无法提前获知, 进而导致的首次滚动条跳动无法去除 (wontfix) 事实上不使用 content-visibility 也会有跳动, 不过是比使用 content-visibility 跳动提前
-    // scrollreveal 插件潜在问题 目前尚不明确
-
-    let eqIsh = (a, b, fuzz = 2) => {
-      return Math.abs(a - b) <= fuzz;
-    };
-
-    let rectNotEQ = (a, b) => {
-      return !eqIsh(a.width, b.width) || !eqIsh(a.height, b.height);
-    };
-
-    // Keep a map of elements and the dimensions of
-    // their place-holders, re-setting the element's
-    // intrinsic size when we get updated measurements
-    // from observers.
-    let spaced = new WeakMap();
-
-    // Only call this when known cheap, post layout
-    let reserveSpace = (el, rect = el.getClientBoundingRect()) => {
-      let old = spaced.get(el);
-      // Set intrinsic size to prevent jumping on un-painting:
-      //    https://drafts.csswg.org/css-sizing-4/#intrinsic-size-override
-      if (!old || rectNotEQ(old, rect)) {
-        spaced.set(el, rect);
-        el.style["contain-intrinsic-size"] = `${rect.width}px ${rect.height}px`;
-      }
-    };
-
-    let iObs = new IntersectionObserver(
-      (entries, o) => {
-        entries.forEach((entry) => {
-          // We don't care if the element is intersecting or
-          // has been laid out as our page structure ensures
-          // they'll get the right width.
-          reserveSpace(entry.target, entry.boundingClientRect);
-        });
-      },
-      { rootMargin: "500px 0px 500px 0px" }
-    );
-
-    let rObs = new ResizeObserver((entries, o) => {
-      entries.forEach((entry) => {
-        reserveSpace(entry.target, entry.contentRect);
-      });
-    });
-
-    let resizeResilientDeferredRendering = (Selector) => {
-      let articles = document.querySelectorAll(Selector);
-
-      if (articles.length) {
-        articles.forEach((el) => {
-          iObs.observe(el);
-          rObs.observe(el);
-        });
-
-        // Workaround for Chrome bug, part 2.
-        //
-        // Re-enable browser management of rendering for the
-        // first article after the first paint. Double-rAF
-        // to ensure we get called after a layout.
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            articles[0].style["content-visibility"] = "auto";
-          });
-        });
-      }
-    };
-
-    let contentVisibilityScrollFix = () => {
-      if (!("content-visibility" in document.documentElement.style)) {
-        return;
-      }
-      resizeResilientDeferredRendering(".post-story");
-    };
-    contentVisibilityScrollFix();
-    volantis.pjax.push(contentVisibilityScrollFix);
-  } catch (error) {
-    console.log(error);
-  }
-</script>
 
 
 <script>

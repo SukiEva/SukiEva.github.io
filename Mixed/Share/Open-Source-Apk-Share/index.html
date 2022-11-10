@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN,en,default">
-    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.6.0'>
+    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.7.6'>
   <meta name="generator" content="Hexo 6.2.0">
-  <meta name="Volantis" content="5.6.0">
+  <meta name="Volantis" content="5.7.6">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -26,7 +26,7 @@
   
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://fastly.jsdelivr.net/gh/SukiEva/assets/blog/favicon.png">
-  <link rel="preload" href="/css/style.d38cd369.css" as="style">
+  <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
 
@@ -54,15 +54,6 @@
     /* 首屏样式 */
     #safearea {
   display: none;
-}
-/*
-  * Workaround for Chrome bug, part 1
-  * Chunk rendering for all but the first article.
-  * /layout/_partial/scripts/content-visibility-scroll-fix.ejs
-*/
-.post-story + .post-story {
-  content-visibility: auto;
-  contain-intrinsic-size: 10px 500px;
 }
 :root {
   --color-site-body: #fff;
@@ -1870,8 +1861,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.d38cd369.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.d38cd369.css"></noscript>
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1944,14 +1935,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   /************这个文件存放不需要重载的全局变量和全局函数*********/
   window.volantis = {}; // volantis 全局变量
-  volantis.debug = false; // 开启调试模式
+  volantis.debug = "env"; // 调试模式
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/parallax.js?time=1665915579978","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenu.js?time=1665915579978","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978"},"css":{"style":"/css/style.d38cd369.css"}},
+    debug: "env",
+    cdn: {"js":{"app":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/parallax.js","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenu.js","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1665915579978),
+    lastupdate: new Date(1668091147913),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2980,7 +2971,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>推荐一些开源的安卓应用，可以在 <a target="_blank" rel="noopener" href="https://www.f-droid.org/">F-Droid</a>或 <a target="_blank" rel="noopener" href="https://github.com/">GitHub</a> 下载，主要是一些软件的第三方。</p>
 <span id="more"></span>
 
-<div class="story post-story"><h2 id="F-Droid-第三方"><a href="#F-Droid-第三方" class="headerlink" title="F-Droid 第三方"></a>F-Droid 第三方</h2><h3 id="Aurora-Droid"><a href="#Aurora-Droid" class="headerlink" title="Aurora Droid"></a>Aurora Droid</h3><p><a target="_blank" rel="noopener" href="https://f-droid.org/zh_Hans/packages/com.aurora.adroid/">Aurora Droid</a></p>
+<h2 id="F-Droid-第三方"><a href="#F-Droid-第三方" class="headerlink" title="F-Droid 第三方"></a>F-Droid 第三方</h2><h3 id="Aurora-Droid"><a href="#Aurora-Droid" class="headerlink" title="Aurora Droid"></a>Aurora Droid</h3><p><a target="_blank" rel="noopener" href="https://f-droid.org/zh_Hans/packages/com.aurora.adroid/">Aurora Droid</a></p>
 <p>Aurora 家族成员，界面仿 PlayStroe 风格，不过上次更新已经是 3 月了，个人体验下来有点卡顿的感觉，没有中文。</p>
 <p>推荐指数：⭐⭐⭐</p>
 <div class="tag-plugin swiper-container" width="min"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/com.aurora.adroid/en-US/phoneScreenshots/ss001.png" /></div><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/com.aurora.adroid/en-US/phoneScreenshots/ss002.png" /></div><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/com.aurora.adroid/en-US/phoneScreenshots/ss003.png" /></div><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/com.aurora.adroid/en-US/phoneScreenshots/ss004.png" /></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div>
@@ -2990,40 +2981,39 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>推荐指数：⭐⭐⭐⭐⭐</p>
 <div class="tag-plugin swiper-container" width="min"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/com.looker.droidify/en-US/phoneScreenshots/app-light.png" /></div><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/com.looker.droidify/en-US/phoneScreenshots/home-light.png" /></div><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/com.looker.droidify/en-US/phoneScreenshots/app-amoled.png" /></div><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/com.looker.droidify/en-US/phoneScreenshots/home-amoled.png" /></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div>
 
-</div><div class="story post-story"><h2 id="Play-Stroe-第三方"><a href="#Play-Stroe-第三方" class="headerlink" title="Play Stroe 第三方"></a>Play Stroe 第三方</h2><h3 id="Aurora-Store"><a href="#Aurora-Store" class="headerlink" title="Aurora Store"></a>Aurora Store</h3><p><a target="_blank" rel="noopener" href="https://f-droid.org/zh_Hans/packages/com.aurora.store/">Aurora Store</a></p>
+<h2 id="Play-Stroe-第三方"><a href="#Play-Stroe-第三方" class="headerlink" title="Play Stroe 第三方"></a>Play Stroe 第三方</h2><h3 id="Aurora-Store"><a href="#Aurora-Store" class="headerlink" title="Aurora Store"></a>Aurora Store</h3><p><a target="_blank" rel="noopener" href="https://f-droid.org/zh_Hans/packages/com.aurora.store/">Aurora Store</a></p>
 <p>Auroara 家族成员，美观且支持匿名登录和选区。</p>
 <p>推荐指数：⭐⭐⭐⭐⭐</p>
 <div class="tag-plugin swiper-container" width="min"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/com.aurora.store/en-US/phoneScreenshots/ss001.png" /></div><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/com.aurora.store/en-US/phoneScreenshots/ss002.png" /></div><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/com.aurora.store/en-US/phoneScreenshots/ss003.png" /></div><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/com.aurora.store/en-US/phoneScreenshots/ss004.png" /></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div>
 
-</div><div class="story post-story"><h2 id="Telegram-第三方"><a href="#Telegram-第三方" class="headerlink" title="Telegram 第三方"></a>Telegram 第三方</h2><h3 id="Nekogram-X"><a href="#Nekogram-X" class="headerlink" title="Nekogram X"></a>Nekogram X</h3><p><a target="_blank" rel="noopener" href="https://f-droid.org/zh_Hans/packages/nekox.messenger/">Nekogram X</a></p>
+<h2 id="Telegram-第三方"><a href="#Telegram-第三方" class="headerlink" title="Telegram 第三方"></a>Telegram 第三方</h2><h3 id="Nekogram-X"><a href="#Nekogram-X" class="headerlink" title="Nekogram X"></a>Nekogram X</h3><p><a target="_blank" rel="noopener" href="https://f-droid.org/zh_Hans/packages/nekox.messenger/">Nekogram X</a></p>
 <p>可以说专门为国人定制的了，自定义选项都很实用，可以自由选择 FCM 推送。</p>
 <p>推荐指数：⭐⭐⭐⭐⭐</p>
-</div><div class="story post-story"><h2 id="Reddit-第三方"><a href="#Reddit-第三方" class="headerlink" title="Reddit 第三方"></a>Reddit 第三方</h2><h3 id="Infinity-for-Reddit"><a href="#Infinity-for-Reddit" class="headerlink" title="Infinity for Reddit"></a>Infinity for Reddit</h3><p><a target="_blank" rel="noopener" href="https://f-droid.org/zh_Hans/packages/ml.docilealligator.infinityforreddit/">Infinity for Reddit</a></p>
+<h2 id="Reddit-第三方"><a href="#Reddit-第三方" class="headerlink" title="Reddit 第三方"></a>Reddit 第三方</h2><h3 id="Infinity-for-Reddit"><a href="#Infinity-for-Reddit" class="headerlink" title="Infinity for Reddit"></a>Infinity for Reddit</h3><p><a target="_blank" rel="noopener" href="https://f-droid.org/zh_Hans/packages/ml.docilealligator.infinityforreddit/">Infinity for Reddit</a></p>
 <p>自定义项多，支持安卓 12 Material you，没有广告，比官方的好用多了。</p>
 <p>推荐指数：⭐⭐⭐⭐⭐</p>
 <div class="tag-plugin swiper-container" width="min"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/ml.docilealligator.infinityforreddit/en-US/phoneScreenshots/1.png" /></div><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/ml.docilealligator.infinityforreddit/en-US/phoneScreenshots/6.png" /></div><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/ml.docilealligator.infinityforreddit/en-US/phoneScreenshots/7.png" /></div><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/ml.docilealligator.infinityforreddit/en-US/phoneScreenshots/8.png" /></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div>
 
-</div><div class="story post-story"><h2 id="Youtube-第三方"><a href="#Youtube-第三方" class="headerlink" title="Youtube 第三方"></a>Youtube 第三方</h2><h3 id="NewPipe"><a href="#NewPipe" class="headerlink" title="NewPipe"></a>NewPipe</h3><p><a target="_blank" rel="noopener" href="https://f-droid.org/zh_Hans/packages/org.schabi.newpipe/">NewPipe</a></p>
+<h2 id="Youtube-第三方"><a href="#Youtube-第三方" class="headerlink" title="Youtube 第三方"></a>Youtube 第三方</h2><h3 id="NewPipe"><a href="#NewPipe" class="headerlink" title="NewPipe"></a>NewPipe</h3><p><a target="_blank" rel="noopener" href="https://f-droid.org/zh_Hans/packages/org.schabi.newpipe/">NewPipe</a></p>
 <p>不需要登陆，没有广告，更新勤快，对轻度使用者极其友好。<br>可惜不能自定义外观，略丑。</p>
 <p>推荐指数：⭐⭐⭐⭐</p>
 <div class="tag-plugin swiper-container" width="min"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/org.schabi.newpipe/en-US/phoneScreenshots/shot_01.png" /></div><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/org.schabi.newpipe/en-US/phoneScreenshots/shot_02.png" /></div><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/org.schabi.newpipe/en-US/phoneScreenshots/shot_06.png" /></div><div class="swiper-slide"><img no-lazy src="https://f-droid.org/repo/org.schabi.newpipe/en-US/phoneScreenshots/shot_07.png" /></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div>
 
-</div><div class="story post-story"><h2 id="Twitter-第三方"><a href="#Twitter-第三方" class="headerlink" title="Twitter 第三方"></a>Twitter 第三方</h2><h3 id="Twidere-X"><a href="#Twidere-X" class="headerlink" title="Twidere X"></a>Twidere X</h3><p><a target="_blank" rel="noopener" href="https://f-droid.org/zh_Hans/packages/com.twidere.twiderex/">Twidere X</a></p>
+<h2 id="Twitter-第三方"><a href="#Twitter-第三方" class="headerlink" title="Twitter 第三方"></a>Twitter 第三方</h2><h3 id="Twidere-X"><a href="#Twidere-X" class="headerlink" title="Twidere X"></a>Twidere X</h3><p><a target="_blank" rel="noopener" href="https://f-droid.org/zh_Hans/packages/com.twidere.twiderex/">Twidere X</a></p>
 <p>支持登录 Twitter 和 Mastodon，完美替代原版。</p>
 <p>推荐指数：⭐⭐⭐⭐⭐</p>
-</div><div class="story post-story"><h2 id="Pixiv-第三方"><a href="#Pixiv-第三方" class="headerlink" title="Pixiv 第三方"></a>Pixiv 第三方</h2><h3 id="Pixiv-Shaft"><a href="#Pixiv-Shaft" class="headerlink" title="Pixiv-Shaft"></a>Pixiv-Shaft</h3><p><a target="_blank" rel="noopener" href="https://github.com/CeuiLiSA/Pixiv-Shaft">Pixiv-Shaft</a></p>
+<h2 id="Pixiv-第三方"><a href="#Pixiv-第三方" class="headerlink" title="Pixiv 第三方"></a>Pixiv 第三方</h2><h3 id="Pixiv-Shaft"><a href="#Pixiv-Shaft" class="headerlink" title="Pixiv-Shaft"></a>Pixiv-Shaft</h3><p><a target="_blank" rel="noopener" href="https://github.com/CeuiLiSA/Pixiv-Shaft">Pixiv-Shaft</a></p>
 <p>美观，且支持浏览部分热点排序，完美替代原版。</p>
 <p>推荐指数：⭐⭐⭐⭐⭐</p>
 <div class="tag-plugin swiper-container" width="min"><div class="swiper-wrapper"><div class="swiper-slide"><img no-lazy src="https://fastly.jsdelivr.net/gh/CeuiLiSA/Pixiv-Shaft/snap/QQ20200106-0.jpg" /></div><div class="swiper-slide"><img no-lazy src="https://fastly.jsdelivr.net/gh/CeuiLiSA/Pixiv-Shaft/snap/QQ20200106-3.jpg" /></div><div class="swiper-slide"><img no-lazy src="https://fastly.jsdelivr.net/gh/CeuiLiSA/Pixiv-Shaft/snap/QQ20200106-4.jpg" /></div><div class="swiper-slide"><img no-lazy src="https://fastly.jsdelivr.net/gh/CeuiLiSA/Pixiv-Shaft/snap/QQ20200106-5.jpg" /></div></div><div class="swiper-pagination"></div><div class="swiper-button-prev blur"></div><div class="swiper-button-next blur"></div></div>
 
-</div><div class="story post-story"><h2 id="贴吧-第三方"><a href="#贴吧-第三方" class="headerlink" title="贴吧 第三方"></a>贴吧 第三方</h2><h3 id="TiebaLite"><a href="#TiebaLite" class="headerlink" title="TiebaLite"></a>TiebaLite</h3><p><a target="_blank" rel="noopener" href="https://github.com/HuanCheng65/TiebaLite">TiebaLite: 贴吧 Lite</a></p>
+<h2 id="贴吧-第三方"><a href="#贴吧-第三方" class="headerlink" title="贴吧 第三方"></a>贴吧 第三方</h2><h3 id="TiebaLite"><a href="#TiebaLite" class="headerlink" title="TiebaLite"></a>TiebaLite</h3><p><a target="_blank" rel="noopener" href="https://github.com/HuanCheng65/TiebaLite">TiebaLite: 贴吧 Lite</a></p>
 <p>测试版仍在更新，评论容易封号，适合只浏览。</p>
 <p>推荐指数：⭐⭐⭐⭐</p>
-</div><div class="story post-story"><h2 id="V2EX-第三方"><a href="#V2EX-第三方" class="headerlink" title="V2EX 第三方"></a>V2EX 第三方</h2><h3 id="V2er"><a href="#V2er" class="headerlink" title="V2er"></a>V2er</h3><p><a target="_blank" rel="noopener" href="https://github.com/v2er-app/Android">V2er.Android</a></p>
+<h2 id="V2EX-第三方"><a href="#V2EX-第三方" class="headerlink" title="V2EX 第三方"></a>V2EX 第三方</h2><h3 id="V2er"><a href="#V2er" class="headerlink" title="V2er"></a>V2er</h3><p><a target="_blank" rel="noopener" href="https://github.com/v2er-app/Android">V2er.Android</a></p>
 <p>原来付费，现在作者开源了，体验最好的 V2EX 第三方。</p>
 <p>推荐指数：⭐⭐⭐⭐⭐</p>
 
-</div>
   </div>
   
   
@@ -3056,7 +3046,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                 
               
                 
-                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href=http://blog.sukiu.top/Mixed/Share/Open-Source-Apk-Share/>http://blog.sukiu.top/Mixed/Share/Open-Source-Apk-Share/</a></p>
+                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href="http://blog.sukiu.top/Mixed/Share/Open-Source-Apk-Share/">http://blog.sukiu.top/Mixed/Share/Open-Source-Apk-Share/</a></p>
                 
               
                 
@@ -3392,7 +3382,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.af2d54c8.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js"></script>
 
 
 
@@ -3637,7 +3627,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3878,19 +3868,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js")
       }
     
   };
@@ -3986,7 +3976,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/aplayer.js?time=1665915579978')
+    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/aplayer.js')
   
   })();
 
@@ -4113,7 +4103,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978");
+    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js");
   }
 
   function loadSearchService() {
@@ -4572,94 +4562,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 </script>
 
-<script>
-  try {
-    // https://web.dev/content-visibility/
-    // https://www.caniuse.com/?search=content-visibility
-    // https://infrequently.org/2020/12/content-visibility-scroll-fix/
-    // https://infrequently.org/2020/12/resize-resilient-deferred-rendering/
-
-    // 备注 目前已知的问题:
-    // 动态修改导致的内容高度变化(例如评论框异步渲染的外部盒子高度变化) 无法提前获知, 进而导致的首次滚动条跳动无法去除 (wontfix) 事实上不使用 content-visibility 也会有跳动, 不过是比使用 content-visibility 跳动提前
-    // scrollreveal 插件潜在问题 目前尚不明确
-
-    let eqIsh = (a, b, fuzz = 2) => {
-      return Math.abs(a - b) <= fuzz;
-    };
-
-    let rectNotEQ = (a, b) => {
-      return !eqIsh(a.width, b.width) || !eqIsh(a.height, b.height);
-    };
-
-    // Keep a map of elements and the dimensions of
-    // their place-holders, re-setting the element's
-    // intrinsic size when we get updated measurements
-    // from observers.
-    let spaced = new WeakMap();
-
-    // Only call this when known cheap, post layout
-    let reserveSpace = (el, rect = el.getClientBoundingRect()) => {
-      let old = spaced.get(el);
-      // Set intrinsic size to prevent jumping on un-painting:
-      //    https://drafts.csswg.org/css-sizing-4/#intrinsic-size-override
-      if (!old || rectNotEQ(old, rect)) {
-        spaced.set(el, rect);
-        el.style["contain-intrinsic-size"] = `${rect.width}px ${rect.height}px`;
-      }
-    };
-
-    let iObs = new IntersectionObserver(
-      (entries, o) => {
-        entries.forEach((entry) => {
-          // We don't care if the element is intersecting or
-          // has been laid out as our page structure ensures
-          // they'll get the right width.
-          reserveSpace(entry.target, entry.boundingClientRect);
-        });
-      },
-      { rootMargin: "500px 0px 500px 0px" }
-    );
-
-    let rObs = new ResizeObserver((entries, o) => {
-      entries.forEach((entry) => {
-        reserveSpace(entry.target, entry.contentRect);
-      });
-    });
-
-    let resizeResilientDeferredRendering = (Selector) => {
-      let articles = document.querySelectorAll(Selector);
-
-      if (articles.length) {
-        articles.forEach((el) => {
-          iObs.observe(el);
-          rObs.observe(el);
-        });
-
-        // Workaround for Chrome bug, part 2.
-        //
-        // Re-enable browser management of rendering for the
-        // first article after the first paint. Double-rAF
-        // to ensure we get called after a layout.
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            articles[0].style["content-visibility"] = "auto";
-          });
-        });
-      }
-    };
-
-    let contentVisibilityScrollFix = () => {
-      if (!("content-visibility" in document.documentElement.style)) {
-        return;
-      }
-      resizeResilientDeferredRendering(".post-story");
-    };
-    contentVisibilityScrollFix();
-    volantis.pjax.push(contentVisibilityScrollFix);
-  } catch (error) {
-    console.log(error);
-  }
-</script>
 
 
 <script>

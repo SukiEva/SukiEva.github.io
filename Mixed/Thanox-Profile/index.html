@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN,en,default">
-    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.6.0'>
+    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.7.6'>
   <meta name="generator" content="Hexo 6.2.0">
-  <meta name="Volantis" content="5.6.0">
+  <meta name="Volantis" content="5.7.6">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -26,7 +26,7 @@
   
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://fastly.jsdelivr.net/gh/SukiEva/assets/blog/favicon.png">
-  <link rel="preload" href="/css/style.d38cd369.css" as="style">
+  <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
 
@@ -62,15 +62,6 @@
     /* 首屏样式 */
     #safearea {
   display: none;
-}
-/*
-  * Workaround for Chrome bug, part 1
-  * Chunk rendering for all but the first article.
-  * /layout/_partial/scripts/content-visibility-scroll-fix.ejs
-*/
-.post-story + .post-story {
-  content-visibility: auto;
-  contain-intrinsic-size: 10px 500px;
 }
 :root {
   --color-site-body: #fff;
@@ -1878,8 +1869,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.d38cd369.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.d38cd369.css"></noscript>
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1952,14 +1943,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   /************这个文件存放不需要重载的全局变量和全局函数*********/
   window.volantis = {}; // volantis 全局变量
-  volantis.debug = false; // 开启调试模式
+  volantis.debug = "env"; // 调试模式
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/parallax.js?time=1665915579978","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenu.js?time=1665915579978","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978"},"css":{"style":"/css/style.d38cd369.css"}},
+    debug: "env",
+    cdn: {"js":{"app":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/parallax.js","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenu.js","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1665915579978),
+    lastupdate: new Date(1668091147913),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2996,13 +2987,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>本文分享自用的情景模式，不定期更新~</p>
 <span id="more"></span>
 
-<div class="story post-story"><h2 id="GPS"><a href="#GPS" class="headerlink" title="GPS"></a>GPS</h2><h3 id="自动开关"><a href="#自动开关" class="headerlink" title="自动开关"></a>自动开关</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Auto GPS&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;全局变量gps&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;priority&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;condition&quot;</span><span class="punctuation">:</span> <span class="string">&quot;(frontPkgChanged &amp;&amp; globalVarOf$gps.contains(to) &amp;&amp; !hw.isLocationEnabled()) || (pkgKilled &amp;&amp; globalVarOf$gps.contains(pkgName) &amp;&amp; hw.isLocationEnabled())&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;actions&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">            <span class="string">&quot;if (!hw.isLocationEnabled()) hw.enableLocation(); else hw.disableLocation();&quot;</span></span><br><span class="line">        <span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+<h2 id="GPS"><a href="#GPS" class="headerlink" title="GPS"></a>GPS</h2><h3 id="自动开关"><a href="#自动开关" class="headerlink" title="自动开关"></a>自动开关</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Auto GPS&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;全局变量gps&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;priority&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;condition&quot;</span><span class="punctuation">:</span> <span class="string">&quot;(frontPkgChanged &amp;&amp; globalVarOf$gps.contains(to) &amp;&amp; !hw.isLocationEnabled()) || (pkgKilled &amp;&amp; globalVarOf$gps.contains(pkgName) &amp;&amp; hw.isLocationEnabled())&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;actions&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">            <span class="string">&quot;if (!hw.isLocationEnabled()) hw.enableLocation(); else hw.disableLocation();&quot;</span></span><br><span class="line">        <span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="微信小程序-amp-内置网页"><a href="#微信小程序-amp-内置网页" class="headerlink" title="微信小程序 &amp; 内置网页"></a>微信小程序 &amp; 内置网页</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Wechat GPS&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;小程序和内置网页&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;priority&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;condition&quot;</span><span class="punctuation">:</span> <span class="string">&quot;(activityResumed &amp;&amp; !hw.isLocationEnabled() &amp;&amp; (componentNameAsString.contains(&#x27;.appbrand.ui.&#x27;) || componentNameAsString.contains(&#x27;.plugin.webview.&#x27;))) || (frontPkgChanged &amp;&amp; hw.isLocationEnabled() &amp;&amp; from == &#x27;com.tencent.mm&#x27;)&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;actions&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">            <span class="string">&quot;if (!hw.isLocationEnabled()) hw.enableLocation(); else hw.disableLocation();&quot;</span></span><br><span class="line">        <span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="NFC"><a href="#NFC" class="headerlink" title="NFC"></a>NFC</h2><h3 id="自动开关-1"><a href="#自动开关-1" class="headerlink" title="自动开关"></a>自动开关</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Auto NFC&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;全局变量nfc&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;priority&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;condition&quot;</span><span class="punctuation">:</span> <span class="string">&quot;(frontPkgChanged &amp;&amp; globalVarOf$nfc.contains(to) &amp;&amp; !hw.isNfcEnabled()) || (pkgKilled &amp;&amp; globalVarOf$nfc.contains(pkgName) &amp;&amp; hw.isNfcEnabled())&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;actions&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">            <span class="string">&quot;if (!hw.isNfcEnabled()) hw.enableNfc(); else hw.disableNfc();&quot;</span></span><br><span class="line">        <span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
+<h2 id="NFC"><a href="#NFC" class="headerlink" title="NFC"></a>NFC</h2><h3 id="自动开关-1"><a href="#自动开关-1" class="headerlink" title="自动开关"></a>自动开关</h3><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">[</span></span><br><span class="line">    <span class="punctuation">&#123;</span></span><br><span class="line">        <span class="attr">&quot;name&quot;</span><span class="punctuation">:</span> <span class="string">&quot;Auto NFC&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;description&quot;</span><span class="punctuation">:</span> <span class="string">&quot;全局变量nfc&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;priority&quot;</span><span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;condition&quot;</span><span class="punctuation">:</span> <span class="string">&quot;(frontPkgChanged &amp;&amp; globalVarOf$nfc.contains(to) &amp;&amp; !hw.isNfcEnabled()) || (pkgKilled &amp;&amp; globalVarOf$nfc.contains(pkgName) &amp;&amp; hw.isNfcEnabled())&quot;</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">&quot;actions&quot;</span><span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">            <span class="string">&quot;if (!hw.isNfcEnabled()) hw.enableNfc(); else hw.disableNfc();&quot;</span></span><br><span class="line">        <span class="punctuation">]</span></span><br><span class="line">    <span class="punctuation">&#125;</span></span><br><span class="line"><span class="punctuation">]</span></span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="冻结相关"><a href="#冻结相关" class="headerlink" title="冻结相关"></a>冻结相关</h2><h3 id="蓝牙开关冻结"><a href="#蓝牙开关冻结" class="headerlink" title="蓝牙开关冻结"></a>蓝牙开关冻结</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">&quot;BT冻结&quot;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&quot;蓝牙关闭冻结指定应用，全局变量 btkill&quot;</span></span><br><span class="line"><span class="attr">priority:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">condition:</span> <span class="string">&quot;btStateChanged &amp;&amp; btStateOff&quot;</span></span><br><span class="line"><span class="attr">actions:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;for (String s : globalVarOf$btkill) &#123; if (pkg.isApplicationEnabled(s)) pkg.disableApplication(s) &#125;&quot;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&#x27;ui.showShortToast(&quot;🎉BT冻结&quot;)&#x27;</span></span><br></pre></td></tr></table></figure>
+<h2 id="冻结相关"><a href="#冻结相关" class="headerlink" title="冻结相关"></a>冻结相关</h2><h3 id="蓝牙开关冻结"><a href="#蓝牙开关冻结" class="headerlink" title="蓝牙开关冻结"></a>蓝牙开关冻结</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">&quot;BT冻结&quot;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&quot;蓝牙关闭冻结指定应用，全局变量 btkill&quot;</span></span><br><span class="line"><span class="attr">priority:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">condition:</span> <span class="string">&quot;btStateChanged &amp;&amp; btStateOff&quot;</span></span><br><span class="line"><span class="attr">actions:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;for (String s : globalVarOf$btkill) &#123; if (pkg.isApplicationEnabled(s)) pkg.disableApplication(s) &#125;&quot;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&#x27;ui.showShortToast(&quot;🎉BT冻结&quot;)&#x27;</span></span><br></pre></td></tr></table></figure>
 
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">&quot;BT解冻&quot;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&quot;蓝牙打开解冻指定应用，全局变量 btkill&quot;</span></span><br><span class="line"><span class="attr">priority:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">condition:</span> <span class="string">&quot;btStateChanged &amp;&amp; btStateOn&quot;</span></span><br><span class="line"><span class="attr">actions:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;for (String s : globalVarOf$btkill) &#123; if (!pkg.isApplicationEnabled(s)) pkg.enableApplication(s) &#125;&quot;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&#x27;ui.showShortToast(&quot;🎉BT解冻&quot;)&#x27;</span></span><br></pre></td></tr></table></figure>
 
@@ -3013,7 +3004,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">&quot;Game解冻&quot;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&quot;打开游戏解冻游戏空间，全局变量 game&quot;</span></span><br><span class="line"><span class="comment"># 一加专属</span></span><br><span class="line"><span class="attr">priority:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">condition:</span> <span class="string">&#x27;frontPkgChanged &amp;&amp; globalVarOf$game.contains(to) &amp;&amp; !pkg.isApplicationEnabled(&quot;com.oneplus.gamespace&quot;)&#x27;</span></span><br><span class="line"><span class="attr">actions:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&#x27;pkg.enableApplication(&quot;com.oneplus.gamespace&quot;)&#x27;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&#x27;ui.showShortToast(&quot;🎉解冻游戏空间&quot;)&#x27;</span></span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="应用相关"><a href="#应用相关" class="headerlink" title="应用相关"></a>应用相关</h2><h3 id="APP-保活"><a href="#APP-保活" class="headerlink" title="APP 保活"></a>APP 保活</h3><blockquote>
+<h2 id="应用相关"><a href="#应用相关" class="headerlink" title="应用相关"></a>应用相关</h2><h3 id="APP-保活"><a href="#APP-保活" class="headerlink" title="APP 保活"></a>APP 保活</h3><blockquote>
 <p>推荐用乖巧模式的规则来 KEEP 想保持的服务</p>
 <p>以下貌似没用，可以开启电池不优化试试</p>
 </blockquote>
@@ -3021,13 +3012,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <h3 id="APP-休眠"><a href="#APP-休眠" class="headerlink" title="APP 休眠"></a>APP 休眠</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">&quot;APP休眠&quot;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&quot;后台应用休眠，全局变量 idle&quot;</span></span><br><span class="line"><span class="attr">priority:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">condition:</span> <span class="string">&quot;frontPkgChanged &amp;&amp; globalVarOf$idle.contains(from)&quot;</span></span><br><span class="line"><span class="attr">actions:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;activity.setInactive(from)&quot;</span></span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="Data-相关"><a href="#Data-相关" class="headerlink" title="Data 相关"></a>Data 相关</h2><h3 id="Data-自动开启"><a href="#Data-自动开启" class="headerlink" title="Data 自动开启"></a>Data 自动开启</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">&quot;Data自动开启&quot;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&quot;打开应用打开移动数据，全局变量 data&quot;</span></span><br><span class="line"><span class="attr">priority:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">condition:</span> <span class="string">&quot;frontPkgChanged &amp;&amp; globalVarOf$data.contains(to) &amp;&amp; !hw.isWifiEnabled() &amp;&amp; !data.isDataEnabled()&quot;</span></span><br><span class="line"><span class="attr">actions:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;data.setDataEnabled(true)&quot;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&#x27;ui.showShortToast(&quot;🎉打开移动数据&quot;)&#x27;</span></span><br></pre></td></tr></table></figure>
+<h2 id="Data-相关"><a href="#Data-相关" class="headerlink" title="Data 相关"></a>Data 相关</h2><h3 id="Data-自动开启"><a href="#Data-自动开启" class="headerlink" title="Data 自动开启"></a>Data 自动开启</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">&quot;Data自动开启&quot;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&quot;打开应用打开移动数据，全局变量 data&quot;</span></span><br><span class="line"><span class="attr">priority:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">condition:</span> <span class="string">&quot;frontPkgChanged &amp;&amp; globalVarOf$data.contains(to) &amp;&amp; !hw.isWifiEnabled() &amp;&amp; !data.isDataEnabled()&quot;</span></span><br><span class="line"><span class="attr">actions:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;data.setDataEnabled(true)&quot;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&#x27;ui.showShortToast(&quot;🎉打开移动数据&quot;)&#x27;</span></span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="亮度相关"><a href="#亮度相关" class="headerlink" title="亮度相关"></a>亮度相关</h2><h3 id="自动亮度关闭"><a href="#自动亮度关闭" class="headerlink" title="自动亮度关闭"></a>自动亮度关闭</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">&quot;自动亮度关闭&quot;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&quot;打开应用关闭自动亮度，全局变量 bright&quot;</span></span><br><span class="line"><span class="attr">priority:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">condition:</span> <span class="string">&quot;frontPkgChanged &amp;&amp; globalVarOf$bright.contains(to) &amp;&amp; power.isAutoBrightnessEnabled()&quot;</span></span><br><span class="line"><span class="attr">actions:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;power.setAutoBrightnessEnabled(false)&quot;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&#x27;ui.showShortToast(&quot;🎉关闭自动亮度&quot;)&#x27;</span></span><br></pre></td></tr></table></figure>
+<h2 id="亮度相关"><a href="#亮度相关" class="headerlink" title="亮度相关"></a>亮度相关</h2><h3 id="自动亮度关闭"><a href="#自动亮度关闭" class="headerlink" title="自动亮度关闭"></a>自动亮度关闭</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">&quot;自动亮度关闭&quot;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&quot;打开应用关闭自动亮度，全局变量 bright&quot;</span></span><br><span class="line"><span class="attr">priority:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">condition:</span> <span class="string">&quot;frontPkgChanged &amp;&amp; globalVarOf$bright.contains(to) &amp;&amp; power.isAutoBrightnessEnabled()&quot;</span></span><br><span class="line"><span class="attr">actions:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;power.setAutoBrightnessEnabled(false)&quot;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&#x27;ui.showShortToast(&quot;🎉关闭自动亮度&quot;)&#x27;</span></span><br></pre></td></tr></table></figure>
 
 <h3 id="自动亮度开启"><a href="#自动亮度开启" class="headerlink" title="自动亮度开启"></a>自动亮度开启</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">&quot;自动亮度开启&quot;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&quot;停止应用打开自动亮度，全局变量 bright&quot;</span></span><br><span class="line"><span class="attr">priority:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">condition:</span> <span class="string">&quot;pkgKilled &amp;&amp; globalVarOf$bright.contains(pkgName) &amp;&amp; !power.isAutoBrightnessEnabled()&quot;</span></span><br><span class="line"><span class="attr">actions:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;power.setAutoBrightnessEnabled(true)&quot;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&quot;power.setBrightness(power.getBrightness())&quot;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&#x27;ui.showShortToast(&quot;🎉开启自动亮度&quot;)&#x27;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="状态栏图标相关"><a href="#状态栏图标相关" class="headerlink" title="状态栏图标相关"></a>状态栏图标相关</h2><blockquote>
+<h2 id="状态栏图标相关"><a href="#状态栏图标相关" class="headerlink" title="状态栏图标相关"></a>状态栏图标相关</h2><blockquote>
 <p>隐藏状态栏图标的 shell 命令：</p>
 <p>settings put secure icon_blacklist 「args」</p>
 <p>自行修改 「args」 参数</p>
@@ -3039,7 +3030,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <h3 id="状态栏图标显示"><a href="#状态栏图标显示" class="headerlink" title="状态栏图标显示"></a>状态栏图标显示</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">name:</span> <span class="string">&quot;状态栏图标显示&quot;</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">&quot;停止应用显示状态栏图标,全局变量 bar&quot;</span></span><br><span class="line"><span class="attr">priority:</span> <span class="number">2</span></span><br><span class="line"><span class="attr">condition:</span> <span class="string">&quot;pkgKilled &amp;&amp; globalVarOf$bar.contains(pkgName)&quot;</span></span><br><span class="line"><span class="attr">actions:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&#x27;su.exe(&quot;settings put secure icon_blacklist volte,vowifi,rotate,zen,battery,vpn&quot;)&#x27;</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&#x27;ui.showShortToast(&quot;🎉显示状态栏图标&quot;)&#x27;</span></span><br></pre></td></tr></table></figure>
 
-</div>
   </div>
   
   
@@ -3092,7 +3082,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                 
               
                 
-                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href=http://blog.sukiu.top/Mixed/Thanox-Profile/>http://blog.sukiu.top/Mixed/Thanox-Profile/</a></p>
+                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href="http://blog.sukiu.top/Mixed/Thanox-Profile/">http://blog.sukiu.top/Mixed/Thanox-Profile/</a></p>
                 
               
                 
@@ -3427,7 +3417,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.af2d54c8.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js"></script>
 
 
 
@@ -3672,7 +3662,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3913,19 +3903,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js")
       }
     
   };
@@ -4021,7 +4011,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/aplayer.js?time=1665915579978')
+    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/aplayer.js')
   
   })();
 
@@ -4148,7 +4138,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978");
+    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js");
   }
 
   function loadSearchService() {
@@ -4607,94 +4597,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 </script>
 
-<script>
-  try {
-    // https://web.dev/content-visibility/
-    // https://www.caniuse.com/?search=content-visibility
-    // https://infrequently.org/2020/12/content-visibility-scroll-fix/
-    // https://infrequently.org/2020/12/resize-resilient-deferred-rendering/
-
-    // 备注 目前已知的问题:
-    // 动态修改导致的内容高度变化(例如评论框异步渲染的外部盒子高度变化) 无法提前获知, 进而导致的首次滚动条跳动无法去除 (wontfix) 事实上不使用 content-visibility 也会有跳动, 不过是比使用 content-visibility 跳动提前
-    // scrollreveal 插件潜在问题 目前尚不明确
-
-    let eqIsh = (a, b, fuzz = 2) => {
-      return Math.abs(a - b) <= fuzz;
-    };
-
-    let rectNotEQ = (a, b) => {
-      return !eqIsh(a.width, b.width) || !eqIsh(a.height, b.height);
-    };
-
-    // Keep a map of elements and the dimensions of
-    // their place-holders, re-setting the element's
-    // intrinsic size when we get updated measurements
-    // from observers.
-    let spaced = new WeakMap();
-
-    // Only call this when known cheap, post layout
-    let reserveSpace = (el, rect = el.getClientBoundingRect()) => {
-      let old = spaced.get(el);
-      // Set intrinsic size to prevent jumping on un-painting:
-      //    https://drafts.csswg.org/css-sizing-4/#intrinsic-size-override
-      if (!old || rectNotEQ(old, rect)) {
-        spaced.set(el, rect);
-        el.style["contain-intrinsic-size"] = `${rect.width}px ${rect.height}px`;
-      }
-    };
-
-    let iObs = new IntersectionObserver(
-      (entries, o) => {
-        entries.forEach((entry) => {
-          // We don't care if the element is intersecting or
-          // has been laid out as our page structure ensures
-          // they'll get the right width.
-          reserveSpace(entry.target, entry.boundingClientRect);
-        });
-      },
-      { rootMargin: "500px 0px 500px 0px" }
-    );
-
-    let rObs = new ResizeObserver((entries, o) => {
-      entries.forEach((entry) => {
-        reserveSpace(entry.target, entry.contentRect);
-      });
-    });
-
-    let resizeResilientDeferredRendering = (Selector) => {
-      let articles = document.querySelectorAll(Selector);
-
-      if (articles.length) {
-        articles.forEach((el) => {
-          iObs.observe(el);
-          rObs.observe(el);
-        });
-
-        // Workaround for Chrome bug, part 2.
-        //
-        // Re-enable browser management of rendering for the
-        // first article after the first paint. Double-rAF
-        // to ensure we get called after a layout.
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            articles[0].style["content-visibility"] = "auto";
-          });
-        });
-      }
-    };
-
-    let contentVisibilityScrollFix = () => {
-      if (!("content-visibility" in document.documentElement.style)) {
-        return;
-      }
-      resizeResilientDeferredRendering(".post-story");
-    };
-    contentVisibilityScrollFix();
-    volantis.pjax.push(contentVisibilityScrollFix);
-  } catch (error) {
-    console.log(error);
-  }
-</script>
 
 
 <script>

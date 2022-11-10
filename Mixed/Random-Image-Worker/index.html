@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN,en,default">
-    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.6.0'>
+    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.7.6'>
   <meta name="generator" content="Hexo 6.2.0">
-  <meta name="Volantis" content="5.6.0">
+  <meta name="Volantis" content="5.7.6">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -26,7 +26,7 @@
   
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://fastly.jsdelivr.net/gh/SukiEva/assets/blog/favicon.png">
-  <link rel="preload" href="/css/style.d38cd369.css" as="style">
+  <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
 
@@ -55,15 +55,6 @@
     /* 首屏样式 */
     #safearea {
   display: none;
-}
-/*
-  * Workaround for Chrome bug, part 1
-  * Chunk rendering for all but the first article.
-  * /layout/_partial/scripts/content-visibility-scroll-fix.ejs
-*/
-.post-story + .post-story {
-  content-visibility: auto;
-  contain-intrinsic-size: 10px 500px;
 }
 :root {
   --color-site-body: #fff;
@@ -1871,8 +1862,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.d38cd369.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.d38cd369.css"></noscript>
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1945,14 +1936,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   /************这个文件存放不需要重载的全局变量和全局函数*********/
   window.volantis = {}; // volantis 全局变量
-  volantis.debug = false; // 开启调试模式
+  volantis.debug = "env"; // 调试模式
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/parallax.js?time=1665915579978","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenu.js?time=1665915579978","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978"},"css":{"style":"/css/style.d38cd369.css"}},
+    debug: "env",
+    cdn: {"js":{"app":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/parallax.js","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenu.js","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1665915579978),
+    lastupdate: new Date(1668091147913),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2982,22 +2973,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>这次通过 CloudFlare Worker 实现一个完全无成本的随机图片 API！</p>
 <span id="more"></span>
 
-<div class="story post-story"><h2 id="图片转-Webp"><a href="#图片转-Webp" class="headerlink" title="图片转 Webp"></a>图片转 Webp</h2><p>这步骤可选，转换为 webp 格式后，图片体积压缩而分辨率不变，可以更快地加载。</p>
+<h2 id="图片转-Webp"><a href="#图片转-Webp" class="headerlink" title="图片转 Webp"></a>图片转 Webp</h2><p>这步骤可选，转换为 webp 格式后，图片体积压缩而分辨率不变，可以更快地加载。</p>
 <p>为了在引用时方便，先把名称按 1、2、3…顺序标号，再通过 <code>PIL</code> 库，将 <code>jpg</code> 和 <code>png</code> 格式的图片转换成 <code>webp</code>。</p>
 <blockquote>
 <p>因为用了文件名按数字排序，所以原始图片需要全为数字，如为其他自行修改代码</p>
 </blockquote>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> PIL <span class="keyword">import</span> Image</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">to_webp</span>(<span class="params">src_dir, dist_dir, img</span>):</span><br><span class="line">    img_path = os.path.join(src_dir, img)</span><br><span class="line">    dist_path = os.path.join(dist_dir, img.split(<span class="string">&quot;.&quot;</span>)[<span class="number">0</span>] + <span class="string">&quot;.webp&quot;</span>)</span><br><span class="line">    <span class="keyword">if</span> os.path.exists(dist_path):</span><br><span class="line">        <span class="keyword">return</span></span><br><span class="line">    image = Image.<span class="built_in">open</span>(img_path)</span><br><span class="line">    image.save(dist_path, <span class="built_in">format</span>=<span class="string">&quot;webp&quot;</span>)</span><br><span class="line">    <span class="built_in">print</span>(img_path + <span class="string">&#x27; convert to &#x27;</span> + dist_path)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">convert</span>(<span class="params">src_dir, dist_dir</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Convert: start&quot;</span>)</span><br><span class="line">    images = os.listdir(src_dir)</span><br><span class="line">    images.sort(key=<span class="keyword">lambda</span> x: <span class="built_in">int</span>(x[:-<span class="number">4</span>]))</span><br><span class="line">    <span class="keyword">for</span> img <span class="keyword">in</span> images:</span><br><span class="line">        to_webp(src_dir, dist_dir, img)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Convert: end&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">rename</span>(<span class="params">dir_path</span>):</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Rename: start&quot;</span>)</span><br><span class="line">    num = <span class="number">1</span></span><br><span class="line">    files = os.listdir(dir_path)</span><br><span class="line">    files.sort(key=<span class="keyword">lambda</span> x: <span class="built_in">int</span>(x[:-<span class="number">4</span>]))</span><br><span class="line">    <span class="keyword">for</span> file <span class="keyword">in</span> files:</span><br><span class="line">        src_path = os.path.join(dir_path, file)</span><br><span class="line">        dist_path = os.path.join(dir_path, <span class="built_in">str</span>(num)) + os.path.splitext(file)[-<span class="number">1</span>]</span><br><span class="line">        num = num + <span class="number">1</span></span><br><span class="line">        <span class="keyword">if</span> src_path == dist_path:</span><br><span class="line">            <span class="comment"># print(&quot;Skip: &quot; + src_path)</span></span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        os.rename(src_path, dist_path)</span><br><span class="line">        <span class="built_in">print</span>(src_path + <span class="string">&#x27; rename to &#x27;</span> + dist_path)</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Rename: end&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">&#x27;__main__&#x27;</span>:</span><br><span class="line">    srcDir = <span class="string">r&quot;E:\Onedrive\图片\次元壁纸&quot;</span></span><br><span class="line">    distDir = <span class="string">&#x27;pc&#x27;</span></span><br><span class="line"></span><br><span class="line">    rename(srcDir)</span><br><span class="line">    convert(srcDir, distDir)</span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="文件上传-Github"><a href="#文件上传-Github" class="headerlink" title="文件上传 Github"></a>文件上传 Github</h2><p>这步骤不具体说了，图片通过 <code>jsdeliver</code> 引用。</p>
-</div><div class="story post-story"><h2 id="CloudFlare-Worker"><a href="#CloudFlare-Worker" class="headerlink" title="CloudFlare Worker"></a>CloudFlare Worker</h2><p>新建一个 worker，代码参考如下：</p>
+<h2 id="文件上传-Github"><a href="#文件上传-Github" class="headerlink" title="文件上传 Github"></a>文件上传 Github</h2><p>这步骤不具体说了，图片通过 <code>jsdeliver</code> 引用。</p>
+<h2 id="CloudFlare-Worker"><a href="#CloudFlare-Worker" class="headerlink" title="CloudFlare Worker"></a>CloudFlare Worker</h2><p>新建一个 worker，代码参考如下：</p>
 <ul>
 <li>因为改了文件名，所以下面只需要修改图片总数 <code>total</code>，就能生成一个随机数访问</li>
 <li>个人通过 <code>type</code> 区别宽屏和竖屏图片，自己按需修改</li>
 </ul>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">addEventListener</span>(<span class="string">&#x27;fetch&#x27;</span>, <span class="function"><span class="params">event</span> =&gt;</span> &#123;</span><br><span class="line">    event.<span class="title function_">respondWith</span>(</span><br><span class="line">        <span class="title function_">handleRequest</span>(event.<span class="property">request</span>).<span class="title function_">catch</span>(<span class="function">(<span class="params">err</span>) =&gt;</span></span><br><span class="line">            <span class="keyword">new</span> <span class="title class_">Response</span>(<span class="string">&#x27;cfworker error:\n&#x27;</span> + err.<span class="property">stack</span>, &#123;</span><br><span class="line">                <span class="attr">status</span>: <span class="number">502</span>,</span><br><span class="line">            &#125;)</span><br><span class="line">        )</span><br><span class="line">    );</span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">handleRequest</span>(<span class="params">request</span>) &#123;</span><br><span class="line">    <span class="keyword">const</span> url = <span class="keyword">new</span> <span class="title function_">URL</span>(request.<span class="property">url</span>);</span><br><span class="line">    <span class="keyword">switch</span> (url.<span class="property">pathname</span>) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&quot;/img&quot;</span>:</span><br><span class="line">            <span class="keyword">var</span> type = url.<span class="property">searchParams</span>.<span class="title function_">has</span>(<span class="string">&quot;type&quot;</span>) ? url.<span class="property">searchParams</span>.<span class="title function_">get</span>(<span class="string">&quot;type&quot;</span>) : <span class="string">&quot;pc&quot;</span>;</span><br><span class="line">            <span class="keyword">const</span> total = <span class="title function_">getTotal</span>(type);</span><br><span class="line">            <span class="keyword">if</span> (total == <span class="number">0</span>) <span class="keyword">return</span> <span class="title function_">handleImage</span>(<span class="string">&quot;pc&quot;</span>, <span class="title function_">getTotal</span>(<span class="string">&quot;pc&quot;</span>));</span><br><span class="line">            <span class="keyword">return</span> <span class="title function_">handleImage</span>(type, total);</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&quot;/favicon.ico&quot;</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="title function_">fetch</span>(<span class="string">&quot;https://fastly.jsdelivr.net/gh/SukiEva/assets/blog/favicon.ico&quot;</span>);</span><br><span class="line">        <span class="attr">default</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="title function_">handleNotFound</span>();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">getTotal</span>(<span class="params">type</span>) &#123;</span><br><span class="line">    <span class="keyword">switch</span> (type) &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&quot;pc&quot;</span>: <span class="keyword">return</span> <span class="number">175</span>;</span><br><span class="line">        <span class="keyword">case</span> <span class="string">&quot;mb&quot;</span>: <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="attr">default</span>: <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">async</span> <span class="keyword">function</span> <span class="title function_">handleImage</span>(<span class="params">type, total</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> index = <span class="title class_">Math</span>.<span class="title function_">floor</span>((<span class="title class_">Math</span>.<span class="title function_">random</span>() * total)) + <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">var</span> img = <span class="string">&quot;https://fastly.jsdelivr.net/gh/SukiEva/assets/webp/&quot;</span> + type + <span class="string">&quot;/&quot;</span> + index + <span class="string">&quot;.webp&quot;</span>;</span><br><span class="line">    res = <span class="keyword">await</span> <span class="title function_">fetch</span>(img);</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Response</span>(res.<span class="property">body</span>, &#123;</span><br><span class="line">        <span class="attr">headers</span>: &#123;</span><br><span class="line">            <span class="string">&#x27;content-type&#x27;</span>: <span class="string">&#x27;image/webp&#x27;</span>,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">handleNotFound</span>(<span class="params"></span>) &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">Response</span>(<span class="string">&#x27;Not Found&#x27;</span>, &#123;</span><br><span class="line">        <span class="attr">status</span>: <span class="number">404</span>,</span><br><span class="line">    &#125;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="自定义域名"><a href="#自定义域名" class="headerlink" title="自定义域名"></a>自定义域名</h2><p>默认是一个 CF 的域名，但是目前已经被国内 ban 了，需要自行添加域名路由。</p>
+<h2 id="自定义域名"><a href="#自定义域名" class="headerlink" title="自定义域名"></a>自定义域名</h2><p>默认是一个 CF 的域名，但是目前已经被国内 ban 了，需要自行添加域名路由。</p>
 <ul>
 <li>添加 DNS A 解析到 <code>2.2.2.2</code>，我配置的 <code>api</code> 三级域名</li>
 <li>在 Worker 里面配置路由，比如我的就是 <code>api.sukiu.top/img*</code></li>
@@ -3005,7 +2996,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>可以通过下面的链接查看实现效果，每天的免费次数是 10w 次，请自行搭建，禁止滥用！！！</p>
 <div class="tag link"><a class="link-card" title="SukiEva 的随机图片 API" target="_blank" rel="noopener" href="https://api.sukiu.top/img"><div class="left"><img src="https://fastly.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" class="lazyload" data-srcset="https://fastly.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="/></div><div class="right"><p class="text">SukiEva 的随机图片 API</p><p class="url">https://api.sukiu.top/img</p></div></a></div>
 
-</div>
   </div>
   
   
@@ -3038,7 +3028,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                 
               
                 
-                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href=http://blog.sukiu.top/Mixed/Random-Image-Worker/>http://blog.sukiu.top/Mixed/Random-Image-Worker/</a></p>
+                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href="http://blog.sukiu.top/Mixed/Random-Image-Worker/">http://blog.sukiu.top/Mixed/Random-Image-Worker/</a></p>
                 
               
                 
@@ -3375,7 +3365,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.af2d54c8.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js"></script>
 
 
 
@@ -3620,7 +3610,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -3861,19 +3851,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js")
       }
     
   };
@@ -3969,7 +3959,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/aplayer.js?time=1665915579978')
+    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/aplayer.js')
   
   })();
 
@@ -4096,7 +4086,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978");
+    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js");
   }
 
   function loadSearchService() {
@@ -4555,94 +4545,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 </script>
 
-<script>
-  try {
-    // https://web.dev/content-visibility/
-    // https://www.caniuse.com/?search=content-visibility
-    // https://infrequently.org/2020/12/content-visibility-scroll-fix/
-    // https://infrequently.org/2020/12/resize-resilient-deferred-rendering/
-
-    // 备注 目前已知的问题:
-    // 动态修改导致的内容高度变化(例如评论框异步渲染的外部盒子高度变化) 无法提前获知, 进而导致的首次滚动条跳动无法去除 (wontfix) 事实上不使用 content-visibility 也会有跳动, 不过是比使用 content-visibility 跳动提前
-    // scrollreveal 插件潜在问题 目前尚不明确
-
-    let eqIsh = (a, b, fuzz = 2) => {
-      return Math.abs(a - b) <= fuzz;
-    };
-
-    let rectNotEQ = (a, b) => {
-      return !eqIsh(a.width, b.width) || !eqIsh(a.height, b.height);
-    };
-
-    // Keep a map of elements and the dimensions of
-    // their place-holders, re-setting the element's
-    // intrinsic size when we get updated measurements
-    // from observers.
-    let spaced = new WeakMap();
-
-    // Only call this when known cheap, post layout
-    let reserveSpace = (el, rect = el.getClientBoundingRect()) => {
-      let old = spaced.get(el);
-      // Set intrinsic size to prevent jumping on un-painting:
-      //    https://drafts.csswg.org/css-sizing-4/#intrinsic-size-override
-      if (!old || rectNotEQ(old, rect)) {
-        spaced.set(el, rect);
-        el.style["contain-intrinsic-size"] = `${rect.width}px ${rect.height}px`;
-      }
-    };
-
-    let iObs = new IntersectionObserver(
-      (entries, o) => {
-        entries.forEach((entry) => {
-          // We don't care if the element is intersecting or
-          // has been laid out as our page structure ensures
-          // they'll get the right width.
-          reserveSpace(entry.target, entry.boundingClientRect);
-        });
-      },
-      { rootMargin: "500px 0px 500px 0px" }
-    );
-
-    let rObs = new ResizeObserver((entries, o) => {
-      entries.forEach((entry) => {
-        reserveSpace(entry.target, entry.contentRect);
-      });
-    });
-
-    let resizeResilientDeferredRendering = (Selector) => {
-      let articles = document.querySelectorAll(Selector);
-
-      if (articles.length) {
-        articles.forEach((el) => {
-          iObs.observe(el);
-          rObs.observe(el);
-        });
-
-        // Workaround for Chrome bug, part 2.
-        //
-        // Re-enable browser management of rendering for the
-        // first article after the first paint. Double-rAF
-        // to ensure we get called after a layout.
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            articles[0].style["content-visibility"] = "auto";
-          });
-        });
-      }
-    };
-
-    let contentVisibilityScrollFix = () => {
-      if (!("content-visibility" in document.documentElement.style)) {
-        return;
-      }
-      resizeResilientDeferredRendering(".post-story");
-    };
-    contentVisibilityScrollFix();
-    volantis.pjax.push(contentVisibilityScrollFix);
-  } catch (error) {
-    console.log(error);
-  }
-</script>
 
 
 <script>

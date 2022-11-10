@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN,en,default">
-    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.6.0'>
+    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.7.6'>
   <meta name="generator" content="Hexo 6.2.0">
-  <meta name="Volantis" content="5.6.0">
+  <meta name="Volantis" content="5.7.6">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -26,7 +26,7 @@
   
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://fastly.jsdelivr.net/gh/SukiEva/assets/blog/favicon.png">
-  <link rel="preload" href="/css/style.d38cd369.css" as="style">
+  <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
 
@@ -54,15 +54,6 @@
     /* 首屏样式 */
     #safearea {
   display: none;
-}
-/*
-  * Workaround for Chrome bug, part 1
-  * Chunk rendering for all but the first article.
-  * /layout/_partial/scripts/content-visibility-scroll-fix.ejs
-*/
-.post-story + .post-story {
-  content-visibility: auto;
-  contain-intrinsic-size: 10px 500px;
 }
 :root {
   --color-site-body: #fff;
@@ -1870,8 +1861,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.d38cd369.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.d38cd369.css"></noscript>
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1944,14 +1935,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   /************这个文件存放不需要重载的全局变量和全局函数*********/
   window.volantis = {}; // volantis 全局变量
-  volantis.debug = false; // 开启调试模式
+  volantis.debug = "env"; // 调试模式
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/parallax.js?time=1665915579978","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenu.js?time=1665915579978","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978"},"css":{"style":"/css/style.d38cd369.css"}},
+    debug: "env",
+    cdn: {"js":{"app":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/parallax.js","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenu.js","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1665915579978),
+    lastupdate: new Date(1668091147913),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2980,7 +2971,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <p>Go（又称 Golang）是 Google 开发的一种静态强类型、编译型、并发型，并具有垃圾回收功能的编程语言。</p>
 <span id="more"></span>
 
-<div class="story post-story"><h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><p>Go 是一门类似 C 的编译型语言，但是它的编译速度非常快。</p>
+<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><h3 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h3><p>Go 是一门类似 C 的编译型语言，但是它的编译速度非常快。</p>
 <p>这门语言的关键字总共也就二十五个：</p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">break</span>    <span class="keyword">default</span>      <span class="function"><span class="keyword">func</span>    <span class="title">interface</span>    <span class="title">select</span></span></span><br><span class="line"><span class="keyword">case</span>     <span class="keyword">defer</span>        <span class="keyword">go</span>      <span class="keyword">map</span>          <span class="keyword">struct</span></span><br><span class="line"><span class="keyword">chan</span>     <span class="keyword">else</span>         <span class="keyword">goto</span>    <span class="keyword">package</span>      <span class="keyword">switch</span></span><br><span class="line"><span class="keyword">const</span>    <span class="keyword">fallthrough</span>  <span class="keyword">if</span>      <span class="keyword">range</span>        <span class="keyword">type</span></span><br><span class="line"><span class="keyword">continue</span> <span class="keyword">for</span>          <span class="keyword">import</span>  <span class="keyword">return</span>       <span class="keyword">var</span></span><br></pre></td></tr></table></figure>
 
@@ -3086,7 +3077,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>这就意味着 map 类型变量作为参数被传递给函数或方法的时候，实质上传递的只是一个“描述符”，而不是整个 map 的数据拷贝，所以这个传递的开销是固定的，而且也很小。</p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 插入，更新相同</span></span><br><span class="line">m := <span class="built_in">make</span>(<span class="keyword">map</span>[<span class="type">int</span>]<span class="type">string</span>)</span><br><span class="line">m[<span class="number">1</span>] = <span class="string">&quot;value1&quot;</span></span><br><span class="line"><span class="comment">// 查找</span></span><br><span class="line">v := m[<span class="string">&quot;key1&quot;</span>]</span><br><span class="line">v, ok := m[<span class="string">&quot;key1&quot;</span>]</span><br><span class="line"><span class="keyword">if</span> !ok &#123; </span><br><span class="line">    <span class="comment">// &quot;key1&quot;不在map中</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 删除</span></span><br><span class="line"><span class="built_in">delete</span>(m, <span class="string">&quot;key2&quot;</span>) <span class="comment">// 删除&quot;key2&quot;</span></span><br><span class="line"><span class="comment">// 遍历，对同一 map 做多次遍历的时候，每次遍历元素的次序都不相同</span></span><br><span class="line"><span class="keyword">for</span> k, v := <span class="keyword">range</span> m &#123; </span><br><span class="line">    fmt.Printf(<span class="string">&quot;[%d, %d] &quot;</span>, k, v) </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="控制结构"><a href="#控制结构" class="headerlink" title="控制结构"></a>控制结构</h2><h3 id="If-else"><a href="#If-else" class="headerlink" title="If-else"></a>If-else</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> condition1 &#123;</span><br><span class="line">    <span class="comment">// do something	</span></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> condition2 &#123;</span><br><span class="line">    <span class="comment">// do something else	</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="comment">// catch-all or default</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 多返回值简化</span></span><br><span class="line"><span class="keyword">if</span> value, ok := readData(); ok &#123;</span><br><span class="line">    <span class="comment">// do something</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="控制结构"><a href="#控制结构" class="headerlink" title="控制结构"></a>控制结构</h2><h3 id="If-else"><a href="#If-else" class="headerlink" title="If-else"></a>If-else</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">if</span> condition1 &#123;</span><br><span class="line">    <span class="comment">// do something	</span></span><br><span class="line">&#125; <span class="keyword">else</span> <span class="keyword">if</span> condition2 &#123;</span><br><span class="line">    <span class="comment">// do something else	</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="comment">// catch-all or default</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 多返回值简化</span></span><br><span class="line"><span class="keyword">if</span> value, ok := readData(); ok &#123;</span><br><span class="line">    <span class="comment">// do something</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <h3 id="Switch"><a href="#Switch" class="headerlink" title="Switch"></a>Switch</h3><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">switch</span> var1 &#123;</span><br><span class="line">    <span class="keyword">case</span> val1:</span><br><span class="line">        ...</span><br><span class="line">    <span class="keyword">case</span> val2:</span><br><span class="line">        ...</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">checkWorkday</span><span class="params">(a <span class="type">int</span>)</span></span> &#123;</span><br><span class="line">    <span class="keyword">switch</span> a &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>:</span><br><span class="line">        <span class="built_in">println</span>(<span class="string">&quot;it is a work day&quot;</span>)</span><br><span class="line">    <span class="keyword">case</span> <span class="number">6</span>, <span class="number">7</span>:</span><br><span class="line">        <span class="built_in">println</span>(<span class="string">&quot;it is a weekend day&quot;</span>)</span><br><span class="line">    <span class="keyword">default</span>:</span><br><span class="line">        <span class="built_in">println</span>(<span class="string">&quot;are you live on earth&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//如果需要执行下一个 case 的代码逻辑，可以显式使用 Go 提供的关键字 fallthrough 来实现</span></span><br><span class="line"><span class="keyword">switch</span> switchexpr() &#123; </span><br><span class="line">    <span class="keyword">case</span> case1(): </span><br><span class="line">        <span class="built_in">println</span>(<span class="string">&quot;exec case1&quot;</span>) </span><br><span class="line">        <span class="keyword">fallthrough</span> </span><br><span class="line">    <span class="keyword">case</span> case2(): </span><br><span class="line">        <span class="built_in">println</span>(<span class="string">&quot;exec case2&quot;</span>) </span><br><span class="line">        <span class="keyword">fallthrough</span> </span><br><span class="line">    <span class="keyword">default</span>: </span><br><span class="line">        <span class="built_in">println</span>(<span class="string">&quot;exec default&quot;</span>) &#125;</span><br></pre></td></tr></table></figure>
 
@@ -3100,7 +3091,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>break、continue 与其他语言功能相同</p>
 <p>label +goto 会造成可读性极差，不推荐使用（基本没看到人用）</p>
 </blockquote>
-</div><div class="story post-story"><h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><p>Go 函数支持多返回值，函数定义一般如下形式：</p>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><p>Go 函数支持多返回值，函数定义一般如下形式：</p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">funcName</span><span class="params">(参数列表)</span></span> 返回值列表</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">foo</span><span class="params">()</span></span> <span class="comment">// 无返回值</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">foo</span><span class="params">()</span></span> <span class="type">error</span> <span class="comment">// 仅有一个返回值</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">foo</span><span class="params">()</span></span> (<span class="type">int</span>, <span class="type">string</span>, <span class="type">error</span>) <span class="comment">// 有2或2个以上返回值</span></span><br></pre></td></tr></table></figure>
 
 <p>函数在 Go 语言中属于“一等公民（First-Class Citizen）”：</p>
@@ -3199,7 +3190,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </tbody>
 </table>
 
-</div><div class="story post-story"><h2 id="结构与方法"><a href="#结构与方法" class="headerlink" title="结构与方法"></a>结构与方法</h2><h3 id="Struct"><a href="#Struct" class="headerlink" title="Struct"></a>Struct</h3><p>结构体定义的一般方式如下：</p>
+<h2 id="结构与方法"><a href="#结构与方法" class="headerlink" title="结构与方法"></a>结构与方法</h2><h3 id="Struct"><a href="#Struct" class="headerlink" title="Struct"></a>Struct</h3><p>结构体定义的一般方式如下：</p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> identifier <span class="keyword">struct</span> &#123;</span><br><span class="line">    field1 type1</span><br><span class="line">    field2 type2</span><br><span class="line">    ...</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">type</span> Person <span class="keyword">struct</span> &#123; </span><br><span class="line">    Name <span class="type">string</span> </span><br><span class="line">    Phone <span class="type">string</span></span><br><span class="line">    Addr <span class="type">string</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 可以无需提供字段的名字，只需要使用其类型就可以了</span></span><br><span class="line"><span class="keyword">type</span> Book <span class="keyword">struct</span> &#123; </span><br><span class="line">    Title <span class="type">string</span> </span><br><span class="line">    Person  <span class="comment">// 嵌入字段（匿名字段）</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p><code>type T struct &#123;a, b int&#125;</code> 也是合法的语法，它更适用于简单的结构体。</p>
@@ -3233,7 +3224,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>类型 *T 的可调用方法集不包含接受者为 T 的方法</li>
 </ul>
 </blockquote>
-</div><div class="story post-story"><h2 id="接口与反射"><a href="#接口与反射" class="headerlink" title="接口与反射"></a>接口与反射</h2><h3 id="Interface"><a href="#Interface" class="headerlink" title="Interface"></a>Interface</h3><p>Go 语言不是一种 <em>“传统”</em> 的面向对象编程语言：它里面没有类和继承的概念。</p>
+<h2 id="接口与反射"><a href="#接口与反射" class="headerlink" title="接口与反射"></a>接口与反射</h2><h3 id="Interface"><a href="#Interface" class="headerlink" title="Interface"></a>Interface</h3><p>Go 语言不是一种 <em>“传统”</em> 的面向对象编程语言：它里面没有类和继承的概念。</p>
 <p>但是 Go 语言里有非常灵活的 <strong>接口</strong> 概念，通过它可以实现很多面向对象的特性。</p>
 <p>接口提供了一种方式来 <strong>说明</strong> 对象的行为：如果谁能搞定这件事，它就可以用在这儿。</p>
 <p>接口定义了一组方法（<strong>方法集</strong>），但是这些方法不包含（实现）代码：它们没有被实现（它们是抽象的）。接口里也不能包含变量。</p>
@@ -3287,7 +3278,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>继承：用组合实现：内嵌一个（或多个）包含想要的行为（字段和方法）的类型；多重继承可以通过内嵌多个类型实现</li>
 <li>多态：用接口实现：某个类型的实例可以赋给它所实现的任意接口类型的变量。类型和接口是松耦合的，并且多重继承可以通过实现多个接口实现。Go 接口不是 Java 和 C# 接口的变体，而且接口间是不相关的，并且是大规模编程和可适应的演进型设计的关键。</li>
 </ul>
-</div><div class="story post-story"><h2 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h2><p>并发是一种能力，它让你的程序可以由若干个代码片段组合而成，并且每个片段都是独立运行的。</p>
+<h2 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h2><p>并发是一种能力，它让你的程序可以由若干个代码片段组合而成，并且每个片段都是独立运行的。</p>
 <p>Go 并没有使用操作系统线程作为承载分解后的代码片段（模块）的基本执行单元，而是实现了<strong>goroutine</strong>这一由 Go 运行时（runtime）负责调度的、轻量的用户级线程，为并发程序设计提供原生支持。</p>
 <h3 id="Goroutine"><a href="#Goroutine" class="headerlink" title="Goroutine"></a>Goroutine</h3><p>相比传统操作系统线程来说，goroutine 的优势主要是：</p>
 <ul>
@@ -3356,7 +3347,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <li>消息队列</li>
 <li>计数信号量</li>
 </ul>
-</div><div class="story post-story"><h2 id="常用包"><a href="#常用包" class="headerlink" title="常用包"></a>常用包</h2><h3 id="Strings"><a href="#Strings" class="headerlink" title="Strings"></a>Strings</h3><p>作为一种基本数据结构，每种语言都有一些对于字符串的预定义处理函数。Go 中使用 <code>strings</code> 包来完成对字符串的主要操作。</p>
+<h2 id="常用包"><a href="#常用包" class="headerlink" title="常用包"></a>常用包</h2><h3 id="Strings"><a href="#Strings" class="headerlink" title="Strings"></a>Strings</h3><p>作为一种基本数据结构，每种语言都有一些对于字符串的预定义处理函数。Go 中使用 <code>strings</code> 包来完成对字符串的主要操作。</p>
 <p><a target="_blank" rel="noopener" href="http://golang.org/pkg/strings/">strings package - strings - pkg.go.dev</a></p>
 <p>常用函数：</p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 判断前缀</span></span><br><span class="line">strings.HasPrefix(s, prefix <span class="type">string</span>) <span class="type">bool</span> </span><br><span class="line"><span class="comment">// 判断后缀</span></span><br><span class="line">strings.HasSuffix(s, suffix <span class="type">string</span>) <span class="type">bool</span></span><br><span class="line"><span class="comment">// 字符串包含</span></span><br><span class="line">strings.Contains(s, substr <span class="type">string</span>) <span class="type">bool</span></span><br><span class="line"><span class="comment">// 字符串替换</span></span><br><span class="line">strings.Replace(str, old, <span class="built_in">new</span> <span class="type">string</span>, n <span class="type">int</span>) <span class="type">string</span> <span class="comment">// 替换old的前 n 个字符， n=-1 替换整个 old</span></span><br><span class="line"><span class="comment">// 判断索引（出现位置）</span></span><br><span class="line">strings.Index(s, str <span class="type">string</span>) <span class="type">int</span> <span class="comment">// -1 表示不包含</span></span><br><span class="line">strings.LastIndex(s, str <span class="type">string</span>) <span class="type">int</span> <span class="comment">// 最后出现的位置</span></span><br><span class="line">strings.IndexRune(s <span class="type">string</span>, r <span class="type">rune</span>) <span class="type">int</span> <span class="comment">// 非 ASCII 编码的字符，strings.IndexRune(&quot;chicken&quot;, 99)</span></span><br><span class="line"><span class="comment">// 出现次数</span></span><br><span class="line">strings.Count(s, str <span class="type">string</span>) <span class="type">int</span></span><br><span class="line"><span class="comment">// 重复字符串</span></span><br><span class="line">strings.Repeat(s, count <span class="type">int</span>) <span class="type">string</span> <span class="comment">//重复 count 次字符串 s 并返回一个新的字符串</span></span><br><span class="line"><span class="comment">// 大小写转换</span></span><br><span class="line">strings.ToLower(s) <span class="type">string</span></span><br><span class="line">strings.ToUpper(s) <span class="type">string</span></span><br><span class="line"><span class="comment">// 修剪</span></span><br><span class="line">strings.TrimSpace(s) <span class="comment">// 剔除开头和结尾的空白符号</span></span><br><span class="line">strings.Trim(s, <span class="string">&quot;cut&quot;</span>) <span class="comment">// 剔除开头和结尾指定字符，TrimLeft，TrimRight 只剔除一边</span></span><br><span class="line"><span class="comment">// 分割，返回 slice</span></span><br><span class="line">strings.Fields(s) <span class="comment">// 用一个或多个空白分割，全是空白则返回长度 0 的切片</span></span><br><span class="line">strings.Split(s, sep) <span class="comment">// 用指定字符串 seq 分割</span></span><br><span class="line"><span class="comment">// 拼接</span></span><br><span class="line">strings.Join(sl []<span class="type">string</span>, sep <span class="type">string</span>) <span class="type">string</span> <span class="comment">// seq 为分隔符， sl 为字符串切片</span></span><br><span class="line"><span class="comment">// 例如：strings.Join([]string&#123;&quot;删除：文件夹&quot;, path&#125;, &quot; &quot;)</span></span><br></pre></td></tr></table></figure>
@@ -3371,7 +3362,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p>常用函数：</p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">t := time.Now() <span class="comment">// 当前时间</span></span><br><span class="line">t.Day()</span><br><span class="line">t.Minute()</span><br><span class="line"><span class="comment">// 标准格式化</span></span><br><span class="line">t.Format(<span class="string">&quot;02 Jan 2006 15:04&quot;</span>) <span class="comment">// 输出 21 Jul 2011 10:31</span></span><br></pre></td></tr></table></figure>
 
-</div>
   </div>
   
   
@@ -3436,7 +3426,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                 
               
                 
-                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href=http://blog.sukiu.top/Programming-Language/Go/Language-Golang/>http://blog.sukiu.top/Programming-Language/Go/Language-Golang/</a></p>
+                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href="http://blog.sukiu.top/Programming-Language/Go/Language-Golang/">http://blog.sukiu.top/Programming-Language/Go/Language-Golang/</a></p>
                 
               
                 
@@ -3774,7 +3764,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.af2d54c8.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js"></script>
 
 
 
@@ -4019,7 +4009,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -4260,19 +4250,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js")
       }
     
   };
@@ -4368,7 +4358,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/aplayer.js?time=1665915579978')
+    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/aplayer.js')
   
   })();
 
@@ -4495,7 +4485,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978");
+    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js");
   }
 
   function loadSearchService() {
@@ -4954,94 +4944,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 </script>
 
-<script>
-  try {
-    // https://web.dev/content-visibility/
-    // https://www.caniuse.com/?search=content-visibility
-    // https://infrequently.org/2020/12/content-visibility-scroll-fix/
-    // https://infrequently.org/2020/12/resize-resilient-deferred-rendering/
-
-    // 备注 目前已知的问题:
-    // 动态修改导致的内容高度变化(例如评论框异步渲染的外部盒子高度变化) 无法提前获知, 进而导致的首次滚动条跳动无法去除 (wontfix) 事实上不使用 content-visibility 也会有跳动, 不过是比使用 content-visibility 跳动提前
-    // scrollreveal 插件潜在问题 目前尚不明确
-
-    let eqIsh = (a, b, fuzz = 2) => {
-      return Math.abs(a - b) <= fuzz;
-    };
-
-    let rectNotEQ = (a, b) => {
-      return !eqIsh(a.width, b.width) || !eqIsh(a.height, b.height);
-    };
-
-    // Keep a map of elements and the dimensions of
-    // their place-holders, re-setting the element's
-    // intrinsic size when we get updated measurements
-    // from observers.
-    let spaced = new WeakMap();
-
-    // Only call this when known cheap, post layout
-    let reserveSpace = (el, rect = el.getClientBoundingRect()) => {
-      let old = spaced.get(el);
-      // Set intrinsic size to prevent jumping on un-painting:
-      //    https://drafts.csswg.org/css-sizing-4/#intrinsic-size-override
-      if (!old || rectNotEQ(old, rect)) {
-        spaced.set(el, rect);
-        el.style["contain-intrinsic-size"] = `${rect.width}px ${rect.height}px`;
-      }
-    };
-
-    let iObs = new IntersectionObserver(
-      (entries, o) => {
-        entries.forEach((entry) => {
-          // We don't care if the element is intersecting or
-          // has been laid out as our page structure ensures
-          // they'll get the right width.
-          reserveSpace(entry.target, entry.boundingClientRect);
-        });
-      },
-      { rootMargin: "500px 0px 500px 0px" }
-    );
-
-    let rObs = new ResizeObserver((entries, o) => {
-      entries.forEach((entry) => {
-        reserveSpace(entry.target, entry.contentRect);
-      });
-    });
-
-    let resizeResilientDeferredRendering = (Selector) => {
-      let articles = document.querySelectorAll(Selector);
-
-      if (articles.length) {
-        articles.forEach((el) => {
-          iObs.observe(el);
-          rObs.observe(el);
-        });
-
-        // Workaround for Chrome bug, part 2.
-        //
-        // Re-enable browser management of rendering for the
-        // first article after the first paint. Double-rAF
-        // to ensure we get called after a layout.
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            articles[0].style["content-visibility"] = "auto";
-          });
-        });
-      }
-    };
-
-    let contentVisibilityScrollFix = () => {
-      if (!("content-visibility" in document.documentElement.style)) {
-        return;
-      }
-      resizeResilientDeferredRendering(".post-story");
-    };
-    contentVisibilityScrollFix();
-    volantis.pjax.push(contentVisibilityScrollFix);
-  } catch (error) {
-    console.log(error);
-  }
-</script>
 
 
 <script>

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN,en,default">
-    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.6.0'>
+    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.7.6'>
   <meta name="generator" content="Hexo 6.2.0">
-  <meta name="Volantis" content="5.6.0">
+  <meta name="Volantis" content="5.7.6">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -26,7 +26,7 @@
   
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://fastly.jsdelivr.net/gh/SukiEva/assets/blog/favicon.png">
-  <link rel="preload" href="/css/style.d38cd369.css" as="style">
+  <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
 
@@ -55,15 +55,6 @@
     /* 首屏样式 */
     #safearea {
   display: none;
-}
-/*
-  * Workaround for Chrome bug, part 1
-  * Chunk rendering for all but the first article.
-  * /layout/_partial/scripts/content-visibility-scroll-fix.ejs
-*/
-.post-story + .post-story {
-  content-visibility: auto;
-  contain-intrinsic-size: 10px 500px;
 }
 :root {
   --color-site-body: #fff;
@@ -1871,8 +1862,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.d38cd369.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.d38cd369.css"></noscript>
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1945,14 +1936,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   /************这个文件存放不需要重载的全局变量和全局函数*********/
   window.volantis = {}; // volantis 全局变量
-  volantis.debug = false; // 开启调试模式
+  volantis.debug = "env"; // 调试模式
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/parallax.js?time=1665915579978","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenu.js?time=1665915579978","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978"},"css":{"style":"/css/style.d38cd369.css"}},
+    debug: "env",
+    cdn: {"js":{"app":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/parallax.js","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenu.js","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1665915579978),
+    lastupdate: new Date(1668091147913),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -3019,7 +3010,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ul>
 </li>
 </ul>
-<div class="story post-story"><h2 id="创建型"><a href="#创建型" class="headerlink" title="创建型"></a>创建型</h2><p><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202202231202054.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202202231202054.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="创建型模式"></p>
+<h2 id="创建型"><a href="#创建型" class="headerlink" title="创建型"></a>创建型</h2><p><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202202231202054.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202202231202054.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="创建型模式"></p>
 <h3 id="单例模式-Singleton"><a href="#单例模式-Singleton" class="headerlink" title="单例模式 Singleton"></a>单例模式 Singleton</h3><p><strong>一个类只允许创建一个对象（实例）</strong>，这个类就是单例类，这种设计模式就叫单例模式<br><strong>用处：</strong> 业务上，有些数据在系统中只应该保存一份</p>
 <p><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202202231129062.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202202231129062.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="单例模式"></p>
 <h4 id="饿汉式"><a href="#饿汉式" class="headerlink" title="饿汉式"></a>饿汉式</h4><blockquote>
@@ -3060,7 +3051,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202202231203233.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202202231203233.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="原型模式"></p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> prototype</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">    <span class="string">&quot;encoding/json&quot;</span></span><br><span class="line">    <span class="string">&quot;time&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Keyword 搜索关键字</span></span><br><span class="line"><span class="keyword">type</span> Keyword <span class="keyword">struct</span> &#123;</span><br><span class="line">    word      <span class="type">string</span></span><br><span class="line">    visit     <span class="type">int</span></span><br><span class="line">    UpdatedAt *time.Time</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Clone 这里使用序列化与反序列化的方式深拷贝</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(k *Keyword)</span></span> Clone() *Keyword &#123;</span><br><span class="line">    <span class="keyword">var</span> newKeyword Keyword</span><br><span class="line">    b, _ := json.Marshal(k)</span><br><span class="line">    json.Unmarshal(b, &amp;newKeyword)</span><br><span class="line">    <span class="keyword">return</span> &amp;newKeyword</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Keywords 关键字 map</span></span><br><span class="line"><span class="keyword">type</span> Keywords <span class="keyword">map</span>[<span class="type">string</span>]*Keyword</span><br><span class="line"></span><br><span class="line"><span class="comment">// Clone 复制一个新的 keywords</span></span><br><span class="line"><span class="comment">// updatedWords: 需要更新的关键词列表，由于从数据库中获取数据常常是数组的方式</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(words Keywords)</span></span> Clone(updatedWords []*Keyword) Keywords &#123;</span><br><span class="line">    newKeywords := Keywords&#123;&#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> k, v := <span class="keyword">range</span> words &#123;</span><br><span class="line">        <span class="comment">// 这里是浅拷贝，直接拷贝了地址</span></span><br><span class="line">        newKeywords[k] = v</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 替换掉需要更新的字段，这里用的是深拷贝</span></span><br><span class="line">    <span class="keyword">for</span> _, word := <span class="keyword">range</span> updatedWords &#123;</span><br><span class="line">        newKeywords[word.word] = word.Clone()</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> newKeywords</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="结构型"><a href="#结构型" class="headerlink" title="结构型"></a>结构型</h2><h3 id="代理模式-Proxy"><a href="#代理模式-Proxy" class="headerlink" title="代理模式 Proxy"></a>代理模式 Proxy</h3><p>为其他对象提供⼀种代理以控制这个对象的访问。</p>
+<h2 id="结构型"><a href="#结构型" class="headerlink" title="结构型"></a>结构型</h2><h3 id="代理模式-Proxy"><a href="#代理模式-Proxy" class="headerlink" title="代理模式 Proxy"></a>代理模式 Proxy</h3><p>为其他对象提供⼀种代理以控制这个对象的访问。</p>
 <p><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202202231208710.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202202231208710.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="代理模式"></p>
 <h4 id="静态代理"><a href="#静态代理" class="headerlink" title="静态代理"></a>静态代理</h4><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> proxy</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">    <span class="string">&quot;log&quot;</span></span><br><span class="line">    <span class="string">&quot;time&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">// IUser IUser</span></span><br><span class="line"><span class="keyword">type</span> IUser <span class="keyword">interface</span> &#123;</span><br><span class="line">    Login(username, password <span class="type">string</span>) <span class="type">error</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// User 用户</span></span><br><span class="line"><span class="keyword">type</span> User <span class="keyword">struct</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Login 用户登录</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(u *User)</span></span> Login(username, password <span class="type">string</span>) <span class="type">error</span> &#123;</span><br><span class="line">    <span class="comment">// 不实现细节</span></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// UserProxy 代理类</span></span><br><span class="line"><span class="keyword">type</span> UserProxy <span class="keyword">struct</span> &#123;</span><br><span class="line">    user *User</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// NewUserProxy NewUserProxy</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">NewUserProxy</span><span class="params">(user *User)</span></span> *UserProxy &#123;</span><br><span class="line">    <span class="keyword">return</span> &amp;UserProxy&#123;</span><br><span class="line">        user: user,</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Login 登录，和 user 实现相同的接口</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(p *UserProxy)</span></span> Login(username, password <span class="type">string</span>) <span class="type">error</span> &#123;</span><br><span class="line">    <span class="comment">// before 这里可能会有一些统计的逻辑</span></span><br><span class="line">    start := time.Now()</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 这里是原有的业务逻辑</span></span><br><span class="line">    <span class="keyword">if</span> err := p.user.Login(username, password); err != <span class="literal">nil</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> err</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// after 这里可能也有一些监控统计的逻辑</span></span><br><span class="line">    log.Printf(<span class="string">&quot;user login cost time: %s&quot;</span>, time.Now().Sub(start))</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -3103,7 +3094,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </blockquote>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> flyweight</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> units = <span class="keyword">map</span>[<span class="type">int</span>]*ChessPieceUnit&#123;</span><br><span class="line">    <span class="number">1</span>: &#123;</span><br><span class="line">        ID:    <span class="number">1</span>,</span><br><span class="line">        Name:  <span class="string">&quot;車&quot;</span>,</span><br><span class="line">        Color: <span class="string">&quot;red&quot;</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="number">2</span>: &#123;</span><br><span class="line">        ID:    <span class="number">2</span>,</span><br><span class="line">        Name:  <span class="string">&quot;炮&quot;</span>,</span><br><span class="line">        Color: <span class="string">&quot;red&quot;</span>,</span><br><span class="line">    &#125;,</span><br><span class="line">    <span class="comment">// ... 其他棋子</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ChessPieceUnit 棋子享元</span></span><br><span class="line"><span class="keyword">type</span> ChessPieceUnit <span class="keyword">struct</span> &#123;</span><br><span class="line">    ID    <span class="type">uint</span></span><br><span class="line">    Name  <span class="type">string</span></span><br><span class="line">    Color <span class="type">string</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// NewChessPieceUnit 工厂</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">NewChessPieceUnit</span><span class="params">(id <span class="type">int</span>)</span></span> *ChessPieceUnit &#123;</span><br><span class="line">    <span class="keyword">return</span> units[id]</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ChessPiece 棋子</span></span><br><span class="line"><span class="keyword">type</span> ChessPiece <span class="keyword">struct</span> &#123;</span><br><span class="line">    Unit *ChessPieceUnit</span><br><span class="line">    X    <span class="type">int</span></span><br><span class="line">    Y    <span class="type">int</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ChessBoard 棋局</span></span><br><span class="line"><span class="keyword">type</span> ChessBoard <span class="keyword">struct</span> &#123;</span><br><span class="line">    chessPieces <span class="keyword">map</span>[<span class="type">int</span>]*ChessPiece</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// NewChessBoard 初始化棋盘</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">NewChessBoard</span><span class="params">()</span></span> *ChessBoard &#123;</span><br><span class="line">    board := &amp;ChessBoard&#123;chessPieces: <span class="keyword">map</span>[<span class="type">int</span>]*ChessPiece&#123;&#125;&#125;</span><br><span class="line">    <span class="keyword">for</span> id := <span class="keyword">range</span> units &#123;</span><br><span class="line">        board.chessPieces[id] = &amp;ChessPiece&#123;</span><br><span class="line">            Unit: NewChessPieceUnit(id),</span><br><span class="line">            X:    <span class="number">0</span>,</span><br><span class="line">            Y:    <span class="number">0</span>,</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> board</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Move 移动棋子</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(c *ChessBoard)</span></span> Move(id, x, y <span class="type">int</span>) &#123;</span><br><span class="line">    c.chessPieces[id].X = x</span><br><span class="line">    c.chessPieces[id].Y = y</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="行为型"><a href="#行为型" class="headerlink" title="行为型"></a>行为型</h2><h3 id="观察者模式-Observer"><a href="#观察者模式-Observer" class="headerlink" title="观察者模式 Observer"></a>观察者模式 Observer</h3><p>定义对象间的⼀种⼀对多的依赖关系，当⼀个对象的状态发生改变时，所有依赖于它的对象都得到通知并自动更新。</p>
+<h2 id="行为型"><a href="#行为型" class="headerlink" title="行为型"></a>行为型</h2><h3 id="观察者模式-Observer"><a href="#观察者模式-Observer" class="headerlink" title="观察者模式 Observer"></a>观察者模式 Observer</h3><p>定义对象间的⼀种⼀对多的依赖关系，当⼀个对象的状态发生改变时，所有依赖于它的对象都得到通知并自动更新。</p>
 <p><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202202231408656.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202202231408656.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="观察者模式"></p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> observer</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">&quot;fmt&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// ISubject subject</span></span><br><span class="line"><span class="keyword">type</span> ISubject <span class="keyword">interface</span> &#123;</span><br><span class="line">    Register(observer IObserver)</span><br><span class="line">    Remove(observer IObserver)</span><br><span class="line">    Notify(msg <span class="type">string</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// IObserver 观察者</span></span><br><span class="line"><span class="keyword">type</span> IObserver <span class="keyword">interface</span> &#123;</span><br><span class="line">    Update(msg <span class="type">string</span>)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Subject Subject</span></span><br><span class="line"><span class="keyword">type</span> Subject <span class="keyword">struct</span> &#123;</span><br><span class="line">    observers []IObserver</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Register 注册</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(sub *Subject)</span></span> Register(observer IObserver) &#123;</span><br><span class="line">    sub.observers = <span class="built_in">append</span>(sub.observers, observer)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Remove 移除观察者</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(sub *Subject)</span></span> Remove(observer IObserver) &#123;</span><br><span class="line">    <span class="keyword">for</span> i, ob := <span class="keyword">range</span> sub.observers &#123;</span><br><span class="line">        <span class="keyword">if</span> ob == observer &#123;</span><br><span class="line">            sub.observers = <span class="built_in">append</span>(sub.observers[:i], sub.observers[i+<span class="number">1</span>:]...)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Notify 通知</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(sub *Subject)</span></span> Notify(msg <span class="type">string</span>) &#123;</span><br><span class="line">    <span class="keyword">for</span> _, o := <span class="keyword">range</span> sub.observers &#123;</span><br><span class="line">        o.Update(msg)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Observer1 Observer1</span></span><br><span class="line"><span class="keyword">type</span> Observer1 <span class="keyword">struct</span>&#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Update 实现观察者接口</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(Observer1)</span></span> Update(msg <span class="type">string</span>) &#123;</span><br><span class="line">    fmt.Printf(<span class="string">&quot;Observer1: %s&quot;</span>, msg)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Observer2 Observer2</span></span><br><span class="line"><span class="keyword">type</span> Observer2 <span class="keyword">struct</span>&#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Update 实现观察者接口</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(Observer2)</span></span> Update(msg <span class="type">string</span>) &#123;</span><br><span class="line">    fmt.Printf(<span class="string">&quot;Observer2: %s&quot;</span>, msg)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -3163,7 +3154,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202202231416106.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202202231416106.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="中介模式"></p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// Package mediator 中介模式</span></span><br><span class="line"><span class="comment">// 采用原课程的示例，并且做了一些裁剪</span></span><br><span class="line"><span class="comment">// 假设我们现在有一个较为复杂的对话框，里面包括，登录组件，注册组件，以及选择框</span></span><br><span class="line"><span class="comment">// 当选择框选择“登录”时，展示登录相关组件</span></span><br><span class="line"><span class="comment">// 当选择框选择“注册”时，展示注册相关组件</span></span><br><span class="line"><span class="keyword">package</span> mediator</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> (</span><br><span class="line">    <span class="string">&quot;fmt&quot;</span></span><br><span class="line">    <span class="string">&quot;reflect&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line"><span class="comment">// Input 假设这表示一个输入框</span></span><br><span class="line"><span class="keyword">type</span> Input <span class="type">string</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// String String</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(i Input)</span></span> String() <span class="type">string</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="type">string</span>(i)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Selection 假设这表示一个选择框</span></span><br><span class="line"><span class="keyword">type</span> Selection <span class="type">string</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Selected 当前选中的对象</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(s Selection)</span></span> Selected() <span class="type">string</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="type">string</span>(s)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Button 假设这表示一个按钮</span></span><br><span class="line"><span class="keyword">type</span> Button <span class="keyword">struct</span> &#123;</span><br><span class="line">    onClick <span class="function"><span class="keyword">func</span><span class="params">()</span></span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// SetOnClick 添加点击事件回调</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(b *Button)</span></span> SetOnClick(f <span class="function"><span class="keyword">func</span><span class="params">()</span></span>) &#123;</span><br><span class="line">    b.onClick = f</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// IMediator 中介模式接口</span></span><br><span class="line"><span class="keyword">type</span> IMediator <span class="keyword">interface</span> &#123;</span><br><span class="line">    HandleEvent(component <span class="keyword">interface</span>&#123;&#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Dialog 对话框组件</span></span><br><span class="line"><span class="keyword">type</span> Dialog <span class="keyword">struct</span> &#123;</span><br><span class="line">    LoginButton         *Button</span><br><span class="line">    RegButton           *Button</span><br><span class="line">    Selection           *Selection</span><br><span class="line">    UsernameInput       *Input</span><br><span class="line">    PasswordInput       *Input</span><br><span class="line">    RepeatPasswordInput *Input</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// HandleEvent HandleEvent</span></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="params">(d *Dialog)</span></span> HandleEvent(component <span class="keyword">interface</span>&#123;&#125;) &#123;</span><br><span class="line">    <span class="keyword">switch</span> &#123;</span><br><span class="line">    <span class="keyword">case</span> reflect.DeepEqual(component, d.Selection):</span><br><span class="line">        <span class="keyword">if</span> d.Selection.Selected() == <span class="string">&quot;登录&quot;</span> &#123;</span><br><span class="line">            fmt.Println(<span class="string">&quot;select login&quot;</span>)</span><br><span class="line">            fmt.Printf(<span class="string">&quot;show: %s\n&quot;</span>, d.UsernameInput)</span><br><span class="line">            fmt.Printf(<span class="string">&quot;show: %s\n&quot;</span>, d.PasswordInput)</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> d.Selection.Selected() == <span class="string">&quot;注册&quot;</span> &#123;</span><br><span class="line">            fmt.Println(<span class="string">&quot;select register&quot;</span>)</span><br><span class="line">            fmt.Printf(<span class="string">&quot;show: %s\n&quot;</span>, d.UsernameInput)</span><br><span class="line">            fmt.Printf(<span class="string">&quot;show: %s\n&quot;</span>, d.PasswordInput)</span><br><span class="line">            fmt.Printf(<span class="string">&quot;show: %s\n&quot;</span>, d.RepeatPasswordInput)</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// others, 如果点击了登录按钮，注册按钮</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</div>
   </div>
   
   
@@ -3216,7 +3206,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                 
               
                 
-                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href=http://blog.sukiu.top/System-Design/Design-Pattern/Go-Design-Pattern/>http://blog.sukiu.top/System-Design/Design-Pattern/Go-Design-Pattern/</a></p>
+                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href="http://blog.sukiu.top/System-Design/Design-Pattern/Go-Design-Pattern/">http://blog.sukiu.top/System-Design/Design-Pattern/Go-Design-Pattern/</a></p>
                 
               
                 
@@ -3565,7 +3555,7 @@ ops ：存放所有的数字以外的操作
 
 <!-- internal -->
 
-<script src="/js/app.af2d54c8.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js"></script>
 
 
 
@@ -3810,7 +3800,7 @@ ops ：存放所有的数字以外的操作
 
   </ul>
 </div>
-<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -4051,19 +4041,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js")
       }
     
   };
@@ -4159,7 +4149,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/aplayer.js?time=1665915579978')
+    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/aplayer.js')
   
   })();
 
@@ -4286,7 +4276,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978");
+    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js");
   }
 
   function loadSearchService() {
@@ -4745,94 +4735,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 </script>
 
-<script>
-  try {
-    // https://web.dev/content-visibility/
-    // https://www.caniuse.com/?search=content-visibility
-    // https://infrequently.org/2020/12/content-visibility-scroll-fix/
-    // https://infrequently.org/2020/12/resize-resilient-deferred-rendering/
-
-    // 备注 目前已知的问题:
-    // 动态修改导致的内容高度变化(例如评论框异步渲染的外部盒子高度变化) 无法提前获知, 进而导致的首次滚动条跳动无法去除 (wontfix) 事实上不使用 content-visibility 也会有跳动, 不过是比使用 content-visibility 跳动提前
-    // scrollreveal 插件潜在问题 目前尚不明确
-
-    let eqIsh = (a, b, fuzz = 2) => {
-      return Math.abs(a - b) <= fuzz;
-    };
-
-    let rectNotEQ = (a, b) => {
-      return !eqIsh(a.width, b.width) || !eqIsh(a.height, b.height);
-    };
-
-    // Keep a map of elements and the dimensions of
-    // their place-holders, re-setting the element's
-    // intrinsic size when we get updated measurements
-    // from observers.
-    let spaced = new WeakMap();
-
-    // Only call this when known cheap, post layout
-    let reserveSpace = (el, rect = el.getClientBoundingRect()) => {
-      let old = spaced.get(el);
-      // Set intrinsic size to prevent jumping on un-painting:
-      //    https://drafts.csswg.org/css-sizing-4/#intrinsic-size-override
-      if (!old || rectNotEQ(old, rect)) {
-        spaced.set(el, rect);
-        el.style["contain-intrinsic-size"] = `${rect.width}px ${rect.height}px`;
-      }
-    };
-
-    let iObs = new IntersectionObserver(
-      (entries, o) => {
-        entries.forEach((entry) => {
-          // We don't care if the element is intersecting or
-          // has been laid out as our page structure ensures
-          // they'll get the right width.
-          reserveSpace(entry.target, entry.boundingClientRect);
-        });
-      },
-      { rootMargin: "500px 0px 500px 0px" }
-    );
-
-    let rObs = new ResizeObserver((entries, o) => {
-      entries.forEach((entry) => {
-        reserveSpace(entry.target, entry.contentRect);
-      });
-    });
-
-    let resizeResilientDeferredRendering = (Selector) => {
-      let articles = document.querySelectorAll(Selector);
-
-      if (articles.length) {
-        articles.forEach((el) => {
-          iObs.observe(el);
-          rObs.observe(el);
-        });
-
-        // Workaround for Chrome bug, part 2.
-        //
-        // Re-enable browser management of rendering for the
-        // first article after the first paint. Double-rAF
-        // to ensure we get called after a layout.
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            articles[0].style["content-visibility"] = "auto";
-          });
-        });
-      }
-    };
-
-    let contentVisibilityScrollFix = () => {
-      if (!("content-visibility" in document.documentElement.style)) {
-        return;
-      }
-      resizeResilientDeferredRendering(".post-story");
-    };
-    contentVisibilityScrollFix();
-    volantis.pjax.push(contentVisibilityScrollFix);
-  } catch (error) {
-    console.log(error);
-  }
-</script>
 
 
 <script>

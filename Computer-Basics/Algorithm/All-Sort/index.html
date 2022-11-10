@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN,en,default">
-    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/tree/5.6.0'>
+    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.7.6'>
   <meta name="generator" content="Hexo 6.2.0">
-  <meta name="Volantis" content="5.6.0">
+  <meta name="Volantis" content="5.7.6">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -26,7 +26,7 @@
   
   <!-- Custom Files headBegin end-->
     <link rel="shortcut icon" type='image/x-icon' href="https://fastly.jsdelivr.net/gh/SukiEva/assets/blog/favicon.png">
-  <link rel="preload" href="/css/style.d38cd369.css" as="style">
+  <link rel="preload" href="/css/style.css" as="style">
   <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
 
@@ -54,15 +54,6 @@
     /* 首屏样式 */
     #safearea {
   display: none;
-}
-/*
-  * Workaround for Chrome bug, part 1
-  * Chunk rendering for all but the first article.
-  * /layout/_partial/scripts/content-visibility-scroll-fix.ejs
-*/
-.post-story + .post-story {
-  content-visibility: auto;
-  contain-intrinsic-size: 10px 500px;
 }
 :root {
   --color-site-body: #fff;
@@ -1870,8 +1861,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.d38cd369.css" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.d38cd369.css"></noscript>
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1944,14 +1935,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <script>
   /************这个文件存放不需要重载的全局变量和全局函数*********/
   window.volantis = {}; // volantis 全局变量
-  volantis.debug = false; // 开启调试模式
+  volantis.debug = "env"; // 调试模式
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    debug: false,
-    cdn: {"js":{"app":"/js/app.af2d54c8.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/parallax.js?time=1665915579978","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenu.js?time=1665915579978","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978"},"css":{"style":"/css/style.d38cd369.css"}},
+    debug: "env",
+    cdn: {"js":{"app":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/parallax.js","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenu.js","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1665915579978),
+    lastupdate: new Date(1668091147913),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2983,7 +2974,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <blockquote>
 <p>稳定性是指排序过程中，原来相同的元素保持原来的相对位置<br>比如 a[i] &#x3D; a[j] ，且 i&lt;j , 排序后 i&lt;j 依然成立</p>
 </blockquote>
-<div class="story post-story"><h2 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h2><h3 id="1-直接插入排序"><a href="#1-直接插入排序" class="headerlink" title="(1) 直接插入排序"></a>(1) 直接插入排序</h3><blockquote>
+<h2 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h2><h3 id="1-直接插入排序"><a href="#1-直接插入排序" class="headerlink" title="(1) 直接插入排序"></a>(1) 直接插入排序</h3><blockquote>
 <p>时间复杂度：O(n^2)，最好 O(n)<br>空间复杂度：O(1)<br>稳定性：稳定</p>
 </blockquote>
 <ul>
@@ -3030,7 +3021,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ? 按照 ShellSort 定义写出</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">shellSort1</span><span class="params">(<span class="type">int</span> a[], <span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> i, j, k, gap;</span><br><span class="line">    <span class="keyword">for</span> (gap = n / <span class="number">2</span>; gap &gt; <span class="number">0</span>; gap /= <span class="number">2</span>)</span><br><span class="line">        <span class="keyword">for</span> (i = <span class="number">0</span>; i &lt; gap; i++)                   <span class="comment">// 分组</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="type">int</span> j = i + gap; j &lt; n; j += gap)  <span class="comment">// 组内插入排序</span></span><br><span class="line">                <span class="keyword">if</span> (a[j] &lt; a[j - gap]) &#123;            <span class="comment">// 直接插入排序</span></span><br><span class="line">                    <span class="type">int</span> v = a[j];</span><br><span class="line">                    <span class="keyword">for</span> (<span class="type">int</span> k = j - gap; k &gt;= <span class="number">0</span> &amp;&amp; a[k] &gt; v; k -= gap)</span><br><span class="line">                        a[k + gap] = a[k];  <span class="comment">// 后移</span></span><br><span class="line">                    a[k + gap] = v;</span><br><span class="line">                &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ? 优化</span></span><br><span class="line"><span class="comment">// - 上述 i 的作用是为了确认 j 的位置，并与组内元素比较</span></span><br><span class="line"><span class="comment">// - 明显每次 gap 与 j-gap 就是组内比较，不需要再分组</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">shellSort</span><span class="params">(<span class="type">int</span> a[], <span class="type">int</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> j, k, gap;</span><br><span class="line">    <span class="keyword">for</span> (gap = n / <span class="number">2</span>; gap &gt; <span class="number">0</span>; gap /= <span class="number">2</span>)</span><br><span class="line">        <span class="keyword">for</span> (j = gap; j &lt; n; j++)</span><br><span class="line">            <span class="keyword">if</span> (a[j] &lt; a[j - gap]) &#123;</span><br><span class="line">                <span class="type">int</span> v = a[j];</span><br><span class="line">                <span class="keyword">for</span> (<span class="type">int</span> k = j - gap; k &gt;= <span class="number">0</span> &amp;&amp; a[k] &gt; v; k -= gap)</span><br><span class="line">                    a[k + gap] = a[k];  <span class="comment">// 后移</span></span><br><span class="line">                a[k + gap] = v;</span><br><span class="line">            &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="交换排序"><a href="#交换排序" class="headerlink" title="交换排序"></a>交换排序</h2><h3 id="3-冒泡排序"><a href="#3-冒泡排序" class="headerlink" title="(3) 冒泡排序"></a>(3) 冒泡排序</h3><blockquote>
+<h2 id="交换排序"><a href="#交换排序" class="headerlink" title="交换排序"></a>交换排序</h2><h3 id="3-冒泡排序"><a href="#3-冒泡排序" class="headerlink" title="(3) 冒泡排序"></a>(3) 冒泡排序</h3><blockquote>
 <p>时间复杂度：平均 O(n^2)，最坏 O(n^2)，最好 O(n)<br>空间复杂度：O(1)<br>稳定性：稳定</p>
 </blockquote>
 <ul>
@@ -3089,7 +3080,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ul>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ? 快排划分</span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">Partition</span><span class="params">(<span class="type">int</span> a[], <span class="type">int</span> l, <span class="type">int</span> r)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> p = a[l];</span><br><span class="line">    <span class="keyword">while</span> (l &lt; r) &#123;                      <span class="comment">// l != r</span></span><br><span class="line">        <span class="keyword">while</span> (l &lt; r &amp;&amp; a[r] &gt;= p) --r;  <span class="comment">// r 向左扫描</span></span><br><span class="line">        a[l] = a[r];</span><br><span class="line">        <span class="keyword">while</span> (l &lt; r &amp;&amp; a[l] &lt;= p) ++l;  <span class="comment">// l 向右扫描</span></span><br><span class="line">        a[r] = a[l];</span><br><span class="line">    &#125;</span><br><span class="line">    a[l] = p;</span><br><span class="line">    <span class="keyword">return</span> l;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ? 快速排序</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">QuickSort</span><span class="params">(<span class="type">int</span> a[], <span class="type">int</span> l, <span class="type">int</span> r)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (l &lt; r) &#123;</span><br><span class="line">        <span class="type">int</span> p = <span class="built_in">Partition</span>(a, l, r);</span><br><span class="line">        <span class="built_in">QuickSort</span>(a, l, p - <span class="number">1</span>);</span><br><span class="line">        <span class="built_in">QuickSort</span>(a, p + <span class="number">1</span>, r);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ? 三数取中优化，此版本快的飞起</span></span><br><span class="line"><span class="comment">// https://www.cnblogs.com/chengxiao/p/6262208.html</span></span><br><span class="line"><span class="comment">// - 左端、中间、右端三个数，然后进行排序，将中间数作为枢纽值</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">QuickSort</span><span class="params">(<span class="type">int</span> a[], <span class="type">int</span> l, <span class="type">int</span> r)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> mid = a[(l + r) / <span class="number">2</span>];</span><br><span class="line">    <span class="type">int</span> i = l, j = r;</span><br><span class="line">    <span class="keyword">do</span> &#123;</span><br><span class="line">        <span class="keyword">while</span> (a[i] &lt; mid) i++;</span><br><span class="line">        <span class="keyword">while</span> (a[j] &gt; mid) j--;</span><br><span class="line">        <span class="keyword">if</span> (i &lt;= j) &#123;</span><br><span class="line">            <span class="built_in">swap</span>(a[i], a[j]);</span><br><span class="line">            i++;</span><br><span class="line">            j--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">while</span> (i &lt;= j);</span><br><span class="line">    <span class="keyword">if</span> (l &lt; j) <span class="built_in">QuickSort</span>(a, l, j);</span><br><span class="line">    <span class="keyword">if</span> (i &lt; r) <span class="built_in">QuickSort</span>(a, i, r);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 字符串的快排</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">qsort</span><span class="params">(vector&lt;string&gt;&amp; nums, <span class="type">int</span> l, <span class="type">int</span> r)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> i = l, j = r;</span><br><span class="line">    string m = nums[l + ((r - l) &gt;&gt; <span class="number">1</span>)];</span><br><span class="line">    <span class="keyword">do</span> &#123;</span><br><span class="line">        <span class="keyword">while</span> (nums[i] + m &lt; m + nums[i]) i++;</span><br><span class="line">        <span class="keyword">while</span> (nums[j] + m &gt; m + nums[j]) j--;</span><br><span class="line">        <span class="keyword">if</span> (i &lt;= j) &#123;</span><br><span class="line">            <span class="built_in">swap</span>(nums[i], nums[j]);</span><br><span class="line">            i++;</span><br><span class="line">            j--;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125; <span class="keyword">while</span> (i &lt;= j);</span><br><span class="line">    <span class="keyword">if</span> (l &lt; j) <span class="built_in">qsort</span>(nums, l, j);</span><br><span class="line">    <span class="keyword">if</span> (i &lt; r) <span class="built_in">qsort</span>(nums, i, r);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h2><h3 id="5-简单选择排序"><a href="#5-简单选择排序" class="headerlink" title="(5) 简单选择排序"></a>(5) 简单选择排序</h3><blockquote>
+<h2 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h2><h3 id="5-简单选择排序"><a href="#5-简单选择排序" class="headerlink" title="(5) 简单选择排序"></a>(5) 简单选择排序</h3><blockquote>
 <p>时间复杂度：平均 O(n^2)，最坏 O(n^2)<br>空间复杂度：O(1)<br>稳定性：不稳定</p>
 </blockquote>
 <p>思路：</p>
@@ -3147,7 +3138,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </ul>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// - 图解 https://www.cnblogs.com/chengxiao/p/6129630.html</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// ? 调整以 k 为根的子树，即 shift 操作</span></span><br><span class="line"><span class="comment">// - 大孩子上升，空位置下降</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">HeadAdjust</span><span class="params">(<span class="type">int</span> a[], <span class="type">int</span> k, <span class="type">int</span> len)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> t = a[k];</span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = k * <span class="number">2</span> + <span class="number">1</span>; i &lt; len; i = i * <span class="number">2</span> + <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="comment">//  如果左子结点小于右子结点，i指向右子结点</span></span><br><span class="line">        <span class="keyword">if</span> (i + <span class="number">1</span> &lt; len &amp;&amp; a[i] &lt; a[i + <span class="number">1</span>]) i++;</span><br><span class="line">        <span class="comment">//  如果子节点大于父节点，将子节点值赋给父节点（不用进行交换）</span></span><br><span class="line">        <span class="keyword">if</span> (a[i] &gt; t) &#123;</span><br><span class="line">            a[k] = a[i];</span><br><span class="line">            k = i;</span><br><span class="line">        &#125; <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    a[k] = t;  <span class="comment">// t 放在最终位置</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// ? 堆排序</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">HeapSort</span><span class="params">(<span class="type">int</span> a[], <span class="type">int</span> len)</span> </span>&#123;</span><br><span class="line">    <span class="type">int</span> i;</span><br><span class="line">    <span class="comment">// - 建立大根堆</span></span><br><span class="line">    <span class="keyword">for</span> (i = len / <span class="number">2</span> - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) <span class="built_in">HeadAdjust</span>(a, i, len);</span><br><span class="line">    <span class="comment">// - 交换堆顶堆低元素 + 调整堆结构</span></span><br><span class="line">    <span class="keyword">for</span> (i = len - <span class="number">1</span>; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">        <span class="built_in">swap</span>(a[i], a[<span class="number">0</span>]);</span><br><span class="line">        <span class="built_in">HeadAdjust</span>(a, <span class="number">0</span>, i);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="其他排序"><a href="#其他排序" class="headerlink" title="其他排序"></a>其他排序</h2><h3 id="7-归并排序"><a href="#7-归并排序" class="headerlink" title="(7) 归并排序"></a>(7) 归并排序</h3><blockquote>
+<h2 id="其他排序"><a href="#其他排序" class="headerlink" title="其他排序"></a>其他排序</h2><h3 id="7-归并排序"><a href="#7-归并排序" class="headerlink" title="(7) 归并排序"></a>(7) 归并排序</h3><blockquote>
 <p>时间复杂度： O(nlogn) (好、坏、平均)<br>空间复杂度：O(n)<br>稳定性：稳定</p>
 </blockquote>
 <p>思路：</p>
@@ -3168,11 +3159,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <p><strong>看图理解：</strong> <img src="https://www.runoob.com/wp-content/uploads/2019/03/radixSort.gif" class="lazyload" data-srcset="https://www.runoob.com/wp-content/uploads/2019/03/radixSort.gif" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom:67%;" /></p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ? 辅助函数，求数据的最大位数  </span></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">maxbit</span><span class="params">(<span class="type">int</span> data[], <span class="type">int</span> n)</span> </span>&#123;  </span><br><span class="line">    <span class="type">int</span> maxData = data[<span class="number">0</span>];  <span class="comment">///&lt; 最大数  </span></span><br><span class="line">    <span class="comment">/// 先求出最大数，再求其位数，这样有原先依次每个数判断其位数，稍微优化点。  </span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; ++i) &#123;  </span><br><span class="line">        <span class="keyword">if</span> (maxData &lt; data[i]) maxData = data[i];  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="type">int</span> d = <span class="number">1</span>;  </span><br><span class="line">    <span class="type">int</span> p = <span class="number">10</span>;  </span><br><span class="line">    <span class="keyword">while</span> (maxData &gt;= p) &#123;  </span><br><span class="line">        <span class="comment">// p *= 10; // Maybe overflow  </span></span><br><span class="line">        maxData /= <span class="number">10</span>;  </span><br><span class="line">        ++d;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">return</span> d;  </span><br><span class="line"> <span class="comment">/*    </span></span><br><span class="line"><span class="comment">     int d = 1; //保存最大的位数  </span></span><br><span class="line"><span class="comment">     int p = 10;  </span></span><br><span class="line"><span class="comment">     for(int i = 0; i &lt; n; ++i)&#123;  </span></span><br><span class="line"><span class="comment">         while(data[i] &gt;= p)&#123;  </span></span><br><span class="line"><span class="comment">             p *= 10;  </span></span><br><span class="line"><span class="comment">             ++d;  </span></span><br><span class="line"><span class="comment">         &#125;  </span></span><br><span class="line"><span class="comment">     &#125;  </span></span><br><span class="line"><span class="comment">     return d;</span></span><br><span class="line"><span class="comment">*/</span>  </span><br><span class="line">&#125;  </span><br><span class="line">  </span><br><span class="line"><span class="comment">// ? 基数排序  </span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Radixsort</span><span class="params">(<span class="type">int</span> data[], <span class="type">int</span> n)</span> </span>&#123;  </span><br><span class="line">    <span class="type">int</span> d = <span class="built_in">maxbit</span>(data, n);  </span><br><span class="line">    <span class="type">int</span> *tmp = <span class="keyword">new</span> <span class="type">int</span>[n];  </span><br><span class="line">    <span class="type">int</span> *count = <span class="keyword">new</span> <span class="type">int</span>[<span class="number">10</span>];  <span class="comment">//计数器  </span></span><br><span class="line">    <span class="type">int</span> i, j, k;  </span><br><span class="line">    <span class="type">int</span> radix = <span class="number">1</span>;  </span><br><span class="line">    <span class="keyword">for</span> (i = <span class="number">1</span>; i &lt;= d; i++)  <span class="comment">//进行d次排序  </span></span><br><span class="line">    &#123;  </span><br><span class="line">        <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; <span class="number">10</span>; j++) count[j] = <span class="number">0</span>;  <span class="comment">//每次分配前清空计数器  </span></span><br><span class="line">        <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; n; j++) &#123;  </span><br><span class="line">            k = (data[j] / radix) % <span class="number">10</span>;  <span class="comment">//统计每个桶中的记录数  </span></span><br><span class="line">            count[k]++;  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">for</span> (j = <span class="number">1</span>; j &lt; <span class="number">10</span>; j++)  </span><br><span class="line">            count[j] = count[j - <span class="number">1</span>] + count[j];  <span class="comment">//将tmp中的位置依次分配给每个桶  </span></span><br><span class="line">        <span class="keyword">for</span> (j = n - <span class="number">1</span>; j &gt;= <span class="number">0</span>; j--)  <span class="comment">//将所有桶中记录依次收集到tmp中  </span></span><br><span class="line">        &#123;  </span><br><span class="line">            k = (data[j] / radix) % <span class="number">10</span>;  </span><br><span class="line">            tmp[count[k] - <span class="number">1</span>] = data[j];  </span><br><span class="line">            count[k]--;  </span><br><span class="line">        &#125;  </span><br><span class="line">        <span class="keyword">for</span> (j = <span class="number">0</span>; j &lt; n; j++)  <span class="comment">//将临时数组的内容复制到data中  </span></span><br><span class="line">            data[j] = tmp[j];  </span><br><span class="line">        radix = radix * <span class="number">10</span>;  </span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="keyword">delete</span>[] tmp;  </span><br><span class="line">    <span class="keyword">delete</span>[] count;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-</div><div class="story post-story"><h2 id="排序比较"><a href="#排序比较" class="headerlink" title="排序比较"></a>排序比较</h2><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192157440.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192157440.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom:50%;" />
+<h2 id="排序比较"><a href="#排序比较" class="headerlink" title="排序比较"></a>排序比较</h2><img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192157440.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192157440.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom:50%;" />
 
 <img src="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192203045.png" class="lazyload" data-srcset="https://picgo-1303870432.cos.ap-shanghai.myqcloud.com/img/202201192203045.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="zoom:67%;" />
 
-</div>
   </div>
   
   
@@ -3205,7 +3195,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                 
               
                 
-                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href=http://blog.sukiu.top/Computer-Basics/Algorithm/All-Sort/>http://blog.sukiu.top/Computer-Basics/Algorithm/All-Sort/</a></p>
+                  <p><i class="fa-duotone fa-anchor"></i> 本文永久链接是：<a href="http://blog.sukiu.top/Computer-Basics/Algorithm/All-Sort/">http://blog.sukiu.top/Computer-Basics/Algorithm/All-Sort/</a></p>
                 
               
                 
@@ -3545,7 +3535,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.af2d54c8.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js"></script>
 
 
 
@@ -3790,7 +3780,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/rightMenus.js?time=1665915579978"></script>
+<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -4031,19 +4021,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/sites.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/friends.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/tags/contributors.js?time=1665915579978")
+        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js")
       }
     
   };
@@ -4139,7 +4129,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/plugins/aplayer.js?time=1665915579978')
+    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/aplayer.js')
   
   })();
 
@@ -4266,7 +4256,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.6.0/source/js/search/hexo.js?time=1665915579978");
+    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js");
   }
 
   function loadSearchService() {
@@ -4725,94 +4715,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 </script>
 
-<script>
-  try {
-    // https://web.dev/content-visibility/
-    // https://www.caniuse.com/?search=content-visibility
-    // https://infrequently.org/2020/12/content-visibility-scroll-fix/
-    // https://infrequently.org/2020/12/resize-resilient-deferred-rendering/
-
-    // 备注 目前已知的问题:
-    // 动态修改导致的内容高度变化(例如评论框异步渲染的外部盒子高度变化) 无法提前获知, 进而导致的首次滚动条跳动无法去除 (wontfix) 事实上不使用 content-visibility 也会有跳动, 不过是比使用 content-visibility 跳动提前
-    // scrollreveal 插件潜在问题 目前尚不明确
-
-    let eqIsh = (a, b, fuzz = 2) => {
-      return Math.abs(a - b) <= fuzz;
-    };
-
-    let rectNotEQ = (a, b) => {
-      return !eqIsh(a.width, b.width) || !eqIsh(a.height, b.height);
-    };
-
-    // Keep a map of elements and the dimensions of
-    // their place-holders, re-setting the element's
-    // intrinsic size when we get updated measurements
-    // from observers.
-    let spaced = new WeakMap();
-
-    // Only call this when known cheap, post layout
-    let reserveSpace = (el, rect = el.getClientBoundingRect()) => {
-      let old = spaced.get(el);
-      // Set intrinsic size to prevent jumping on un-painting:
-      //    https://drafts.csswg.org/css-sizing-4/#intrinsic-size-override
-      if (!old || rectNotEQ(old, rect)) {
-        spaced.set(el, rect);
-        el.style["contain-intrinsic-size"] = `${rect.width}px ${rect.height}px`;
-      }
-    };
-
-    let iObs = new IntersectionObserver(
-      (entries, o) => {
-        entries.forEach((entry) => {
-          // We don't care if the element is intersecting or
-          // has been laid out as our page structure ensures
-          // they'll get the right width.
-          reserveSpace(entry.target, entry.boundingClientRect);
-        });
-      },
-      { rootMargin: "500px 0px 500px 0px" }
-    );
-
-    let rObs = new ResizeObserver((entries, o) => {
-      entries.forEach((entry) => {
-        reserveSpace(entry.target, entry.contentRect);
-      });
-    });
-
-    let resizeResilientDeferredRendering = (Selector) => {
-      let articles = document.querySelectorAll(Selector);
-
-      if (articles.length) {
-        articles.forEach((el) => {
-          iObs.observe(el);
-          rObs.observe(el);
-        });
-
-        // Workaround for Chrome bug, part 2.
-        //
-        // Re-enable browser management of rendering for the
-        // first article after the first paint. Double-rAF
-        // to ensure we get called after a layout.
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            articles[0].style["content-visibility"] = "auto";
-          });
-        });
-      }
-    };
-
-    let contentVisibilityScrollFix = () => {
-      if (!("content-visibility" in document.documentElement.style)) {
-        return;
-      }
-      resizeResilientDeferredRendering(".post-story");
-    };
-    contentVisibilityScrollFix();
-    volantis.pjax.push(contentVisibilityScrollFix);
-  } catch (error) {
-    console.log(error);
-  }
-</script>
 
 
 <script>
