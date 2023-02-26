@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zh-CN,en,default">
     <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.7.7'>
-  <meta name="generator" content="Hexo 6.2.0">
+  <meta name="generator" content="Hexo 6.3.0">
   <meta name="Volantis" content="5.7.7">
   <meta charset="utf-8">
   <!-- SEO相关 -->
@@ -1717,6 +1717,148 @@ ul.list-v >li>a:hover {
     background: var(--color-site-bg) !important;
   }
 }
+#l_cover {
+  position: relative;
+}
+.main-hero-waves-area {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  bottom: -10px;
+  font-size: 0;
+}
+.waves-area .waves-svg {
+  width: 100%;
+  height: 4rem;
+}
+.waves-area .parallax > use {
+  -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  -khtml-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  -moz-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  -o-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+  -ms-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
+}
+.waves-area .parallax > use:first-child {
+  -webkit-animation-delay: -2s;
+  animation-delay: -2s;
+  -webkit-animation-duration: 7s;
+  animation-duration: 7s;
+  fill: rgba(255,255,255,0.7);
+}
+.waves-area .parallax > use:nth-child(2) {
+  -webkit-animation-delay: -3s;
+  animation-delay: -3s;
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  fill: rgba(255,255,255,0.5);
+}
+.waves-area .parallax > use:nth-child(3) {
+  -webkit-animation-delay: -4s;
+  animation-delay: -4s;
+  -webkit-animation-duration: 13s;
+  animation-duration: 13s;
+  fill: rgba(255,255,255,0.3);
+}
+.waves-area .parallax > use:nth-child(4) {
+  -webkit-animation-delay: -5s;
+  animation-delay: -5s;
+  -webkit-animation-duration: 20s;
+  animation-duration: 20s;
+  fill: #f7f9fe;
+}
+@-webkit-keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+    -webkit-transform: translate3d(-90px, 0, 0);
+    -khtml-transform: translate3d(-90px, 0, 0);
+    -moz-transform: translate3d(-90px, 0, 0);
+    -o-transform: translate3d(-90px, 0, 0);
+    -ms-transform: translate3d(-90px, 0, 0);
+  }
+  to {
+    transform: translate3d(85px, 0, 0);
+    -webkit-transform: translate3d(85px, 0, 0);
+    -khtml-transform: translate3d(85px, 0, 0);
+    -moz-transform: translate3d(85px, 0, 0);
+    -o-transform: translate3d(85px, 0, 0);
+    -ms-transform: translate3d(85px, 0, 0);
+  }
+}
+@-moz-keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+    -webkit-transform: translate3d(-90px, 0, 0);
+    -khtml-transform: translate3d(-90px, 0, 0);
+    -moz-transform: translate3d(-90px, 0, 0);
+    -o-transform: translate3d(-90px, 0, 0);
+    -ms-transform: translate3d(-90px, 0, 0);
+  }
+  to {
+    transform: translate3d(85px, 0, 0);
+    -webkit-transform: translate3d(85px, 0, 0);
+    -khtml-transform: translate3d(85px, 0, 0);
+    -moz-transform: translate3d(85px, 0, 0);
+    -o-transform: translate3d(85px, 0, 0);
+    -ms-transform: translate3d(85px, 0, 0);
+  }
+}
+@-webkit-keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+    -webkit-transform: translate3d(-90px, 0, 0);
+    -khtml-transform: translate3d(-90px, 0, 0);
+    -moz-transform: translate3d(-90px, 0, 0);
+    -o-transform: translate3d(-90px, 0, 0);
+    -ms-transform: translate3d(-90px, 0, 0);
+  }
+  to {
+    transform: translate3d(85px, 0, 0);
+    -webkit-transform: translate3d(85px, 0, 0);
+    -khtml-transform: translate3d(85px, 0, 0);
+    -moz-transform: translate3d(85px, 0, 0);
+    -o-transform: translate3d(85px, 0, 0);
+    -ms-transform: translate3d(85px, 0, 0);
+  }
+}
+@-o-keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+    -webkit-transform: translate3d(-90px, 0, 0);
+    -khtml-transform: translate3d(-90px, 0, 0);
+    -moz-transform: translate3d(-90px, 0, 0);
+    -o-transform: translate3d(-90px, 0, 0);
+    -ms-transform: translate3d(-90px, 0, 0);
+  }
+  to {
+    transform: translate3d(85px, 0, 0);
+    -webkit-transform: translate3d(85px, 0, 0);
+    -khtml-transform: translate3d(85px, 0, 0);
+    -moz-transform: translate3d(85px, 0, 0);
+    -o-transform: translate3d(85px, 0, 0);
+    -ms-transform: translate3d(85px, 0, 0);
+  }
+}
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0);
+    -webkit-transform: translate3d(-90px, 0, 0);
+    -khtml-transform: translate3d(-90px, 0, 0);
+    -moz-transform: translate3d(-90px, 0, 0);
+    -o-transform: translate3d(-90px, 0, 0);
+    -ms-transform: translate3d(-90px, 0, 0);
+  }
+  to {
+    transform: translate3d(85px, 0, 0);
+    -webkit-transform: translate3d(85px, 0, 0);
+    -khtml-transform: translate3d(85px, 0, 0);
+    -moz-transform: translate3d(85px, 0, 0);
+    -o-transform: translate3d(85px, 0, 0);
+    -ms-transform: translate3d(85px, 0, 0);
+  }
+}
 
   </style>
   <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
@@ -1800,7 +1942,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/app.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/plugins/parallax.js","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/plugins/rightMenu.js","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/plugins/rightMenus.js","sites":"https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/plugins/tags/sites.js","friends":"https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/plugins/tags/friends.js","contributors":"https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/plugins/tags/contributors.js","search":"https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1677388484762),
+    lastupdate: new Date(1677394697722),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -2222,26 +2364,45 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <!-- import head_end begin -->
   <!-- import head_end end -->
   <!-- Custom Files headEnd begin-->
-  <!-- <link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/HCLonely/images@master/others/loading.min.css"> -->
+  
   <!-- Custom Files headEnd end-->
 </head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <!-- import body_begin begin-->
     <!-- import body_begin end-->
     <!-- Custom Files bodyBegin begin-->
-    <!-- <div id="loading-box">
+    <div id="loading-box">
     <div class="loading-left-bg"></div>
     <div class="loading-right-bg"></div>
-    <div class="spinner-box">
-      <div class="configure-border-1">
-        <div class="configure-core"></div>
+    <div class="wizard-scene">
+      <div class="wizard-objects">
+        <div class="wizard-square"></div>
+        <div class="wizard-circle"></div>
+        <div class="wizard-triangle"></div>
       </div>
-      <div class="configure-border-2">
-        <div class="configure-core"></div>
+      <div class="wizard">
+        <div class="wizard-body"></div>
+        <div class="wizard-right-arm">
+          <div class="wizard-right-hand"></div>
+        </div>
+        <div class="wizard-left-arm">
+          <div class="wizard-left-hand"></div>
+        </div>
+        <div class="wizard-head">
+          <div class="wizard-beard"></div>
+          <div class="wizard-face">
+            <div class="wizard-adds"></div>
+          </div>
+          <div class="wizard-hat">
+            <div class="wizard-hat-of-the-hat"></div>
+            <div class="wizard-four-point-star --first"></div>
+            <div class="wizard-four-point-star --second"></div>
+            <div class="wizard-four-point-star --third"></div>
+          </div>
+        </div>
       </div>
-      <div class="loading-word">加载中...</div>
     </div>
-</div> -->
+  </div>
     <!-- Custom Files bodyBegin end-->
     <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto  " style='opacity: 0' >
   <div class='container'>
@@ -2399,11 +2560,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                target="_blank" rel="noopener" href="https://travellings.link" title="开往"
+                target="_blank" rel="noopener" href="https://www.travellings.cn/go.html" title="开往"
                   
                   
                   
-                    active-action="action-https:travellingslink"
+                    active-action="action-https:wwwtravellingscngohtml"
                   >
                   <i class='fa-duotone fa-train-subway NEPHRITIS fa-fw'></i>开往
                 </a>
@@ -2605,11 +2766,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
-                target="_blank" rel="noopener" href="https://travellings.link" title="开往"
+                target="_blank" rel="noopener" href="https://www.travellings.cn/go.html" title="开往"
                   
                   
                   
-                    active-action="action-https:travellingslink"
+                    active-action="action-https:wwwtravellingscngohtml"
                   >
                   <i class='fa-duotone fa-train-subway NEPHRITIS fa-fw'></i>开往
                 </a>
@@ -2653,7 +2814,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
       <div id="half" class='cover-wrapper post search' style="display: ;">
         
-  <div class='cover-bg lazyload placeholder' data-bg="https://api.sukiu.top/img?type=pc"></div>
+  <div class='cover-bg lazyload placeholder' data-bg="https://url.sukiu.top/cover"></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -2719,6 +2880,17 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
         <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
       </div>
+      <section class="main-hero-waves-area waves-area"> 
+        <svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+          <defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs>
+          <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0"></use>
+            <use xlink:href="#gentle-wave" x="48" y="3"></use>
+            <use xlink:href="#gentle-wave" x="48" y="5"></use>
+            <use xlink:href="#gentle-wave" x="48" y="7"></use>
+          </g>
+        </svg>
+      </section>
     
   
 </div>
@@ -4508,13 +4680,13 @@ document.addEventListener("DOMContentLoaded", function () {
     <!-- import body_end begin-->
     <!-- import body_end end-->
     <!-- Custom Files bodyEnd begin-->
-    <!-- <script>
+    <script>
     var endLoading = function () {
-      document.body.style.overflow = 'auto';
-      document.getElementById('loading-box').classList.add("loaded");
+        document.body.style.overflow = 'auto';
+        document.getElementById('loading-box').classList.add("loaded");
     }
     window.addEventListener('load',endLoading);
-</script> -->
+</script>
     <!-- Custom Files bodyEnd end-->
   </body>
 </html>
