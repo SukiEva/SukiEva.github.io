@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN,en,default">
-    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.7.6'>
+    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.7.7'>
   <meta name="generator" content="Hexo 6.2.0">
-  <meta name="Volantis" content="5.7.6">
+  <meta name="Volantis" content="5.7.7">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -14,7 +14,7 @@
   <meta name="renderer" content="webkit">
   <meta name="force-rendering" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <meta http-equiv="Content-Security-Policy" content=" default-src 'self' https:; block-all-mixed-content; base-uri 'self' https:; form-action 'self' https:; worker-src 'self' https:; connect-src 'self' https: *; img-src 'self' data: https: *; media-src 'self' https: *; font-src 'self' data: https: *; frame-src 'self' sukiu.top https: *; manifest-src 'self' https: *; child-src https:; script-src 'self' https: 'unsafe-inline' *; style-src 'self' https: 'unsafe-inline' *; ">
+    <meta http-equiv="Content-Security-Policy" content=" default-src 'self' https:; block-all-mixed-content; base-uri 'self' https:; form-action 'self' https:; worker-src 'self' https:; connect-src 'self' https: *; img-src 'self' data: https: *; media-src 'self' https: *; font-src 'self' data: https: *; frame-src 'self' https: *; manifest-src 'self' https: *; child-src https:; script-src 'self' https: 'unsafe-inline' *; style-src 'self' https: 'unsafe-inline' *; ">
   <meta name="HandheldFriendly" content="True" >
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
@@ -25,13 +25,13 @@
   <!-- Custom Files headBegin begin-->
   
   <!-- Custom Files headBegin end-->
-    <link rel="shortcut icon" type='image/x-icon' href="https://fastly.jsdelivr.net/gh/SukiEva/assets/blog/favicon.png">
+    <link rel="shortcut icon" type='image/x-icon' href="https://gcore.jsdelivr.net/gh/SukiEva/assets/blog/favicon.png">
   <link rel="preload" href="/css/style.css" as="style">
-  <link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-<link rel="preload" href="https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
+  <link rel="preload" href="https://gcore.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+<link rel="preload" href="https://gcore.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF" as="font" type="font/OTF" crossorigin="anonymous">
 
   <!-- feed -->
-        <link rel="alternate" href="/rss.xml" title="千反田" type="application/rss+xml">
+      <link rel="alternate" href="/rss.xml" title="千反田" type="application/rss+xml">
   <!-- 页面元数据 -->
   <title>进程管理 - 千反田</title>
   <meta name="keywords" content="Thread,null">
@@ -45,13 +45,13 @@
 <meta property="og:site_name" content="千反田">
 <meta property="og:description" content="线程是最小的执行单元，而进程由至少一个线程组成。 如何调度进程和线程，完全由操作系统决定，程序自己不能决定什么时候执行，执行多长时间。 多进程和多线程的程序涉及到同步、数据共享的问题，编写起来更复杂。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-01-15T11:03:00.000Z">
 <meta property="article:modified_time" content="2022-01-15T11:03:00.000Z">
 <meta property="article:author" content="SukiEva">
 <meta property="article:tag" content="Thread">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <style>
     /* 首屏样式 */
     #safearea {
@@ -880,14 +880,14 @@ button {
 }
 @font-face {
   font-family: 'FZFWZhuZiAYuanJR';
-  src: url("https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF");
+  src: url("https://gcore.jsdelivr.net/gh/SukiEva/assets/fonts/FZFWZhuZiAYuanJR.OTF");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
 @font-face {
   font-family: 'Sxls';
-  src: url("https://fastly.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf");
+  src: url("https://gcore.jsdelivr.net/gh/SukiEva/assets/fonts/Sxls.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
@@ -1719,148 +1719,6 @@ ul.list-v >li>a:hover {
     background: var(--color-site-bg) !important;
   }
 }
-#l_cover {
-  position: relative;
-}
-.main-hero-waves-area {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  z-index: 0;
-  bottom: -10px;
-  font-size: 0;
-}
-.waves-area .waves-svg {
-  width: 100%;
-  height: 4rem;
-}
-.waves-area .parallax > use {
-  -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-  -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-  -khtml-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-  -moz-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-  -o-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-  -ms-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-}
-.waves-area .parallax > use:first-child {
-  -webkit-animation-delay: -2s;
-  animation-delay: -2s;
-  -webkit-animation-duration: 7s;
-  animation-duration: 7s;
-  fill: rgba(255,255,255,0.7);
-}
-.waves-area .parallax > use:nth-child(2) {
-  -webkit-animation-delay: -3s;
-  animation-delay: -3s;
-  -webkit-animation-duration: 10s;
-  animation-duration: 10s;
-  fill: rgba(255,255,255,0.5);
-}
-.waves-area .parallax > use:nth-child(3) {
-  -webkit-animation-delay: -4s;
-  animation-delay: -4s;
-  -webkit-animation-duration: 13s;
-  animation-duration: 13s;
-  fill: rgba(255,255,255,0.3);
-}
-.waves-area .parallax > use:nth-child(4) {
-  -webkit-animation-delay: -5s;
-  animation-delay: -5s;
-  -webkit-animation-duration: 20s;
-  animation-duration: 20s;
-  fill: #f7f9fe;
-}
-@-webkit-keyframes move-forever {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-    -webkit-transform: translate3d(-90px, 0, 0);
-    -khtml-transform: translate3d(-90px, 0, 0);
-    -moz-transform: translate3d(-90px, 0, 0);
-    -o-transform: translate3d(-90px, 0, 0);
-    -ms-transform: translate3d(-90px, 0, 0);
-  }
-  to {
-    transform: translate3d(85px, 0, 0);
-    -webkit-transform: translate3d(85px, 0, 0);
-    -khtml-transform: translate3d(85px, 0, 0);
-    -moz-transform: translate3d(85px, 0, 0);
-    -o-transform: translate3d(85px, 0, 0);
-    -ms-transform: translate3d(85px, 0, 0);
-  }
-}
-@-moz-keyframes move-forever {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-    -webkit-transform: translate3d(-90px, 0, 0);
-    -khtml-transform: translate3d(-90px, 0, 0);
-    -moz-transform: translate3d(-90px, 0, 0);
-    -o-transform: translate3d(-90px, 0, 0);
-    -ms-transform: translate3d(-90px, 0, 0);
-  }
-  to {
-    transform: translate3d(85px, 0, 0);
-    -webkit-transform: translate3d(85px, 0, 0);
-    -khtml-transform: translate3d(85px, 0, 0);
-    -moz-transform: translate3d(85px, 0, 0);
-    -o-transform: translate3d(85px, 0, 0);
-    -ms-transform: translate3d(85px, 0, 0);
-  }
-}
-@-webkit-keyframes move-forever {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-    -webkit-transform: translate3d(-90px, 0, 0);
-    -khtml-transform: translate3d(-90px, 0, 0);
-    -moz-transform: translate3d(-90px, 0, 0);
-    -o-transform: translate3d(-90px, 0, 0);
-    -ms-transform: translate3d(-90px, 0, 0);
-  }
-  to {
-    transform: translate3d(85px, 0, 0);
-    -webkit-transform: translate3d(85px, 0, 0);
-    -khtml-transform: translate3d(85px, 0, 0);
-    -moz-transform: translate3d(85px, 0, 0);
-    -o-transform: translate3d(85px, 0, 0);
-    -ms-transform: translate3d(85px, 0, 0);
-  }
-}
-@-o-keyframes move-forever {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-    -webkit-transform: translate3d(-90px, 0, 0);
-    -khtml-transform: translate3d(-90px, 0, 0);
-    -moz-transform: translate3d(-90px, 0, 0);
-    -o-transform: translate3d(-90px, 0, 0);
-    -ms-transform: translate3d(-90px, 0, 0);
-  }
-  to {
-    transform: translate3d(85px, 0, 0);
-    -webkit-transform: translate3d(85px, 0, 0);
-    -khtml-transform: translate3d(85px, 0, 0);
-    -moz-transform: translate3d(85px, 0, 0);
-    -o-transform: translate3d(85px, 0, 0);
-    -ms-transform: translate3d(85px, 0, 0);
-  }
-}
-@keyframes move-forever {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-    -webkit-transform: translate3d(-90px, 0, 0);
-    -khtml-transform: translate3d(-90px, 0, 0);
-    -moz-transform: translate3d(-90px, 0, 0);
-    -o-transform: translate3d(-90px, 0, 0);
-    -ms-transform: translate3d(-90px, 0, 0);
-  }
-  to {
-    transform: translate3d(85px, 0, 0);
-    -webkit-transform: translate3d(85px, 0, 0);
-    -khtml-transform: translate3d(85px, 0, 0);
-    -moz-transform: translate3d(85px, 0, 0);
-    -o-transform: translate3d(85px, 0, 0);
-    -ms-transform: translate3d(85px, 0, 0);
-  }
-}
 
   </style>
   <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
@@ -1942,9 +1800,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   volantis.GLOBAL_CONFIG ={
     debug: "env",
-    cdn: {"js":{"app":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js","parallax":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/parallax.js","rightMenu":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenu.js","rightMenus":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js","sites":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js","friends":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js","contributors":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js","search":"https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
-    default: {"avatar":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1668091147913),
+    cdn: {"js":{"app":"https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/app.js","parallax":"https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/plugins/parallax.js","rightMenu":"https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/plugins/rightMenu.js","rightMenus":"https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/plugins/rightMenus.js","sites":"https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/plugins/tags/sites.js","friends":"https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/plugins/tags/friends.js","contributors":"https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/plugins/tags/contributors.js","search":"https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
+    default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
+    lastupdate: new Date(1677388484762),
     sidebar: {
       for_page: [],
       for_post: ["toc","blogger"],
@@ -1960,8 +1818,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       }
     },
     plugins: {
-      message: {"enable":true,"css":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/izitoast/dist/css/iziToast.min.css","js":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/izitoast/dist/js/iziToast.min.js","icon":{"default":"fa-light fa-info-circle light-blue","quection":"fa-light fa-question-circle light-blue"},"time":{"default":3000,"quection":10000},"position":"topRight","transitionIn":"bounceInLeft","transitionOut":"fadeOutRight","titleColor":"var(--color-text)","messageColor":"var(--color-text)","backgroundColor":"var(--color-card)","zindex":2147483647,"copyright":{"enable":true,"title":"知识共享许可协议","message":"请遵守 CC BY-NC-SA 4.0 协议。","icon":"fa-brands fa-creative-commons light-blue"},"aplayer":{"enable":true,"play":"fa-light fa-play light-blue","pause":"fa-light fa-pause light-blue","error":"fa-light fa-exclamation-square red"},"rightmenu":{"enable":true,"notice":true}},
-      fancybox: {"css":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/@fancyapps/ui/dist/fancybox.css","js":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/@fancyapps/ui/dist/fancybox.umd.js"},
+      message: {"enable":true,"css":"https://unpkg.com/volantis-static@0.0.1654736714924/libs/izitoast/dist/css/iziToast.min.css","js":"https://unpkg.com/volantis-static@0.0.1654736714924/libs/izitoast/dist/js/iziToast.min.js","icon":{"default":"fa-light fa-info-circle light-blue","quection":"fa-light fa-question-circle light-blue"},"time":{"default":3000,"quection":10000},"position":"topRight","transitionIn":"bounceInLeft","transitionOut":"fadeOutRight","titleColor":"var(--color-text)","messageColor":"var(--color-text)","backgroundColor":"var(--color-card)","zindex":2147483647,"copyright":{"enable":true,"title":"知识共享许可协议","message":"请遵守 CC BY-NC-SA 4.0 协议。","icon":"fa-brands fa-creative-commons light-blue"},"aplayer":{"enable":true,"play":"fa-light fa-play light-blue","pause":"fa-light fa-pause light-blue","error":"fa-light fa-exclamation-square red"},"rightmenu":{"enable":true,"notice":true}},
+      fancybox: {"css":"https://unpkg.com/volantis-static@0.0.1654736714924/libs/@fancyapps/ui/dist/fancybox.css","js":"https://unpkg.com/volantis-static@0.0.1654736714924/libs/@fancyapps/ui/dist/fancybox.umd.js"},
       
       aplayer: {
         id: 7484670730,
@@ -2209,7 +2067,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.import = {
     jQuery: () => {
       if (typeof jQuery == "undefined") {
-        return volantis.js("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/jquery/dist/jquery.min.js")
+        return volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/jquery/dist/jquery.min.js")
       } else {
         return new Promise(resolve => {
           resolve()
@@ -2292,8 +2150,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     volantis.requestAnimationFrame(loop)
   }
   volantis.scroll.handleScrollEvents()
+  volantis.scroll.ele = null;
   // 触发页面滚动至目标元素位置
-  volantis.scroll.to = (ele, option = {}) =>{
+  volantis.scroll.to = (ele, option = {}) => {
+    if (!ele) return;
+    volantis.scroll.ele = ele;
     // 默认配置
     opt = {
       top: ele.getBoundingClientRect().top + document.documentElement.scrollTop,
@@ -2319,8 +2180,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // 用于处理 lazyload 引起的 cls 导致的定位失败问题
     // option.observer = false
     if (option.observer) {
-      setTimeout(()=>{
-        volantis.scroll.unengine.push(()=>{
+      setTimeout(() => {
+        if (volantis.scroll.ele != ele) {
+          return
+        }
+        volantis.scroll.unengine.push(() => {
           let me = ele.getBoundingClientRect().top
           if(!(me >= -option.observerDic && me <= option.observerDic)){
             volantis.scroll.to(ele, option)
@@ -2347,11 +2211,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   /******************************************************************************/
   //图像加载出错时的处理
   function errorImgAvatar(img) {
-    img.src = "https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg";
+    img.src = "https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg";
     img.onerror = null;
   }
   function errorImgCover(img) {
-    img.src = "https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg";
+    img.src = "https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg";
     img.onerror = null;
   }
   /******************************************************************************/
@@ -2360,14 +2224,14 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <!-- import head_end begin -->
   <!-- import head_end end -->
   <!-- Custom Files headEnd begin-->
-  <link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/HCLonely/images@master/others/loading.min.css">
+  <!-- <link rel="stylesheet" href="https://gcore.jsdelivr.net/gh/HCLonely/images@master/others/loading.min.css"> -->
   <!-- Custom Files headEnd end-->
 </head>
   <body itemscope itemtype="http://schema.org/WebPage">
     <!-- import body_begin begin-->
     <!-- import body_begin end-->
     <!-- Custom Files bodyBegin begin-->
-    <div id="loading-box">
+    <!-- <div id="loading-box">
     <div class="loading-left-bg"></div>
     <div class="loading-right-bg"></div>
     <div class="spinner-box">
@@ -2379,7 +2243,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       </div>
       <div class="loading-word">加载中...</div>
     </div>
-</div>
+</div> -->
     <!-- Custom Files bodyBegin end-->
     <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto  " style='opacity: 0' >
   <div class='container'>
@@ -2857,20 +2721,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
         <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
       </div>
-      <section class="main-hero-waves-area waves-area"> 
-        <svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-          <defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs>
-          <g class="parallax">
-            <use xlink:href="#gentle-wave" x="48" y="0"></use>
-            <use xlink:href="#gentle-wave" x="48" y="3"></use>
-            <use xlink:href="#gentle-wave" x="48" y="5"></use>
-            <use xlink:href="#gentle-wave" x="48" y="7"></use>
-          </g>
-        </svg>
-      </section>
     
   
 </div>
+
       <div id="safearea">
         <div class="body-wrapper">
           
@@ -2889,7 +2743,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   
     <span hidden>
-      <meta itemprop="image" content="https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
   <div class="article-meta" id="top">
@@ -3259,12 +3113,6 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
        <!-- 相关文章 -->
       
-      <!-- 打赏组件 -->
-      
-        <div class='donate'>
-          <iframe src="https://sukiu.top/donate/drinks/" style="overflow-x:hidden;overflow-y:hidden; border:0xp none #fff; min-height:240px; width:100%;"  frameborder="0" scrolling="no"></iframe>
-        </div>
-      
       <!-- 版权声明组件 -->
       
         
@@ -3293,6 +3141,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             </blockquote>
           </div>
         
+      
+      <!-- 打赏组件 -->
       
     </div>
   
@@ -3410,7 +3260,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       
         <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://fastly.jsdelivr.net/gh/SukiEva/assets/blog/avatar.jpg'/>
+          <img no-lazy src='https://gcore.jsdelivr.net/gh/SukiEva/assets/blog/avatar.jpg'/>
         </a>
       
     
@@ -3607,13 +3457,13 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   
-  volantis.css("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/@fortawesome/fontawesome-pro/css/all.min.css");
+  volantis.css("https://unpkg.com/volantis-static@0.0.1654736714924/libs/@fortawesome/fontawesome-pro/css/all.min.css");
   
   
-  volantis.css("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/font-awesome-animation/font-awesome-animation.min.css");
+  volantis.css("https://unpkg.com/volantis-static@0.0.1654736714924/libs/font-awesome-animation/font-awesome-animation.min.css");
   
   
-  volantis.css("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/node-waves/dist/waves.min.css");
+  volantis.css("https://unpkg.com/volantis-static@0.0.1654736714924/libs/node-waves/dist/waves.min.css");
   
 </script>
 
@@ -3622,7 +3472,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/app.js"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/app.js"></script>
 
 
 
@@ -3867,7 +3717,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   </ul>
 </div>
-<script src="https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/rightMenus.js"></script>
+<script src="https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/plugins/rightMenus.js"></script>
 <script>
   const RightMenusFunction = {};
   
@@ -4108,19 +3958,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/sites.js")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/plugins/tags/sites.js")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/friends.js")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/plugins/tags/friends.js")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/tags/contributors.js")
+        volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/plugins/tags/contributors.js")
       }
     
   };
@@ -4134,7 +3984,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script defer src="https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/vanilla-lazyload/dist/lazyload.min.js"></script>
+  <script defer src="https://unpkg.com/volantis-static@0.0.1654736714924/libs/vanilla-lazyload/dist/lazyload.min.js"></script>
 <script>
   // https://www.npmjs.com/package/vanilla-lazyload
   // Set the options globally
@@ -4173,7 +4023,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 	hoverDelay: 0
   };
 </script>
-<script defer src="https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/flying-pages/flying-pages.min.js"></script>
+<script defer src="https://unpkg.com/volantis-static@0.0.1654736714924/libs/flying-pages/flying-pages.min.js"></script>
 
 
 
@@ -4196,7 +4046,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
       pjax_scrollrebeal();
     }
   }
-  volantis.js("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/scrollreveal/dist/scrollreveal.min.js");
+  volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/scrollreveal/dist/scrollreveal.min.js");
   document.addEventListener("DOMContentLoaded", init_scrollrebeal);
   volantis.pjax.push(
     pjax_scrollrebeal,
@@ -4209,14 +4059,14 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  volantis.css("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/aplayer/dist/APlayer.min.css");
+  volantis.css("https://unpkg.com/volantis-static@0.0.1654736714924/libs/aplayer/dist/APlayer.min.css");
   (async () => {
     // APlayer 需要在  MetingJS 之前加载
-    await volantis.js("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/aplayer/dist/APlayer.min.js")
-    await volantis.js("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
+    await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/aplayer/dist/APlayer.min.js")
+    await volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/plugins/aplayer.js')
+    await volantis.js('https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/plugins/aplayer.js')
   
   })();
 
@@ -4236,7 +4086,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
               const aplayerItem = item.aplayer; if(!aplayerItem) return;
               const rightAplayerCheck = 'true' === 'true'
                 && item.meta.id === '7484670730';
-              if(rightAplayerCheck) RightMenuAplayer.checkAPlayer();
+              if(rightAplayerCheck && typeof RightMenuAplayer !="undefined") RightMenuAplayer.checkAPlayer();
               if(aplayerItem.events.events.play.every(item => {return item.name !== 'messagePlay'})) {
                 aplayerItem.on('play', function messagePlay() {
                   let index = aplayerItem.list.index;
@@ -4290,7 +4140,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   volantis.layoutHelper("comments",`<div id="twikoo_container"><i class="fa-solid fa-cog fa-spin fa-fw fa-2x"></i></div>`)
   function load_twikoo() {
     if(!document.querySelectorAll("#twikoo_container")[0])return;
-    volantis.js("https://fastly.jsdelivr.net/npm/twikoo@latest", pjax_twikoo)
+    volantis.js("https://unpkg.com/twikoo@latest", pjax_twikoo)
   }
   function pjax_twikoo() {
     if(!document.querySelectorAll("#twikoo_container")[0])return;
@@ -4300,7 +4150,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
       let defaultPath = '';
       path = defaultPath || decodeURI(window.location.pathname);
     }
-    twikoo.init(Object.assign(Object.assign({"js":"https://fastly.jsdelivr.net/npm/twikoo@latest","path":null,"envId":"https://twikoo.sukiu.top/","placeholder":null}, {
+    twikoo.init(Object.assign(Object.assign({"js":"https://unpkg.com/twikoo@latest","path":null,"envId":"https://twikoo.sukiu.top/","placeholder":null}, {
       el: '#twikoo_container',
       path: path,
       placeholder: placeholder,
@@ -4343,7 +4193,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("https://fastly.jsdelivr.net/npm/hexo-theme-volantis@5.7.6/source/js/search/hexo.js");
+    return volantis.js("https://unpkg.com/hexo-theme-volantis@5.7.7/source/js/search/hexo.js");
   }
 
   function loadSearchService() {
@@ -4389,7 +4239,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   
-<script src="https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/node-waves/dist/waves.min.js"></script>
+<script src="https://unpkg.com/volantis-static@0.0.1654736714924/libs/node-waves/dist/waves.min.js"></script>
 
 <script type="text/javascript">
 document.addEventListener("DOMContentLoaded", function () {
@@ -4406,7 +4256,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   
-<script src="https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/comment_typing/comment_typing.js"></script>
+<script src="https://unpkg.com/volantis-static@0.0.1654736714924/libs/comment_typing/comment_typing.js"></script>
 
 
 
@@ -4650,8 +4500,8 @@ document.addEventListener("DOMContentLoaded", function () {
   <script>
   function load_swiper() {
     if (!document.querySelectorAll(".swiper-container")[0]) return;
-    volantis.css("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/swiper/swiper-bundle.min.css");
-    volantis.js("https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/swiper/swiper-bundle.min.js").then(() => {
+    volantis.css("https://unpkg.com/volantis-static@0.0.1654736714924/libs/swiper/swiper-bundle.min.css");
+    volantis.js("https://unpkg.com/volantis-static@0.0.1654736714924/libs/swiper/swiper-bundle.min.js").then(() => {
       pjax_swiper();
     });
   }
@@ -4820,7 +4670,7 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Computer-Basics/","name":"Computer Basics"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Computer-Basics/Operating-System/","name":"Operating System"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Computer-Basics/Operating-System/Process-And-Thread/","name":"进程管理"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"进程管理","description":"线程是最小的执行单元，而进程由至少一个线程组成。\n如何调度进程和线程，完全由操作系统决定，程序自己不能决定什么时候执行，执行多长时间。\n多进程和多线程的程序涉及到同步、数据共享的问题，编写起来更复杂。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Computer-Basics/Operating-System/Process-And-Thread/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Computer-Basics/Operating-System/Process-And-Thread/","wordCount":100,"datePublished":"2022-01-15T11:03:00.000Z","dateModified":"2022-01-15T11:03:00.000Z","articleSection":"Computer Basics","keywords":"Thread","image":{"@type":"ImageObject","url":"https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","sameAs":["https://github.com/volantis-x"],"description":"One simple blog"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://blog.sukiu.top/","name":"千反田"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Computer-Basics/","name":"Computer Basics"}},{"@type":"ListItem","position":2,"item":{"@id":"http://blog.sukiu.top/categories/Computer-Basics/Operating-System/","name":"Operating System"}},{"@type":"ListItem","position":3,"item":{"@id":"http://blog.sukiu.top/Computer-Basics/Operating-System/Process-And-Thread/","name":"进程管理"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"千反田","url":"http://blog.sukiu.top/","keywords":null,"description":"One simple blog","author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/","description":"One simple blog"},"publisher":{"@type":"Organization","name":"千反田","url":"http://blog.sukiu.top/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://blog.sukiu.top?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"进程管理","description":"线程是最小的执行单元，而进程由至少一个线程组成。\n如何调度进程和线程，完全由操作系统决定，程序自己不能决定什么时候执行，执行多长时间。\n多进程和多线程的程序涉及到同步、数据共享的问题，编写起来更复杂。","inLanguage":["zh-CN","en","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"http://blog.sukiu.top/Computer-Basics/Operating-System/Process-And-Thread/"},"author":{"@type":"Person","name":"SukiEva","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://blog.sukiu.top/"},"publisher":{"@type":"Organization","name":"千反田","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://blog.sukiu.top/Computer-Basics/Operating-System/Process-And-Thread/","wordCount":100,"datePublished":"2022-01-15T11:03:00.000Z","dateModified":"2022-01-15T11:03:00.000Z","articleSection":"Computer Basics","keywords":"Thread","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
@@ -4835,7 +4685,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-<script src="https://fastly.jsdelivr.net/npm/volantis-static@0.0.1654736714924/libs/pjax/pjax.min.js"></script>
+<script src="https://unpkg.com/volantis-static@0.0.1654736714924/libs/pjax/pjax.min.js"></script>
 
 
 <script>
@@ -4902,34 +4752,13 @@ document.addEventListener("DOMContentLoaded", function () {
     <!-- import body_end begin-->
     <!-- import body_end end-->
     <!-- Custom Files bodyEnd begin-->
-    <script>
+    <!-- <script>
     var endLoading = function () {
       document.body.style.overflow = 'auto';
       document.getElementById('loading-box').classList.add("loaded");
     }
     window.addEventListener('load',endLoading);
-</script>
+</script> -->
     <!-- Custom Files bodyEnd end-->
-  <!-- hexo injector body_end start -->
-  <script data-pjax src="https://fastly.jsdelivr.net/gh/Zfour/hexo-github-calendar@1.21/hexo_githubcalendar.js"></script>
-  <script data-pjax>
-        function GithubCalendarConfig(){
-            var git_githubapiurl ="https://python-github-calendar-api.vercel.app/api?SukiEva";
-            var git_color =['#ebedf0', '#dcffe4', '#9be9a8', '#70c463', '#40c463', '#30a14e', '#216e39',  '#20021f', '#1b1f23'];
-            var git_user ="SukiEva";
-            var parent_div_git = document.getElementsByClassName('post-list')[0];
-            var git_div_html = '<div class="post post-v3 white-box reveal shadow" style="width:100%;height:auto;padding:10px;transform: none!important;"><div id="github_loading" style="width:10%;height:100%;margin:0 auto;display: block"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 50 50" style="enable-background:new 0 0 50 50" xml:space="preserve"><path fill="#d0d0d0" d="M25.251,6.461c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615V6.461z" transform="rotate(275.098 25 25)"><animateTransform attributeType="xml" attributeName="transform" type="rotate" from="0 25 25" to="360 25 25" dur="0.6s" repeatCount="indefinite"></animateTransform></path></svg></div><div id="github_container"></div></div>';
-            if(parent_div_git && location.pathname =='/'){
-                console.log('已挂载github calendar')
-                // parent_div_git.innerHTML=git_div_html+parent_div_git.innerHTML // 无报错，但不影响使用(支持pjax跳转)
-                parent_div_git.insertAdjacentHTML("afterbegin",git_div_html) // 有报错，但不影响使用(支持pjax跳转)
-            };
-            GithubCalendar(git_githubapiurl,git_color,git_user)
-        }
-        if(document.getElementsByClassName('post-list')[0]){
-            GithubCalendarConfig()
-        }
-    </script>
-    <style>#github_container{min-height:280px}@media screen and (max-width:650px) {#github_container{background-image:;min-height:0px}}</style>
-    <style></style><!-- hexo injector body_end end --></body>
+  </body>
 </html>

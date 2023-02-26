@@ -7378,18 +7378,6 @@ ul.list-v.rightmenu li.music .nav.volume .aplayer-volume-bar .aplayer-volume {
   :root:not([color-scheme]) .OwO .OwO-body .OwO-items-image .OwO-item:hover {
     background-color: #252627 !important;
   }
-  :root:not([color-scheme]) .waves-area .parallax > use:first-child {
-    fill: rgba(31,31,31,0.7);
-  }
-  :root:not([color-scheme]) .waves-area .parallax > use:nth-child(2) {
-    fill: rgba(31,31,31,0.5);
-  }
-  :root:not([color-scheme]) .waves-area .parallax > use:nth-child(3) {
-    fill: rgba(31,31,31,0.3);
-  }
-  :root:not([color-scheme]) .waves-area .parallax > use:nth-child(4) {
-    fill: #1f1f1f;
-  }
   :root:not([color-scheme]) .widget,
   :root:not([color-scheme]) article {
     border: 1.5px solid #02d7f2;
@@ -7537,18 +7525,6 @@ ul.list-v.rightmenu li.music .nav.volume .aplayer-volume-bar .aplayer-volume {
 }
 [color-scheme='dark'] .OwO .OwO-body .OwO-items-image .OwO-item:hover {
   background-color: #252627 !important;
-}
-[color-scheme='dark'] .waves-area .parallax > use:first-child {
-  fill: rgba(31,31,31,0.7);
-}
-[color-scheme='dark'] .waves-area .parallax > use:nth-child(2) {
-  fill: rgba(31,31,31,0.5);
-}
-[color-scheme='dark'] .waves-area .parallax > use:nth-child(3) {
-  fill: rgba(31,31,31,0.3);
-}
-[color-scheme='dark'] .waves-area .parallax > use:nth-child(4) {
-  fill: #1f1f1f;
 }
 [color-scheme='dark'] .widget,
 [color-scheme='dark'] article {
